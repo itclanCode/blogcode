@@ -6,4 +6,4 @@ title: 目录
 
 ## 手把手教你利用 vuepress 搭建博客
 
-手把手教你用 vuepress 搭建博客
+- [手把手教你用 vuepress 搭建博客](./vuepress-build-blog)

@@ -8,7 +8,7 @@
  * @Date: 2020-05-29
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-02 20:11:09
+ * @LastEditTime: 2020-06-04 22:24:54
  * @Description: 头部navs导航配置文件,入口文件原本在config.js文件中,但抽离到了themeConfig.js中,该文件通过module.exports导出,在themeConfig.js中通过require方式引入
  * 集中配置管理头部nav导航栏
  * @docs: https://vuepress.docschina.org/default-theme-config/#%E5%AF%BC%E8%88%AA%E6%A0%8F-navbar
@@ -30,7 +30,7 @@ const navs = [
     items: [
       { text: "CSS", link: "/fontend/css/" },
       { text: "JavaScript", link: "/fontend/js/" },
-      { text: "工具", link: "/fontend/tools/" }
+      { text: "开发工具", link: "/fontend/tools/" }
     ]
   },
 
@@ -42,7 +42,18 @@ const navs = [
     ]
   },
 
-  { text: "面试锦囊", link: "/interview/" },
+  {
+    text: "面试锦囊",
+    items: [
+      { text: "CSS", link: "/interview/css/" },
+      { text: "JavaScript", link: "/interview/js/" },
+      { text: "微信小程序", link: "/interview/minprogram/" },
+      { text: "React", link: "/interview/react/" },
+      { text: "Vue", link: "/interview/vue/" },
+      { text: "Http", link: "/interview/http/" },
+      { text: "Node", link: "/interview/Node/" }
+    ]
+  },
 
   {
     text: "社交",
@@ -55,10 +66,14 @@ const navs = [
       {
         text: "segmentfault",
         link: "https://segmentfault.com/u/suibichuanji_5900e1f5bcf67"
+      },
+      {
+        text: "视频教程",
+        link: "https://space.bilibili.com/267957620"
       }
     ]
   },
-  { text: "关于我", link: "/about/" },
+
   {
     text: "工具",
     items: [
@@ -87,7 +102,16 @@ const navs = [
         ]
       }
     ]
-  }
+  },
+  {
+    text: "读书",
+    items: [
+      { text: "财富", link: "/read/wealth/" },
+      { text: "文案", link: "/read/copywrite/" },
+      { text: "运营", link: "/read/operate/" }
+    ]
+  },
+  { text: "关于我", link: "/about/" }
 ];
 
 module.exports = navs;

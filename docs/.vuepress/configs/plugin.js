@@ -8,14 +8,14 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-04 18:09:41
+ * @LastEditTime: 2020-06-04 19:23:00
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
  * 插件配置链接：
  * 1. 返回顶部插件:https://www.vuepress.cn/plugin/official/plugin-active-header-links.html#%E5%AE%89%E8%A3%85
  */
-
+const moment = require("moment"); // 引入moment.js  // 不要忘了安装 moment
 // 侧边栏排序 vuepress-plugin-auto-sidebar
 const sortFn = key => (a, b) =>
   a[key].split("-")[1][length - 1] > b[key].split("-")[1][length - 1] ? 1 : -1;
@@ -33,6 +33,15 @@ const plugins = [
       // 页面滚动时自动激活侧边栏链接的插件配置
       sidebarLinkSelector: ".sidebar-link",
       headerAnchorSelector: ".header-anchor"
+    }
+  ],
+
+  [
+    {
+      transformer: timestamp => {
+        moment.locale("zh-cn");
+        return moment(timestamp).fromat("LLLL");
+      }
     }
   ],
 
