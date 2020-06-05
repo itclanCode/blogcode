@@ -36,6 +36,7 @@
     "vuepress-plugin-auto-sidebar": "^1.4.1",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-copyright": "^1.0.2",
     "vuepress-plugin-img-lazy": "^1.0.3",
     "vuepress-plugin-reading-progress": "^1.0.9",
     "vuepress-plugin-reading-time": "^0.1.1"

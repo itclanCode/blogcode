@@ -8,14 +8,16 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-04 19:23:00
+ * @LastEditTime: 2020-06-05 20:57:25
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
  * 插件配置链接：
  * 1. 返回顶部插件:https://www.vuepress.cn/plugin/official/plugin-active-header-links.html#%E5%AE%89%E8%A3%85
  */
+// const emojiMaps = require("./emojiMaps"); // 引入表情包
 const moment = require("moment"); // 引入moment.js  // 不要忘了安装 moment
+const secret = require("./secretKey"); // 引入密钥信息
 // 侧边栏排序 vuepress-plugin-auto-sidebar
 const sortFn = key => (a, b) =>
   a[key].split("-")[1][length - 1] > b[key].split("-")[1][length - 1] ? 1 : -1;
@@ -61,13 +63,8 @@ const plugins = [
     "@vuepress/pwa", // 以@开头的都是官方维护的插件, pwa配置
     {
       serviceWorker: true, // 如果设置为 true，VuePress 将自动生成并注册一个 Service Worker，用于缓存页面的内容以供离线使用（仅会在生产环境中启用）
-      updatePopup: {
-        // 只有在你能够使用 SSL 部署您的站点时才能启用此功能，因为 service worker 只能在 HTTPs 的 URL 下注册
-        "/zh/": {
-          message: "发现新内容可用",
-          buttonText: "刷新"
-        }
-      }
+      updatePopup: true,
+      popupComponent: "MySWUpdatePopup"
     }
   ],
 
@@ -75,11 +72,21 @@ const plugins = [
     "vuepress-plugin-comment", // valine留言插件
     {
       choosen: "valine",
-      // options选项中的所有参数，会传给Valine的配置
+      // options选项中的所有参数，会传给Valine的配置,配置选项见文档:https://valine.js.org/configuration.html#appId
       options: {
         el: "#valine-vuepress-comment",
-        appId: "QffFto4w5NEPzOtOubDJubDA-gzGzoHsz",
-        appKey: "0SwBlQTI7U0znWtQjPWh4IXH"
+        appId: secret.appId, // 引入密钥appId
+        appKey: secret.appKey, // 引入密钥appKey
+        placeholder: "据说评论几句,结果会一鸣惊人~互相学习哈",
+        path: "window.location.pathname",
+        avatar: "robohash", // 非自定义头像
+        meta: ["nick", "mail"],
+        requiredFields: ["nick", "email"],
+        pageSize: 10,
+        visitor: true // 对访问量进行统计
+        // emojiCDN:
+        //   "https://www.jsdelivr.com/package/gh/GamerNoTitle/ValineCDN?path=bilibilitv",
+        // emojiMaps
       }
     }
   ],
@@ -98,6 +105,16 @@ const plugins = [
       uncollapseList: [
         // 不折叠的路由列表
       ]
+    }
+  ],
+
+  [
+    "copyright",
+    {
+      noCopy: true, // 选中的文字将无法被复制
+      minLength: 100, // 如果长度超过 100 个字符
+      "en-US": "Author",
+      "zh-CN": "作者"
     }
   ]
 ];
