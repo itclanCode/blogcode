@@ -8,7 +8,7 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-05 20:57:25
+ * @LastEditTime: 2020-06-05 21:59:31
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
@@ -63,8 +63,12 @@ const plugins = [
     "@vuepress/pwa", // 以@开头的都是官方维护的插件, pwa配置
     {
       serviceWorker: true, // 如果设置为 true，VuePress 将自动生成并注册一个 Service Worker，用于缓存页面的内容以供离线使用（仅会在生产环境中启用）
-      updatePopup: true,
-      popupComponent: "MySWUpdatePopup"
+      updatePopup: {
+        "/zh/": {
+          message: "发现有新的内容更新,马上更新",
+          buttonText: "刷新"
+        }
+      }
     }
   ],
 

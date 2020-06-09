@@ -25,5 +25,5 @@ export default ({
 }) => {
   // ...做一些其他的应用级别的优化
   // 全局注入组件
-  Vue.component("ClipboardComponent", ClipboardComponent);
+  // Vue.component("ClipboardComponent", ClipboardComponent);
 };

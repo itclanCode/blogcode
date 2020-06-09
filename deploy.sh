@@ -10,11 +10,11 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-echo 'docs.itclan.cn' > CNAME
+echo 'doc.itclan.cn' > CNAME
 
 git init
 git add -A
-git commit -m '部署docs.itclan.cn'
+git commit -m '部署doc.itclan.cn'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f https://github.com/itclanCode/itclancode.github.io.git  master
