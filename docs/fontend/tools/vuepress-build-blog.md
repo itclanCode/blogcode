@@ -1,6 +1,7 @@
 ---
 sidebarDepth: 3
 title: 手把手教你用 vuepress 搭建博客
+autoPrev: README
 ---
 
 # 用 vuepress 搭建博客
@@ -54,6 +55,7 @@ title: 手把手教你用 vuepress 搭建博客
   - [检验域名有没有解析成功](#检验域名有没有解析成功)
   - [在仓库底下新建一个-CNAME-文件](#在仓库底下新建一个-CNAME-文件)
 * [添加百度统计](#添加百度统计)
+* [添加逼格徽章](#添加逼格徽章)
 * [常见问题](#常见问题)
   - [页面显示-404](#页面显示-404)
   - [侧边栏显示的是文件路径，而非文件名](#侧边栏显示的是文件路径，而非文件名)
@@ -66,7 +68,7 @@ title: 手把手教你用 vuepress 搭建博客
 
 ## 前言
 
-如果说阅读是知识的输入,那么写作就是知识的输出,输出是一个内化知识理解的过程,有些知识,一问,知道,一动手,不会,看似简单,一看就会,一做就废,凡是不被自己吸收,为自己所用的,都只能称作为做信息,而不能视为知识.
+如果说阅读是知识的输入,那么写作就是知识的输出,输出是一个内化知识理解的过程,有些知识,一问,知道,一动手,不会,看似简单,一看就会,一做就废,凡是不被自己吸收,为自己所用的,都只能称作为做信息,而不能视作为知识.
 
 记录就像是复盘,迭代自己,不断试错,反馈. 无论是前端还是后端,甚至是其他,多动手,多实践才是真理
 
@@ -149,13 +151,13 @@ title: 手把手教你用 vuepress 搭建博客
 
 而很多博客,大佬,基本上都是基于一个模板,有很多坑并没有提及
 
-官方文档只适合查阅,也并不适合从头看到尾,每个 API 都熟记于心,你只需要知道怎么去查,在哪个地方找就可以了的
+官方文档只适合查阅,也并不适合从头看到尾,不用每个 API 都熟记于心,你只需要知道怎么去查,在哪个地方找就可以了的
 
 `VuePress` 的配置的确复杂,但并非令人望而却步,本篇文章有些长,建议一步步的按阶段完成,有些配置你不必知道原因,你只需要知道按照官方文档那么配置,能出来,达到你想要的效果就可以了,至于内部原理,富有闲于时,可自行探索,不必深究
 
-也不要一上来,就折腾自定义主题,看到酷炫花销的博客,就立马想就搞一个出来
+也不要一上来,就去折腾自定义主题,看到酷炫花销的博客,就立马想搞一个出来
 
-一个能吸引到你的网站,让你停留片刻,收藏,点赞,转发,三连击的,起决定性作用的,并非是你的 UI,而是你网站提供的内容服务,如果一味的追求 UI 效果,却忽略建站的初衷,就有些本末倒置了的
+一个能吸引到你的网站,让你停留片刻,收藏,点赞,转发,三连击的,起决定性作用,并非是你的 UI,而是你网站所提供的内容服务,如果一味的追求 UI 效果,却忽略建站的初衷,就有些本末倒置了
 
 先把官方默认的主题,玩熟悉了,在去玩自定义主题,以及进行二次开发,都是可以的
 
@@ -335,7 +337,7 @@ features:
     details: 用心记录技术,走心分享,始于前端,不止于前端,励志成为一名优秀的全栈工程师,真正的实现码中致富
   - title: 生活
     details: 无分享,不生活,一个具有情怀的技匠,路上正追逐斜杠青年的践行者
-footer: MIT Licensed | Copyright © 2018-present 随笔川迹
+footer: MIT Licensed | Copyright © 2020-present 随笔川迹
 ---
 ```
 
@@ -1128,6 +1130,18 @@ git remote -v
 
 当你在`git bash`命令行终端执行`bash deploy`,注意在`DOS`命令行终端下,不支持这个`bash`命令,或者双击`deploy.sh`这个脚本
 就会自动的执行这个脚本,分别完成构建和向远端指定的仓库提交代码
+
+有时候,我们希望执行一行命令就可以完成自动化部署，那么您需要在`package.json`中的`scripts`中添加`deploy:bash deploy.sh`就可以了的,往后在命令行终端执行`npm run deploy`或者`yarn deploy`就可以自动执行该`deploy.sh`脚本了的
+
+```
+"scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+
+```
+
 ::: tip 提示
 如果自动部署脚本不成功,可以尝试如下操作
 
@@ -1139,6 +1153,8 @@ git remote -v
 <img class="medium-zoom" src="../images/tools-article-imgs/vuepress-build-blog/github-name.png" alt="github-name" />
 <img class="medium-zoom" src="../images/tools-article-imgs/vuepress-build-blog/home-config.png" alt="github-domain" />
 <img class="medium-zoom" src="../images/tools-article-imgs/vuepress-build-blog/github-pages-success.png" alt="github-success" />
+
+## Travis-CI 自动化部署
 
 ## 配置自定义域名
 
@@ -1232,6 +1248,10 @@ doc.itclan.cn
 ```
 
 一般过 24 小时后,百度就会统计你网站每日的访问量的,您可以根据这些信息,不断的优化您自己的网站
+
+## 添加逼格徽章
+
+shields.io
 
 ## 常见问题 <Badge text="必看" type="error"/>
 
@@ -1352,7 +1372,7 @@ doc.itclan.cn
 
 关于`vuepress`搭建网站到自定义域名部署上线,基本上就完成了,如果您觉得`github pages`访问很慢,也可以将代码托管给[gitee](https://gitee.com/)或者[coding](https://coding.net/)等一些第三方平台上的,这样访问速度就会快些
 
-当然你也可以直接`clone`[blogcode 源码](https://github.com/itclanCode/blogcode)进行二次修改,但是我个人觉得,建议还是自己手动一行一行的配置一下的,结合[vuepress 中文官方文档](https://www.vuepress.cn/),进行配置的
+当然你也可以直接`clone`[blogcode 源码](https://github.com/itclanCode/blogcode)进行二次修改,但是我个人觉得,建议还是自己手动一行一行的配置一下,结合[vuepress 中文官方文档](https://www.vuepress.cn/),进行配置
 
 在搭建的过程中,每个人遇到的坑,问题或多或少都会不一样,只有自己配置过一次,往后修改起来,才知道问题出现在哪里
 

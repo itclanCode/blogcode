@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "bash deploy",
+    "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

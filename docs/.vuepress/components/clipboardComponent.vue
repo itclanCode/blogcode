@@ -13,12 +13,8 @@
 <template>
   <div>
     <p>
-      MIT Licensed | Copyright © 2020-present
-      <a
-        href="https://github.com/itclanCode/blogcode"
-        target="_blank"
-      >随笔川迹</a>
-
+      <span>MIT Licensed | Copyright © 2020-present</span>
+      <a href="https://github.com/itclanCode/blogcode" target="_blank">随笔川迹</a>
       <a href="http://www.beian.miit.gov.cn/" target="_blank">
         <img src="../public/icons/icp.png" width="20" height="20" alt="公网备案" />京ICP备16017996号
       </a>
@@ -29,6 +25,11 @@
 <style lang="stylus" scoped>
 p {
   text-align: center;
+  font-size: 16px;
+
+  span {
+    display: block;
+  }
 
   a {
     margin-right: 3px;
@@ -37,6 +38,7 @@ p {
       display: inline-block;
       vertical-align: middle;
       margin-right: 2px;
+      margin-left: 2px;
     }
   }
 }
