@@ -1154,8 +1154,6 @@ git remote -v
 <img class="medium-zoom" src="../images/tools-article-imgs/vuepress-build-blog/home-config.png" alt="github-domain" />
 <img class="medium-zoom" src="../images/tools-article-imgs/vuepress-build-blog/github-pages-success.png" alt="github-success" />
 
-## Travis-CI 自动化部署
-
 ## 配置自定义域名
 
 ### 前提条件
