@@ -4,4 +4,4 @@
 
 set -e
 
-echo 'dos.itclan.cn' > docs/.vuepress/dist/CNAME
+echo 'doc.itclan.cn' > docs/.vuepress/dist/CNAME
