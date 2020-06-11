@@ -32,3 +32,9 @@ fatal: Authentication failed for 'https://xxx.git'
 
 * 方法-2:clone 的代码连接前加上 git 账号和密码
   git clone http://账户名:密码@192.168.0.00/xxxx/xxxx.git
+
+  ### GitHub 中 README 添加图片不正常显示
+
+  - 免费图床服务
+    - [picb 免费图床](https://www.picb.cc/)
+    - [imgchr 免费图床](https://imgchr.com/)

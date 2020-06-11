@@ -24,8 +24,9 @@
 - 本博客若有对小伙伴们有帮助,谢谢不要吝啬您的`star`,欢迎随时灵魂拷问
 - 线上地止:[itclanCoder-线上预览](http://doc.itclan.cn)
 - 您也可关注**官方微信公众号:itclanCoder**
-
-![tIpk0j.jpg](https://t1.picb.cc/uploads/2020/06/11/tIpk0j.jpg)
+  <div align="center">
+  ![tIpk0j.jpg](https://t1.picb.cc/uploads/2020/06/11/tIpk0j.jpg)
+  </div>
 
 ### 如何支持作者
 
