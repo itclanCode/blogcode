@@ -14,7 +14,7 @@
         <h4>关注公众号</h4>
         <p>一个走心,有温度的号,同千万同行一起交流学习</p>
         <img
-          class="lazy"
+          class="medium-zoom lazy"
           loading="lazy"
           src="../public/images/itclancoder-code.jpg"
           alt
@@ -27,7 +27,7 @@
           <span>加群</span>
         </p>
         <img
-          class="lazy"
+          class="medium-zoom lazy"
           loading="lazy"
           src="../public/images/person-code.jpg"
           alt
@@ -106,6 +106,7 @@ export default {
             font-size: 12px;
           }
           img {
+            cursor: pointer;
             width: 140px;
           }
        }

@@ -65,6 +65,7 @@ autoPrev: README
   * [部署失败](#部署失败)
   * [npm-安装某些包失败](#npm-安装某些包失败)
   * [配置自定义域名不生效](#配置自定义域名不生效)
+* [相关链接参考文档](#相关链接参考文档)
 * [结语](#结语)
 
 ## 前言
@@ -181,7 +182,7 @@ autoPrev: README
   - NodeJs 下载地址:([NodeJS-长期支持版下载](https://nodejs.org/zh-cn/))
 - 安装`git bash`:用于向 github 提交代码,虽然`cmd`或者`power Shell`都可以,但还是建议使用`git bash`
 - git bash 下载地址:[git bash](https://gitforwindows.org/)
-- 熟悉下`markdwon`语法,不熟悉也没有关系,后续都是用它来写文档,五分钟立马就可以上手
+- 熟悉下`markdwon`语法,不熟悉也没有关系,后续都是用它来写文档,五分钟立马就可以上手,可前往[在线练习 markdonw 语法](https://markdown-it.github.io/)
 - vscode 插件商店里安装`markdown`,`markdown Preview`插件,也可下载安装[Typora](https://www.typora.io/)`软件到本地编写`md`
 
 ## 项目搭建
@@ -1391,15 +1392,37 @@ doc.itclan.cn
 
 当然你也可以直接`clone`[blogcode 源码](https://github.com/itclanCode/blogcode)进行二次修改,但是我个人觉得,建议还是自己手动一行一行的配置一下,结合[vuepress 中文官方文档](https://www.vuepress.cn/),进行学习配置
 
-## 结语 <Badge text="老铁,加油" type="error"/>
+## 相关链接参考文档
 
-在自己搭建博客的过程中,每个人遇到的坑,问题或多或少都会不一样,只有自己配置过一次,往后修改起来,才知道问题出现在哪里
+- [vuepress 中文官方文档](https://www.vuepress.cn/)
+- [vuepress 插件市场](https://github.com/vuepressjs/awesome-vuepress#plugins)
+- [markdonw-Emoji 表情包](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+- Valine-评论插件
+  - [Valine 官网](https://valine.js.org/)
+  - [leancloud 官网](https://www.leancloud.cn/)
+- [自动生成侧边栏-auto-sidebar 文档](https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/)
+- [travis-ci 官网](https://travis-ci.com/)
+- [npm 仓库](https://www.npmjs.com/)
+- [阿里云控制台](https://account.aliyun.com/login/login.htm?oauth_callback=http%3A%2F%2Fdc.console.aliyun.com%2Fnext%2Findex%3Fspm%3D5176.12818093.recommends.ddomain.488716d0fW4NrQ)
+  - [万网域名检测工具](https://zijian.aliyun.com/?spm=a2c4g.11186623.2.15.6db92da1C19ghl#/domainDetect)
+  * [域名解析生效测试方法](https://help.aliyun.com/knowledge_detail/39834.html?spm=a2c1d.8251892.0.0.77815b76EaO3wE&_from=help_widget_detail)
+  * [添加解析记录](https://help.aliyun.com/knowledge_detail/29725.html?spm=a2c4g.11186631.2.1.47685b006BpVme)
+  * 如有不清楚的,可回滚到上方[登录域名管理后台,仔细看图解](#登录域名管理后台)
 
-有些东西,你看着简单,自己去动手去做就知道,例如:侧边栏动态生成配置,折叠控制,自动化部署,域名解析等,每走一步或多或少,都会遇到一些奇奇怪怪的问题
+* [百度统计](https://tongji.baidu.com/)
+* [逼格徽章在线生成地止](https://shields.io/)
 
-花一点时间,折腾一下,踩到坑了,就是挫折,跳出来了,就是成长~,手动一行行的配置,的确有些枯燥,但是会让你理解更加深刻,相比于`jekyll`,`Hexo`等`Docsify-Docute`,你更能感受到`vuepress`确实很强悍,虽然配置有些复杂,但是值得去折腾
+## 结语<Badge text="老铁,没毛病,加油" type="error"/>
 
-**动手吧,少年,搭建博客只是一个开始,持续不断输出优质内容才是漫漫长路,曾今你或许持以仰望,对那些高大上的网站,觉得遥不可及**,如今,却触手可及
+在您自己搭建博客的过程中,每个人遇到的坑,问题或多或少都会不一样,只有自己配置过一次,即使往后遇到什么问题,也知道问题出现在哪里
+
+有些东西,你看着简单,自己去动手去做就知道,所谓台上一分钟,台下十年功,并不是没有一定道理的,在自己没有实现出来之前,不要轻易说简单,它并不等于容易,也不要高估自己,唯有亲身去实践,才有发言权,而不是嘴上跑火车
+
+例如:侧边栏动态生成配置(难点),折叠控制(自动化排序),自定义组件,定制化需求,自动化部署,域名解析等,每走一步或多或少,都会遇到一些奇奇怪怪的问题
+
+花一点时间,折腾一下,踩到坑了,就是挫折,跳出来了,就是成长~,手动一行行的配置,的确有些枯燥,但是会让你理解更加深刻,相比于`jekyll`,`Hexo`等`Docsify-Docute`,你更能感受到`vuepress`确实很强悍,灵活,拓展性很强,虽然配置有些复杂,但是值得去折腾
+
+**动手吧,少年,搭建博客只是一个开始,持续不断输出优质内容才是漫漫长路,曾今您或许持以仰望,对那些高大上的网站,觉得遥不可及**,如今,却触手可及
 
 自己的网站,自己做主,一定要坚信,对于这种绝大多人都可以快速搭建起来的应用网站,你也是可以的,只要耐心折腾一下,本身并无多大技术含量,只有折腾过了,你才会发现新的大陆
 
