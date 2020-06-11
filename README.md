@@ -15,7 +15,7 @@
 - 本博客若有对小伙伴们有帮助,谢谢不要吝啬您的`star`,欢迎随时灵魂拷问
 - 线上地止:[itclanCoder-线上预览](http://doc.itclan.cn)
 - 您也可关注**官方微信公众号:itclanCoder**
-- ![Image](./itclancoder-code.jpg)
+- ![tHKhVI.jpg](https://s1.ax1x.com/2020/06/11/tHKhVI.jpg)
 
 ### 如何支持作者
 
@@ -25,7 +25,7 @@
 - 直接支持
 
   - 如果您觉得博客中的文章对你有帮助,可赞助一杯咖啡的钱,小额捐助来表示您的谢意.更好的鼓励我深夜打码,创作
-    ![Image](./vxzanshang-code.jpg) ![Image](./zhifubao-code.jpg) ![Image](./person-code.jpg)
+    ![tHKoPf.jpg](https://s1.ax1x.com/2020/06/11/tHKoPf.jpg) ![tHK4at.jpg](https://s1.ax1x.com/2020/06/11/tHK4at.jpg) ![tHK5IP.jpg](https://s1.ax1x.com/2020/06/11/tHK5IP.jpg)
 
   * 小额赞助后,您可以获得额外的回报,您可以告诉我,您的名字,它将会出现在`itclanCoder` 的`GitHub`仓库中,再比如您公司 `logo`,或相关产品会出现在[itclanCoder 官网](http://doc.itclan.cn)上.
 
