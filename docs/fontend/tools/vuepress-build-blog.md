@@ -1069,6 +1069,14 @@ module.exports = {
 - 在`github`上创建两个仓库,一个仓库的名称:`https://<USERNAME>.github.io/<REPO>/` 即`https://github.com/<USERNAME>/<REPO>`,或者直接仓库的名称就是`username.github.io`(这个 username 是你 github 的登录账号的名称,是固定的),这个仓库的作用是用来部署线上版本用的
 - 在创建一个仓库,这个仓库的名称任意,这个仓库是用来平时日常开发代码的,比如我的:`blogcode`
 
+::: details 为什么要创建两个代码仓库呢,一个仓库不是很好么?
+
+1. 一个仓库用于日常的开发,新增文章或者二次开发,不断迭代,注意不要往这个仓库里`push`构建出来`dist`文件
+2. 另一个仓库只用于线上预览,项目中最终构建 build 生成的`dist`目录文件推送到这个远程仓库当中
+3. 保持两个仓库的相互独立,互不干扰,如果全部放在一个仓库里,不易于后续维护和代码的管理
+4. 如果你想把代码静态资源部署到其他服务器上,你只需把`build`构建出来的`dist`文件放到你服务器根目录下就可以了的
+   :::
+
 ::: tip 提醒
 如果您的仓库不是放置在根目录下(就是`https://itclancode.github.io/blogcode/`这种形式,而非`https://itclancode.github.io/`),则在`config.js`的基础配置中需要更改`base`的路径,它默认是指向根路径的,可以省略
 
@@ -1385,12 +1393,16 @@ doc.itclan.cn
 ```
 
 ::: tip 提醒
-这个 CNAME 文件在本地活动仓库中可以没有,但是在远端仓库中必须要存在,这个 CNAME 文件可以在远端项目根目录下创建写入的
+这个 CNAME 文件在本地活动仓库中可以没有,但是在远端仓库中必须要存在,这个·`CNAME` 文件可以在远端项目根目录下创建写入的
 :::
 
 关于`vuepress`搭建网站到自定义域名部署上线,基本上就完成了,如果您觉得`github pages`访问很慢,也可以将代码托管给[gitee](https://gitee.com/)或者[coding](https://coding.net/)等一些第三方平台上的,这样访问速度就会快些
 
 当然你也可以直接`clone`[blogcode 源码](https://github.com/itclanCode/blogcode)进行二次修改,但是我个人觉得,建议还是自己手动一行一行的配置一下,结合[vuepress 中文官方文档](https://www.vuepress.cn/),进行学习配置
+
+建议您克隆[blogcode 简易版-示例 Demo](https://github.com/itclanCode/vuepress-build-blog-demo),您当前看到的博客,就是基于此简易示例`Demo`进行拓展的,该模板没有掺杂特别多的东西,在示例的`md`中也有对应的`markdown`语法的拓展的演示,可自行修改
+
+一上来,就折腾一堆文件,不明不白的东西,难免会令新手奔溃,这就像读源码的,一上来,读上千行的代码,根本不知道从哪看起,而分模块的读,先整体,后局部,从简易的示例模块中读,才是正确的方式
 
 ## 相关链接参考文档
 
