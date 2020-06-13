@@ -55,14 +55,16 @@ autoPrev: README
   - [检验域名有没有解析成功](#检验域名有没有解析成功)
   - [在仓库底下新建一个-CNAME-文件](#在仓库底下新建一个-CNAME-文件)
 * [添加百度统计](#添加百度统计)
+* [添加谷歌分析](#添加谷歌分析)
 * [添加逼格徽章](#添加逼格徽章)
 * [常见问题](#常见问题)
   - [页面显示-404](#页面显示-404)
   - [侧边栏显示的是文件路径，而非文件名](#侧边栏显示的是文件路径，而非文件名)
   - [自动化-bash-deploy.sh-脚本不成功](#自动化-bash-deploy.sh-脚本不成功)
   * [markdown 中引入图片不显示](#markdown-中引入图片不显示)
-  * [plugin-back-to-top 或 pwa 插件不生效](#plugin-back-to-top-或-pwa-插件不生效)
-  * [部署失败](#部署失败)
+  * [安装某插件后不生效](#安装某插件后不生效)
+  * [热更新问题](#热更新问题)
+  * [deploy 脚本部署失败](#deploy-脚本部署失败)
   * [npm-安装某些包失败](#npm-安装某些包失败)
   * [配置自定义域名不生效](#配置自定义域名不生效)
 * [相关链接参考文档](#相关链接参考文档)
@@ -146,6 +148,13 @@ autoPrev: README
   - 远不止于用来搭建博客,可以开发公司企业官网等网站应用,也可结合`boostrap`,`Element UI`等技术进行二次开发,构建更复杂的应用
   - ....
   - [vuepress 官方文档](https://www.vuepress.cn/)
+
+::: warning 注意
+
+1. 目前 `VuePress`版本并没有支持 `typescript`，并且没有提供类型定义,但如果想要用`TS`,可以安装`vuepress-plugin-typescript`插件,它提供了在 `VuePress`中使用 `typescript` 的部分能力。如果你想获取到正确的类型定义，你可以配合 `vuepress-types` 一起使用
+2. `vuepress-types`作为`VuePress`的类型定义包，还处于实验阶段
+3. 具体使用,可参考文档[vuepress-plugin-typescript 使用文档](https://vuepress.github.io/zh/plugins/typescript/),可以去尝试一下,这个不仅仅可以写`Ts`,在`md`也可以写`TypeScript`
+   :::
 
 在自己用 `VuePress`搭建网站的过程中,从零开始,一行行代码的配置,编写,以及考虑代码模块化的拆分,维护性,可实现按需定制化,到最终部署上线,自定义域名等,在这个过程中,踩了很多坑
 
@@ -1259,6 +1268,48 @@ doc.itclan.cn
 
 一般过 24 小时后,百度就会统计你网站每日的访问量的,您可以根据这些信息,不断的优化您自己的网站
 
+## 添加谷歌分析
+
+### 前提条件
+
+- 下面的一切基于您具备科学上网能力之上
+- 有一个`Google`账号,没有的话,能科学上网,注册一个即可
+- 前往[谷歌分析站点](https://analytics.google.com/)
+- 创建媒体资源,获取`ga`,格式是`UA-00000000-0`
+- 安装插件,并配置选项
+
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/google-alays-01.png" alt="谷歌分析" /> 
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/google-alays-02.png" alt="谷歌分析" /> 
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/google-alays-03.png" alt="谷歌分析" /> 
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/google-alays-04.png" alt="谷歌分析" />
+
+### 安装
+
+在当前项目目录下,使用`yarn`安装`@vuepress/plugin-google-analytics`,插件
+
+```
+yarn add -D @vuepress/plugin-google-analytics
+# OR npm install -D @vuepress/plugin-google-analytics
+```
+
+::: tip 注意
+如果你的项目正在使用 `Google analytics`插件，推荐使用 `Yarn`而不是`npm`来安装所有依赖。因为在这种情形下，npm 会生成错误的依赖树
+:::
+
+### 使用
+
+```
+module.exports = {
+plugins: [
+  [
+    '@vuepress/google-analytics',
+    {
+      'ga': '' // UA-00000000-0 ,填入你google账号分析那个ID即可
+    }
+  ]
+]
+```
+
 ## 添加逼格徽章
 
 有时候看到一些 Github 项目里,项目前会新填一些徽章,这些徽章是可以自己自定义生成的
@@ -1274,7 +1325,7 @@ doc.itclan.cn
 <a target="_blank" href="https://github.com/itclanCode/blogcode"><img src="https://img.shields.io/badge/stars-20K-brightgreen"></a>
 <a target="_blank" href="https://juejin.im/user/5900e97b1b69e60058b936ed/posts"><img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-10K-orange"></a>
 
-## 常见问题 <Badge text="必看" type="error"/>
+## 常见问题:ghost: <Badge text="必看" type="error"/> 
 
 - ### 页面显示-404
 
@@ -1347,9 +1398,13 @@ title: 标题
 
 与路径相关内容[静态资源文档](https://www.vuepress.cn/guide/assets.html)
 
-### plugin-back-to-top-或-pwa-插件不生效
+### 安装某插件后不生效
 
-本地未安装`vuepress`,在本地的`package.json`中检查`vuepress`是否有安装
+在当前项目中安装`plugin-back-to-top`-或-`pwa`-等插件后,发现不生效,其他插件也是如此
+
+**原因**:本地项目未安装`vuepress`,因为一些第三方插件依赖`vuepress`,除了全局坏境下安装了`vupress`,当前项目下也得安装
+
+**解决**:在本地的`package.json`中检查`vuepress`是否有安装,若没有则用`npm install -D vuepress`安装一下
 
 ```
 "devDependencies": {
@@ -1359,7 +1414,28 @@ title: 标题
 
 ```
 
-### 部署失败
+### 热更新问题
+
+在`vuepress 1.5.0`之前的版本中,若`md`文件或者其他配置文件(或自定义组件)有所更改,页面内容并不会马上更新,每次都需要重新`npm run docs:dev`,热更新存在一些问题
+
+**解决**:只需使用`npm`升级`vuepress`的版本即可,在`vuepress:^1.5.1`中此问题已经解决
+
+```
+npm install -D vuepress@next
+// 在当前项目的package.json中就会看到vuepress的最新版本
+"vuepress": "^1.0.0-rc.1",
+```
+
+这个`rc`代表的是`（Release Candidate）`候选版本。系统平台上就是发行候选版本。`RC`版不会再加入新的功能了，主要着重于除错
+当然,网上也有说在`package.json`,添加如下代码也可以解决,可自行测试
+
+```
+resolutions: {
+  "watchpack":"1.7.2"
+}
+```
+
+### deploy-脚本部署失败
 
 当你在命令行终端执行`bash deploy.sh`,报如下错误
 <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/deploy-error.png" alt="部署失败" />

@@ -8,12 +8,13 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-10 17:19:34
+ * @LastEditTime: 2020-06-12 18:44:44
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
  * 插件配置链接：
  * 1. 返回顶部插件:https://www.vuepress.cn/plugin/official/plugin-active-header-links.html#%E5%AE%89%E8%A3%85
+ *
  */
 // const emojiMaps = require("./emojiMaps"); // 引入表情包
 const moment = require('moment'); // 引入moment.js  // 不要忘了安装 moment
@@ -116,6 +117,14 @@ const plugins = [
       minLength: 100, // 如果长度超过 100 个字符
       'en-US': 'Author',
       'zh-CN': '作者'
+    }
+  ],
+
+  [
+    // 添加谷歌分析
+    '@vuepress/google-analytics',
+    {
+      ga: secret.googleGa // UA-00000000-0
     }
   ],
 
