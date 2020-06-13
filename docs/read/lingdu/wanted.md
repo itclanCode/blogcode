@@ -11,8 +11,8 @@ title: 招募领读者
       <p>阅,交一些益友</p>
       <img class="medium-zoom lazy" loading="lazy" src="../images/lingdu-article-imgs/lingdu01.jpg" width="300" height="300" alt="领读" /> 
 </div>
-  <p> `QQ:1703409633`(人人领读)<p>
-  <p>微信:`suibichuanji`(随笔川迹)</p>
+  <p> QQ:1703409633(人人领读)<p>
+  <p>微信:suibichuanji(随笔川迹)</p>
 
 <div> 
   <p>人生百态</p>

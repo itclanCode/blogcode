@@ -1,4 +1,5 @@
 ---
+sidebarDepth: 3
 title: 小程序-云开发-多图片内容安全检测
 autoPrev: README
 ---
