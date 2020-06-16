@@ -53,7 +53,9 @@ title: 关于作者
 
 始终相信,当经过有效的量变,积累到一定程度后,就会产生质变
 
-我一直都坚信:如果自己无法清晰的表达一件事,那么只能说明自己理解不到位,逻辑不清晰,甚至就是不明白,即使会了,但不一定就真懂,任何东西,无论复杂程度如何,它都是能够通过准确的语言给描述出来的,化抽象为具体,演绎过程,最终成为实例
+我一直都坚信:如果自己无法清晰的表达一件事,那么只能说明自己理解不到位,逻辑不清晰,甚至就是不明白
+
+即使会了,但不一定就真懂,任何东西,无论复杂程度如何,它都是能够通过准确的语言给描述出来的,化抽象为具体,演绎过程,最终成为实例
 
 通过向自己所在行业的陌生人清楚的解说某一件事,来确认自己是否真正弄懂了这件事,教会别人,是理解知识一种很好的方式
 
@@ -118,11 +120,12 @@ title: 关于作者
 * [微信公众号: itclanCoder](https://mp.weixin.qq.com/s/EgSgGqMWoV4nrt7qPF9nzA)
 * [微信公众号: 人人领读(renrenlingdu)](https://mp.weixin.qq.com/s/2uEeANGSsixlTqDcJCnm6Q)
 * [诚意招募领读人](https://mp.weixin.qq.com/s/26gR8oixKW1hzOuE_PLCXQ)
+* 更多正在进行中...
 
 ## 发人身醒的感悟
 
-- [链接关系,相互陪伴,见证成长](https://mp.weixin.qq.com/s/fFY-JUn_cKdnltdRhLkKbw)
-- [关于社交圈子的一点思考](https://mp.weixin.qq.com/s/_CwCKJCwsuGFXNW_Z26HnQ)
+- [链接关系,相互陪伴,见证成长](../read/replay/link-accompany-growth)
+- [关于社交圈子的一点思考](../read/replay/on-social-circle.md)
 
 ## 一段简短的自我告白
 

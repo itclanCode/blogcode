@@ -31,7 +31,7 @@
 ### 如何支持作者
 
 - 间接支持:
-  - 给该项目`star`,可以`clone`,但是谢谢注明下来源,写作不易,请您尊重下作者劳动成果,建议克隆另一简易版本[itclanCoder 博客-简易模板](https://github.com/itclanCode/vuepress-build-blog-demo),进行自行二次配置,修改
+  - 给该项目`star`,可以`clone`,但是谢谢注明下来源,写作不易,请您尊重下作者劳动成果,建议克隆另一简易版本[itclanCoder 博客-简易模板](https://github.com/itclanCode/vuepress-build-blog-demo),自行二次配置,修改
   - 收藏,转发,点赞,三连击
   - [视频录制](https://space.bilibili.com/267957620),如有收获,三连击(点赞,关注,投币:whale:)
 - 直接支持

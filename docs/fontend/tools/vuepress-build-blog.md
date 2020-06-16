@@ -27,17 +27,19 @@ autoPrev: README
 ### Jekyll
 
 ::: details 点击即可查看详情
+
 - 特点:Github 自带的,您不用部署静态页面,您只要往 GitHub 上推 md 文件就能产生 blog
 - 问题:
   - 当 md 文件多了之后,排序是一个很头疼的问题,纯体力手工劳动,无法实现自动化,速度很是极具考验
   - 后端基于 Ruby 语言
   - 我早期的博客就是用 `jekyll` 搭建的,但是后来因为管理确实麻烦,就没打理了的
 - [Jekyll 官方文档](http://jekyllcn.com/)
-:::
+  :::
 
 ### Hexo
 
 ::: details 点击即可查看详情
+
 - 特点:比`Jekyll`要先进一点,先生成文件,在部署
 
 * 基于 `Node.js`的静态网站生成器
@@ -46,33 +48,36 @@ autoPrev: README
   - 每次都需要把生成的静态页面推上去,md 若出现错误,编译会出错,配置的不是特别灵活
 
 - [Hexo 官方文档](https://hexo.io/)
-::: details 点击即可查看详情
+  ::: details 点击即可查看详情
 
 ### GitBook
 
 ::: details 点击即可查看详情
+
 - 问题
   - 默认主题有限制,随着文档的增加,每次加载的时间会很长,也不是 Vue 驱动的
   - 官方团队专注于打造一个商业产品,而并非开源工具
 - [GitBook 官方文档](https://www.gitbook.com/)
-::: 
+  :::
 
 ### Docsify-Docute
 
 ::: details 点击即可查看详情
+
 - 两者都是基于`Vue`,在运行时驱动
 - `Docsify`由于只用于解析`Markdown`文件并生成网站,不会生成静态 html 文件,所以它是不利于搜索引擎,百度,谷歌等是难以被收录的,即使做了网站统计,也很爬取到你的内容,但是简单,你只需专注 md 编写就可以
 - `Docute`,是`Docsify`的升级,没有构建过程,将 `md`文件呈现为单页面应用程序,会生成静态 `HTML`,对 SEO 很友好,利于百度蜘蛛的抓取
 - [Docsify 官方文档](https://docsify.js.org/#/),
 - [Docute 官方文档](https://docute.org/#what-is-docute)
-::: 
+  :::
 
 ### Nuxt
 
 ::: details 点击即可查看详情
+
 - 更偏向于构建应用程序,SSR 服务端渲染框架,适合构建复杂的系统应用程序,对于开发人员要求是有门槛的,如果自己只专注于内容创作,而耗费精力去搭建一个静态博客,个人觉得,有种大材小用
 - [NuxtJS 官方文档](https://zh.nuxtjs.org/)
-::: 
+  :::
 
 ### 比较
 
@@ -85,6 +90,7 @@ autoPrev: README
 ## 为什么推荐选择-VuePress
 
 ::: details 点击即可查看详情
+
 - VuePress
   - `Vue` 驱动,强大的插件生态系统,官方文档详细
   - 支持搜索引擎优化(SEO),单页面应用,按需加载,支持 PWA(无网络情况下照样能访问)
@@ -99,7 +105,7 @@ autoPrev: README
   - 远不止于用来搭建博客,可以开发公司企业官网等网站应用,也可结合`boostrap`,`Element UI`等技术进行二次开发,构建更复杂的应用
   - ....
   - [vuepress 官方文档](https://www.vuepress.cn/)
-:::
+    :::
 
 ::: warning 注意
 
@@ -116,7 +122,9 @@ autoPrev: README
 
 官方文档只适合查阅,也并不适合从头看到尾,不用每个 API 都熟记于心,你只需要知道怎么去查,在哪个地方找就可以了的
 
-`VuePress` 的配置的确复杂,但并非令人望而却步,本篇文章有些长,建议一步步的按阶段完成,有些配置你不必知道原因,你只需要知道按照官方文档那么配置,能出来,达到你想要的效果就可以了,至于内部原理,富有闲于时,可自行探索,不必深究
+`VuePress` 的配置的确复杂,比较零散,但并非令人望而却步,一旦你掌握了套路后,就会欣赏它的独特,配置选项虽然多,但是它的结构非常清晰
+
+本篇文章有些长,建议一步步的按阶段完成,有些配置你不必知道原因,你只需要知道按照官方文档那么配置,能出来,达到你想要的效果就可以了,至于内部原理,富有闲于时,可自行探索,不必深究
 
 也不要一上来,就去折腾自定义主题,看到酷炫花销的博客,就立马想搞一个出来
 
@@ -1140,6 +1148,8 @@ git remote -v
 <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/domain-config1.png" alt="配置域名" />
 <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/domain-config3.png" alt="配置域名" />
 
+实现这一步相当于就是将自定义的域名指向`gihub pages`,当访问`https://itclancode.github.io/`与`doc.itclan.cn`指向同一个`IP`,相比于浏览器地止栏输入`xxx.github.io`,直接输入域名访问要方便得多
+
 ### 检验域名有没有解析成功
 
 可以在本地的命令行终端,进行`ping`一下的,如
@@ -1277,7 +1287,7 @@ plugins: [
 <a target="_blank" href="https://github.com/itclanCode/blogcode"><img src="https://img.shields.io/badge/stars-20K-brightgreen"></a>
 <a target="_blank" href="https://juejin.im/user/5900e97b1b69e60058b936ed/posts"><img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-10K-orange"></a>
 
-## 常见问题:ghost: <Badge text="必看" type="error"/> 
+## 常见问题:ghost: <Badge text="必看" type="error"/>
 
 - ### 页面显示-404
 
@@ -1411,9 +1421,9 @@ resolutions: {
 - 去错误日志文件内,看具体的报错信息
 - 根据错误信息去相应的目录下,把相应`npm`中的`node_modules`给删掉,重新在安装
   <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/solve-install-fail.png" alt="解决错误信息" />
-::: tip 提醒
-推荐使用`yarn`进行安装某些插件和安装包,因为`npm`有时候,`npm` 会生成错误的依赖树,导致安装某些插件安装不上,即使安装上了,在执行`npm run dev`启动项目时,会报错,影响项目的启动
-:::
+  ::: tip 提醒
+  推荐使用`yarn`进行安装某些插件和安装包,因为`npm`有时候,`npm` 会生成错误的依赖树,导致安装某些插件安装不上,即使安装上了,在执行`npm run dev`启动项目时,会报错,影响项目的启动
+  :::
 
 ### 配置自定义域名不生效
 
@@ -1439,6 +1449,7 @@ doc.itclan.cn
 ## 相关链接参考文档
 
 ::: details 点击可查看相关链接文档
+
 - [vuepress 中文官方文档](https://www.vuepress.cn/)
 - [vuepress 插件市场](https://github.com/vuepressjs/awesome-vuepress#plugins)
 - [markdonw-Emoji 表情包](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
