@@ -696,7 +696,148 @@ css 示例代码如下所示
 
 ## 水平+垂直居中
 
-### 方式-1-使用`line-height:高度`-`text-align:center`
+### 方法 1-使用弹性 flex 布局
+
+在实际开发中,很多元素的高度,宽度是不固定的,随着自身的内容撑大而撑大的,怎么让它在页面中实现水平垂直居中显示呢?
+
+html 标签
+
+```
+<div class="wrapper flex-center">
+    <p>itclanCoder元素水平垂直居中</p>
+</div>
+```
+
+css 层叠样式
+
+```
+.wrapper {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+.flex-center {     //在父级元素中,添加如下代码即可
+    display: flex;
+    justify-content: center;  // 水平居中
+    align-items: center;      // 垂直居中
+}
+```
+
+最终效果如下所示
+<img class="medium-zoom lazy" loading="lazy"  src ="../images/css-article-imgs/1-center/vertial-align6.png" alt="元素水平垂直居中" />
+
+### 方法 2-flex+margin
+
+父级元素设置 `flex`，子元素设置 margin: auto;。可以理解为子元素被四周的 margin “挤” 到了中间
+html 示例代码
+
+```
+<div class="wrapper">
+    <p>itclanCoder元素水平垂直居中</p>
+</div>
+```
+
+css 样式
+
+```
+.wrapper {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+.wrapper > p {
+    margin: auto;
+}
+```
+
+示例如下效果所示
+<img class="medium-zoom lazy" loading="lazy"  src ="../images/css-article-imgs/1-center/vertial-align7.png" alt="元素水平垂直居中" />
+
+### 方法 3-transform + absolute
+
+这个组合，常用于图片的居中显示，子元素设置绝对定位,父级元素相对定位,也可以将父元素 `wrapper`的相对定位，移入子元素`img`中，替换掉绝对定位。效果也是一样的,
+html 示例代码
+
+```
+<div class="wrapper">
+    <img src="test.png">
+</div>
+```
+
+css 示例代码
+
+```
+.wrapper {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.wrapper > img {
+    position: absolute;  // 子元素绝对定位
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+```
+
+### 方法 4-table-cell
+
+利用 `table`的单元格居中效果展示。与 `flex`一样，需要写在父级元素上
+
+```
+<div class="wrapper">
+    <p>itclanCoder元素水平垂直居中</p>
+</div>
+
+```
+
+css 代码
+
+```
+.wrapper {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+```
+
+### 方法 5-使用 grid 网格布局
+
+像表格一样，网格布局让我们能够按行或列来对齐元素。然而在布局上，网格比表格更可能做到或更简单
+html 示例代码
+
+```
+<div class="wrapper">
+    <p>itclanCoder元素水平垂直居中</p>
+</div>
+```
+
+css 示例代码
+
+```
+.wrapper {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: grid;
+}
+.wrapper > p {
+    align-self: center;
+    justify-self: center;
+}
+```
+
+::: tip 兼容性
+它在兼容性上不如 flex，特别是 IE 浏览器，只支持 IE10 及以上
+:::
+
+### 方法 6-使用`line-height:高度`-`text-align:center`
 
 若是文本图片,则可以使用`line-height:高度`；`text-align:center`
 示例代码如下所示
@@ -725,7 +866,7 @@ css 结构代码
 实例效果图如下所示
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/css-article-imgs/1-center/vertal-hortal1.png" alt="元素水平垂直居中" />
 
-### 方式-2-margin-负半值进行元素的水平垂直居中显示
+### 方法 7-margin-负半值进行元素的水平垂直居中显示
 
 若是定宽定高,使用绝对定位`position:absolute,left:50%,top:50%`,使用`margin负半值`进行元素的水平垂直居中显示
 
@@ -762,9 +903,12 @@ css 示例代码如下所示
 实例效果如下所示
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/css-article-imgs/1-center/vertial-align2.png" alt="元素水平垂直居中" />
 
-### 方式-3-绝对定位结合-top-left-right-bottom
+### 方法-3-绝对定位结合-top-left-right-bottom
 
 绝对定位`absolute+margin:auto`,同时,`top:0;left:0;right:0,bottom:0`这种方式使一个元素水平垂直居中也是比较常见的
+
+这种方法一般用于弹出层，需要设置弹出层的宽高
+
 html 内容结构代码
 
 ```
@@ -792,7 +936,7 @@ css 层叠样式代码
 实例效果图显示
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/css-article-imgs/1-center/vertial-align3.png" alt="元素水平垂直居中" />
 
-### 方式-4-使用-js-动态计算使其元素水平垂直居中
+### 方法 8-使用-js-动态计算使其元素水平垂直居中
 
 - 水平居中元素应设置为绝对定位,获取元素的位置,距离浏览器左边，上边的距离,并且进行赋值
 - `left`:(浏览器的宽度-元素的宽度)/2
@@ -842,7 +986,7 @@ window.onload = function(){
 实例效果如下所示
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/css-article-imgs/1-center/vertial-align4.png" alt="元素水平垂直居中" />
 
-### 方法-5-使用-jQuery-实现元素的水平垂直居中
+### 方法 9-使用-jQuery-实现元素的水平垂直居中
 
 - 获取元素
 - 获取浏览器可视宽度`$(window).width()`;
