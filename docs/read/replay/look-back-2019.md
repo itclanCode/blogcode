@@ -1,6 +1,6 @@
 ---
 title: 2019 已落幕,2020 再出发
-autoPrev: README
+autoNext: link-accompany-growth
 collapsable: true
 ---
 

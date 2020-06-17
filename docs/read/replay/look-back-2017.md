@@ -1,7 +1,7 @@
 ---
 sidebarDepth: 3
 title: 不负时光不负已,回眸 2017
-autoPrev: resume-mid-year
+autoNext: link-accompany-growth
 collapsable: true
 ---
 
