@@ -1,5 +1,6 @@
 ---
 title: 小程序-实现类似新浪头条新闻上下间歇性滚动
+autoPrev: README
 ---
 
 ## 小程序-实现类似新浪头条新闻上下间歇性滚动
@@ -21,7 +22,7 @@ title: 小程序-实现类似新浪头条新闻上下间歇性滚动
 ## 完成效果示例
 
 <div align="center">
-<img class="medium-zoom lazy" loading="lazy"  src ="../images/new-scroll-up-down/demo-shixian.gif" alt="效果展示" />
+<img class="medium-zoom lazy" loading="lazy" width="500" height="500"  src ="../images/new-scroll-up-down/demo-shixian.gif" alt="效果展示" />
 </div>
 
 ## 实现方式
@@ -58,6 +59,7 @@ title: 小程序-实现类似新浪头条新闻上下间歇性滚动
 `swiper`组件中各个属性含义,具体可看参考文档[swiper 组件使用](https://developers.weixin.qq.com/miniprogram/dev/component/swiper.html)
 
 如下是 wxss
+::: details 点击即可查看详情
 
 ```
 .order-list-wrap {
@@ -95,6 +97,7 @@ title: 小程序-实现类似新浪头条新闻上下间歇性滚动
 
 ```
 
+:::
 如下预约列表的数据格式
 
 ```
@@ -113,6 +116,8 @@ orderLists: [
 而这里的时间是从服务器返回给前端的时间,仍然需要做处理,进行转化
 
 - **用户名格式化处理,保留姓氏**
+
+::: details 点击即可查看详情
 
 ```
 // 格式化名字,只留姓,名字中间用*替代
@@ -135,7 +140,11 @@ function _formatName(name) {
 console.log(_formatName("李海涛"))  // 输出李*涛
 ```
 
+:::
+
 - **电话号码格式化处理**
+
+::: details 点击即可查看详情
 
 ```
 // 格式化电话号码
@@ -146,7 +155,11 @@ console.log(_formatPhone(15210927743)) // 输出:15****7743
 
 ```
 
+:::
+
 - **时间格式化处理**
+
+::: details 点击即可查看详情
 
 ```
 function _formatTime(date) {
@@ -174,9 +187,11 @@ function _formatTime(date) {
 console.log(_formatTime(new Date("2020-06-17T07:54:41.146Z"))); // 2020-06-18 21:35:02
 ```
 
+:::
 如下是完整的示例逻辑代码 JS
 
 在实际开发中,这些数据是在小程序端请求云数据库,然后渲染到页面当中去的
+::: details 完整示例代码
 
 ```
 // pages/profile/profile.js
@@ -270,6 +285,94 @@ _formatTime(date) {
 })
 ```
 
+:::
+当然,对于这个时间格式化处理,是灵活多变的,也是可以转化成格式`刚刚`,`几分钟前`,`几小时前`,`几天前`,`几个月前`的
+
+您可以扫下面的小程序码,感受一下示例的
+
+<div align="center">
+<img class="medium-zoom lazy" loading="lazy" width="200" height="200"  src ="../images/new-scroll-up-down/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" />
+</div>
+
+如下示例代码所示
+::: details 点击即可查看详情
+
+```
+function _formatTimeDetail() {
+    var pretime = "2020-06-20 14:38:16";  // 将整个时间格式转换为几分钟前,几小时前,几个月之前等
+
+		var minute = 1000 * 60;
+		var hour = minute * 60;
+		var day = hour * 24;
+		var halfamonth = day * 15;
+		var month = day * 30;
+
+		getDate(pretime);
+
+		//然后再每隔一分钟更新一次时间
+		setInterval(function() {
+		    getDate(pretime);
+		}, 60000);
+
+		function getDate(dateTimeStamp){
+
+			if(dateTimeStamp==undefined){
+				return false;
+			}else{
+				dateTimeStamp = dateTimeStamp.replace(/\-/g, "/");
+				var sTime = new Date(dateTimeStamp).getTime();    //把时间pretime的值转为时间戳
+				var now = new Date().getTime();                    //获取当前时间的时间戳
+				var diffValue = now - sTime;
+
+				if(diffValue < 0){
+					return false;
+				}
+
+				var monthC =diffValue/month;
+				var weekC =diffValue/(7*day);
+				var dayC =diffValue/day;
+				var hourC =diffValue/hour;
+				var minC =diffValue/minute;
+
+				if(monthC>=1){
+					console.log(parseInt(monthC) + "个月前");
+          return `${parseInt(monthC)}个月前`
+				}
+				else if(weekC>=1){
+					console.log(parseInt(weekC) + "周前")
+          return `${parseInt(weekC)}周前`
+				}
+				else if(dayC>=1){
+					console.log(parseInt(dayC) +"天前")
+          return `${parseInt(weekC)}天前`
+				}
+				else if(hourC>=1){
+					console.log(parseInt(hourC) +"个小时前")
+          return `${parseInt(hourC)}个小时前`
+				}
+				else if(minC>=1){
+					console.log(parseInt(minC) +"分钟前")
+          return `${parseInt(minC)}分钟前`
+				}else{
+					console.log("刚刚")
+          return "刚刚"
+				}
+			}
+
+		}
+
+   return getDate(pretime)
+}
+
+_formatTimeDetail()  // 3小时前,上面的传入的是可控制的
+```
+
+:::
+
+上面的代码无论是在小程序中还是在网页中,直接在控制台,测试一下就知道这个函数具体是做什么的
+
+前面那个`_formatTime`函数主要是将服务器端的时间转化为类似这种`2020-06-20 14:38:16`格式,而后面的`_formatTimeDetail`这个函数是将`年-月-日 时 分 秒`这种格式转化为多少分钟前,几天前,几周前等这种格式
+
 关于用户名与手机号的处理方式,也可参考[用户名-手机号加密特殊处理](/fontend/js/name-mobile-encrye)
 
 ## 结语
@@ -277,3 +380,5 @@ _formatTime(date) {
 本文主要介绍了利用`swiper`这个组件实现类似新浪头条上下间歇性滚动的效果,并怎么对用户名,电话号码在小程序端进行加密处理
 
 注意,这个用户名和电话号码,存到数据库当中是完整的,我们只是从云数据库中读取到这个数据后,然后做特殊处理的
+
+还有就是怎么将时间进行格式化,转化为自己想要的格式,对于新手来说,这是一个难点,也比较灵活多变,具体需求,具体分析

@@ -118,7 +118,7 @@ title: 关于作者
   </div>
 
 * [itclanCoder 博客源码](https://github.com/itclanCode/blogcode)
-* [itclan 网站](http://itclan.cn)
+* [itclan 网站 http://itclan.cn](http://itclan.cn)
 * [微信公众号: itclanCoder](https://mp.weixin.qq.com/s/EgSgGqMWoV4nrt7qPF9nzA)
 * [微信公众号: 人人领读(renrenlingdu)](https://mp.weixin.qq.com/s/2uEeANGSsixlTqDcJCnm6Q)
 * [诚意招募领读人](https://mp.weixin.qq.com/s/26gR8oixKW1hzOuE_PLCXQ)

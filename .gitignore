@@ -1,5 +1,5 @@
 node_modules
 .history
 .vscode
-# .vuepress/dist/
-# .vuepress/configs/secretKey.js
+.vuepress/dist/
+.vuepress/configs/secretKey.js
