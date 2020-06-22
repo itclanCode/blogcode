@@ -51,7 +51,7 @@ person();                     // 函数调用执行
 ```
 
 控制台打印输出如下:实现了在函数外访问函数内的局部变量
-<img class="medium-zoom"  src="../images/js-article-imgs/deep-understand-closure/what-closure.png" alt="测试闭包是什么" />
+<img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/deep-understand-closure/what-closure.png" alt="测试闭包是什么" />
 上面的代码简单的翻译成白话文如下:
 
 - 全局作用域范围内定义了一个`name=“随笔川迹”`的全局变量
@@ -173,7 +173,7 @@ HTML内容结构代码
 ```
 
 点击按钮操作 gif 图演示
-<img class="medium-zoom"  src="../images/js-article-imgs/deep-understand-closure/clourse-sence.gif" alt="闭包的应用场景" />
+<img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/deep-understand-closure/clourse-sence.gif" alt="闭包的应用场景" />
 
 **解决办法方式 1**:使用匿名函数自执行
 
@@ -210,7 +210,7 @@ window.onload = function(){
 ```
 
 改正后如下 gif 所示
-<img class="medium-zoom"  src="../images/js-article-imgs/deep-understand-closure/closure-1.gif" alt="闭包的应用场景" />
+<img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/deep-understand-closure/closure-1.gif" alt="闭包的应用场景" />
 
 - 模块化代码,减少全局变量的污染,匿名函数自执行进行累加(最上面的示例中其实已经用到了)
 - 采用函数对象引用方式的`setTimeout`调用，一个函数作为定时器调用的第一个参数
@@ -235,7 +235,7 @@ var expResult = funText("随笔川迹","boy","itclan");
 ```
 
 如下 gif 图所示:
-<img class="medium-zoom"  src="../images/js-article-imgs/deep-understand-closure/closure-2.gif" alt="闭包的应用场景" />
+<img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/deep-understand-closure/closure-2.gif" alt="闭包的应用场景" />
 
 - 将函数关联到对象的实例方法(也就是等待时机成熟使用,比如实现函数柯礼化,反科里化)
   **应用场景**:需要分配一个函数对象的引用,以便在某个时间执行该函数,这不就是函数封装的强大之处嘛,随调随用，封装不就是将相同的代码给提取出来,封装成一个函数,将不同的事件对象给找出来,通过传递参数的方式进行控制嘛,还有想想构造器函数的使用,实例化对象调用原型下面的公共属性和方法,都是闭包的应用啊,所以说面向对象编程本身就离不开闭包的使用,至于构造器函数这里就不贴代码了的,以后在详聊仔细体会的

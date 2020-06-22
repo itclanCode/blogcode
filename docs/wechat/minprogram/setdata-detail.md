@@ -46,7 +46,7 @@ autoNext: new-scroll-up-down
 - 而第二个参数`Function callback`回调函数是非必填的,它所代表的含义是,`setData`引起的界面更新渲染完毕后的回调函数
 
 为了便于理解,在小程序中创建一个 page 页面,名为`setdata`,如下是逻辑层 js 文件
-::: details 点击即可查看文件
+::: details 点击即可查看文
 
 ```
 // miniprogram/pages/setdata/setdata.js
@@ -69,13 +69,18 @@ Page({
 ```
 
 :::
+
 而 wxml 文件如下
+
 ::: details 点击即可查看
 
-<!--miniprogram/pages/setdata/setdata.wxml-->
-
+```
+// miniprogram/pages/setdata/setdata.wxml
 <text>{{name}}</text>
+```
+
 :::
+
 在`Web` 开发中，开发者使用 `JavaScript` 通过`Dom`接口来完成界面的实时更新。而在小程序中，使用 `WXML`语言所提供的数据绑定功能，来完成此项功能,在小程序中是没有`DOM`,`BOM`的那一套东西的,没有`document.getElementById`等的
 
 小程序是数据驱动视图的,逻辑层中的 data 数据改变了,视图层 view 也会跟着改变,它是单向数据流的,如果想要触发视图中数据的更新,那么就需要借助`setData`这个方法

@@ -8,7 +8,7 @@
  * @Date: 2020-05-29
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-20 22:26:46
+ * @LastEditTime: 2020-06-22 13:26:13
  * @Description: 头部navs导航配置文件,入口文件原本在config.js文件中,但抽离到了themeConfig.js中,该文件通过module.exports导出,在themeConfig.js中通过require方式引入
  * 集中配置管理头部nav导航栏
  * @docs: https://vuepress.docschina.org/default-theme-config/#%E5%AF%BC%E8%88%AA%E6%A0%8F-navbar
@@ -79,35 +79,6 @@ const navs = [
     ]
   },
 
-  {
-    text: '工具',
-    items: [
-      {
-        text: '思维导图',
-        items: [
-          { text: 'zhiMap', link: 'https://zhimap.com/home' },
-          { text: 'processOn', link: 'https://www.processon.com/' },
-          { text: 'gitmind', link: 'https://gitmind.cn/' }
-        ]
-      },
-
-      {
-        text: '文档管理',
-        items: [
-          { text: '语雀', link: 'https://www.yuque.com/dashboard' },
-          { text: '腾讯文档', link: 'https://docs.qq.com/desktop' }
-        ]
-      },
-
-      {
-        text: '实用工具',
-        items: [
-          { text: '声享-做ppt', link: 'https://ppt.baomitu.com/' },
-          { text: '马克鳗-量标注', link: 'http://www.getmarkman.com/l' }
-        ]
-      }
-    ]
-  },
   {
     text: '读书',
     items: [

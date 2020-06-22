@@ -98,9 +98,9 @@ var mphone = `${phone.substr(0, 3)}****${phone.substr(7)}`;
 :::
 
 <div align="center">
-   <img class="medium-zoom"  src="../images/name-mobile-encrye/usersensitive.png" alt="移动手机" />
+   <img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/name-mobile-encrye/usersensitive.png" alt="移动手机" />
 </div>
 具体案例体验,可如下小程序码在我的页面体验
 <div align="center">
-   <img class="medium-zoom"  src="../../about/images/jiahaoruisen-min-code.jpg" alt="移动手机" />
+   <img class="medium-zoom lazy"  loading="lazy"  src="../../about/images/jiahaoruisen-min-code.jpg" alt="移动手机" />
 </div>
