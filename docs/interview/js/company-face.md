@@ -213,7 +213,7 @@ const module = {
   name: 'itclanCoder',
   getName: function() {
     return this.name;
-  }
+  },
 };
 
 const unboundGetName = module.getName;
@@ -584,4 +584,22 @@ function buddleSort(data){
 console.log(buddleSort(ary));
 ```
 
+:::
+
+## 第 12 题 以下结果是 false 的选项有哪些
+
+考察点:条件表达式中,有哪些结果值是 false 的
+
+```
+A. 0 == ''
+B. null == undefined
+C: NaN == NaN
+D: 0.1+0.2 === 0.3
+E: {} == []
+F: !{}
+G: !0
+```
+
+::: details 点击即可查看
+答案: C D F
 :::

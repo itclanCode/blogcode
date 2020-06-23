@@ -143,7 +143,7 @@ console.log(fun1(),"name is","=",name)
 ```
 
 效果显示如下所示:
-<img class="medium-zoom"  src="../images/js-article-imgs/scope/scode-chain.png" alt="作用域链" />
+<img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/scope/scode-chain.png" alt="作用域链" />
 当我们分析这段代码时
 全局变量:`name`,`函数fun1`嵌套`fun2函数`
 

@@ -80,7 +80,7 @@ box-sizing: content-box | border-box | inherit | padding-box
 元素水平垂直居中是 web 开发中常见遇到的问题
 ::: details 点击即可查看
 
-- 方法 1-使用`transform` + `absolute`
+- **方法 1-使用`transform` + `absolute`**
 
 这个组合，常用于图片的居中显示，子元素设置绝对定位,父级元素相对定位,也可以将父元素 `wrapper`的相对定位，移入子元素`img`中，替换掉绝对定位。效果也是一样的,
 html 示例代码
@@ -108,7 +108,7 @@ css 示例代码
 }
 ```
 
-- 方法 2-利用-table-cell
+- **方法 2-利用-table-cell**
 
 利用 `table`的单元格居中效果展示。与 `flex`一样，需要写在父级元素上
 
@@ -132,7 +132,7 @@ css 代码
 }
 ```
 
-- 方法 3-使用弹性`flex`布局
+- **方法 3-使用弹性`flex`布局**
 
 在实际开发中,很多元素的高度,宽度是不固定的,随着自身的内容撑大而撑大的,怎么让它在页面中实现水平垂直居中显示呢?
 
@@ -238,9 +238,10 @@ css 代码
 
 具体测试结果
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/css-interview-imgs/company-face/margin-distance.png" alt="外边距" />
+::: details 点击即可查看
 
 **答案**:A-B 之间的间距是 `300px`
-
+:::  
 **结论**:当元素横向方向外边距时,不会出现外边距迭代的问题
 :::
 
@@ -280,7 +281,75 @@ css 代码
 具体测试结果
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/css-interview-imgs/company-face/margin-bottom-distance.png" alt="外边距" />
 
+::: details 点击即可查看
 **答案**:A-B 之间的间距是`200px`
-
+:::
 **结论**:当元素在垂直方向,两个相邻的元素之间增加上下外边距时,会出现外边距的叠加
+:::
+
+### 第 6 题 以下哪些设置可以使 z-index 生效?
+
+考察点:css 中的定位结合`z-index`的使用
+
+`z-index`需要在相对定位中使用(排除`position: static`),就是对标签元素设置了`position`的属性,并且属性为：`absolute`/`fixed`/`relative`/
+值不一定就是`absolute`
+
+父级元素设定了一个定位元素及其后代元素或 `flex` 项目的 `z-order`。当元素之间重叠的时候,`z-index`较大的元素会覆盖较小的元素在上层进行显示
+
+也就是说:在相同层级元素同时设置了定位属性,给该元素设置`z-index`属性,可以设置元素的堆叠顺序,拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面
+::: tip 提示
+该属性设置一个定位元素沿 z 轴的位置，如果`z-index`为正数，则离用户更近，为负数则表示离用户更远,元素也是可拥有负的 `z-index` 属性值的
+:::
+
+```
+A: position:relative
+B: position:absolute
+C: position: fixed
+D: position:static
+```
+
+::: details 点击即可查看
+答案: A B C
+解析：`Z-index`仅能在定位元素上奏效,z-index 默认值是 0,仍然占据文档流的位置
+:::
+
+### 第 7 题 选择器优先级问题
+
+如下示例代码,分别在行内样式 id,class 设置高度,最终`div`的高度是多少
+
+```
+// html
+<div id="boxWrap" class="box-wrap" style="height: 100px"></div>
+// css
+#boxWrap {
+  height: 20px;
+}
+
+#boxwrap.box-wrap {
+  height: 40px;
+}
+```
+
+::: details 点击即可查看
+答案: 100px;
+解析: 行间元素样式>内部样式>外部样式,id 选择器的优先级大于 class 选择器
+:::
+
+### 第 8 题 盒子模型相关问题
+
+如下代码所示:
+
+```
+<div style="width: 100px; padding: 10px; margin: 10px;box-sizing: border-box;background: red"></div>
+
+A: 80px
+B: 100px
+C: 120px
+D: 140px
+```
+
+请问背景色为红色区域的宽度是多少呢?
+::: details 点击即可查看
+答案: B
+解析: 盒子模型,设置了 box-sizing: border-box;属性后,表示遵循 IE 盒模型的计算方式,增加 border,以及 padding 大小,不会让盒子溢出，给元素添加边框(border)和内边距(padding),都不会影响元素盒子的总尺寸
 :::

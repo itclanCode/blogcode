@@ -8,7 +8,7 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-13 19:56:12
+ * @LastEditTime: 2020-06-23 15:10:11
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
@@ -145,6 +145,32 @@ const plugins = [
       normalSuffix: '/',
       indexSuffix: '/',
       notFoundPath: '/404.html'
+    }
+  ],
+
+  [
+    'music-bar', // vuepress-plugin-music-bar,音乐插件
+    {
+      playList: [],
+      platform: [
+        {
+          name: 'music.163.com',
+          songIDs: [
+            // 歌曲ID,具体歌曲数值,可以前往网易音乐获取
+            '1363948882',
+            '1454730043',
+            '1385646451',
+            '1456270729',
+            '1378945187',
+            '1344897943',
+            '1413585838'
+          ],
+          playListIDs: ['19723756', '3779629', '3778678']
+        }
+      ],
+
+      timeOut: 2000,
+      firstClickPlay: true // 首次点击自动播放
     }
   ]
 ];
