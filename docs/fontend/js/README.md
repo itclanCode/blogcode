@@ -8,6 +8,7 @@ title: 目录
 - [理解-JS-中的作用域-作用域链以及闭包](./scope)
 - [深度理解闭包](./understand-closure)
 - [JavaScript 中的浅拷贝 VS 深拷贝](./shallow-vs-deep-copy)
+- [Js 之选择控制语句及很重要的表达式真与假](./choice-statement)
 
 ### JS 实用案例技巧
 

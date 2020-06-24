@@ -8,7 +8,7 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-23 15:10:11
+ * @LastEditTime: 2020-06-24 17:59:51
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
@@ -34,17 +34,17 @@ const plugins = [
     {
       // 页面滚动时自动激活侧边栏链接的插件配置
       sidebarLinkSelector: '.sidebar-link',
-      headerAnchorSelector: '.header-anchor'
-    }
+      headerAnchorSelector: '.header-anchor',
+    },
   ],
 
   [
     {
-      transformer: timestamp => {
+      transformer: (timestamp) => {
         moment.locale('zh-cn');
         return moment(timestamp).fromat('LLLL');
-      }
-    }
+      },
+    },
   ],
 
   [
@@ -54,9 +54,9 @@ const plugins = [
       delay: 1000, // 延迟1秒
       options: {
         margin: 24,
-        scrollOffset: 0
-      }
-    }
+        scrollOffset: 0,
+      },
+    },
   ],
 
   [
@@ -66,10 +66,10 @@ const plugins = [
       updatePopup: {
         '/zh/': {
           message: '发现有新的内容更新,马上更新',
-          buttonText: '刷新'
-        }
-      }
-    }
+          buttonText: '刷新',
+        },
+      },
+    },
   ],
 
   [
@@ -87,12 +87,12 @@ const plugins = [
         meta: ['nick', 'mail'],
         requiredFields: ['nick', 'email'],
         pageSize: 10,
-        visitor: true // 对访问量进行统计
+        visitor: true, // 对访问量进行统计
         // emojiCDN:
         //   "https://www.jsdelivr.com/package/gh/GamerNoTitle/ValineCDN?path=bilibilitv",
         // emojiMaps
-      }
-    }
+      },
+    },
   ],
   // default、lowercase、uppercase、capitalize、camelcase、kebabcase、titlecase 自动生成侧边栏管理插件,如果使用这个插件后,就不必手动的去维护侧边栏了的,可以前往themeConfig.js中将slidebar去掉,交给这个插件去管理
   // 文档地址: https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/features/plugin-options.html#%E6%A6%82%E8%A7%88
@@ -108,8 +108,8 @@ const plugins = [
       ],
       uncollapseList: [
         // 不折叠的路由列表
-      ]
-    }
+      ],
+    },
   ],
 
   [
@@ -118,24 +118,24 @@ const plugins = [
       noCopy: true, // 选中的文字将无法被复制
       minLength: 100, // 如果长度超过 100 个字符
       'en-US': 'Author',
-      'zh-CN': '作者'
-    }
+      'zh-CN': '作者',
+    },
   ],
 
   [
     // 添加谷歌分析
     '@vuepress/google-analytics',
     {
-      ga: secret.googleGa // UA-00000000-0
-    }
+      ga: secret.googleGa, // UA-00000000-0
+    },
   ],
 
   [
     {
       // 右边固定栏
       name: 'page-plugin',
-      globalUIComponents: ['fixed']
-    }
+      globalUIComponents: ['fixed'],
+    },
   ],
 
   [
@@ -144,8 +144,8 @@ const plugins = [
     {
       normalSuffix: '/',
       indexSuffix: '/',
-      notFoundPath: '/404.html'
-    }
+      notFoundPath: '/404.html',
+    },
   ],
 
   [
@@ -163,16 +163,15 @@ const plugins = [
             '1456270729',
             '1378945187',
             '1344897943',
-            '1413585838'
+            '1413585838',
           ],
-          playListIDs: ['19723756', '3779629', '3778678']
-        }
+          playListIDs: ['19723756', '3779629', '3778678'],
+        },
       ],
-
       timeOut: 2000,
-      firstClickPlay: true // 首次点击自动播放
-    }
-  ]
+      firstClickPlay: true, // 首次点击自动播放
+    },
+  ],
 ];
 
 module.exports = plugins; // 导出

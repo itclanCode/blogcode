@@ -591,15 +591,17 @@ console.log(buddleSort(ary));
 考察点:条件表达式中,有哪些结果值是 false 的
 
 ```
-A. 0 == ''
-B. null == undefined
-C: NaN == NaN
-D: 0.1+0.2 === 0.3
-E: {} == []
-F: !{}
-G: !0
+A. 0 == ''            // true
+B. null == undefined  // true
+C: NaN == NaN         // false
+D: 0.1+0.2 === 0.3    // false
+E: {} == []           // 报错
+F: !{}                // false
+G: !0                 // true
 ```
 
 ::: details 点击即可查看
 答案: C D F
 :::
+
+关于表达式的真假问题可以参考[Js 之选择控制语句及很重要的表达式真与假](/fontend/js/choice-statement)
