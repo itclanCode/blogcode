@@ -45,7 +45,7 @@
     <img src="https://t1.picb.cc/uploads/2020/06/11/tIpwCK.jpg" width="148" height="148" alt="支付宝支付" border="0">
 </div>
 
-- 小额赞助后,您可以联系作者,可获得额外的回报,您可以告诉我,您的名字,它将会出现在`itclanCoder` 的`GitHub`仓库中,再比如您公司 `logo`,或相关产品会出现在[itclanCoder 官网](http://doc.itclan.cn)上.
+- 小额赞助后,您可以联系作者,可获得额外的回报,您可以告诉我,您的名字,它将会出现在`itclanCoder` 的`GitHub`仓库中,再比如您公司 `logo`,或相关产品会出现在[itclanCoder 官网](https://coder.itclan.cn)上.
 - **如需合作联系:vx:`suibichuanji`,备注:坐标-昵称-身份,如:深圳-李明-IT(后端)**
 
 ### 如何参与贡献
