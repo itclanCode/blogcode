@@ -48,7 +48,7 @@ autoPrev: README
   - 每次都需要把生成的静态页面推上去,md 若出现错误,编译会出错,配置的不是特别灵活
 
 - [Hexo 官方文档](https://hexo.io/)
-  ::: details 点击即可查看详情
+  :::
 
 ### GitBook
 
@@ -1011,7 +1011,7 @@ module.exports = {
 一定要耐心的学着葫芦画瓢,如果让自己从零开始写,用`vue`,`vue-router`,`webpack`去写这么一个网站,还是多多少少有些复杂度的
 目前,你只需知道怎么配置,怎么修改配置,能达到自己的效果就可以了的
 
-## 部署到-github
+## 部署到-github 平台
 
 ### 前提条件
 
@@ -1199,6 +1199,69 @@ doc.itclan.cn
 ```
 
 在你推上去后,在代码仓库设置页面的`Custom domain`中应该就可以看到变化了的,最终测试是否成功
+
+## 部署到 coding 平台
+
+上面的操作是将代码部署到`github pages`中,然后设置一个二级域名指定`github`的 `ip` 地止
+
+如果你想将自己的网站部署到自己服务器上,可以将`npm run build`生成的`dist`(docs/.vuepress/dist)目录文件,上传到你网站的服务器根目录下就可以了的
+
+也可以通过`ftp`手动上传,或通过一些自动化集成 cli 工具,通过脚本的方式自动部署上传,都可以
+
+受限于国外网络的原因,有时候访问`github pages`是有些慢的,但可以把代码部署到国内的一些代码管理的平台上:例如[码云](https://gitee.com/),[coding](https://coding.net/)上等都可以
+
+只要你熟悉了`github pages`,其他平台都大同小异,在这里我以`coding`为例:
+::: tip 前提条件
+
+前往[coding 官网](https://coding.net),注册 `coding`账号,若有直接登录即可
+:::
+
+### 新建选择 DevOps 代码仓库
+
+::: warning 注意
+新建仓库时,选择`DevOps 项目`作为模板,如果选择第 1,2 个,里面并没有持续部署,静态网站,云服务器等功能
+:::
+
+<div align="center">
+  <p><strong>step1:新建仓库</strong></p>
+  <div>
+    <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding01.png" alt="新建仓库" />
+  </div>
+  <div>
+  <p><strong>step2:选择DevOps模板</strong></p>
+  <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding02.png" alt="新建仓库" />
+  </div>
+  <div>
+  <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding03.png" alt="新建仓库" />
+  </div>
+  <p><strong>step3:选择静态网站</strong></p>
+  <div>
+  <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding04.png" alt="选择静态网站" />
+  </div>
+  <p><strong>step4:修改静态网站配置</strong></p>
+  <div>
+  <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding05.png" alt="新建仓库" />
+  </div>
+   <p><strong>step5:设置自定义域名</strong></p>
+   <div>
+  <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding06.png" alt="新建仓库" />
+  </div>
+    <div>
+  <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-build-blog/coding07.png" alt="新建仓库" />
+  </div>
+</div>
+
+经过上面的操作,访问在 coding 平台上部署的网站,能访问,那么就说明成功部署了的
+
+### 可能会遇到的问题
+
+- `coding`仓库底下上传了`dist`文件家,部署无效
+  ::: tip 解决办法
+  仓库根目录下上传 dist 目录下子文件内容即可解决
+  :::
+- 域名解析问题
+
+  - 具体自定义域名解析问题可参考下方常见问题
 
 ## 添加百度统计
 
