@@ -23,12 +23,12 @@ class Button extends Component {
   render() {
     constructor(props) {
       super(props)
-
+      const { content } = this.props;
     }
 
     return (
       <div>
-           <h1>itclanCoder</h1>
+           <button>{{content}}</button>
       </div>
     )
   }
@@ -36,16 +36,16 @@ class Button extends Component {
 
 const container = document.getElementById('root');
 
-ReactDOM.render(<Button />, container);
+ReactDOM.render(<Button content="按钮" />, container);
 ```
 
-在 React 中你经常会看到上面的代码,\*\*如果一个组件需要定义自己的构造函数,那么就一定要调用`super(props)`,也就是继承了`React.Component`构造函数
+在 React 中你经常会看到上面的代码,如果一个组件需要定义自己的构造函数,那么就一定要调用`super(props)`,也就是继承了`React.Component`构造函数
 
-至于为什么要调用`super(props)`方法,因为 Es6 采用的是先创建父类实例的 this,然后在用子类的构造函数修改 this
+**至于为什么要调用`super(props)`方法,因为 Es6 采用的是先创建父类实例的 this,然后在用子类的构造函数修改 this**
 
-如果没有`constructor`构造器函数,调用`super()`,以及参数`props`,它是会报错的
+**如果没有`constructor`构造器函数,调用`super()`,以及参数`props`,它是会报错的**
 
-在组件实例被构造之后,该组件的所有成员函数都无法通过`this.props`访问到父组件传递过来的`props`值
+**在组件实例被构造之后,该组件的所有成员函数都无法通过`this.props`访问到父组件传递过来的`props`值**
 
 下面一起来详细了解下`super`这个关键字
 
@@ -53,7 +53,7 @@ ReactDOM.render(<Button />, container);
 
 ## super 作为函数调用
 
-当`super` 作为函数调用时, 它代表的指向的是父类的构造函数,在子类的构造函数必须执行一次 super 函数
+当`super` 作为函数调用时, 它代表的指向的是父类的构造函数,在子类的构造函数必须执行一次`super`函数
 
 也就是说,在子类继承父类中，如果`super`作为函数调用，只能写在子类的构造函数(constructor)里面，`super`代表的是父类的构造函数
 
@@ -63,7 +63,7 @@ class A {          // class关键字声明了一个类A
   }
 }
 
-class B extends A { // class关键字声明了B继承自A类
+class B extends A { // class关键字声明了类B继承自A类
   constructor() {   // constructor构造器函数
     super();        // 调用super()
   }
@@ -73,11 +73,13 @@ new A() // A
 new B() // B
 ```
 
-在上面的代码中,子类 B 的构造函数之中的`super()`,它代表调用父类的构造函数。这是必须的,否则 JavaScript 引擎会报错。
+在上面的代码中,子类 B 的构造函数之中的`super()`,它代表调用父类的构造函数。这是必须的,否则 JavaScript 引擎就会报错。
 ::: tip 注意
-super 虽然代表了父类 A 的构造函数,但是返回的是子类 B 的实例,即 super 内部的 this 指的是 B 的实例
+super 虽然代表了父类 A 的构造函数,但是返回的是子类 B 的实例,即 super 内部的 this 指向的是 B 的实例
 :::
-这里的`super`相当于 A 类的`constructor`构造函数,会执行 A 的`constructor`,但是此时的`this`指向的是 B,所以打印出 B,换一种理解是：在执行`super`时，A 把 constructor 方法给了 B，此时 B 有了 A 的功能，但是执行的是 B 的内容，也就是 es5 的`A.prototype.constructor.call(this)`
+这里的`super`相当于 A 类的`constructor`构造函数,会执行 A 的`constructor`,但是此时的`this`指向的是 B,所以打印出 B
+
+换一种理解是：在执行`super`时，A 把 constructor 方法给了 B，此时 B 有了 A 的功能，但是执行的是 B 的内容，也就是 es5 的`A.prototype.constructor.call(this)`
 
 而作为函数调用:它必须只能在子类的构造器函数(constructor)中进行调用的,如果放在其他地方,则是会报错的,如下所示:
 
@@ -164,7 +166,7 @@ const dog = new Dog()
 console.log(dog.watchHome()); // super实例上的属性,可以拿到父类中原型下的name属性,定义在原型下的属性和方法都是公有的
 ```
 
-而在`ES6`中规定, 在子类普通方法中, 通过 `super` 调用父类的方法时, 方法内部的 `this` 指向当前子类的实例.
+而在`ES6`中规定, 在子类普通方法中, 通过 `super` 调用父类的方法时, 方法内部的 `this` 指向当前子类的实例. 如下所示
 
 ```
 class A {
@@ -192,7 +194,7 @@ b.m() // 随笔川迹
 ```
 
 `super.print()`虽然调用的是`A.prototype.print()`，但是`A.prototype.print()`内部的`this`指向子类 B 的实例
-导致输出的是"随笔川迹"，而不是"itclanCoder"。也就是说，实际上执行的是`super.print.call(this)`
+导致输出的是"随笔川迹"，而不是`"itclanCoder"`。也就是说，实际上执行的是`super.print.call(this)`
 
 **这个特性很有用,可以用于重写(覆盖)父类的私有属性**
 
