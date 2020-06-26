@@ -20,15 +20,14 @@ import ReactDom from 'react-dom'
 
 
 class Button extends Component {
-  render() {
-    constructor(props) {
+  constructor(props) {
       super(props)
-      const { content } = this.props;
-    }
-
+  }
+  render() {
+    const { content } = this.props;
     return (
       <div>
-           <button>{{content}}</button>
+           <button>{content}</button>
       </div>
     )
   }
@@ -49,7 +48,7 @@ ReactDOM.render(<Button content="按钮" />, container);
 
 下面一起来详细了解下`super`这个关键字
 
-它不仅仅是一个关键字，还可以作为函数和对象
+它不仅仅是一个关键字，还可以作为函数调用和对象使用
 
 ## super 作为函数调用
 
