@@ -6,3 +6,10 @@ title: 目录
 
 - [说人话,做人事](./speak-and-act)
 - [文案标题写法](./how-to-write-the-title)
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

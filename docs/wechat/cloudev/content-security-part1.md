@@ -507,3 +507,10 @@ _requestCloudMsgCheck() {
 - [云调用](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html#%E4%BA%91%E5%87%BD%E6%95%B0)
 - [百度文本审核](https://ai.baidu.com/tech/textcensoring)
 - [网易云盾](https://dun.163.com/product/text-detection)
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

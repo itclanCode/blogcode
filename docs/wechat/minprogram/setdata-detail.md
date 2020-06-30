@@ -259,3 +259,10 @@ setData 将数据从逻辑层发送到视图层是异步,同时改变对应的`t
 
 - [setData 官方文档](https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html)
 - [setData 官方文档解析](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tips.html)
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

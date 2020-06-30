@@ -147,3 +147,10 @@ title: 陷入穷循环,打破壁垒
 总之选择适合自己的一种方式,记账只是手段....(无论是做 Excel 表格,还是记事本等)就可以了的)
 
 您也可以在微信`itclanCoder`上听[读富爸爸,穷爸爸后感一](https://mp.weixin.qq.com/s/rJ8j5oNzEmTZJefjKKsh-A)
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

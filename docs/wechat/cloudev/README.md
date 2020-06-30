@@ -13,3 +13,10 @@ title: 目录
 
 - [云开发技术文档](https://docs.cloudbase.net/)
 - [云开发社区](https://club.cloudbase.net/)
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

@@ -98,3 +98,10 @@ sidebarDepth: 3
 一篇好的文案就像一产品一样,同样需要反复打磨,并非一触而就,首先你的内容,解决了别人的问题
 
 提供了有效的解决方案,触碰到用户的痛点,并解决了痛点,引起共鸣,就是好文案.
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

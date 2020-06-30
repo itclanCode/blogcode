@@ -280,3 +280,10 @@ react 非常适合构建用户交互组件
 本文主要讲到了`react`是什么,以及通过`creact-react-app`脚手架工具搭建一个`react`初始化的项目,其中初始化一个 react 应用,有多种方式
 
 其中最重要的是,初始化项目目录文件的含义,以及构建一个 react 组件的方式,以及 react 中的组件,react 的特点,写一个 react 应用的基本流程,从一个初始化项目里,学到了 react 编程方式
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

@@ -617,3 +617,9 @@ collapsable: true
 <div align="center">
   <img class="medium-zoom lazy" loading="lazy" src="../images/link-accompany-grouwth/link8.png" alt="链接关系" />
 </div>
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
