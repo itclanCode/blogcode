@@ -109,6 +109,7 @@ module.exports = {
 **使用**
 
 在`md`中直接输入如下即可
+
 ```
 ::: tip 提示
 这是一个友好的提示
@@ -1415,3 +1416,11 @@ module.exports = {
 ```
 
 :::
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />

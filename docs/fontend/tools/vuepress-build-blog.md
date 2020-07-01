@@ -1548,3 +1548,11 @@ doc.itclan.cn
 自己的网站,自己做主,一定要坚信,对于这种绝大多人都可以快速搭建起来的应用网站,你也是可以的,只要耐心折腾一下,本身并无多大技术含量,只有折腾过了,你才会发现新的大陆
 
 如果您有关于`VuePress`搭建网站或二次开发中有任何问题,欢迎提[issue](https://github.com/itclanCode/blogcode/issues),也欢迎评论下方,留言,我们一起学习讨论,加油
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />

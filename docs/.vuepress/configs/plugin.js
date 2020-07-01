@@ -8,7 +8,7 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-24 17:59:51
+ * @LastEditTime: 2020-07-01 15:28:33
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
@@ -147,7 +147,7 @@ const plugins = [
       notFoundPath: '/404.html',
     },
   ],
-
+  /*
   [
     'music-bar', // vuepress-plugin-music-bar,音乐插件
     {
@@ -171,7 +171,7 @@ const plugins = [
       timeOut: 2000,
       firstClickPlay: true, // 首次点击自动播放
     },
-  ],
+  ],*/
 ];
 
 module.exports = plugins; // 导出

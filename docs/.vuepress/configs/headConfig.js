@@ -8,7 +8,7 @@
  * @Date: 2020-06-02 07:29:20
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-30 19:39:32
+ * @LastEditTime: 2020-07-01 13:32:19
  * @Description:头部html中head需要引入的标签,当前文件通过module.exports导出,在config.js主入口文件中通过require导入
  */
 const baidu = require('./secretKey'); // 引入百度统计密钥ID
@@ -48,6 +48,14 @@ const headConfig = [
         'width=device-width,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no',
     },
   ],
+
+  [
+    'meta',
+    {
+      'http-equiv': 'Content-Security-Policy', // 自动将http的不安全请求升级为https
+      content: 'upgrade-insecure-requests', // HTTPS 是 HTTP over Secure Socket Layer，以安全为目标的 HTTP 通道，所以在 HTTPS 承载的页面上不允许出现 http 请求，一旦出现就是提示或报错
+    },
+  ],
   [
     // 添加百度统计代码
     'script',
@@ -64,8 +72,8 @@ const headConfig = [
   ],
   ['link', { rel: 'stylesheet', href: '/css/style.css' }], // 这种方式也可以覆盖默认样式
   ['script', { charset: 'utf-8', src: '/js/disable-user-zoom.js' }], // 移动端,禁止用户缩放,引入你写的js
-  ['script', { charset: 'utf-8', src: '/js/readmore.js' }],
-  ['script', { charset: 'utf-8', src: '/js/btwplugin.js' }],
+  // ['script', { charset: 'utf-8', src: '/js/readmore.js' }],
+  // ['script', { charset: 'utf-8', src: '/js/btwplugin.js' }],
   [
     'script',
     {
@@ -78,12 +86,15 @@ const headConfig = [
     {
       charset: 'utf-8',
       src:
-        'http://static.bshare.cn/b/button.js#style=-1&amp;uuid=9bdd2044-a21a-48f4-8838-5aea07e583ab&amp;pophcol=3&amp;lang=zh',
+        'http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=9bdd2044-a21a-48f4-8838-5aea07e583ab&amp;pophcol=2&amp;lang=zh',
     },
   ],
   [
     'script',
-    { charset: 'utf-8', src: 'http://static.bshare.cn/b/bshareC0.js' },
+    {
+      charset: 'utf-8',
+      src: 'http://static.bshare.cn/b/bshareC0.js',
+    },
   ],
 ];
 

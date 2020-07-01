@@ -235,3 +235,11 @@ fatal: Authentication failed for 'https://xxx.git'
 
 * 方法-2:clone 的代码连接前加上 git 账号和密码
   git clone http://账户名:密码@192.168.0.00/xxxx/xxxx.git
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />

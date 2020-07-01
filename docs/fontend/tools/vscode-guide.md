@@ -195,3 +195,11 @@ $time_each_hour
 * [有道智云](http://ai.youdao.com/)
 
 ## 常见问题
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />

@@ -154,3 +154,4 @@ title: 陷入穷循环,打破壁垒
 <div align="center">
   <DaShang />
 </div>
+<ShangPic />

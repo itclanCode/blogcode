@@ -3,15 +3,16 @@ title: 不可不知的 JSX
 collapsable: true
 ---
 
+## 不可不知的 JSX
+
 ## 快速导航
 
 <TOC />
 
-## 不可不知的 JSX
-
 <div align="center">
 <img class="medium-zoom lazy" loading="lazy"  src ="../images/framework-article-imgs/the-indispensable-jsx/jsx-01.jpg" alt="JSX" />
 </div>
+
 ## 前言
 
 当您读完本文,就`get`到
@@ -553,3 +554,4 @@ for 在 JSX 中应该被写作 `htmlFor`
 <div align="center">
   <DaShang />
 </div>
+<ShangPic />

@@ -353,3 +353,11 @@ D: 140px
 答案: B
 解析: 盒子模型,设置了 box-sizing: border-box;属性后,表示遵循 IE 盒模型的计算方式,增加 border,以及 padding 大小,不会让盒子溢出，给元素添加边框(border)和内边距(padding),都不会影响元素盒子的总尺寸
 :::
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />

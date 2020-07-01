@@ -1,6 +1,10 @@
 <template>
   <div>
-    <a class="shang-btn" href="https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813">赞</a>
+    <a
+      class="shang-btn"
+      target="_blank"
+      href="https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813"
+    >赞</a>
   </div>
 </template>
 
@@ -56,11 +60,12 @@ export default {
 }
 
 .shang-btn {
-  width: 80rpx;
-  height: 80rpx;
+  width: 56px;
+  height: 56px;
+  padding: 11px 11px;
+  line-height: 56px;
+  font-size: 22px;
   display: inline-block;
-  font-size: 16rpx;
-  line-height: 80rpx;
   text-align: center;
   background: rgba(255, 37, 37, 0.6);
   color: #fff;

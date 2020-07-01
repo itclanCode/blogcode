@@ -623,3 +623,4 @@ collapsable: true
 <div align="center">
   <DaShang />
 </div>
+<ShangPic />

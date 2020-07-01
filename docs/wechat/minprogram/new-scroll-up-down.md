@@ -387,9 +387,9 @@ _formatTimeDetail()  // 3小时前,上面的传入的是可控制的
 
 </div>
 <div align="right">
-<ShareLink />
+  <ShareLink />
 </div>
 <div align="center">
-<DaShang />
-
+  <DaShang />
 </div>
+<ShangPic />

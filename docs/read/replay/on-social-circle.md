@@ -236,3 +236,10 @@ title: 关于社交圈子的一点思考
 <div align="center">
   <img class="medium-zoom lazy" loading="lazy" src="../images/on-social-circle/social5.png" alt="链接关系" />
 </div>
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />

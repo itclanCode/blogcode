@@ -143,7 +143,8 @@ console.log(obj1, obj2);
 :::
 
 - **第 3 种解决办法: 通过 Es6 中的拓展运算符 ...**
-  ::: details 点击即可查看
+
+::: details 点击即可查看
 
 ```
 var obj1 = {x: 1, y: 2}
@@ -155,7 +156,8 @@ console.log(obj1, obj2);
 :::
 
 - **第 4 种解决办法: 通过 JSON.parse(JSON.stringify())**
-  ::: details 点击即可查看
+
+::: details 点击即可查看
 
 ```
 var obj1 = { x: 1, y: 2}
@@ -303,3 +305,11 @@ console.log(arrs);  //  [{name: "川川"}, {age: 20}, {job: "搬砖"}]
 其中前面三者只能实现数据的一级拷贝,如果想要更深沉次的拷贝的话,那么可以用递归实现,如上面代码所示
 
 当然最后也提到了一个开发中常见的问题:往一个数组中`push`对象，前面的值总是会被最后一次的值覆盖的问题,具体解决办法是,把目标对象放在`for-in`里面就可以了的
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>
+<ShangPic />
