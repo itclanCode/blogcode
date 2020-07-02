@@ -554,4 +554,3 @@ for 在 JSX 中应该被写作 `htmlFor`
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

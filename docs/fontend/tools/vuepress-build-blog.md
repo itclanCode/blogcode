@@ -1555,4 +1555,3 @@ doc.itclan.cn
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

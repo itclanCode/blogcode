@@ -242,4 +242,3 @@ title: 关于社交圈子的一点思考
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

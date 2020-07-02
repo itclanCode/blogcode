@@ -197,4 +197,3 @@ App({
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

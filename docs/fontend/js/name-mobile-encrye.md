@@ -104,3 +104,9 @@ var mphone = `${phone.substr(0, 3)}****${phone.substr(7)}`;
 <div align="center">
    <img class="medium-zoom lazy"  loading="lazy"  src="../../about/images/jiahaoruisen-min-code.jpg" alt="移动手机" />
 </div>
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

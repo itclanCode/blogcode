@@ -1,6 +1,7 @@
 ---
 title: vuejs 中的组件以及父子组件间通信传值
 ---
+
 ## vuejs 中的组件以及父子组件间通信传值
 
 ## 快速导航
@@ -1030,4 +1031,3 @@ vuejs 虽然强大,但是底层核心逻辑依然是是不变的,有些事情仍
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

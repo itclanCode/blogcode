@@ -88,8 +88,8 @@
     config.askUrl = config.baseUrl + '/ask/' + config.uid + '/widget';
 
     // Debug: 配置信息.
-    console.log('打赏配置...');
-    console.log(config);
+    // console.log('打赏配置...');
+    // console.log(config);
 
     $(document).ready(function() {
       // 检查打赏元素容器并根据配置插入打赏元素.
@@ -134,15 +134,15 @@
   if (typeof $ !== 'function') {
     // 检查是否存在 jQuery 函数，避免重新引入 jQuery 产生冲突
     if (typeof jQuery === 'function') {
-      console.log('jQuery 已加载（$ 未赋值）: ' + jQuery.fn.jquery);
+      // console.log('jQuery 已加载（$ 未赋值）: ' + jQuery.fn.jquery);
       $ = jQuery;
       if (typeof $ === 'function') {
-        console.log('jQuery 已加载（$ 已赋值）: ' + $.fn.jquery);
+        // console.log('jQuery 已加载（$ 已赋值）: ' + $.fn.jquery);
       }
       init($, window);
     } else {
-      console.log('jQuery 不存在，准备加载...');
-      console.log('加载 jQuery: ' + config.jQueryUrl);
+      // console.log('jQuery 不存在，准备加载...');
+      // console.log('加载 jQuery: ' + config.jQueryUrl);
       var jq = document.createElement('script');
       jq.src = config.jQueryUrl;
       var s = document.getElementsByTagName('script')[0];
@@ -154,14 +154,14 @@
       };
     }
   } else {
-    console.log('jQuery 已加载（$ 已赋值）：' + $.fn.jquery);
+    // console.log('jQuery 已加载（$ 已赋值）：' + $.fn.jquery);
     init($, window);
   }
 
   function init($, window) {
     // 避免重复加载.
     if (window._zhi12Loaded) {
-      console.log('略过重复加载');
+      // console.log('略过重复加载');
       return;
     } else {
       window._zhi12Loaded = true;
@@ -171,12 +171,12 @@
     (function main() {
       // 检查并加载 Colorbox.
       if (typeof $.colorbox !== 'function') {
-        console.log('$.colorbox 不存在，准备加载...');
+        // console.log('$.colorbox 不存在，准备加载...');
         $.getScript(config.colorboxUrl, function() {
-          console.log('加载 colorbox: ' + config.colorboxUrl);
+          // console.log('加载 colorbox: ' + config.colorboxUrl);
         });
       } else {
-        console.log('$.colorbox 存在');
+        // console.log('$.colorbox 存在');
       }
 
       // 加载 CSS 文件.

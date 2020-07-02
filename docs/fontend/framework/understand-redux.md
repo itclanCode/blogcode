@@ -286,4 +286,3 @@ function counter(state = 0, action) {
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

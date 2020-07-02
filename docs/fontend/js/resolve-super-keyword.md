@@ -329,3 +329,10 @@ let b = new B();
 `super`关键字可以用于覆盖重写父类型中的属性,这也是它的一个作用,有时候在面试的时候,只要问到 class 继承,深一点话,就会问到`super`关键字
 
 在做面向对象开发时,这个`super`也是非常重要的
+
+<div align="right">
+  <ShareLink />
+</div>
+<div align="center">
+  <DaShang />
+</div>

@@ -230,4 +230,3 @@ title: 关注更多的应该是你自己
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

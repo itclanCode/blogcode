@@ -1423,4 +1423,3 @@ module.exports = {
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

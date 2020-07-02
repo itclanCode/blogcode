@@ -19,4 +19,3 @@ title: 目录
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

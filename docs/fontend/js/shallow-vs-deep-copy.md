@@ -312,4 +312,3 @@ console.log(arrs);  //  [{name: "川川"}, {age: 20}, {job: "搬砖"}]
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

@@ -202,4 +202,3 @@ $time_each_hour
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

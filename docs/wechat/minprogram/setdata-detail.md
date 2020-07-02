@@ -266,4 +266,3 @@ setData 将数据从逻辑层发送到视图层是异步,同时改变对应的`t
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

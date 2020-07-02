@@ -1,7 +1,7 @@
 <template>
   <div class="shang-wrap">
     <a target="_blank" href="https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813">
-      <img v-if="shangeFlag" class="shange" src="/images/itclanCoder-shang.png" />
+      <img height="80" v-if="shangeFlag" class="shange" src="/images/itclanCoder-shang.png" />
     </a>
   </div>
 </template>
@@ -44,13 +44,19 @@ export default {
 
 <style lang="stylus" scoped>
 .shang-wrap {
-  width: 300px;
-  height: 160px;
+  width: 170px;
+  height: 80px;
   position: fixed;
   bottom: 50px;
-  right: 15px;
+  right: 140px;
   z-index: 999999;
   opacity: 1;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    vertical-align: center;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -58,8 +64,10 @@ export default {
     width: 150px;
     height: 80px;
     position: fixed;
-    right: 15px;
+    right: 3.5rem;
     bottom: 50px;
+    text-align: center;
+    z-index: 777;
   }
 }
 </style>

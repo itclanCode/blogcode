@@ -52,3 +52,4 @@ collapsable: true
   <DaShang />
 </div>
 <ShangPic />
+<RightBar />
