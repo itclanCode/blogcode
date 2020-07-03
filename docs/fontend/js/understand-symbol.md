@@ -72,7 +72,7 @@ let s2 = Symbol.for('itclanCoder');
 console.log(s1 === s2); // true
 ```
 
-在上面的示例代码中,`s1` 和 `s2` 都是`Symbol`实例化出来的值,但是它们都是由`Symbol.for`方法生成的,指向的嗾使同一个值,地止
+在上面的示例代码中,`s1` 和 `s2` 都是`Symbol`实例化出来的值,但是它们都是由`Symbol.for`方法生成的,指向的是同一个值,地止
 
 - ### `Symbol` 与 `Symbol.for` 的区别
 
@@ -316,6 +316,7 @@ Object.getOwnPropertySymbols(x) // [Symbol(size)]
 
 结合`Symbol`与模块化机制,类的私有属性和方法完美实现,如下代码所示
 在文件`a.js`中
+::: details 点击即可查看
 
 ```
 const PASSWORD = Symbol();  // 定义一个PASSWORD变量,类型是Symbol
@@ -334,7 +335,11 @@ class Login() {      // class关键字声明一个Login类
 export default Login;
 ```
 
+:::
+
 在文件`b.js`中
+
+::: details 点击即可查看
 
 ```
 import Login from './a'
@@ -347,6 +352,8 @@ login[PASSWORD]; // 访问不到
 login['PASSWORD'] // 访问不到
 
 ```
+
+:::
 
 因为通过`Symbol`定义的`PASSWORD`常量定义在`a.js`模块中,外面的模块是获取不到这个`Symbol`的,在外部无法引用这个值,也无法改写,也不可能在在创建一个一模一样的`Symbol`出来
 
@@ -361,6 +368,8 @@ login['PASSWORD'] // 访问不到
 在使用`React`中,结合`Redux`做公共数据状态管理时,当想要改变组件中的某个状态时,`reducer`是一个纯函数,它会返回一个最新的状态给`store`,返回的结果是由`action`和`state`共同决定的
 
 `action`是一个对象,有具体的类型`type`值,如果你写过几行`Redux`的代码,就会常常看到,进行`action`的拆分,将事件动作的类型定义成常量
+
+::: details 点击即可查看
 
 ```
 const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE';  // 监听input框输入值的常量
@@ -382,6 +391,8 @@ function reducer(state, action) {
 
 }
 ```
+
+:::
 
 以上代码在`Redux`中很常见,将`action`对象中的`type`值,给抽离出来,定义一个常量存储,来代表一种业务逻辑,通常希望这些常量是唯一的,在`Redux`中定义成常量,是为了便于调试查错
 
