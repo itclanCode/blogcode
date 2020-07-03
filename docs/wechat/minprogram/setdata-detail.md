@@ -1,6 +1,7 @@
 ---
 title: 微信小程序中 setData 详解
 autoNext: new-scroll-up-down
+sidebarDepth: 3
 ---
 
 ## 微信小程序中 setData 详解
@@ -74,7 +75,7 @@ Page({
 
 ::: details 点击即可查看
 
-```
+```v-pre
 // miniprogram/pages/setdata/setdata.wxml
 <text>{{name}}</text>
 ```
@@ -85,7 +86,7 @@ Page({
 
 小程序是数据驱动视图的,逻辑层中的 data 数据改变了,视图层 view 也会跟着改变,它是单向数据流的,如果想要触发视图中数据的更新,那么就需要借助`setData`这个方法
 
-上面的`WXML`通过`{{变量名}}`来绑定 `WXML`文件和对应的`JavaScript`文件中的`data`对象属性
+上面的`WXML`通过**插值表达式**来绑定 `WXML`文件和对应的`JavaScript`文件中的`data`对象属性
 
 在上面的示例中,页面会显示`itclanCoder`,那如何更改逻辑层的数据呢
 

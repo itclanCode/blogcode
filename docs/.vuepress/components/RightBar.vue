@@ -80,7 +80,7 @@ export default {
   .right-bar-wrap {
     position: fixed;
     right: 0.2rem;
-    top: 50%;
+    top: 40%;
     display: flex;
     flex-direction: column;
     z-index: 888;

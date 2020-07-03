@@ -4,6 +4,7 @@ title: 目录
 
 ## 离您最近的表示是最新的
 
+- [理解 Es6 中 Symbol 类型](../fontend/js/understand-symbol)
 - [微信小程序 setData 详解](../wechat/minprogram/setdata-detail)
 - [解析 super 关键字](../fontend/js/resolve-super-keyword)
 - [用户名-手机号加密特殊处理](../fontend/js/name-mobile-encrye)
@@ -19,5 +20,3 @@ title: 目录
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />
-<RightBar />

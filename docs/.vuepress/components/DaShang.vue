@@ -61,11 +61,11 @@ export default {
 }
 
 .shang-btn {
-  width: 56px;
-  height: 56px;
-  padding: 11px 11px;
-  line-height: 56px;
-  font-size: 22px;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 16px;
   display: inline-block;
   text-align: center;
   background: rgba(255, 37, 37, 0.6);
@@ -74,5 +74,8 @@ export default {
   border-radius: 100%;
   -webkit-animation: shangBtn 2s alternate infinite;
   margin-top: 50px;
+  font-weight: 500;
+  border: none;
+  outline: none;
 }
 </style>

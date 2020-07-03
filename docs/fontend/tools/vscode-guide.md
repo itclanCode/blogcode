@@ -109,6 +109,8 @@ vscode 中安装 Translate(使用这个需要到有道智云里面获取密钥�
      </div>
   </div>
 
+## 如何查看历史
+
 ## 如何一边 coding 一边让萌妹子为你加油
 
 - ### Rainbow Fart 插件
