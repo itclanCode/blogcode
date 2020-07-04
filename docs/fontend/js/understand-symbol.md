@@ -44,9 +44,13 @@ console.log(Object.prototype.toString.call(s1)); // [object Symbol]
 
 因为不是对象,所以也不能添加属性,它是一种类似于字符串的数据类型,可以理解为是在字符串类型的一种额外的拓展
 
-`Symbol`函数可以接收一个字符串做为参数,它是对该`Symbol`实例的一种描述,主要是为了在控制台显示,或转为字符串时，进行区分
+`Symbol`函数可以接收一个字符串做为参数,它是对该`Symbol`实例的一种描述,主要是为了在控制台显示
+
+**Symbol 的描述是可选的，仅用于调试目的或转为字符串时,进行区分**,不是访问 symbol 本身
 
 可以使用`Symbol().description`会返回`Symbol()`的实例描述的具体内容,如果有值,则会返回该描述,若无则会返回`undefined`
+
+`description`是`Symbol`的一个静态属性
 :::
 当使用字符串定义对象的属性名时,若出现同名属性,则会出现属性覆盖问题,而使用`Symbol`类型定义的对象属性名,则不会,它是独一无二的,每调用一次`Symbol()`都会生成一个唯一的标识,即使是使用`Symbol()` 生成的实例描述相同,但它们依旧不相等,总会返回`false`
 如下代码所示
@@ -76,7 +80,8 @@ console.log(s1 === s2); // true
 
 - ### `Symbol` 与 `Symbol.for` 的区别
 
-::: tip 区别
+::: tip 比较
+
 **共同点:** 都会生成新的`Symbol`
 **不同点:** `Symbol.for()`会被登记在全局坏境中供搜索,而`Symbol()`不会,`Symbol.for()`不会每次调用就返回一个新的`Symbol`类型的值,而是会先检查给定的`key`是否已经存在,如果不存在才会新建一个`Symbol`值
 
@@ -439,7 +444,7 @@ function reducer(state, action) {
 
 因为用它在不同`window`中创建的`Symbol实例`总是唯一的，而我们需要的是在所有这些`window环境下`保持一个共享的`Symbol`值。
 
-在这种情况下，我们就需要使用另一个 API 来创建或获取`Symbol`，那就是`Symbol.for()`，它可以注册或获取一个`window`间全局的`Symbol实例`：
+在这种情况下，我们就需要使用另一个 API 来创建或获取`Symbol`，那就是`Symbol.for()`，它可以注册或获取一个`window`间全局的`Symbol实例`，它是`Symbol`的一个静态方法
 
 这个在前面已经提到过一次,这个还是有那么一点点用处,所以在提一嘴的
 
@@ -453,6 +458,10 @@ console.log(gs1 === gs2 ) // true
 ```
 
 经过`Symbol.for()`实例化出来的`Symbol`字符串类型,只要描述的内容相同,那么不光是在当前`window`中是唯一的,在其他全局范围内的`window`也是唯一的,并且相同
+
+该特性,若是创建跨文件可用的`symbol`，甚至跨域（每个`window`都有它自己的全局作用域） , 可以使用 `Symbol.for()`取到相同的值
+
+也就是说,使用了`Symbol.for()`在全局范围内,`Symbol`类型值可以共享
 
 ## 注意事项
 
@@ -530,7 +539,9 @@ obj[s]("itclanCoder")
 
 本文主要介绍了`Es6`中`Symbol`的常见使用,`Symbol`是一种新的基础类型,它形式字符串的数据类型,是字符串类型的一种额外拓展
 
-常常用于作为对象的键名,保证对象的每个属性名的唯一性,可解决属性名的冲突问题
+常用于作为对象属性的键名,每个从`Symbol()`返回的`symbol值`都是唯一的,可保证对象的每个属性名的唯一性,可解决属性名的冲突问题
+
+`Symbol()`函数会返回`symbol`类型的值，该类型具有静态属性(如`Symbol().description`,)和静态方法(`Symbol.for()`,`Symbol.keyFor()`)
 
 当然也介绍了`Symbol`的一些常见应用场景,作为对象的属性名(key),定义类的私有属性和方法,替代常量,以及注册全局`Symbol`等,以及一些注意事项
 
@@ -539,6 +550,8 @@ obj[s]("itclanCoder")
 ## 相关参考文档
 
 - [Es6 标准入门-Symbol](https://es6.ruanyifeng.com/#docs/symbol)
+- [MDN-Symbol](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+- [MDN-Symbol 介绍](https://developer.mozilla.org/zh-CN/docs/Glossary/Symbol)
 
 <div align="right">
   <ShareLink />
