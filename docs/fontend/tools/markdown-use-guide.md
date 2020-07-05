@@ -137,6 +137,7 @@ module.exports = {
 
   - [picb 免费图床](https://www.picb.cc/)
   - [imgchr 免费图床](https://imgchr.com/)
+  - [imgkr-图壳-免费图床](https://imgkr.com/)
 
 在`md`中引入图片有**两种方式**
 

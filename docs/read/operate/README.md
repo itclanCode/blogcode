@@ -2,12 +2,17 @@
 title: 目录
 ---
 
-## 运营工具
+## 排版+实用性工具
 
-- [markdown-lovejade](https://markdown.lovejade.cn/)
-- [md2All-微信排版工具](http://md.aclickall.com/)
-- [mdnice 微信排版工具](https://mdnice.com/)
-- [微信生态下的各种辅助工具-更好的写公众号文章的小工具](https://www.wxmarkdown.com/)
+<TypeSet />
+
+## 赚取收益-写作平台
+
+<EarnMoney />
+
+## 知识致富-变现平台
+
+<KnowledgeRich />
 
 <div align="right">
   <ShareLink />
@@ -15,4 +20,3 @@ title: 目录
 <div align="center">
   <DaShang />
 </div>
-<ShangPic />

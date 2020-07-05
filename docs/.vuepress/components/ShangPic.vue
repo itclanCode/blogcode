@@ -48,7 +48,7 @@ export default {
   height: 80px;
   position: fixed;
   bottom: 50px;
-  right: 140px;
+  right: 130px;
   z-index: 999999;
   opacity: 1;
   text-align: center;

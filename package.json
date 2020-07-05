@@ -19,8 +19,15 @@
     "type": "git",
     "url": "git+https://github.com/itclanCode/blogcode.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "itclanCoder的技术博客-随笔川迹"
+  ],
+  "author": {
+    "name": "随笔川迹",
+    "email": "itclancode@163.com",
+    "url": "https://coder.itclan.cn/",
+    "wxPublic": "欢迎关注微信itclanCoder公众号"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/itclanCode/blogcode/issues"
@@ -37,6 +44,7 @@
     "vuepress": "^1.5.1",
     "vuepress-plugin-auto-sidebar": "^1.4.1",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-cat": "^1.0.3",
     "vuepress-plugin-clean-urls": "^1.1.1",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-copyright": "^1.0.2",

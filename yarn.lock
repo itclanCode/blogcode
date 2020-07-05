@@ -9919,6 +9919,11 @@ vuepress-plugin-baidu-autopush@^1.0.1:
   resolved "https://registry.yarnpkg.com/vuepress-plugin-baidu-autopush/-/vuepress-plugin-baidu-autopush-1.0.1.tgz#e5042170f05a585c4a38f876e01ff4706cd82fbe"
   integrity sha512-KVQkrmMgPY+GG8dtI2wcRxUv1n2h5DM8aFs75ltsSlFBSS9C/vfLb2LmywXAsoCXk2EHya2p66cpn7BxofK+Mw==
 
+vuepress-plugin-cat@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-cat/-/vuepress-plugin-cat-1.0.3.tgz#efbac43981ae4dee55c8726b347b7ba272052654"
+  integrity sha512-1tronr8K/02Qn7M/+cOa5zYGfY/qlWLAqJjpT3FKYX4BsHEn9KEDnjJ7t9SyCPKpV68e8IP6XJvPZYTQ0Qs90w==
+
 vuepress-plugin-clean-urls@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-clean-urls/-/vuepress-plugin-clean-urls-1.1.1.tgz#593f47be643c33c34413ba408e8bee31aaf534bd"

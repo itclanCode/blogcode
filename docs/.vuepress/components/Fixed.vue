@@ -26,19 +26,14 @@
           扫二维码 备注
           <span>加群</span>
         </p>
-        <img
-          class="medium-zoom lazy"
-          loading="lazy"
-          src="../public/images/person-code.jpg"
-          alt
-        />
+        <img class="medium-zoom lazy" loading="lazy" src="../public/images/person-code.jpg" alt />
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'fixed',
+  name: "fixed",
   data() {
     return {
       onOff: true, // 默认开关,开启
@@ -100,7 +95,7 @@ export default {
     right: 1px;
     top: 110px;
     width: 140px;
-    padding: 20px 10px;
+    padding: 0 10px 10px 10px;
     text-align: center;
     background-color: #fff;
     box-shadow: -1px 0 2px 0.5px #42b983;
@@ -108,10 +103,12 @@ export default {
     h4 {
       font-size: 15px;
       color: #42b983;
+      margin: 16px 0;
     }
 
     p {
       font-size: 12px;
+      margin: 0;
     }
 
     img {
