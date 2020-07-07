@@ -548,9 +548,4 @@ for 在 JSX 中应该被写作 `htmlFor`
 
 当然对于 JSX 的相关知识学习暂且就这么多了
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

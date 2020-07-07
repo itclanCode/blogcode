@@ -7,6 +7,11 @@
         </a>
       </div>
       <div>
+        <a href="/latestarticle/">
+          <img width="30" height="30" src="/images/new.png" alt="最新" />
+        </a>
+      </div>
+      <div>
         <img
           width="30"
           height="30"
@@ -37,18 +42,18 @@
 
 <script>
 export default {
-  name: "RightBar",
+  name: 'RightBar',
   data() {
     return {
-      isRightBar: false
+      isRightBar: false,
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.scroll);
+    window.addEventListener('scroll', this.scroll);
   },
 
   destroyed() {
-    window.removeEventListener("scroll", this.scroll);
+    window.removeEventListener('scroll', this.scroll);
   },
 
   methods: {
@@ -64,8 +69,8 @@ export default {
       } else {
         that.isRightBar = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -76,11 +81,11 @@ export default {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .right-bar-wrap {
     position: fixed;
     right: 0.2rem;
-    top: 40%;
+    top: 35%;
     display: flex;
     flex-direction: column;
     z-index: 888;

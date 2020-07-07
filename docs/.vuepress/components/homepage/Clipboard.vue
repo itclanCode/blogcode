@@ -14,9 +14,16 @@
   <div>
     <p>
       <span>MIT Licensed | Copyright © 2020-present</span>
-      <a href="https://github.com/itclanCode/blogcode" target="_blank">随笔川迹</a>
+      <a href="https://github.com/itclanCode/blogcode" target="_blank"
+        >随笔川迹</a
+      >
       <a href="http://www.beian.miit.gov.cn/" target="_blank">
-        <img src="../public/icons/icp.png" width="20" height="20" alt="公网备案" />京ICP备16017996号
+        <img
+          src="/icons/icp.png"
+          width="20"
+          height="20"
+          alt="公网备案"
+        />京ICP备16017996号
       </a>
     </p>
     <div v-html="html" />
@@ -45,10 +52,10 @@ p {
 </style>
 <script>
 export default {
-  props: ["html"],
+  props: ['html'],
 
   created() {
     // this.location = window.location;
-  }
+  },
 };
 </script>

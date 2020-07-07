@@ -8,7 +8,7 @@
  * @Date: 2020-06-01 20:49:41
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-07-04 20:50:46
+ * @LastEditTime: 2020-07-06 23:10:12
  * @Description: 所有外部插件配置,入口在当前目录下config.js,本文件通过module.exports暴露,而在config.js中通过require方式引入
  * 集中管理外部插件配置
  *
@@ -29,7 +29,7 @@ const plugins = [
   'vuepress-plugin-reading-time', // 阅读时间
   'vuepress-plugin-smooth-scroll', // 你的 VuePress 站点中使用平滑滚动
   'vuepress-plugin-table-of-contents', // 为你的 VuePress 站点增加目录组件,支持在md和vue中写<TOC />,生成目录树
-  'vuepress-plugin-cat', // 编程猫
+  // 'vuepress-plugin-cat', // 编程猫
   [
     '@vuepress/active-header-links',
     {
@@ -135,7 +135,14 @@ const plugins = [
     {
       // 右边固定栏
       name: 'page-plugin',
-      globalUIComponents: ['fixed', 'ToBottom', 'RightBar', 'ShangPic'],
+      globalUIComponents: [
+        'global-AttionFixed',
+        'global-ToBottom',
+        'global-RightBar',
+        'global-ShangPic',
+        'global-Cat',
+        'global-Copy',
+      ],
     },
   ],
 

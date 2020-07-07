@@ -10,9 +10,4 @@ title: 目录
 
 - [小程序-实现类似新浪头条新闻上下间歇性滚动](./new-scroll-up-down)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

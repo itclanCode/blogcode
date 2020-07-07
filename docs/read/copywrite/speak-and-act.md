@@ -45,11 +45,4 @@ collapsable: true
 
 在这一点上,做广告,写文案,就服杜蕾斯,一句"女人每年穿破的丝袜比她们用过的杜蕾斯还多",不信,你品,你细品
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
-<ShangPic />
-<RightBar />
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

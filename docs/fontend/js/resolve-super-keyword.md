@@ -330,9 +330,4 @@ let b = new B();
 
 在做面向对象开发时,这个`super`也是非常重要的
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

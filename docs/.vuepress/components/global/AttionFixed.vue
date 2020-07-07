@@ -16,7 +16,7 @@
         <img
           class="medium-zoom lazy"
           loading="lazy"
-          src="../public/images/itclancoder-code.jpg"
+          src="/images/itclancoder-code.jpg"
           alt
         />
       </div>
@@ -26,18 +26,23 @@
           扫二维码 备注
           <span>加群</span>
         </p>
-        <img class="medium-zoom lazy" loading="lazy" src="../public/images/person-code.jpg" alt />
+        <img
+          class="medium-zoom lazy"
+          loading="lazy"
+          src="/images/person-code.jpg"
+          alt
+        />
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: "fixed",
+  name: 'AttionFixed',
   data() {
     return {
       onOff: true, // 默认开关,开启
-      fixContainerShow: true // 默认显示
+      fixContainerShow: true, // 默认显示
     };
   },
   methods: {
@@ -49,8 +54,8 @@ export default {
         this.fixContainerShow = true;
         this.onOff = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="stylus">

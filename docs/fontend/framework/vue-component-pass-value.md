@@ -1025,9 +1025,4 @@ vuejs 虽然强大,但是底层核心逻辑依然是是不变的,有些事情仍
 
 其中重点是在于理解父子组件间的简单通信,关于组件的内容,比较多,也比较杂,理解组件之间的通信非常重要
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

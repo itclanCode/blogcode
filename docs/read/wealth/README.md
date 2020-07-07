@@ -9,9 +9,4 @@ title: 目录
 - [读富爸爸,穷爸爸,后感 3](./rich-poo-dad-3)
 - [读富爸爸,穷爸爸,后感 4](./rich-poo-dad-4)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

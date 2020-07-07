@@ -1549,9 +1549,4 @@ doc.itclan.cn
 
 如果您有关于`VuePress`搭建网站或二次开发中有任何问题,欢迎提[issue](https://github.com/itclanCode/blogcode/issues),也欢迎评论下方,留言,我们一起学习讨论,加油
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

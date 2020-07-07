@@ -207,10 +207,4 @@ collapsable: true
 
 改变自己原有的思维模式,升级自己的认知,**时间对于我们每个人都是公平的,但是消逝得很快**,对于 2018,我觉得要多读书,多编码,少吹牛皮,少刷圈,多分享
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
-<ShangPic />
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

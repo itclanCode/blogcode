@@ -17,10 +17,4 @@ title: 目录
 - [jsbin 在线 coding](http://jsbin.com/)
 - [在线实用工具](https://tool.lu/)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
-<ShangPic />
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

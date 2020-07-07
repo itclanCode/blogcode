@@ -386,9 +386,5 @@ _formatTimeDetail()  // 3小时前,上面的传入的是可控制的
 还有就是怎么将时间进行格式化,转化为自己想要的格式,对于新手来说,这是一个难点,也比较灵活多变,具体需求,具体分析
 
 </div>
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

@@ -151,6 +151,4 @@ title: 关于作者
 
 愿每日不负时光不负己...
 
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

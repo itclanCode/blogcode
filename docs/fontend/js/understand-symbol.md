@@ -553,9 +553,4 @@ obj[s]("itclanCoder")
 - [MDN-Symbol](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 - [MDN-Symbol 介绍](https://developer.mozilla.org/zh-CN/docs/Glossary/Symbol)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

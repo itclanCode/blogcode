@@ -344,9 +344,4 @@ Nodejs 区块链开发,图解 HTTP,网络是怎么连接的..好的技术类书�
 
 既要仰望星空,更要脚踏实地.愿往后不负时光,不负己。2019 已落幕,2020 再出发。
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

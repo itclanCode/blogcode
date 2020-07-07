@@ -246,10 +246,4 @@ title: 认清财务知识的重要性
 
 在今天的读后感中,我们了解了对于学习财务知识的重要性,理清资产与负债的关系,怎么理解财富,认清现金流,对于有钱人的定义,不知道讲到的这些有没有触动你的小心脏呢?可以让我们很好的审视自我,合理的运用金钱的力量,多多的投资自己.从而站在更高层的角度规划自己的生活,让自己变得更好,更有趣。
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
-<ShangPic />
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

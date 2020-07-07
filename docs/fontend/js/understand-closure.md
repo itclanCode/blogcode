@@ -325,9 +325,4 @@ function　fun(){
 - 闭包会造成内存泄露？不会,有争议的话题,不必互相喷,自己理解了就可以
 - 造成内存泄露的原因:IE8 低版本浏览器下 js 引擎与 DOM 对象垃圾回收机制不同,js 对象循环计数导致内存泄露可用闭包词法作用域解决,见上,js 对象与 DOM 对象互相引用迹某些 DOM 操作导致内存泄露,常见解决方式为可手动设置解决,见上
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

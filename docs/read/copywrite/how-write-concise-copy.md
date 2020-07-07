@@ -104,9 +104,4 @@ title: 该怎么写言简意赅的文案
 
 好的文案并非是欺骗,诱导,而是能形成一种自动扩散.
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

@@ -280,9 +280,4 @@ function counter(state = 0, action) {
 
 但是 Redux 依然是主流,只要你能够应付项目中开发需求,哪个用得爽就用哪个的,Redux 虽然确实是绕了一些,有时候在各个文件之间进行来回切换,对于模块化的拆分,如果不是很清楚 Redux 的使用流程,无论是后续维护还是迭代升级,都挺痛苦的
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

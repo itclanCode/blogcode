@@ -198,9 +198,4 @@ $time_each_hour
 
 ## 常见问题
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

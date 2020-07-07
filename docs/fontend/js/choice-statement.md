@@ -508,3 +508,5 @@ while(x) {
 小节主要学习到 js 中的选择控制语句,if 语句,switch 语句,while 语句以及 do..while 语句,for 循环的对比,每个语句都有与之对应的应用场景以及解决的问题
 
 当然最后学习到了表达式中的真(true)与假(false),在我们平时做一些逻辑判断的时候,对于一些边界值的判断往往是非常重要的
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

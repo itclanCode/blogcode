@@ -13,7 +13,9 @@
  *  可以使用这个钩子来安装一些附加的 Vue 插件、注册全局组件，或者增加额外的路由钩子等
  * 具体使用见文档: https://www.vuepress.cn/zh/guide/basic-config.html#%E5%BA%94%E7%94%A8%E7%BA%A7%E5%88%AB%E7%9A%84%E9%85%8D%E7%BD%AE
  */
-import ClipboardComponent from "./components/ClipboardComponent";
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+// import Clipboard from './components/Clipboard';
 
 // 使用异步函数也是可以的
 export default ({
@@ -21,9 +23,10 @@ export default ({
   options, // 附加到根实例的一些选项
   router, // 当前应用的路由实例
   siteData, // 站点元数据
-  isServer // 当前应用配置是处于 服务端渲染 或 客户端
+  isServer, // 当前应用配置是处于 服务端渲染 或 客户端
 }) => {
   // ...做一些其他的应用级别的优化
   // 全局注入组件
-  // Vue.component("ClipboardComponent", ClipboardComponent);
+  // Vue.component('Clipboard', Clipboard);
+  Vue.use(ElementUI);
 };

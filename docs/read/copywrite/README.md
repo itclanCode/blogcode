@@ -10,9 +10,4 @@ title: 目录
 - [根据这些方法开始写正文](./write-text-these-method)
 - [该怎么写言简意赅的文案](./how-write-concise-copy)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

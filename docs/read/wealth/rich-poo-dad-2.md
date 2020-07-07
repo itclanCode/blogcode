@@ -176,9 +176,4 @@ title: 谈钱色变,穷思维,富想法
 
 但现在是真的可以直接转化为财富的,更赤裸直接点,它是可以转化为人名币的,想想罗胖子的逻辑思维,喜马拉雅的吴晓波等等大佬的
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

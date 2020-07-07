@@ -606,9 +606,4 @@ G: !0                 // true
 
 关于表达式的真假问题可以参考[Js 之选择控制语句及很重要的表达式真与假](/fontend/js/choice-statement)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

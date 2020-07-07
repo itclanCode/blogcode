@@ -863,9 +863,4 @@ try {
 实现了如何对上传的图片大小进行限制,以及解决同名图片上传覆盖的问题。
 如果小可爱们有对文本内容安全校验以及图片安全校验仍然有什么问题,可以在下方留言,一起探讨
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

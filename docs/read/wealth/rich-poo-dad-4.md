@@ -224,9 +224,4 @@ title: 关注更多的应该是你自己
 
 努力成为一个有故事的人
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

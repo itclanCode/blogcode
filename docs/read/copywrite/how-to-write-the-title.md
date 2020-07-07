@@ -99,9 +99,4 @@ sidebarDepth: 3
 
 提供了有效的解决方案,触碰到用户的痛点,并解决了痛点,引起共鸣,就是好文案.
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

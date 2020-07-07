@@ -327,9 +327,4 @@ console.log(countNum());   // 3
 
 其实也不必抓着什么执行坏境和上下文这些相对抽象的概念不放,我们只有在平时的使用当中,稍稍留意就行
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

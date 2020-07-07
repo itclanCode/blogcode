@@ -148,9 +148,4 @@ title: 陷入穷循环,打破壁垒
 
 您也可以在微信`itclanCoder`上听[读富爸爸,穷爸爸后感一](https://mp.weixin.qq.com/s/rJ8j5oNzEmTZJefjKKsh-A)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

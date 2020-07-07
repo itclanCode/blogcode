@@ -508,9 +508,4 @@ _requestCloudMsgCheck() {
 - [百度文本审核](https://ai.baidu.com/tech/textcensoring)
 - [网易云盾](https://dun.163.com/product/text-detection)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

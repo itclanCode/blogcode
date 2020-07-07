@@ -111,9 +111,4 @@ A: '1234' B: 10 C: '334' D: 334
 
 :::
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

@@ -1,20 +1,18 @@
 <template>
   <SWUpdatePopup v-slot="{ enabled, reload, message, buttonText }">
-    <div
-      v-if="enabled"
-      class="my-sw-update-popup">
-      {{ message }}<br>
+    <div v-if="enabled" class="my-sw-update-popup">
+      {{ message }}<br />
       <button @click="reload">{{ buttonText }}</button>
     </div>
   </SWUpdatePopup>
 </template>
 
 <script>
-import SWUpdatePopup from '@vuepress/plugin-pwa/lib/SWUpdatePopup.vue'
+import SWUpdatePopup from '@vuepress/plugin-pwa/lib/SWUpdatePopup.vue';
 
 export default {
-  components: { SWUpdatePopup }
-}
+  components: { SWUpdatePopup },
+};
 </script>
 
 <style>

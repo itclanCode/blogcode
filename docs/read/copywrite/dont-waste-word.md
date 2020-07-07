@@ -70,9 +70,6 @@ title: 别浪费任何一个字
 
 它的结构,以及循序渐进的写法,是值得学习的,逻辑清晰,表达有力.非一日之功~:pencil2:
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+根据这些方法开始写正文
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

@@ -156,9 +156,4 @@ collapsable: true
 
 我们终日忙碌却不知道在忙什么,当然这也是在警醒我自己,对于过去,我觉得少带些遗憾和后悔回顾过去,而要更多的要带着经验向前看.
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

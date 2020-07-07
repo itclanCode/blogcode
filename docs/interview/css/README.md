@@ -7,9 +7,4 @@ title: 目录
 - [互联网公司 CSS 笔试真题](./company-face)
 - [css2.0 面试题](./css2.0)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

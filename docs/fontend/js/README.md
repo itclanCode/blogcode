@@ -15,9 +15,4 @@ title: 目录
 
 - [用户姓名-手机号-中间位数用\*替代](./name-mobile-encrye)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

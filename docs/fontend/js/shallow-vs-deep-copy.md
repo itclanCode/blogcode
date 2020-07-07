@@ -306,9 +306,4 @@ console.log(arrs);  //  [{name: "川川"}, {age: 20}, {job: "搬砖"}]
 
 当然最后也提到了一个开发中常见的问题:往一个数组中`push`对象，前面的值总是会被最后一次的值覆盖的问题,具体解决办法是,把目标对象放在`for-in`里面就可以了的
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

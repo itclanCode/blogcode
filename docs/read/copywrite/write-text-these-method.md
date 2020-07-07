@@ -105,9 +105,4 @@ title: 根据这些方法开始写正文
 
 希望如上一些方法,能给您带来一些启发,如您有新的技巧,欢迎评论下方,补充.一起学习,探讨
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

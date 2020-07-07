@@ -16,9 +16,4 @@ title: 目录
 
 - [vuejs 中的组件以及父子组件间通信传值](./vue-component-pass-value)
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

@@ -191,9 +191,4 @@ App({
 
 也知道了怎么将其中一个坏境中的数据集合导入到另一个坏境当中去的
 
-<div align="right">
-  <ShareLink />
-</div>
-<div align="center">
-  <DaShang />
-</div>
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />
