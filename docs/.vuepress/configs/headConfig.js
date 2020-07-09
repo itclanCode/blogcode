@@ -8,7 +8,7 @@
  * @Date: 2020-06-02 07:29:20
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-07-04 21:03:54
+ * @LastEditTime: 2020-07-09 18:26:02
  * @Description:头部html中head需要引入的标签,当前文件通过module.exports导出,在config.js主入口文件中通过require导入
  */
 const baidu = require('./secretKey'); // 引入百度统计密钥ID
@@ -20,7 +20,7 @@ const headConfig = [
     {
       rel: 'keywords',
       content:
-        '随笔川迹,itclanCoder,itclanCoder的技术博客,itclan,川川,http://itclan.cn,http://doc.itclan.cn',
+        '随笔川迹,itclanCoder,itclanCoder的技术博客,itclan,川川,http://itclan.cn,https://coder.itclan.cn/',
     },
   ],
   ['meta', { name: 'Author', content: '随笔川迹' }],

@@ -1,4 +1,20 @@
 // 覆盖主题默认样式,将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级
+// 表格一些样式
+table {
+  margin:0;
+}
+
+tr {
+  &:nth-child(2n) {
+    background: none;
+  }
+}
+
+.el-table::before {
+  height: 0;
+}
+
+// 主题代码高亮显示
 .theme-default-content code {
   background-color: #F7F7F7;
   color: #42b983;

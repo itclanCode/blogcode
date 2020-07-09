@@ -52,6 +52,7 @@ p {
 </style>
 <script>
 export default {
+  name: 'Clipboard',
   props: ['html'],
 
   created() {
