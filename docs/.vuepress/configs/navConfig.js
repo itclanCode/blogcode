@@ -8,7 +8,7 @@
  * @Date: 2020-05-29
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-06-22 13:26:13
+ * @LastEditTime: 2020-07-10 18:23:13
  * @Description: 头部navs导航配置文件,入口文件原本在config.js文件中,但抽离到了themeConfig.js中,该文件通过module.exports导出,在themeConfig.js中通过require方式引入
  * 集中配置管理头部nav导航栏
  * @docs: https://vuepress.docschina.org/default-theme-config/#%E5%AF%BC%E8%88%AA%E6%A0%8F-navbar
@@ -17,12 +17,12 @@
 const navs = [
   {
     text: '首页',
-    link: '/'
+    link: '/',
   },
 
   {
     text: '最新文章',
-    link: '/latestarticle/'
+    link: '/latestarticle/',
   },
 
   {
@@ -31,16 +31,17 @@ const navs = [
       { text: 'CSS', link: '/fontend/css/' },
       { text: 'JavaScript', link: '/fontend/js/' },
       { text: '前端框架', link: '/fontend/framework/' },
-      { text: '开发工具', link: '/fontend/tools/' }
-    ]
+      { text: '前端算法', link: '/fontend/rsa/' },
+      { text: '开发工具', link: '/fontend/tools/' },
+    ],
   },
 
   {
     text: '小程序',
     items: [
       { text: '微信小程序', link: '/wechat/minprogram/' },
-      { text: '云开发', link: '/wechat/cloudev/' }
-    ]
+      { text: '云开发', link: '/wechat/cloudev/' },
+    ],
   },
 
   {
@@ -52,8 +53,8 @@ const navs = [
       { text: 'React', link: '/interview/react/' },
       { text: 'Vue', link: '/interview/vue/' },
       { text: 'Http', link: '/interview/http/' },
-      { text: 'Node', link: '/interview/Node/' }
-    ]
+      { text: 'Node', link: '/interview/Node/' },
+    ],
   },
 
   {
@@ -61,22 +62,22 @@ const navs = [
     items: [
       {
         text: '掘金',
-        link: 'https://juejin.im/user/5900e97b1b69e60058b936ed/posts'
+        link: 'https://juejin.im/user/5900e97b1b69e60058b936ed/posts',
       },
       { text: '简书', link: 'https://www.jianshu.com/u/5ee7ee7fd180' },
       {
         text: 'segmentfault',
-        link: 'https://segmentfault.com/u/suibichuanji_5900e1f5bcf67'
+        link: 'https://segmentfault.com/u/suibichuanji_5900e1f5bcf67',
       },
       {
         text: '知乎',
-        link: 'https://www.zhihu.com/people/itclan'
+        link: 'https://www.zhihu.com/people/itclan',
       },
       {
         text: '视频教程',
-        link: 'https://space.bilibili.com/267957620'
-      }
-    ]
+        link: 'https://space.bilibili.com/267957620',
+      },
+    ],
   },
 
   {
@@ -86,10 +87,10 @@ const navs = [
       { text: '文案', link: '/read/copywrite/' },
       { text: '运营', link: '/read/operate/' },
       { text: '领读', link: '/read/lingdu/' },
-      { text: '复盘', link: '/read/replay/' }
-    ]
+      { text: '复盘', link: '/read/replay/' },
+    ],
   },
-  { text: '关于我', link: '/about/' }
+  { text: '关于我', link: '/about/' },
 ];
 
 module.exports = navs;

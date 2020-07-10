@@ -112,3 +112,5 @@ console.log(queryString(baseUrllStr)); //{name: "itclanCoder",study: ["css", "js
 :::
 
 <parseurl-parseUrl :url="`https://coder.itclan.cn?name=itclanCoder&study=css&study=js&study=react`" />
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

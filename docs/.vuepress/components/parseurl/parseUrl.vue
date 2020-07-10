@@ -9,7 +9,7 @@
           <el-button type="primary" @click="queryString(inputUrl)">立即提参</el-button>
         </el-form-item>
       </el-form>
-      <div>{{result}}</div>
+      <div>检验结果:{{result}}</div>
     </div>
   </div>
 </template>
@@ -57,7 +57,6 @@ export default {
           message: "您输入的url有误,请重新输入",
           type: "error"
         });
-        this.inputUrl = "";
       }
     }
   },

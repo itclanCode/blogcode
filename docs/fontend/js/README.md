@@ -11,6 +11,10 @@ title: 目录
 - [JavaScript 中的浅拷贝 VS 深拷贝](./shallow-vs-deep-copy)
 - [Js 之选择控制语句及很重要的表达式真与假](./choice-statement)
 
+## JS 实用正则表达式
+
+- [JS 正则表达式](./js-regular-express)
+
 ### JS 实用案例技巧
 
 - [用户姓名-手机号-中间位数用\*替代](./name-mobile-encrye)
