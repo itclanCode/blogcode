@@ -155,29 +155,26 @@ title: meta标签
 
 ::: details 点击即可查看-响应式页面必知必会
 
-```
+```css
 /* 横屏 */
-@media screen and (orientation:landscape){
-
+@media screen and (orientation: landscape) {
 }
 /* 竖屏 */
-@media screen and (orientation:portrait){
-
+@media screen and (orientation: portrait) {
 }
 /* 窗口宽度<960,设计宽度=768 */
-@media screen and (max-width:959px){
+@media screen and (max-width: 959px) {
   // 写样式
 }
 /* 窗口宽度<768,设计宽度=640 */
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   // 写样式
 }
 /* 窗口宽度<640,设计宽度=480 */
-@media screen and (max-width:639px){
-
+@media screen and (max-width: 639px) {
 }
 /* 窗口宽度<480,设计宽度=320 */
-@media screen and (max-width:479px){
+@media screen and (max-width: 479px) {
   // 写样式
 }
 /* 设备像素比为2 */
@@ -186,16 +183,205 @@ title: meta标签
   // 写样式
 }
 /* windows UI 贴靠 */
-@media screen and (-ms-view-state:snapped){
-
+@media screen and (-ms-view-state: snapped) {
 }
 /* 打印 */
-@media print{
-
+@media print {
 }
-
 ```
 
 :::
+
+## 显示器媒体查询
+
+显示器媒体查询是以屏幕大小为基础划分的
+
+当浏览器的宽度为 640px 或更小时,执行花括号内的 css 样式
+
+```css
+@media screen and (max-width: 640px) {
+  /* 执行下面的css代码 */
+}
+```
+
+当浏览器的宽度为 800px 或更小时,执行花括号内的 css 样式
+
+```css
+@media screen and (max-width: 800px) {
+  /* 执行下面的css代码 */
+}
+```
+
+当浏览器的宽度为 1024px 或更小时,执行花括号内的 css 样式
+
+```css
+@media screen and (max-width: 1024px) {
+  /* 执行下面的css代码 */
+}
+```
+
+## 智能手机媒体查询
+
+- ### iPhone(2G-4S)
+
+```css
+/*Landscape Mode 当手机横屏,设备尺寸宽度等于480px或更小时执行花括号中的的css代码*/
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+  /* 执行下面的代码 */
+}
+/* Portrait Mode 当手机竖屏,设备尺寸宽度等于320px或更小时执行花括号中的的css代码*/
+@media screen and (max-device-width: 320px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
+
+- ### iPhone 4
+
+`-webkit-min-device-pixel-ratio`,表示设备上物理像素和设备独立像素，设备像素比率,当时显示屏最小的色倍为 1.5 倍的
+
+```css
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /*some rules*/
+}
+```
+
+- ### iPhone 5
+
+当页面宽度大于 320px 小于 568px 的时候执行花括号里面的 CSS
+
+```css
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /*some rules*/
+}
+```
+
+- ### iPhone 6
+
+```css
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  /*iPhone 6 Portrait 当页面大于375px小于667px时执行下面的代码,竖屏*/
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  /*iPhone 6 landscape 当页面大于375px小于667px时执行下面的代码,横屏*/
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  /*iPhone 6+ Portrait */
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  /*iPhone 6+ landscape 当页面大于414px小于736px时执行下面的代码,竖屏*/
+}
+@media only screen and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) {
+  /*iPhone 6 and iPhone 6+ portrait and landscape */
+}
+@media only screen and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) and (orientation: portrait) {
+  /*iPhone 6 and iPhone 6+ portrait*/
+}
+@media only screen and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) and (orientation: landscape) {
+  /*iPhone 6 and iPhone 6+ landscape*/
+}
+```
+
+- ### HTC Evo，BlackBerry Torch，HTC Thunderbolt，HD2
+
+```css
+@media screen and (max-device-width: 480px) {
+  /*some rules*/
+}
+```
+
+## 平板媒体查询
+
+- ### iPad / iPad 2 / iPad 3
+
+```css
+/* Landscape Mode 小于1024px,横屏*/
+@media (max-device-width: 1024px) and (orientation: landscape) {
+  /*some rules*/
+}
+/* Portrait Mode 小于768px,竖屏*/
+@media (max-device-width: 768px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
+
+- ### iPad Mini
+
+```css
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*some rules*/
+}
+```
+
+- ### Samsung Galaxy Tab 10.1 / Motorola Xoom / Lenovo Thinkpad Tablet / Sony Tablet S
+
+```css
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) {
+  /*some rules*/
+}
+/* Portrait Mode */
+@media (max-device-width: 800px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
+
+- ### HTC Flyer / BlackBerry PlayBook
+
+```css
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) {
+  /*some rules*/
+}
+/* Portrait Mode */
+@media (max-device-width: 600px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
+
+- ### HP TouchPad
+
+```css
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) {
+  /*some rules*/
+}
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
+
+- ### T-Mobile G-Slate
+
+```css
+/* Landscape Mode */
+@media (max-device-width: 1280px) and (orientation: landscape) {
+  /*some rules*/
+}
+/* Portrait Mode */
+@media (max-device-width: 768px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
+
+- ### ViewSonic ViewPad 10
+
+```css
+/* Landscape Mode */
+@media (max-device-width: 1024px) and (orientation: landscape) {
+  /*some rules*/
+}
+/* Portrait Mode */
+@media (max-device-width: 600px) and (orientation: portrait) {
+  /*some rules*/
+}
+```
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />

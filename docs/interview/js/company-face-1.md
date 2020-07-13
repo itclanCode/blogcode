@@ -90,7 +90,8 @@ console.log(5)
 ```
 
 ::: details 点击可查看详情
-答案: 1 5 3 4 2
+
+**答案**: 1 5 3 4 2
 
 解析:事件循环,任务队列的执行顺序,`new Promise`是会立即调用,接收了一个`resolve`参数,执行调用输出`console.log(1)`语句,遇到`setTimeout`,它是一个异步宏任务,会推送到任务队列中,进入挂起状态
 
@@ -102,10 +103,11 @@ console.log(5)
 ## 第 5 题-"123456789".match(/\d{3,5}?/g)的结果是什么?
 
 正则表达式: 考察`match`的用法
+
 ::: details 点击即可查看详情
 答案: ["123", "456", "789"]
 
-解析:
+**解析**:
 
 `match`方法的返回值是存放首次匹配内容的数组。如果没有找到匹配结果，返回 `null`
 
@@ -605,5 +607,9 @@ G: !0                 // true
 :::
 
 关于表达式的真假问题可以参考[Js 之选择控制语句及很重要的表达式真与假](/fontend/js/choice-statement)
+
+## 在线测试
+
+<iframe-lineTestCode />
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />

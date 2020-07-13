@@ -13,12 +13,7 @@
       <div class="public-code">
         <h4>关注公众号</h4>
         <p>一个走心,有温度的号,同千万同行一起交流学习</p>
-        <img
-          class="medium-zoom lazy"
-          loading="lazy"
-          src="/images/itclancoder-code.jpg"
-          alt
-        />
+        <img class="medium-zoom lazy" loading="lazy" src="/images/itclancoder-code.jpg" alt />
       </div>
       <div class="person-code">
         <h4>加作者微信</h4>
@@ -26,23 +21,18 @@
           扫二维码 备注
           <span>加群</span>
         </p>
-        <img
-          class="medium-zoom lazy"
-          loading="lazy"
-          src="/images/person-code.jpg"
-          alt
-        />
+        <img class="medium-zoom lazy" loading="lazy" src="/images/person-code.jpg" alt />
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'AttionFixed',
+  name: "AttionFixed",
   data() {
     return {
       onOff: true, // 默认开关,开启
-      fixContainerShow: true, // 默认显示
+      fixContainerShow: true // 默认显示
     };
   },
   methods: {
@@ -54,8 +44,8 @@ export default {
         this.fixContainerShow = true;
         this.onOff = true;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="stylus">

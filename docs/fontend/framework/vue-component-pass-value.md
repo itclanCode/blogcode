@@ -1,5 +1,6 @@
 ---
 title: vuejs 中的组件以及父子组件间通信传值
+autoGroup-3: Vue基础
 ---
 
 ## vuejs 中的组件以及父子组件间通信传值

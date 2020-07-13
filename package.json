@@ -50,9 +50,8 @@
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-clean-urls": "^1.1.1",
     "vuepress-plugin-comment": "^0.7.3",
-    "vuepress-plugin-img-lazy": "^1.0.3",
+    "vuepress-plugin-img-lazy": "^1.0.4",
     "vuepress-plugin-reading-progress": "^1.0.10",
-    "vuepress-plugin-reading-time": "^0.1.1",
     "vuepress-plugin-smooth-scroll": "^0.0.9",
     "vuepress-plugin-table-of-contents": "^1.1.6"
   }

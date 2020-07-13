@@ -11,10 +11,6 @@ title: 目录
 
 ## 在线编码平台
 
-- [codepen 平台](https://codepen.io/)
-- [codesanbox 平台](https://codesandbox.io/)
-- [jsrun 平台](http://jsrun.net/)
-- [jsbin 在线 coding](http://jsbin.com/)
-- [在线实用工具](https://tool.lu/)
+<onlinecode-CodePlatform />
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />

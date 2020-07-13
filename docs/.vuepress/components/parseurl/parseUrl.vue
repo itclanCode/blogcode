@@ -2,14 +2,14 @@
   <div>
     <div class="split-wrap">
       <el-form :inline="true" class="demo-form-inline">
-        <el-form-item label="输入URL">
+        <el-form-item label="输入携带参数的URL">
           <el-input v-model="inputUrl" clearable class="el-input"></el-input>
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="queryString(inputUrl)">立即提参</el-button>
         </el-form-item>
       </el-form>
-      <div>检验结果:{{result}}</div>
+      <div class="result-text">提参结果:&nbsp;&nbsp;{{result}}</div>
     </div>
   </div>
 </template>
@@ -30,25 +30,19 @@ export default {
   methods: {
     queryString(str) {
       // 校验URL是不是网址
-      let regUrl = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/;
-      if (regUrl.test(str)) {
-        let params = str.split("?")[1]; //截取?号后的字符串即name=itclanCoder&study=css
-        let param = params.split("&"); // 通过&符号进行分割即["name=itclanCoder", "study=css"]
-        let obj = {}; // 用一个对象存储目标值
-        for (let i = 0; i < param.length; i++) {
-          // 循环遍历截取出来的param数组
-          let paramsA = param[i].split("="); // 通过split,=继续对数组params每一项进行分割,生成数组["name", "itclanCoder"]
-          let key = paramsA[0]; // 取数组项["name", "itclanCoder"]中第0位,即name
-          let value = paramsA[1]; // 取数组项["name", "itclanCoder"]中第1位,即itclanCoder
-          if (obj[key]) {
-            // 主要是在这里做了一下处理,判断值是不是一个数组
-            obj[key] = Array.isArray(obj[key]) ? obj[key] : [obj[key]];
-            obj[key].push(value);
+      let regx = /([^&?=]+)=([^&?=]+)/g;
+      if (regx.test(str)) {
+        let obj = {};
+        str.replace(regx, (...args) => {
+          if (obj[args[1]]) {
+            obj[args[1]] = Array.isArray(obj[args[1]])
+              ? obj[args[1]]
+              : [obj[args[1]]];
+            obj[args[1]].push(args[2]);
           } else {
-            obj[key] = value;
+            obj[args[1]] = args[2];
           }
-        }
-
+        });
         this.result = obj;
         this.inputUrl = "";
       } else {
@@ -70,9 +64,13 @@ export default {
   width: 100%;
 }
 
+.result-text {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 960px) {
   .el-input {
-    width: 553px;
+    width: 480px;
   }
 }
 
