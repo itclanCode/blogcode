@@ -89,14 +89,16 @@ console.log(hightFrequency(hotWords)); //热词Js,出现了3次
 
 ::: details 点击即可查看代码
 
-```
+```js
 const hightFrequency = function(arrs) {
   var [obj, max, elm] = [{}, 1, '']; // 数组解构
-  arrs.forEach(value => {  // 对传入的数组值进行遍历
+  arrs.forEach((value) => {
+    // 对传入的数组值进行遍历
     if (obj[value]) {
       // 已经有值了 就把值+1
       obj[value]++;
-      if (obj[value] > max) { // 判断重复次数有没有超过当前最高的
+      if (obj[value] > max) {
+        // 判断重复次数有没有超过当前最高的
         max = obj[value]; // 重复多少次
         elm = value; // el为当前元素
       }
@@ -123,3 +125,5 @@ console.log(hightFrequency(hotWords)); // 关键词Js,出现了3次
 ```
 
 :::
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

@@ -12,6 +12,7 @@ title: 目录
 ### React 进阶
 
 - [React 进阶(1)-理解 Redux](./advance-understand-redux)
+- [React 进阶(2)-上手实践 Redux-如何获取 store 的数据](./advance-getstore-data)
 
 ### Vue 基础
 

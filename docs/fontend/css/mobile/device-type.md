@@ -11,6 +11,7 @@ title: 设备类型判断-移动端/PC端
 ## 移动端/pc 端判断
 
 **应用场景**:根据屏幕的机型尺寸,页面响应式变化,布局,以及控制某些节点操作,在`JS`中进行控制
+::: details 点击即可查看核心代码
 
 ```js
 const isMobile = function() {
@@ -28,7 +29,9 @@ if (isPhone) {
 }
 ```
 
+:::
 当然你也可以这样
+::: details 点击即可查看核心代码
 
 ```js
 const isMobile = /(phone|pad|pod|iPhone|iPod|ios|IEMobile|Opera Mini|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(
@@ -42,3 +45,5 @@ if (isMobile) {
   // PC端
 }
 ```
+
+:::

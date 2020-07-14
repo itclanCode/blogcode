@@ -197,6 +197,7 @@ title: meta标签
 显示器媒体查询是以屏幕大小为基础划分的
 
 当浏览器的宽度为 640px 或更小时,执行花括号内的 css 样式
+::: details 点击即可查看核心代码
 
 ```css
 @media screen and (max-width: 640px) {
@@ -204,7 +205,10 @@ title: meta标签
 }
 ```
 
+:::
+
 当浏览器的宽度为 800px 或更小时,执行花括号内的 css 样式
+::: details 点击即可查看核心代码
 
 ```css
 @media screen and (max-width: 800px) {
@@ -212,7 +216,9 @@ title: meta标签
 }
 ```
 
+:::
 当浏览器的宽度为 1024px 或更小时,执行花括号内的 css 样式
+::: details 点击即可查看核心代码
 
 ```css
 @media screen and (max-width: 1024px) {
@@ -220,9 +226,13 @@ title: meta标签
 }
 ```
 
+:::
+
 ## 智能手机媒体查询
 
 - ### iPhone(2G-4S)
+
+::: details 点击即可查看核心代码
 
 ```css
 /*Landscape Mode 当手机横屏,设备尺寸宽度等于480px或更小时执行花括号中的的css代码*/
@@ -235,9 +245,13 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### iPhone 4
 
 `-webkit-min-device-pixel-ratio`,表示设备上物理像素和设备独立像素，设备像素比率,当时显示屏最小的色倍为 1.5 倍的
+
+::: details 点击即可查看核心代码
 
 ```css
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -246,9 +260,13 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### iPhone 5
 
 当页面宽度大于 320px 小于 568px 的时候执行花括号里面的 CSS
+
+::: details 点击即可查看核心代码
 
 ```css
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
@@ -256,7 +274,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### iPhone 6
+
+::: details 点击即可查看核心代码
 
 ```css
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
@@ -288,7 +310,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### HTC Evo，BlackBerry Torch，HTC Thunderbolt，HD2
+
+::: details 点击即可查看核心代码
 
 ```css
 @media screen and (max-device-width: 480px) {
@@ -296,9 +322,13 @@ title: meta标签
 }
 ```
 
+:::
+
 ## 平板媒体查询
 
 - ### iPad / iPad 2 / iPad 3
+
+::: details 点击即可查看核心代码
 
 ```css
 /* Landscape Mode 小于1024px,横屏*/
@@ -311,7 +341,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### iPad Mini
+
+::: details 点击即可查看核心代码
 
 ```css
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -319,7 +353,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### Samsung Galaxy Tab 10.1 / Motorola Xoom / Lenovo Thinkpad Tablet / Sony Tablet S
+
+::: details 点击即可查看核心代码
 
 ```css
 /* Landscape Mode */
@@ -332,7 +370,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### HTC Flyer / BlackBerry PlayBook
+
+::: details 点击即可查看核心代码
 
 ```css
 /* Landscape Mode */
@@ -345,7 +387,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### HP TouchPad
+
+::: details 点击即可查看核心代码
 
 ```css
 /* Landscape Mode */
@@ -358,7 +404,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### T-Mobile G-Slate
+
+::: details 点击即可查看核心代码
 
 ```css
 /* Landscape Mode */
@@ -371,7 +421,11 @@ title: meta标签
 }
 ```
 
+:::
+
 - ### ViewSonic ViewPad 10
+
+::: details 点击即可查看核心代码
 
 ```css
 /* Landscape Mode */
@@ -383,5 +437,7 @@ title: meta标签
   /*some rules*/
 }
 ```
+
+:::
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />

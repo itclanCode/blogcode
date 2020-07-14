@@ -12,3 +12,4 @@ title:目录
 
 - [找出数组中重复次数最多的元素](./findMostReEl)
 - [数组的排序](./arraySort)
+- [数组的去重](./array-unique)

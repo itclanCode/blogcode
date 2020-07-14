@@ -258,7 +258,110 @@ async function start() {
 
 ## 第 9 题-请用 JS 实现数组的去重
 
-## 第 10 题-请写出前端浏览器本地存储的方法,并说明区别
+- **方法 1: indexOf 方法去重**
+
+数组的`indexOf()`方法可返回某个指定元素在数组中首次出现的未知,该方法先定义一个空数组`res`,然后调用`indexOf`方法对原来的数组进行遍历判断,如果元素不在`res`中,则`push`进`res`中,最后将`res`返回即可获得去重的数组
+::: details 点击即可查看 indexOf 方法去重
+
+```js
+function unique(arr) {
+  // 判断是不是数组
+  if (!Array.isArray(arr)) {
+    console.log('type error!');
+    return;
+  }
+  let res = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (res.indexOf(arr[i]) === -1) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+
+var arr = [1, 1, 2, 3, 2, 4, 5, 7];
+console.log(unique(arr)); // 1,2,3,4,5,7
+```
+
+:::
+
+- **方法 2-利用如果索引不是第一个索引说明是重复值**
+
+::: details 点击即可查看
+
+```js
+function unique(arr) {
+  var res = arr.filter(function(item, index, array) {
+    return array.indexOf(item) === index;
+  });
+
+  return res;
+}
+var arr = [1, 1, 2, 3, 2, 4, 5, 7];
+console.log(unique(arr)); // 1,2,3,4,5,7
+```
+
+:::
+
+具体更多详细数组去重可参考[JS 中的数组去重](/fontend/rsa/array-unique)
+
+## 第 10 题-将一个字符串转化成驼峰的方法
+
+- ### 方法 1-常规方法
+
+::: details 点击即可查看核心实现代码
+
+```js
+/*
+ *
+ * 将一个字符串转换为驼峰命名
+ *
+ * @function toHumpName
+ * @param {String} str
+ * @return {Array}
+ *   1.功能函数的编写，函数的调用，传参
+ *   2.js中的内置对象,切割:split(),切割完后得用一个变量给存储起来
+ *   3.for循环的遍历,遍历查找
+ *   4.找到对应的字符串,第0个转化为大写,转化为大写的函数,toUpperCase()在加上字符串的拼接，在进行截取(substring())
+ *   5. 把字符串给拼接起来(join())
+ *
+ */
+var str = 'border-top-color';
+console.log(str); // border-top-color
+function toHumpName(str) {
+  var arr = str.split('-'); // spilt切割,border,top,color
+  console.log(arr); // [border,top,color]
+  for (var i = 1; i < arr.length; i++) {
+    // 循环遍历数组
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substring(1);
+    console.log(arr[i]); // [border,Top,Color]
+  }
+  return arr.join(''); // 字符串给加起来
+}
+console.log(toHumpName(str)); // borderTopColor
+```
+
+:::
+
+- ### 利用正则表达式将一字符串转换为驼峰式命名
+
+::: details 点击即可查看用正则实现驼峰式命名
+
+```js
+var str = 'border-top-color';
+function toHumpName(str) {
+  var re = /-(\w)/g; // \w匹配所有的字母和数字字符以及下划线_
+  return str.replace(re, function($0, $1) {
+    // 第一个参数re表示正则,第二个回调函数,对该字符串处理方式,圆括号内的形参数表示正则表达式的子选项
+    return $1.toUpperCase(); // 转大写
+  });
+}
+console.log(toHumpName(str)); // borderTopColor
+```
+
+:::
+
+## 第 11 题-请写出前端浏览器本地存储的方法,并说明区别
 
 ## 在线测试
 

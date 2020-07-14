@@ -13,7 +13,8 @@ title: 目录
 
 ## JS 实用正则表达式
 
-- [JS 正则表达式](./js-regular-express)
+- [常见实用 JS 正则表达式](./js-regular-express)
+- [js 中的正则表达式(1)](./reg-learn-1)
 
 ### JS 实用案例技巧
 
