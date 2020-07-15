@@ -12,10 +12,9 @@ title:目录
 ## CSS 常见实例技巧
 
 - [文字超出末尾显示省略号](./ellipsis)
+- [文字水平及垂直方向显示排布](./text-display-layout)
 
 ## 移动端相关
 
 - [meta 标签](./meta)
 - [设备类型判断-移动端/PC 端](./mobile/device-type)
-
-<RightBar />

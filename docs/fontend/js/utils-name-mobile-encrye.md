@@ -1,6 +1,5 @@
 ---
 title: 用户名-手机号加密特殊处理
-autoPrev: understand-closure
 ---
 
 # 用户名-手机号加密特殊处理
@@ -19,24 +18,26 @@ autoPrev: understand-closure
 
 ::: details 点击即可查看
 
-```
+```js
 function formatName(name) {
-    let newStr;
-    if (name.length === 2) {
-    newStr = name.substr(0, 1) + '*';   // 通过substr截取字符串从第0位开始截取,截取1个
-    } else if (name.length > 2) {       // 当名字大于2位时
-      let char = '';
-      for (let i = 0, len = name.length - 2; i < len; i++) {  // 循环遍历字符串
-        char += '*';
-      }
-      newStr = name.substr(0, 1) + char + name.substr(-1, 1);
-    } else {
-      newStr = name;
+  let newStr;
+  if (name.length === 2) {
+    newStr = name.substr(0, 1) + '*'; // 通过substr截取字符串从第0位开始截取,截取1个
+  } else if (name.length > 2) {
+    // 当名字大于2位时
+    let char = '';
+    for (let i = 0, len = name.length - 2; i < len; i++) {
+      // 循环遍历字符串
+      char += '*';
     }
+    newStr = name.substr(0, 1) + char + name.substr(-1, 1);
+  } else {
+    newStr = name;
+  }
 
-    return newStr;
- }
- console.log(formatName("王海龙"))
+  return newStr;
+}
+console.log(formatName('王海龙'));
 ```
 
 :::
@@ -47,15 +48,18 @@ function formatName(name) {
 ```
 
 - **方法 2**: 使用正则表达式，只保留姓后面都变为\*
-  ::: details 点击即可查看详情
-  ```
-  var str = "王小明"
-  var reg = /(?<=.)./g;
-  result = str.replace(reg, '*');
-  console.log(result);
-  ```
-  :::
-  输出
+
+::: details 点击即可查看详情
+
+```js
+var str = '王小明';
+var reg = /(?<=.)./g;
+result = str.replace(reg, '*');
+console.log(result);
+```
+
+:::
+输出
 
 ```
 王**
@@ -69,16 +73,16 @@ function formatName(name) {
 
 ::: details 点击即可查看详情
 
-```
-var phone = "13701134148"
-var resultPhone = phone.replace(/^(\d{3})\d{4}(\d+)/,"$1****$2")
+```js
+var phone = '13701134148';
+var resultPhone = phone.replace(/^(\d{3})\d{4}(\d+)/, '$1****$2');
 console.log(resultPhone);
 ```
 
 :::
 输出
 
-```
+```js
 137****4148
 ```
 
@@ -86,12 +90,12 @@ console.log(resultPhone);
 
 ::: details 点击即可查看详情
 
-```
-var phone = "13701134148"
+```js
+var phone = '13701134148';
 var mphone = phone.substr(0, 3) + '****' + phone.substr(7);
 console.log(mphone);
 // 如果用 Es6 模板字符串的话,可以不用+号做拼接
-var phone = "13701134148"
+var phone = '13701134148';
 var mphone = `${phone.substr(0, 3)}****${phone.substr(7)}`;
 ```
 
@@ -100,9 +104,10 @@ var mphone = `${phone.substr(0, 3)}****${phone.substr(7)}`;
 <div align="center">
    <img class="medium-zoom lazy"  loading="lazy"  src="../images/js-article-imgs/name-mobile-encrye/usersensitive.png" alt="移动手机" />
 </div>
-具体案例体验,可如下小程序码在我的页面体验
+
 <div align="center">
-   <img class="medium-zoom lazy"  loading="lazy"  src="../../about/images/jiahaoruisen-min-code.jpg" alt="移动手机" />
+   <p>具体案例体验,可如下小程序码在我的页面体验</p>
+   <img class="medium-zoom lazy" width="200" height="200" loading="lazy"  src="../../about/images/jiahaoruisen-min-code.jpg" alt="移动手机" />
 </div>
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />

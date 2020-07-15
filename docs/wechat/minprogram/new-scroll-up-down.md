@@ -35,21 +35,28 @@ autoPrev: README
 
 如下是`wxml`
 
-```
+```html
 <view class="order-list-wrap">
   <view class="order-title"><text>预约用户</text></view>
-	<swiper class="swiper" vertical="true" autoplay="true" circular="true" interval="3000" display-multiple-items='4'>
-	  <block wx:for="{{ orderLists }}" wx:key="*this">
-				<swiper-item>
-						<view class="swiper-item-box">
-								<view class="username">{{item.username}}</view>
-								<view>{{item.phonenumber}}</view>
-								<view>已预约</view>
-								<view>{{item.createtime}}</view>
-						</view>
-				</swiper-item>
-	  </block>
-	</swiper>
+  <swiper
+    class="swiper"
+    vertical="true"
+    autoplay="true"
+    circular="true"
+    interval="3000"
+    display-multiple-items="4"
+  >
+    <block wx:for="{{ orderLists }}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item-box">
+          <view class="username">{{item.username}}</view>
+          <view>{{item.phonenumber}}</view>
+          <view>已预约</view>
+          <view>{{item.createtime}}</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
 </view>
 ```
 
@@ -63,14 +70,13 @@ autoPrev: README
 如下是 wxss
 ::: details 点击即可查看详情
 
-```
+```css
 .order-list-wrap {
   padding: 10rpx 0 10rpx 0;
   font-size: 28rpx;
-  background:#23d5ab;
+  background: #23d5ab;
   margin: 0 20rpx 20rpx 20rpx;
   color: #fff;
-
 }
 
 .order-title {
@@ -80,13 +86,13 @@ autoPrev: README
 
 .swiper {
   height: 320rpx;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .swiper-item-box {
-   display: flex;
-   justify-content: space-around;
-   border-bottom: 1px dashed #ede1d4;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px dashed #ede1d4;
 }
 
 .swiper-item-box view {
@@ -96,21 +102,39 @@ autoPrev: README
 .swiper-item-box .username {
   width: 90rpx;
 }
-
 ```
 
 :::
 如下预约列表的数据格式
 
-```
+```js
 orderLists: [
-      {phonenumber:15210927743,username:"杨海龙",createtime:"2020-06-17T07:54:41.146Z"},
-      {createtime:"2020-06-18T13:35:02.944Z",phonenumber:13141467811,username:"洋洋"},
-      {createtime:"2020-06-18T14:18:51.307Z",phonenumber:"15210927639",username:"郑霞"},
-      {phonenumber:13801135148,username:"王海勇",createtime:"2020-06-17T07:53:34.584Z"},
-      {createtime:"2020-06-17T09:28:47.062Z",phonenumber:15810923375,username:"向生明"}
-    ]
-
+  {
+    phonenumber: 15210927743,
+    username: '杨海龙',
+    createtime: '2020-06-17T07:54:41.146Z',
+  },
+  {
+    createtime: '2020-06-18T13:35:02.944Z',
+    phonenumber: 13141467811,
+    username: '洋洋',
+  },
+  {
+    createtime: '2020-06-18T14:18:51.307Z',
+    phonenumber: '15210927639',
+    username: '郑霞',
+  },
+  {
+    phonenumber: 13801135148,
+    username: '王海勇',
+    createtime: '2020-06-17T07:53:34.584Z',
+  },
+  {
+    createtime: '2020-06-17T09:28:47.062Z',
+    phonenumber: 15810923375,
+    username: '向生明',
+  },
+];
 ```
 
 如果仅仅是这样,在页面中,姓名和电话号码会完全被显示,但是往往我们需要对姓名和电话进行特殊处理的
@@ -121,15 +145,17 @@ orderLists: [
 
 ::: details 点击即可查看详情
 
-```
+```js
 // 格式化名字,只留姓,名字中间用*替代
 function _formatName(name) {
   let newStr;
   if (name.length === 2) {
-  newStr = name.substr(0, 1) + '*';   // 通过substr截取字符串从第0位开始截取,截取1个
-  } else if (name.length > 2) {       // 当名字大于2位时
+    newStr = name.substr(0, 1) + '*'; // 通过substr截取字符串从第0位开始截取,截取1个
+  } else if (name.length > 2) {
+    // 当名字大于2位时
     let char = '';
-    for (let i = 0, len = name.length - 2; i < len; i++) {  // 循环遍历字符串
+    for (let i = 0, len = name.length - 2; i < len; i++) {
+      // 循环遍历字符串
       char += '*';
     }
     newStr = name.substr(0, 1) + char + name.substr(-1, 1);
@@ -139,7 +165,7 @@ function _formatName(name) {
   return newStr;
 }
 
-console.log(_formatName("李海涛"))  // 输出李*涛
+console.log(_formatName('李海涛')); // 输出李*涛
 ```
 
 :::
@@ -148,13 +174,12 @@ console.log(_formatName("李海涛"))  // 输出李*涛
 
 ::: details 点击即可查看详情
 
-```
+```js
 // 格式化电话号码
 function _formatPhone(phone) {
-  return `${phone.substr(0, 3)}****${phone.substr(7)}`
+  return `${phone.substr(0, 3)}****${phone.substr(7)}`;
 }
-console.log(_formatPhone(15210927743)) // 输出:15****7743
-
+console.log(_formatPhone(15210927743)); // 输出:15****7743
 ```
 
 :::
@@ -163,30 +188,33 @@ console.log(_formatPhone(15210927743)) // 输出:15****7743
 
 ::: details 点击即可查看详情
 
-```
+```js
 function _formatTime(date) {
-  let fmt = 'yyyy-MM-dd hh:mm:ss'
+  let fmt = 'yyyy-MM-dd hh:mm:ss';
   const o = {
     'M+': date.getMonth() + 1, // 月份
     'd+': date.getDate(), // 日
     'h+': date.getHours(), // 小时
     'm+': date.getMinutes(), // 分钟
     's+': date.getSeconds(), // 秒
-  }
+  };
 
   if (/(y+)/.test(fmt)) {
-    fmt = fmt.replace(RegExp.$1, date.getFullYear())
+    fmt = fmt.replace(RegExp.$1, date.getFullYear());
   }
   for (let k in o) {
     if (new RegExp('(' + k + ')').test(fmt)) {
-      fmt = fmt.replace(RegExp.$1, o[k].toString().length == 1 ? '0' + o[k] : o[k])
+      fmt = fmt.replace(
+        RegExp.$1,
+        o[k].toString().length == 1 ? '0' + o[k] : o[k]
+      );
     }
   }
   // console.log(fmt)
-  return fmt
+  return fmt;
 }
 
-console.log(_formatTime(new Date("2020-06-17T07:54:41.146Z"))); // 2020-06-18 21:35:02
+console.log(_formatTime(new Date('2020-06-17T07:54:41.146Z'))); // 2020-06-18 21:35:02
 ```
 
 :::
@@ -195,7 +223,7 @@ console.log(_formatTime(new Date("2020-06-17T07:54:41.146Z"))); // 2020-06-18 21
 在实际开发中,这些数据是在小程序端请求云数据库,然后渲染到页面当中去的
 ::: details 完整示例代码
 
-```
+```js
 // pages/profile/profile.js
 const db = wx.cloud.database(); // 初始化数据库
 Page({
@@ -299,74 +327,68 @@ _formatTime(date) {
 如下示例代码所示
 ::: details 点击即可查看详情
 
-```
+```js
 function _formatTimeDetail() {
-    var pretime = "2020-06-20 14:38:16";  // 将整个时间格式转换为几分钟前,几小时前,几个月之前等
+  var pretime = '2020-06-20 14:38:16'; // 将整个时间格式转换为几分钟前,几小时前,几个月之前等
 
-		var minute = 1000 * 60;
-		var hour = minute * 60;
-		var day = hour * 24;
-		var halfamonth = day * 15;
-		var month = day * 30;
+  var minute = 1000 * 60;
+  var hour = minute * 60;
+  var day = hour * 24;
+  var halfamonth = day * 15;
+  var month = day * 30;
 
-		getDate(pretime);
+  getDate(pretime);
 
-		//然后再每隔一分钟更新一次时间
-		setInterval(function() {
-		    getDate(pretime);
-		}, 60000);
+  //然后再每隔一分钟更新一次时间
+  setInterval(function() {
+    getDate(pretime);
+  }, 60000);
 
-		function getDate(dateTimeStamp){
+  function getDate(dateTimeStamp) {
+    if (dateTimeStamp == undefined) {
+      return false;
+    } else {
+      dateTimeStamp = dateTimeStamp.replace(/\-/g, '/');
+      var sTime = new Date(dateTimeStamp).getTime(); //把时间pretime的值转为时间戳
+      var now = new Date().getTime(); //获取当前时间的时间戳
+      var diffValue = now - sTime;
 
-			if(dateTimeStamp==undefined){
-				return false;
-			}else{
-				dateTimeStamp = dateTimeStamp.replace(/\-/g, "/");
-				var sTime = new Date(dateTimeStamp).getTime();    //把时间pretime的值转为时间戳
-				var now = new Date().getTime();                    //获取当前时间的时间戳
-				var diffValue = now - sTime;
+      if (diffValue < 0) {
+        return false;
+      }
 
-				if(diffValue < 0){
-					return false;
-				}
+      var monthC = diffValue / month;
+      var weekC = diffValue / (7 * day);
+      var dayC = diffValue / day;
+      var hourC = diffValue / hour;
+      var minC = diffValue / minute;
 
-				var monthC =diffValue/month;
-				var weekC =diffValue/(7*day);
-				var dayC =diffValue/day;
-				var hourC =diffValue/hour;
-				var minC =diffValue/minute;
+      if (monthC >= 1) {
+        console.log(parseInt(monthC) + '个月前');
+        return `${parseInt(monthC)}个月前`;
+      } else if (weekC >= 1) {
+        console.log(parseInt(weekC) + '周前');
+        return `${parseInt(weekC)}周前`;
+      } else if (dayC >= 1) {
+        console.log(parseInt(dayC) + '天前');
+        return `${parseInt(weekC)}天前`;
+      } else if (hourC >= 1) {
+        console.log(parseInt(hourC) + '个小时前');
+        return `${parseInt(hourC)}个小时前`;
+      } else if (minC >= 1) {
+        console.log(parseInt(minC) + '分钟前');
+        return `${parseInt(minC)}分钟前`;
+      } else {
+        console.log('刚刚');
+        return '刚刚';
+      }
+    }
+  }
 
-				if(monthC>=1){
-					console.log(parseInt(monthC) + "个月前");
-          return `${parseInt(monthC)}个月前`
-				}
-				else if(weekC>=1){
-					console.log(parseInt(weekC) + "周前")
-          return `${parseInt(weekC)}周前`
-				}
-				else if(dayC>=1){
-					console.log(parseInt(dayC) +"天前")
-          return `${parseInt(weekC)}天前`
-				}
-				else if(hourC>=1){
-					console.log(parseInt(hourC) +"个小时前")
-          return `${parseInt(hourC)}个小时前`
-				}
-				else if(minC>=1){
-					console.log(parseInt(minC) +"分钟前")
-          return `${parseInt(minC)}分钟前`
-				}else{
-					console.log("刚刚")
-          return "刚刚"
-				}
-			}
-
-		}
-
-   return getDate(pretime)
+  return getDate(pretime);
 }
 
-_formatTimeDetail()  // 3小时前,上面的传入的是可控制的
+_formatTimeDetail(); // 3小时前,上面的传入的是可控制的
 ```
 
 :::
@@ -375,7 +397,7 @@ _formatTimeDetail()  // 3小时前,上面的传入的是可控制的
 
 前面那个`_formatTime`函数主要是将服务器端的时间转化为类似这种`2020-06-20 14:38:16`格式,而后面的`_formatTimeDetail`这个函数是将`年-月-日 时 分 秒`这种格式转化为多少分钟前,几天前,几周前等这种格式
 
-关于用户名与手机号的处理方式,也可参考[用户名-手机号加密特殊处理](/fontend/js/name-mobile-encrye)
+关于用户名与手机号的处理方式,也可参考[用户名-手机号加密特殊处理](/fontend/js/utils-name-mobile-encrye)
 
 ## 结语
 

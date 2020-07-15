@@ -1529,6 +1529,7 @@ doc.itclan.cn
   * 如有不清楚的,可回滚到上方[登录域名管理后台,仔细看图解](#登录域名管理后台)
 
 * [百度统计](https://tongji.baidu.com/)
+* [百度站点 sitemapt 添加](https://ziyuan.baidu.com/)
 * [逼格徽章在线生成地止](https://shields.io/)
 
 :::

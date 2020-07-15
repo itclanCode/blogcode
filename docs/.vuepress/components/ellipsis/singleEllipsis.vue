@@ -8,7 +8,7 @@
  * @Date: 2020-07-06 14:44:07
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2020-07-09 20:54:18
+ * @LastEditTime: 2020-07-15 17:22:16
  * @Description: 标签属性操作
 -->
 <template>
@@ -75,7 +75,6 @@
 <script>
 import Prism from "prismjs";
 import { singleAttrData, tableColums } from "./ellipsisdesc";
-// import { isMobile } from './ismobile'; // 添加判断手机设备,移动端还是pc端
 export default {
   name: "singleEllipsis",
   data() {

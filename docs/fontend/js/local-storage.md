@@ -2,6 +2,8 @@
 title: 本地存储
 ---
 
+## 本地存储
+
 ## 快捷导航
 
 <TOC />
@@ -31,7 +33,8 @@ function setCookie(key, value, expiredays) {
 :::
 
 - ### 删除 cookie
-  ::: details 点击即可查看代码
+
+::: details 点击即可查看代码
 
 ```js
 function delCookie(name) {

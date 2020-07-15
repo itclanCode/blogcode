@@ -1,5 +1,6 @@
 ---
-title: Js正则表达式
+title: 常见实用 JS 正则表达式
+autoGroup-1: 正则表达式
 ---
 
 ## 快速导航
@@ -95,7 +96,7 @@ checkPhone(testPhone); // 13801134168
 
 ::: details 点击即可查看,不考虑 16,19
 
-```
+```js
 var regPhone = /^1[3|4|5|7|8][0-9]{9}$/; //验证规则,总共是11位
 
 var phoneNum = '13801134168'; //手机号码
@@ -104,9 +105,10 @@ var flag = regPhone.test(phoneNum); //true
 ```
 
 如果嫌验证麻烦,还可以不验证第二位规则
-::: details 忽略手机号第 2 位数的限制
 
-```
+忽略手机号第 2 位数的限制
+
+```js
 var regPhone = /^1[0-9]{10}$/;
 ```
 
@@ -131,6 +133,26 @@ function checkTel(str) {
 
 let tel = `010-60440426`;
 console.log(checkTel(tel)); // 010-60440426
+```
+
+:::
+
+## 校验邮箱的正确性
+
+校验用户输入邮箱的正确性
+
+<regular-regExpress :label="`输入邮箱`" :type="`email`" :input="`1046678249@qq.com`" :btntext="`立即校验`" />
+
+::: details 点击即可查看正则校验邮箱代码
+
+```js
+//let emailReg = /^\w+((.\w+)|(-\w+))@[A-Za-z0-9]+((.|-)[A-Za-z0-9]+).[A-Za-z0-9]+$/; // 邮箱的正则
+let emailReg = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/g; // 邮箱的正则
+if (!emailReg.test(str)) {
+  // 邮箱有误
+} else {
+  // 邮箱匹配正确
+}
 ```
 
 :::

@@ -1,6 +1,9 @@
 ---
-title: 正则表达式1
+title: js 中的正则表达式(1)
+autoGroup-1: 正则表达式
 ---
+
+## js 中的正则表达式(1)
 
 ## 快速导航
 
@@ -609,3 +612,5 @@ console.log(pattern.exec(str)); // 因为第三个字符是c不是d,与所要的
 ## 总结
 
 正则是一个非常强大的文本匹配工具,用特殊的字符正着去匹配文本还好(其实也不简单),往往需要逆向的去折腾它,就是不在你考虑范围条件下也要考虑进去从而剔除一些程序上的漏洞,是比较难的
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

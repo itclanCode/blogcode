@@ -62,7 +62,6 @@
 <script>
 import Prism from "prismjs";
 import { multiAttrData, tableColums } from "./ellipsisdesc";
-// import { isMobile } from './ismobile'; // 添加判断手机设备,移动端还是pc端
 
 export default {
   name: "multiEllipsis",

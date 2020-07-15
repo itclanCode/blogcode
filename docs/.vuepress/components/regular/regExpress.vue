@@ -8,7 +8,7 @@
         <el-button type="primary" @click="handleElBtn(inputVal,inputType)">{{btnText}}</el-button>
       </el-form-item>
     </el-form>
-    <div>校验结果:{{result}}</div>
+    <div>校验结果:&nbsp;&nbsp;{{result}}</div>
   </div>
 </template>
 
@@ -51,6 +51,19 @@ export default {
       }
     },
 
+    // 检测邮箱
+    checkEmail(str) {
+      //let emailReg = /^\w+((.\w+)|(-\w+))@[A-Za-z0-9]+((.|-)[A-Za-z0-9]+).[A-Za-z0-9]+$/; // 邮箱的正则
+      let emailReg = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/g;
+      if (!emailReg.test(str)) {
+        this.errMessage("您输入的邮箱有误,请重新输入");
+        return false;
+      } else {
+        this.result = str;
+        this.inputVal = "";
+      }
+    },
+
     errMessage(errtext) {
       this.$message({
         showClose: true,
@@ -68,6 +81,9 @@ export default {
           // 电话号码
           this.checkPhone(str);
           break;
+        case "email":
+          // 邮箱
+          this.checkEmail(str);
         default:
           break;
       }
@@ -75,7 +91,7 @@ export default {
   },
 
   mounted() {
-    console.log(this);
+    // console.log(this);
   }
 };
 </script>
