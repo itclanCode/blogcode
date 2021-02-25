@@ -13,6 +13,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+- [如何使用免费图床](../fontend/tools/how-use-free-drawbed)
 - [本地部署 easy-mock](../fontend/tools/local-deploy-easy-mock)
 - [昔日无痕,沧桑有迹-魔幻般的 2020](../read/replay/look-back-2020)
 - [如何将网站代码部署到 netlify 上免费托管](../fontend/tools/netlify-hosting)

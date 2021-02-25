@@ -37,6 +37,18 @@ friendLinkers = [
     url: 'https://lxchuan12.gitee.io',
     desc: '《学习源码整体架构系列》作者',
   },
+
+  {
+    name: '杜老师说',
+    url: 'https://dusays.com',
+    desc: '主要分享一些运维技术、经验',
+  },
+
+  {
+    name: '风过不留痕',
+    url: 'https://alexhchu.com/',
+    desc: '望尽天涯路',
+  },
 ];
 function getFriendsLink() {
   return friendLinkers;
