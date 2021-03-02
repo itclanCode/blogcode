@@ -1,0 +1,23 @@
+{
+  "name": "itclanCoder",
+  "short_name": "itclanCoder",
+  "version": "1.0.0",
+  "description": "http://itclan.cn,itclanCoder,随笔川迹博主, 前端开发,IT技术,网络技术,斜杠青年,itclanCoder的博客,川川的博客,https://coder.itclan.cn/",
+  "manifest_version": 2,
+  "icons": [
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c"
+}

@@ -119,6 +119,7 @@ title: 关于作者
 - [北京 itclan 爱客来科技网络](https://itclan.cn)
 - [站集网-一个收录对你有用的网站](https://zhanji.itclan.cn)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
+- [免费图床](https://img.itclan.cn)
 
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />
