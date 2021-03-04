@@ -11,6 +11,7 @@ title:目录
 练习算法,确实会掉不少头发,但很锻炼逻辑
 
 - [实现反转一个 3 位整数](./reverse-three-init)
+- [判断一个字符串是否是回文字符](./is-palindrome-character)
 - [数组的排序](./arraySort)
 - [数组的去重](./array-unique)
 - [找出数组中重复次数最多的元素](./array-findMostReEl)

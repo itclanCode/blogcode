@@ -2,6 +2,8 @@
 title: 实现反转一个 3 位整数
 ---
 
+## 实现反转一个 3 位整数
+
 ## 快速导航
 
 <TOC />
@@ -43,6 +45,11 @@ getTranArrs(num); // 321
 ::: tab 方法 2-取余,逐个颠倒拼接 lazy
 
 ```js
+/*
+ 取余: 一个表达式的值除以另一个表达式的值,返回余数
+ 公式: result = numberA % numberB
+       若numberA < numberB则返回最终的余数为numberA
+*/
 function getSurplus(number) {
   var result =
     parseInt(number % 10) * 100 +
