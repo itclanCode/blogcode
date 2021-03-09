@@ -16,6 +16,75 @@ title: 实现反转一个 3 位整数
 
 123 反转之后就是 321,800 反转之后就是 8
 
+<template>
+     <div>
+		    <el-col :span="10">
+					<div class="grid-content bg-purple-dark">
+							<el-input
+								placeholder="请输入数字"
+								v-model="input"
+								@input="handleInput"
+								@change="handleInputChange"
+    						clearable>
+    						</el-input>
+    				</div>
+    			</el-col>
+    	    <el-col :span="10">
+    			   <div class="grid-content bg-purple-dark">
+    				 		 <el-button :disabled="isDisabled" @click="handleReverse(input)" type="danger">反转</el-button>
+    				 </div>
+    			</el-col>
+					<br /><br /><br />
+					<div>结果:{{result}}</div>
+    	 </div>
+
+</template>
+
+<script>
+  export default {
+		data() {
+			return {
+				input: "",
+				isDisabled: true,
+				result: ""
+			}
+		},
+
+		methods: {
+				handleReverse(input) {
+					 var result = [...input.toString()].reverse().join("")
+					 this.result = parseInt(result);
+					 return this.result;
+				},
+
+				handleInput(event) {
+					var regInputVal = /^\d/g;
+					if(regInputVal.test(this.input)) {
+						this.isDisabled = false
+					}else {
+						this.$message({
+							message: '请输入数字类型',
+							type: 'warning'
+						});
+						this.input = "";
+					}
+				},
+
+				handleInputChange() {
+						if(!this.input) {
+						this.isDisabled = true
+						this.result = "";
+					}
+				}
+		}
+	}
+</script>
+<style>
+
+</style>
+
+<br />
+
 ## 题目分析
 
 ⒈ 遇到 008 这种,需要转为 9,去 0 操作

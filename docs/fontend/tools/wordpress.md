@@ -10,3 +10,15 @@ title: wordpress 性能优化
 - [Imagify Image Optimizer]()
 
 * [tinypng](https://tinypng.com/)
+
+## woocommerce插件安装
+
+## storefront主题
+
+wp resized image quality:修改缩略图的插件
+货到付款
+alipay for woocommerce
+
+
+
+

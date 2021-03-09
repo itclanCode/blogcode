@@ -13,7 +13,7 @@
 <template>
   <div>
     <p>
-      <span>MIT Licensed | Copyright © 2020-present</span>
+      <span>MIT Licensed | Copyright ©2021-present</span>
       <a href="https://github.com/itclanCode/blogcode" target="_blank"
         >随笔川迹</a
       >
