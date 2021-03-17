@@ -173,11 +173,11 @@ let name;
 **编写个数:** `window.onload`不能同时编写多个,而`$(document).ready()`能同时编写多个
 
 ```js
-window.onload = function () {
+window.onload = function() {
   alert('test1`');
 };
 
-window.onload = function () {
+window.onload = function() {
   alert('test2');
 };
 // 结果只会输出test2
@@ -186,16 +186,16 @@ window.onload = function () {
 而`$(document).ready()`能同时编写多个
 
 ```js
-$(document).ready(function () {
+$(document).ready(function() {
   alert('Hello world');
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   alert('hello itclanCoder');
 });
 // 结果会两次输出
 // 可以简写成
-$(function () {
+$(function() {
   //..
 });
 ```
@@ -256,7 +256,7 @@ const observer = new MutationObserver(targetNode,config);
 ```js
 var targetNode = document.getElementById('target');
 var i = 0;
-var observe = new MutationObserver(function (mutations, observe) {
+var observe = new MutationObserver(function(mutations, observe) {
   i++;
 });
 observe.observe(targetNode, { childList: true });
@@ -293,12 +293,12 @@ var obj = {
 
 Object.defineProperty(obj, 'phone', {
   configurable: true, // 属性可配置
-  set: function (v) {
+  set: function(v) {
     console.log('phone发生了变化');
     this.phone = v;
   },
 
-  get: function () {
+  get: function() {
     return this.phone;
   },
 });
@@ -317,7 +317,7 @@ var obj = {
 };
 
 var handler = {
-  set: function (target, name, value) {
+  set: function(target, name, value) {
     console.log('phone发生了变化');
     // 改变被代理对象的值,使之保持一致
     target[name] = value;
@@ -347,5 +347,98 @@ proxy.phone = 1371123765;
 这种方案是在现有的页面中,写好骨架,等程序渲染后就会替换掉骨架
 
 **方案 2:使用 base64 的图片来作为骨架屏**
+
+## 第 9 题-jq 对象如何向 js 对象做转化
+
+jQuery 对象只能使用 jQuery 方法,不能使用 js 的方法,相反的,js 对象也只能使用 js 的方法,如果 js 对象使用了 jQuery 方法,那么浏览器就会报错
+
+但是在一些特定的时候,我们就需要对 jQuery 对象使用 js 的方法,此时就要用到两者对象之间的转化
+
+```js
+var person = $('div'); // 这是一个jQuery对象
+
+var per1 = person[0]; // 此时的per1是一个js对象
+var per2 = person.get(0); // 此时的per2也是一个js对象
+```
+
+js 对象转换为 jquery 对象
+
+```js
+var fruit = document.getElementById('div'); // 这是一个Js对象
+var fruit1 = $('fruit'); // 此时fruit1是一个jQuery对象
+```
+
+使用`$`可以将任何 js 对象转化为 jQuery 对象
+
+## 如何中断 Ajax 请求
+
+停止`javaScript`的`ajax`请求有两种方式
+
+⒈ 设置超时时间让 ajax 自动断开
+
+⒉ 手动去停止 ajax 请求
+
+核心是调用 XMLHttpRequest 对象上的 abort 方法
+
+jQuery 的 ajax 对象的 abort 方法,调用 abort 的 jQuery 会执行 error 的方法,抛出 abort 的异常信息,此时即可执行我们中断 ajax 后的操作
+
+```js
+var ajax = $.ajax({
+  error: function(jqXHR, textStatus, errorThrown) {
+    if (errorThrown != 'abort') {
+      // ajax被调用abort后执行的方法
+      alert('您的ajax方法被停止了');
+    }
+  },
+});
+
+ajax.abort(); // 停止ajax
+```
+
+原生 js
+
+```js
+xmlHttp.open('POST', 'URL', true);
+xmlHttp.onreadystatechange = function() {
+  // 得到相应之后的操作
+};
+xmlHttp.send();
+// 设置3秒中后检查xmlHttp对象所发送的数据是否得到响应
+setTimeout('CheckRequest()', '3000');
+function CheckRequest() {
+  // 为4时代表请求完成了
+  if ((xmlHttp.readyState = 4)) {
+    alert('数据响应超时');
+  }
+  xmlHttp.close();
+}
+```
+
+::: tip 注意
+不可用 abort 方法来作为终止对服务器的请求操作,只有当做在前端页面立刻停止执行 ajax 成功后的方法
+:::
+
+## 如何让 form 表单提交数据后,页面不跳转不刷新
+
+解决思路:
+
+需要一个 iframe 标签做替罪羊,form 点击提交后到 iframe 里面,当什么都没有发生一样,先把写好的 iframe 标签隐藏起来,给 form 绑定属性 target 为何 iframe 的 name 一模一样的值,当点击 button 进行提交后,就会提交到 iframe 框里面,这样就不会重新打开一个新页面成功提交数据
+
+在 form 表单后添加 iframe 元素
+
+```js
+<iframe
+  style="display:none"
+  id="rfFrame"
+  name="rfFrame"
+  src="about:blank"
+></iframe>
+```
+
+点击保存提交事件里需要将`target`改为`iframe`的名字
+
+```js
+document.forms[0].target = 'rfFrame';
+```
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
