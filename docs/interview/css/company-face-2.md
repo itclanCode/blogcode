@@ -237,3 +237,4 @@ localStorage 和 sessionStorage: 源生接口可以接受,可再次封装对 Obj
 ## 第 11 题-浏览器的垃圾回收机制是什么
 
 ## 怎么减少重绘和重排
+

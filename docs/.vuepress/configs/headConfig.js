@@ -8,7 +8,7 @@
  * @Date: 2020-06-02 07:29:20
  * @Version: xxx.v1.0
  * @LastEditors: 川川
- * @LastEditTime: 2021-01-31 09:36:03
+ * @LastEditTime: 2021-03-29 17:19:08
  * @Description:头部html中head需要引入的标签,当前文件通过module.exports导出,在config.js主入口文件中通过require导入
  */
 const baidu = require('./secretKey'); // 引入百度统计密钥ID
@@ -76,6 +76,13 @@ const headConfig = [
       async: 'async',
       name: 'google-site-verification',
       content: 'Lp5bo-dr1R5gCVE_3iUI6KXr8tNhN5pyUxPYYKCZkO4',
+    },
+  ],
+  [
+    'meta',
+    {
+      'http-equiv': 'x-dns-prefetch-control',
+      content: 'on',
     },
   ],
   [

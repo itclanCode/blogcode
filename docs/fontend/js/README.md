@@ -37,6 +37,11 @@ title: 目录
 
 - [用户姓名-手机号-中间位数用\*替代](./utils-name-mobile-encrye)
 
+## 性能优化
+
+- [加载时优化](./optimize-on-load)
+- [运行时优化](./run-on-load)
+
 ## 代码规范
 
 - [JavaScript 企业级编程规范(1)-文件命名-注释规范-id 与 class](./program-rules1)
