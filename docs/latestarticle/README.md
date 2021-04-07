@@ -3,6 +3,7 @@ title: 目录
 ---
 
 <form-weather />
+<charts-home />
 <form-Search />
 
 ## 最新文章
