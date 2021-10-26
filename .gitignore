@@ -1,0 +1,7 @@
+node_modules
+.history
+.vscode
+.vuepress/dist/
+.vuepress/configs/secretKey.js
+
+.vercel

@@ -1,0 +1,124 @@
+// 覆盖主题默认样式,将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级
+// 表格一些样式
+table {
+  margin:0;
+}
+
+tr {
+  &:nth-child(2n) {
+    background: none;
+  }
+}
+
+.el-table::before {
+  height: 0;
+}
+
+// 主题代码高亮显示
+.theme-default-content code {
+  // background-color: #F7F7F7;
+  color: #42b983;
+  font-weight: bold;
+}
+
+#valine-vuepress-comment {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+
+#valine-vuepress-comment .vheader input[name="link"] {
+  display: none;
+}
+
+#valine-vuepress-comment .vheader .vinput {
+  width: 50%;
+}
+
+.txt-right{
+  display:none;
+}
+
+blockquote {
+  border-left: .3rem solid #3eaf7c;
+}
+
+.el-tabs .el-tabs__header .el-tabs__item:hover {
+    color: #42b983;
+}
+
+.el-tabs .el-tabs__header .el-tabs__item.is-active {
+  color: #42b983;
+}
+
+.el-tabs .el-tabs__header .el-tabs__active-bar {
+  background-color: #42b983;
+}
+
+.el-slider .el-slider__bar {
+   background-color: #42b983;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  background-color: #42b983 !imporant;
+}
+
+.el-slider__button {
+ background-color: #42b983;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background: #42b983 !imporant;
+}
+
+.van-dialog__header {
+  color: #323233 !important;
+}
+
+.home .hero img {
+  border-radius: 40px !important;
+}
+
+.el-tabs--border-card .el-tabs__content .el-tab-pane p {
+  color: #323233 !important;
+}
+
+.el-tabs--border-card .el-tabs__content p{
+  color: #323233 !important;
+}
+
+.el-tabs--border-card .el-tabs__content .el-tab-pane ol li {
+  color: #323233 !important;
+}
+
+#btw-modal-input{
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  #btw-modal {
+    width: 265px !important;
+  }
+}
+
+#read-more-btn {
+  color: #fff !important;
+  border: none !important;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  background: #3eaf7c !important;
+}
+
+#read-more-btn:hover {
+  background: #de3636 !important;
+  color: #fff !important;
+  transition: all 0.5s ease;
+}
+
+.global-ui .go-to-top {
+  right: 5.5rem !important;
+}
+
+.el-collapse-item .el-collapse-item__content {
+  background:#303133;
+}

@@ -1,0 +1,72 @@
+{
+  "name": "blogcode",
+  "version": "1.0.0",
+  "description": "itclanCoder博客代码",
+  "main": "index.js",
+  "directories": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itclanCode/blogcode.git"
+  },
+  "keywords": [
+    "itclanCoder的技术博客-随笔川迹",
+    "itclanCoder",
+    "http://coder.itclan.cn/",
+    "川川",
+    "itclancode",
+    "前端"
+  ],
+  "author": {
+    "name": "随笔川迹",
+    "email": "itclancode@163.com",
+    "url": "http://coder.itclan.cn/",
+    "wxPublic": "欢迎关注微信itclanCoder公众号"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itclanCode/blogcode/issues"
+  },
+  "homepage": "https://github.com/itclanCode/blogcode#readme",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "axios": "^0.24.0",
+    "codemirror": "^5.63.3",
+    "diff-match-patch": "^1.0.5",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.15.6",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "vant": "^2.12.30",
+    "vue-clipboard2": "^0.3.3",
+    "vue-echarts": "^5.0.0-beta.0",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-clean-urls": "^1.1.2",
+    "vuepress-plugin-demo-code": "^0.6.0",
+    "vuepress-plugin-element-tabs": "^0.2.8",
+    "vuepress-plugin-element-ui": "^1.1.0",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-plugin-img-lazy": "^1.0.4",
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-plugin-smooth-scroll": "0.0.10",
+    "vuepress-plugin-table-of-contents": "^1.1.7",
+    "vuepress-theme-yuu": "^3.1.1"
+  }
+}
