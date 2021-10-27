@@ -17,7 +17,7 @@ git add -A
 git commit -m '部署coder.itclan.cn'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f https://github.com/itclanCode/itclancode.github.io.git  master
+git push -f https://github.com/itclanCode/blogcode.git  master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
