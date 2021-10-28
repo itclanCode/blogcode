@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import FlipClock from './flipClock';
+  import FlipClock from './flipClock'
   export default {
     components: {
       FlipClock
