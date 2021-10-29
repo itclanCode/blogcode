@@ -127,7 +127,9 @@ const plugins = [
     'vuepress-plugin-auto-sidebar',
     {
       titleMode: 'titlecase', // 标题模式
-      collapsable: true, // 设置为true,开启折叠
+      collapsable: {
+        open: true
+      }, // 设置为true,开启折叠
       // sidebarDepth: 0, // 标题的深度
       collapseList: [
         // 折叠的路由列表
@@ -203,44 +205,44 @@ const plugins = [
   //   },
   // ],
 
-  [
-    'meting',
-    {
-      // metingApi: 'https://meting.sigure.xyz/api/music',
-      meting: {
-        // 网易
-        server: 'netease',
-        // 读取歌单
-        type: 'playlist',
-        mid: '2539599584',
-      },
-      // 不配置该项的话不会出现全局播放器
-      aplayer: {
-        // 是否开启吸底模式
-        fixed: true,
-        // 是否开启迷你模式
-        mini: true,
-        // 自动播放
-        autoplay: false,
-        // 设置播放器的初始循环模式
-        loop: 'All',
-        // 歌曲栏折叠
-        listFolded: true,
-        // 设置播放器默认主题颜色
-        theme: '#42b983',
-        // 播放顺序为随机
-        order: 'random',
-        // 初始音量
-        volume: 0.1,
-        // 关闭歌词显示
-        lrcType: 0,
-      },
-      mobile: {
-        // 手机端去掉cover图
-        cover: false,
-      },
-    },
-  ],
+  // [
+  //   'meting',
+  //   {
+  //     // metingApi: 'https://meting.sigure.xyz/api/music',
+  //     meting: {
+  //       // 网易
+  //       server: 'netease',
+  //       // 读取歌单
+  //       type: 'playlist',
+  //       mid: '2539599584',
+  //     },
+  //     // 不配置该项的话不会出现全局播放器
+  //     aplayer: {
+  //       // 是否开启吸底模式
+  //       fixed: true,
+  //       // 是否开启迷你模式
+  //       mini: true,
+  //       // 自动播放
+  //       autoplay: false,
+  //       // 设置播放器的初始循环模式
+  //       loop: 'All',
+  //       // 歌曲栏折叠
+  //       listFolded: true,
+  //       // 设置播放器默认主题颜色
+  //       theme: '#42b983',
+  //       // 播放顺序为随机
+  //       order: 'random',
+  //       // 初始音量
+  //       volume: 0.1,
+  //       // 关闭歌词显示
+  //       lrcType: 0,
+  //     },
+  //     mobile: {
+  //       // 手机端去掉cover图
+  //       cover: false,
+  //     },
+  //   },
+  // ],
 ];
 
 module.exports = plugins; // 导出

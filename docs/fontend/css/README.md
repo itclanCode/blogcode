@@ -36,6 +36,7 @@ title: 目录
 - [css 实现小鸟旋转](./animate-effect-brid)
 - [css 实现动画箭头](./animated-arrow)
 - [css 汽车 VR-3D 旋转](./animate-car-vr)
+- [css 时钟翻转](./animate-flip-clock)
 
 ## 移动端相关
 
