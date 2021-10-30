@@ -303,3 +303,47 @@ hotcss.maxWidth = 480;
 :::
 
 在需要使用自适应页面,名为为`mobild-adapt.js`,这个名字是任意的,在所需页面引入这段`js`,或在根`html`标签中引入这段`js`,仍然可以愉快的写自适应布局页面代码了
+
+## 方式3-使用rem适配
+
+```js
+/*
+     * @desc:移动端适配js
+     *	
+     */
+    (function(win) {
+        var docEl = win.document.documentElement;
+        var timer = '';
+
+        function changeRem() {
+            var width = docEl.getBoundingClientRect().width;
+            if (width > 720) //最大宽度，若果兼容到ipad的话把这个去掉就行
+            {
+                width = 720;
+            }
+            var fontS = width / 16; //把设备宽度16等分 等同于用vw来做720/16=45,1rem=45px,750/20=37.5
+            docEl.style.fontSize = fontS + "px";
+        }
+        //页面尺寸发生改变的时候就再执行changeRem
+        win.addEventListener("resize", function() {
+            clearTimeout(timer);
+            timer = setTimeout(changeRem, 30);
+        }, false);
+        //页面加载的时候，若果是调用缓存的话就再执行changeRem
+        win.addEventListener("pageshow", function(e) {
+            if (e.persisted) //缓存
+            {
+                clearTimeout(timer);
+                timer = setTimeout(changeRem, 30);
+            }
+        }, false);
+        changeRem();
+    })(window)
+```
+::: tip 提示
+注意使用这种方式时-需要配置好基数-可以使用css-rem这个插件,在submlimText中进行安装,在编写样式时,可以自动将css像素转化为rem
+:::
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FeedBack />
+

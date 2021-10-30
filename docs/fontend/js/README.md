@@ -36,6 +36,11 @@ title: 目录
 ## JS 实用案例技巧
 
 - [用户姓名-手机号-中间位数用\*替代](./utils-name-mobile-encrye)
+- [固定滚动条-禁止页面滚动](./fixed-scrollbar)
+- [判断当前位置是否为页面底部](./judge-bottom-of-the-page)
+- [判断元素是否在可视范围内](./judge-visual-range)
+- [获取页面元素的样式](./get-elem-style)
+- [进入/退出全屏模式](./enter-the-full-screen)
 
 ## 性能优化
 

@@ -43,6 +43,7 @@ title: 目录
 - [meta 标签](./mobile-meta)
 - [设备类型判断-移动端/PC 端](./mobile-device-type)
 - [移动端页面适配](./mobile-adapt)
+- [移动端-禁止用户界面缩放](./mobile-scalable)
 
 ## 业务型实例
 
