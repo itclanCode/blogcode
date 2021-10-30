@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[293],{1563:function(n,e){window.onload=function(){$("#app > .theme-container>.page > .theme-default-content").removeAttr("id")}}}]);
