@@ -41,6 +41,7 @@ title: 目录
 - [判断元素是否在可视范围内](./judge-visual-range)
 - [获取页面元素的样式](./get-elem-style)
 - [进入/退出全屏模式](./enter-the-full-screen)
+- [浏览器对象BOM相关](./browser-bom-related)
 
 ## 性能优化
 

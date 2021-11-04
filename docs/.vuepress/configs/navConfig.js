@@ -105,6 +105,8 @@ const navs = [
     text: '工具',
     items: [
       {text:'飞扬的小鸟',link: 'https://flybird.itclan.cn'},
+      {text: '贪吃蛇',link: 'https://snake.itclan.cn'},
+      {text: '合成大西瓜',link: 'https://xigua.itclan.cn'},
       { text: '图床', link: 'https://img.itclan.cn' },
       { text: '站集网', link: 'https://zhanji.itclan.cn' },
       { text: 'Vue2.0模板编译', link: 'https://vue2compile.itclan.cn' },
