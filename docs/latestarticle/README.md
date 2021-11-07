@@ -47,6 +47,10 @@ title: 目录
 
 ::::
 
+## 游戏
+
+<latest-Games />
+
 ## 前端
 
 <latest-FontEnd />

@@ -48,3 +48,11 @@ if (isMobile) {
 ```
 
 :::
+
+## 方式3-检查设备类型
+
+```js
+function detectDeviceType() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop'
+}
+```

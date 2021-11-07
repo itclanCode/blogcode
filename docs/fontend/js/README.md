@@ -42,7 +42,10 @@ title: 目录
 - [获取页面元素的样式](./get-elem-style)
 - [进入/退出全屏模式](./enter-the-full-screen)
 - [浏览器对象BOM相关](./browser-bom-related)
-
+- [文本复制](./text-copy)
+- [本地存储cookie增删查](./cookie)
+- [本地存储localStorage](./localStorage)
+- [本地存储sessionStorage](./sessionStorage)
 ## 性能优化
 
 - [加载时优化](./optimize-on-load)
