@@ -9,8 +9,9 @@ title: 目录
 ## TypeScript基础
 
 - [tsconfig.json相关配置介绍](./tscconfig)
+- [ts-基本数据类型](./ts-data-type)
 
-## TypeScript可能会问题
+## TypeScript可能会遇到的问题
 
 - [vscode终端使用tsc命令无法将ts文件转化为js文件](./tsc-programe-1)
 
