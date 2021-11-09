@@ -210,11 +210,13 @@ const plugins = [
   //   {
   //     // metingApi: 'https://meting.sigure.xyz/api/music',
   //     meting: {
+  //       //auto: 'https://music.163.com/#/playlist?id=784399723'
   //       // 网易
   //       server: 'netease',
   //       // 读取歌单
   //       type: 'playlist',
-  //       mid: '2539599584',
+  //       mid: '784399723'
+  //       // mid: '1300310,31654455,4022088,29717271,2061739,3934523,28263314,29577767,28949412,34749433,32102855,41630476,5042951,31010566,41630480,2061724,34690640,3935176,32526653,28283167',
   //     },
   //     // 不配置该项的话不会出现全局播放器
   //     aplayer: {
@@ -243,6 +245,40 @@ const plugins = [
   //     },
   //   },
   // ],
+  [
+    "music-bar",
+    {
+      //手动添加歌曲,支持 URLs 或 base64 data URIs ,默认为空
+      //Add songs manually, support URLs or base64 data URIs, empty by default
+      // playList: ["example.mp3"],
+
+      platform: [
+        //目前仅支持网易云 TODO:多平台支持,默认为空数组
+        //Currently only supports Netease Cloud Music,
+        //the default is an empty array TODO: Multi-platform support,
+        {
+          name: "music.163.com",
+          songIDs:[],//支持多个歌曲 ID  //Support multiple song IDs
+          playListIDs: ['1300310','31654455','4022088','29717271',
+                        '2061739','3934523','28263314','29577767',
+                        '28949412','34749433','32102855','41630476',
+                        '5042951,31010566','41630480','2061724','34690640',
+                        '3935176','32526653','28283167'] //支持多个歌单 ID  //Support multiple playlist IDs
+        }
+      ],
+
+      timeOut: 2000, //加载超时,单位毫秒,默认2000  //Load timeout in milliseconds, default 2000
+      firstClickPlay: true //首次点击自动播放,对移动端友好  //The first click autoplay, mobile friendly
+
+      //debugMode: <Boolean> Development mode, if in the dev environment,
+      //                     output log to console, enabled by default
+
+      //background: <String> //主容器样式  //Main container style
+      //                       default: "linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)"
+
+      //frameColor: <String> default: $accentColor
+    }
+  ]
 ];
 
 module.exports = plugins; // 导出

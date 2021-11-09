@@ -6,6 +6,15 @@ title: 目录
 
 <TOC />
 
+## TypeScript基础
+
+- [tsconfig.json相关配置介绍](./tscconfig)
+
+## TypeScript可能会问题
+
+- [vscode终端使用tsc命令无法将ts文件转化为js文件](./tsc-programe-1)
+
+
 ## React 基础
 
 - [React 基础(1)-create-react-app](./base-create-react-app)
