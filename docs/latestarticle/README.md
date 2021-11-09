@@ -6,6 +6,11 @@ title: 目录
 <charts-home />
 <form-Search />
 
+<Meting server="netease"
+        type="playlist"
+        mid="784399723"
+        :list-folded="true"/>
+
 ## 最新文章
 
 <TOC />
