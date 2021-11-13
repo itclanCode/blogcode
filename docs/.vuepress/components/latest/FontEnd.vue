@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="wrap">
-      <div v-for="item in FontEndData" class="item">
+      <div v-for="item in FontEndData" class="item" :key="item.text">
         <p class="list">
           <a :href="item.href" target="_blank" :title="item.alt">
             <img width="100" height="44" class="img-pic" :src="item.imgSrc" :alt="item.alt" />

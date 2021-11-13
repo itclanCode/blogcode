@@ -116,6 +116,7 @@ title: 关于作者
 - 微信小程序:搜索`搞清亲戚称谓关系`
 - 微信小程序:搜索`佳豪瑞森装饰`
 - 微信小程序:搜索`轻记账`
+- 微信小程序:搜索`暖暖聊天恋爱话术`
 - [北京 itclan 爱客来科技网络](https://itclan.cn)
 - [站集网-一个收录对你有用的网站](https://zhanji.itclan.cn)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
@@ -124,7 +125,9 @@ title: 关于作者
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />
   <p>扫码即可体验,还有待完善</p>
-   <img class="medium-zoom lazy" loading="lazy"  src="./images/qing-jizhang-min-code.png" alt="佳豪瑞森装饰" width="200" height="200" />
+   <img class="medium-zoom lazy" loading="lazy"  src="https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/%E8%BD%BB%E8%AE%B0%E8%B4%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A0%81.3unxzonk84a0.jpg" alt="轻记账" width="200" height="200" />
+  <p>扫码即可体验,还有待完善</p>
+  <img class="medium-zoom lazy" loading="lazy"  src="https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/gh_a0b6a06d175a_258.6k0rqh7vefo0.jpg" alt="暖暖聊天恋爱话术" width="200" height="200" />
   <p>扫码即可体验,还有待完善</p>
   </div>
 
