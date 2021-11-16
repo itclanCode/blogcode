@@ -51,6 +51,7 @@ title: 目录
 - [城市地级联选择](./business-city-choice)
 - [日期时间限制的选择](./bussiness-date-limit-select)
 - [全选-复选/单选框](./business-select-all)
+- [全选-复选框-控制表格的列的显示和隐藏](./business-control-col-show)
 
 ## 常见问题
 

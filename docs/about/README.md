@@ -189,10 +189,9 @@ title: 关于作者
 
 本站信息
 
+网站头像: https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image
 网站名称: itclanCoder
-
 网站链接: https://coder.itclan.cn/
-
 网站介绍: 书以启智,技于谋生,活出斜杠
 :::
 

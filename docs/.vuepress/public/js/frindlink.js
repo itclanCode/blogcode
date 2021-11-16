@@ -49,6 +49,12 @@ friendLinkers = [
     url: 'https://alexhchu.com/',
     desc: '望尽天涯路',
   },
+
+  {
+    name:'April的记录小屋',
+    url: 'https://april-tong.com',
+    desc: '热爱可抵岁月漫长'
+  }
 ];
 function getFriendsLink() {
   return friendLinkers;
