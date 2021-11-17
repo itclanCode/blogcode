@@ -220,41 +220,6 @@ const type = {
     },
   ],
 
-  designDraws: [
-    {
-      label: '可画canva',
-      name: 'canva',
-      url: 'canva.com/design/play?category=',
-      tip: '快速通过拖拉拽的方式制作漂亮的设计作品',
-    },
-    {
-      label: '搞定设计',
-      name: '搞定设计',
-      url: 'https://www.gaoding.com/templates/d442?q=',
-      tip: '图片编辑-聚焦商业设计的多场景在线设计平台'
-    },
-
-    {
-      label: "图怪兽",
-      name: "图怪兽",
-      url: 'https://818ps.com/',
-      tip: '免费编辑快速上手，提供海量模板素材'
-    },
-    {
-      label: '即时设计',
-      name: "即时设计",
-      url: 'https://js.design/home',
-      tip: "原型设计"
-    },
-
-    {
-      label: "图艺图",
-      name: "图艺图-在线编辑图片",
-      url: "https://www.tuyitu.com/photoshop/",
-      tip: "在线编辑图片"
-    }
-  ],
-
   codehosts: [
     {
       label: 'github',
@@ -422,6 +387,33 @@ const type = {
       url: 'https://www.canva.cn/search/templates?q=',
       tip: '可直接输入关键字，回车-寻找设计素材',
     },
+
+    {
+      label: '搞定设计',
+      name: '搞定设计',
+      url: 'https://www.gaoding.com/templates/d442?q=',
+      tip: '图片编辑-聚焦商业设计的多场景在线设计平台'
+    },
+
+    {
+      label: "图怪兽",
+      name: "图怪兽",
+      url: 'https://818ps.com/',
+      tip: '免费编辑快速上手，提供海量模板素材'
+    },
+    {
+      label: '即时设计',
+      name: "即时设计",
+      url: 'https://js.design/home',
+      tip: "原型设计"
+    },
+
+    {
+      label: "图艺图",
+      name: "图艺图-在线编辑图片",
+      url: "https://www.tuyitu.com/photoshop/",
+      tip: "在线编辑图片"
+    }
   ],
 };
 

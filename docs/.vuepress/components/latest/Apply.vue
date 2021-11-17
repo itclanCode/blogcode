@@ -39,6 +39,28 @@ export default {
           target: "_self",
           class:"medium-zoom lazy img-pic"
         },
+         {
+          href: "javascript:;",
+          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/gaoqingqi.16l762kzsihs.jpg",
+          alt: "搞清亲戚称谓关系-知道亲戚称呼什么的一款工具",
+          text: "搞清亲戚称谓关系",
+          width: "85",
+          height: "85",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
+        },
+        
+         {
+          href: "javascript:;",
+          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/susuanjisuanqi.6ayyb58z2d00.jpg",
+          alt: "速算计算器-一款简易的加减乘除计算器",
+          text: "速算计算器",
+          width: "85",
+          height: "85",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
+        },
+
         {
             href: "https://img.itclan.cn",
             imgSrc: "/images/latest/kelaituchuang.svg",
