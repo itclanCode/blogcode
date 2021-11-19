@@ -1,5 +1,6 @@
 ---
 title: 找出数组中重复次数最多的元素
+autoGroup-1: 数组
 ---
 
 ## 找出数组中重复次数最多的元素
@@ -141,6 +142,14 @@ countOccurrences(arrs, 1); // 4
 ```
 
 :::
+
+### 检查数组中某元素出现的次数
+
+```js
+function countOccurrences(arr, value) {
+  return arr.reduce((a, v) => v === value ? a + 1 : a + 0, 0);
+}
+```
 
 
 

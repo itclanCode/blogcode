@@ -31,6 +31,16 @@ export default {
         },
         {
           href: "javascript:;",
+          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/暖暖聊天表情包.2w2dhf5lfcu0.jpg",
+          alt: "暖暖聊天表情包",
+          text: "暖暖聊天表情包",
+          width: "85",
+          height: "85",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
+        },
+        {
+          href: "javascript:;",
           imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/轻记账小程序码.3unxzonk84a0.jpg",
           alt: "轻记账-一款轻松微信记账小工具",
           text: "轻记账",

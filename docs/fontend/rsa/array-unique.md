@@ -1,5 +1,6 @@
 ---
 title: JS数组去重
+autoGroup-1: 数组
 ---
 
 ## 数组去重

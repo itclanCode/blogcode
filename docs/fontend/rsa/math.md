@@ -1,5 +1,6 @@
 ---
 title: JavaScript 算法-数学
+autoGroup-2: 数学
 ---
 
 ## 线性关系

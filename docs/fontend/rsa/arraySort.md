@@ -1,5 +1,6 @@
 ---
 title: 数组排序
+autoGroup-1: 数组
 ---
 
 ## 快速导航
@@ -98,5 +99,24 @@ console.log(buddleSort(ary)); // [5, 21, 43, 82]
 ```
 
 :::
+
+## 数组的乱排
+
+```js
+function shuffle(arr) {
+  let array = arr
+  let index = array.length
+
+  while (index) {
+    index -= 1
+    let randomInedx = Math.floor(Math.random() * index)
+    let middleware = array[index]
+    array[index] = array[randomInedx]
+    array[randomInedx] = middleware
+  }
+
+  return array
+}
+```
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
