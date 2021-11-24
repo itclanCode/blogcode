@@ -10,7 +10,8 @@ title:目录
 
 练习算法,确实会掉不少头发,但很锻炼逻辑
 
-- [实现反转一个 3 位整数](./reverse-three-init)
+### 数组Array
+
 - [判断一个字符串是否是回文字符](./is-palindrome-character)
 - [实现姓名去重操作](./name-duplication-operation)
 - [数组的排序](./arraySort)
@@ -27,3 +28,12 @@ title:目录
 - [返回数组中下标间隔nth的元素](./array-return-nth)
 - [返回数组中的第n个元素](./array-return-n-elem)
 - [返回数组头尾元素](./array-head-elem)
+
+## 字符串String
+
+- [实现反转一个 3 位整数](./reverse-three-init)
+
+## 数字Number
+
+- [数字千分位分割]('./number-split')
+- [生成随机数](./number-suijishu)

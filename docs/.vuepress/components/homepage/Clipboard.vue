@@ -13,7 +13,7 @@
 <template>
   <div>
     <p>
-      <span>MIT Licensed | Copyright ©2021-present</span>
+      <span>MIT Licensed | {{ dateYear }}-present</span>
       <a href="https://github.com/itclanCode/blogcode" target="_blank"
         >随笔川迹</a
       >
@@ -54,6 +54,11 @@ p {
 export default {
   name: 'Clipboard',
   props: ['html'],
+  data() {
+    return {
+      dateYear: new Date().getFullYear()
+    }
+  },
 
   created() {
     // this.location = window.location;

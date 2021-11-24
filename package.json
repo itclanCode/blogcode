@@ -52,6 +52,7 @@
     "element-ui": "^2.15.6",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
+    "sortablejs": "^1.14.0",
     "vant": "^2.12.30",
     "vue-clipboard2": "^0.3.3",
     "vue-echarts": "^5.0.0-beta.0",
