@@ -39,6 +39,16 @@ export default {
           target: "_self",
           class:"medium-zoom lazy img-pic"
         },
+         {
+          href: "javascript:;",
+          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/爱客来证件照制作小程序码.149lpqwmr4xs.jpg",
+          alt: "爱客来证件照制作",
+          text: "爱客来证件照制作",
+          width: "85",
+          height: "85",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
+        },
         {
           href: "javascript:;",
           imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/轻记账小程序码.3unxzonk84a0.jpg",
