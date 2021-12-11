@@ -53,6 +53,8 @@ title: 目录
 - [全选-复选/单选框](./business-select-all)
 - [全选-复选框-控制表格的列的显示和隐藏](./business-control-col-show)
 - [实现表格行的拖拽](./business-col-draw)
+- [上传图片大小格式的限制](./business-upload-img-limit)
+- [一级拖拽/二级拖拽](./business-level-draw)
 
 ## 常见问题
 

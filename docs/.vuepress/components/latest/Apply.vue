@@ -81,6 +81,17 @@ export default {
           class:"medium-zoom lazy img-pic"
         },
 
+         {
+            href: "https://video.itclan.cn",
+            imgSrc: "/images/latest/kelaimovie.svg",
+            alt: "客来影视TV",
+            text: "客来影视TV",
+            width: "100",
+            height: "44",
+            target: "_blank",
+            class:"lazy img-pic"  
+        },
+
         {
             href: "https://img.itclan.cn",
             imgSrc: "/images/latest/kelaituchuang.svg",

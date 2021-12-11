@@ -97,7 +97,9 @@ opacity: 0;
 ````
 
 :::
+
 <animate-animateArrowLeft />
+
 ::: details 点击即可查看朝左箭头示例代码
 
 ```css{6,7,8}
