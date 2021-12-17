@@ -49,6 +49,7 @@
     "codemirror": "^5.63.3",
     "diff-match-patch": "^1.0.5",
     "echarts": "^4.9.0",
+    "echarts-gl": "^2.0.8",
     "element-ui": "^2.15.6",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",

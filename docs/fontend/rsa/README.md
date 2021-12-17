@@ -16,6 +16,7 @@ title:目录
 - [实现姓名去重操作](./name-duplication-operation)
 - [数组的排序](./arraySort)
 - [数组的去重](./array-unique)
+- [数组对象去重](./array-unique-object)
 - [找出数组中重复次数最多的元素](./array-findMostReEl)
 - [找出数组中最大和最小的元素](./array-max-min-el)
 - [对比两个数组并且返回其中不同的元素](./array-compare-two-diff-ele)
