@@ -54,6 +54,12 @@ friendLinkers = [
     name:'April的记录小屋',
     url: 'https://april-tong.com',
     desc: '热爱可抵岁月漫长'
+  },
+
+  {
+    name: '666收录',
+    url: 'http://www.0666.tv',
+    desc: '666收录'
   }
 ];
 function getFriendsLink() {
