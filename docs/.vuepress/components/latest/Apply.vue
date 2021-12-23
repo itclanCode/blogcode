@@ -20,6 +20,16 @@ export default {
     return {
       applyData: [
          {
+            href: "javascript:;",
+            imgSrc: "https://static01.imgkr.com/temp/0a2e223438fc4e47849c912f1cf30291.jpg",
+            alt: "让你平时的消费更省钱,日久越长,能省出一辆车",
+            text: "外卖电影客惠劵",
+            width: "85",
+            height: "85",
+            target: "_self",
+            class:"medium-zoom lazy img-pic"
+         },
+         {
           href: "javascript:;",
           imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/gh_a0b6a06d175a_258.6k0rqh7vefo0.jpg",
           alt: "暖暖聊天恋爱话术小程序-高情商聊天对话,让撩妹,撩汉脱单更简单",

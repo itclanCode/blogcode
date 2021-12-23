@@ -1,6 +1,6 @@
 <template>
   <div>
-    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=mango" frameborder="0" width="100%" height="32" allowtransparency="true"></iframe>
+    <iframe  class="iframe" scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=mango" frameborder="0" width="100%" height="32" allowtransparency="true"></iframe>
     <div class="clock-box"><FlipClock></FlipClock></div>
   </div>
 </template>
@@ -16,6 +16,9 @@
 </script>
 
 <style scoped>
+.iframe {
+  display:none;
+}
 .clock-box {
   margin: 10px 0 20px 0;
 }
