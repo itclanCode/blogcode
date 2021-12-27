@@ -21,7 +21,7 @@ export default {
       applyData: [
          {
             href: "javascript:;",
-            imgSrc: "https://static01.imgkr.com/temp/0a2e223438fc4e47849c912f1cf30291.jpg",
+            imgSrc: "https://static01.imgkr.com/temp/f85d0cb9bc2d4138a91f08efcdadf5a6.jpg",
             alt: "让你平时的消费更省钱,日久越长,能省出一辆车",
             text: "外卖电影客惠劵",
             width: "85",

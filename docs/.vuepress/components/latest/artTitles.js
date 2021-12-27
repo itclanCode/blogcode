@@ -369,11 +369,32 @@ export  const artTitles =  [
       desc: "数组对象的去重",
       author: "随笔川迹",
       update_time: '2021-12-17',
-      link: "javascript:;",
+      link: "http://33h.co/kwk86",
       url:"/fontend/rsa/array-unique-object",
       tag: "数组"
    },
 
+   {
+      id: 35,
+      title: "实现扇形生成器",
+      desc: "实现扇形生成器",
+      author: "随笔川迹",
+      update_time: '2021-12-25',
+      link: "javascript:;",
+      url:"/fontend/css/example-sector",
+      tag: "css"
+   },
+
+   {
+      id: 36,
+      title: "实现小于12px的字体像素",
+      desc: "实现小于12px的字体像素",
+      author: "随笔川迹",
+      update_time: '2021-12-26',
+      link: "javascript:;",
+      url:"/fontend/css/example-12px",
+      tag: "css"
+   },
 
 
  
