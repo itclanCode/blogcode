@@ -392,7 +392,7 @@ export  const artTitles =  [
       author: "随笔川迹",
       update_time: '2021-12-26',
       link: "javascript:;",
-      url:"/fontend/css/example-12px",
+      url:"/fontend/css/example-small-size",
       tag: "css"
    },
 
