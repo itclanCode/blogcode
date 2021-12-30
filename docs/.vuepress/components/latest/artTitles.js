@@ -396,6 +396,17 @@ export  const artTitles =  [
       tag: "css"
    },
 
+   {
+      id: 37,
+      title: "2021-又是一年告别时",
+      desc: "2021-又是一年告别时",
+      author: "随笔川迹",
+      update_time: '2021-12-30',
+      link: "javascript:;",
+      url:"/read/replay/look-back-2021",
+      tag: "年终总结"
+   },
+
 
  
 

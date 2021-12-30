@@ -8,6 +8,7 @@ title: 目录
 
 ## JavaScript 文章目录
 
+- [使用let/const定义变量的场景](./variable-use) 
 - [理解 Es6 中的 Symbol 类型](./understand-symbol)
 - [解析 super 关键字](./resolve-super-keyword)
 - [理解-JS-中的作用域-作用域链以及闭包](./scope)
@@ -46,6 +47,8 @@ title: 目录
 - [本地存储cookie增删查](./cookie)
 - [本地存储localStorage](./localStorage)
 - [本地存储sessionStorage](./sessionStorage)
+
+
 ## 性能优化
 
 - [加载时优化](./optimize-on-load)
