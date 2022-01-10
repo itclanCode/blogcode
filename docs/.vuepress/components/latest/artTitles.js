@@ -408,15 +408,26 @@ export  const artTitles =  [
    },
 
    {
-      id: 37,
+      id: 38,
       title: "使用let/const定义变量的场景",
       desc: "使用let/const定义变量的场景",
       author: "随笔川迹",
       update_time: '2022-1-4',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/NvucGFrmJu7FUC64rKfb3A",
       url:"/fontend/js/variable-use",
       tag: "js"
    },
+
+   {
+      id: 39,
+      title: "vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较",
+      desc: "vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较",
+      author: "随笔川迹",
+      update_time: '2022-1-10',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-computed-watch",
+      tag: "Vue"  
+   }
 
 
  
