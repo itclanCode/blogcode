@@ -21,6 +21,16 @@ export default {
       applyData: [
          {
             href: "javascript:;",
+            imgSrc: "https://static01.imgkr.com/temp/449b0b2c383546d687515a5159416b97.png",
+            alt: "客群基地,帮你拓展人脉,各行各业真实圈子,发广告,发名片等",
+            text: "客群基地",
+            width: "85",
+            height: "85",
+            target: "_self",
+            class:"medium-zoom lazy img-pic"
+         },
+         {
+            href: "javascript:;",
             imgSrc: "https://static01.imgkr.com/temp/f85d0cb9bc2d4138a91f08efcdadf5a6.jpg",
             alt: "让你平时的消费更省钱,日久越长,能省出一辆车",
             text: "外卖电影客惠劵",
@@ -91,6 +101,17 @@ export default {
           class:"medium-zoom lazy img-pic"
         },
 
+          {
+          href: "javascript:;",
+          imgSrc: "https://static01.imgkr.com/temp/5dddbcaa179042a7a142241c707cfcd6.jpg",
+          alt: "域名防红-监测域名是否被微信禁用",
+          text: "域名防红",
+          width: "85",
+          height: "85",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
+        },
+
          {
             href: "https://video.itclan.cn",
             imgSrc: "/images/latest/kelaimovie.svg",
@@ -118,6 +139,17 @@ export default {
             imgSrc: "/images/latest/zhanjinet.svg",
             alt: "站集网-总有你不知道的好用的网站大全",
             text: "站集网",
+            width: "100",
+            height: "44",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
+
+        {
+            href: "http://bhnk8.cn/884jt",
+            imgSrc: "/images/latest/qun.svg",
+            alt: "客群基地-寻找圈子,加各种资源群,发布广告,个人名片",
+            text: "客群基地",
             width: "100",
             height: "44",
             target: "_blank",

@@ -17,7 +17,7 @@
 
 <style scoped>
 .iframe {
-  display:none;
+  display:block;
 }
 .clock-box {
   margin: 10px 0 20px 0;

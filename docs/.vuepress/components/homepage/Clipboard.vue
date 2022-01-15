@@ -17,7 +17,7 @@
       <a href="https://github.com/itclanCode/blogcode" target="_blank"
         >随笔川迹</a
       >
-      <a href="http://www.beian.miit.gov.cn/" target="_blank">
+      <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
         <img
           src="/icons/icp.png"
           width="20"

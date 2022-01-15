@@ -194,7 +194,7 @@ export  const artTitles =  [
       author: "随笔川迹",
       update_time: '2020-12-09',
       link: "https://mp.weixin.qq.com/s/2s9LkphmDoa2L6jEzeWZ0Q",
-      url:"/fontend/framework/advance-highfun-and-component/",
+      url:"/fontend/framework/advance-react-use-decorator/",
       tag: "React"
    },
 

@@ -1,12 +1,21 @@
 <template>
 	<div class="wrap">
      <div class="top">
-			   <div class="item">
-					 <v-chart id="chart" ref="chartPies"  :options="optionPies" autoresize/>
-				 </div>	 
-				 <div class="item">
-					 <v-chart  ref="chartLines"  :options="optionLines" autoresize/>
-				 </div>
+          <el-row :gutter="20" type="flex" >
+              <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+                <el-card shadow="hover">
+                  <div slot="header"><span>itclanCoder网站-统计</span></div>
+                 <v-chart id="chart" ref="chartPies"  :options="optionPies" autoresize/>
+                </el-card>
+              </el-col>
+              <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+                <el-card shadow="hover">
+                  <div slot="header"><span>文章热词</span></div>
+                  <!-- <v-chart  ref="chartLines"  :options="optionLines" autoresize/> -->
+                  <hot-chart :chartData="hotData"></hot-chart>
+                </el-card>
+              </el-col>
+         </el-row>
 		 </div>
 	</div>
 </template>
@@ -15,19 +24,23 @@
 import ECharts from 'vue-echarts'
 import 'echarts/lib/chart/line'
 import 'echarts/lib/chart/pie'   // 引入饼图
-import 'echarts/lib/chart/lines'   // 引入折线图
+import resize from './resize';
+// import 'echarts/lib/chart/lines'   // 引入折线图
 import 'echarts/lib/chart/map'   // 引入地图
 import 'echarts/lib/component/tooltip' // 引入提示
 import 'echarts/lib/component/legend'  // 左上角legend
 import 'echarts/lib/component/title'  // 标题
-
+import HotChart from "./hotChart";
+import {hotArrs} from "./hotArrs.js"
 
 const colorLost = ['#4FD8FF', '#C15FFF', '#FF5F55', '#FFC935', '#767BFB', 'rgb(248,70,102)','#ff4c41','ff0066'];
 	export default {
 		name: "home",
 		components: {
-       'v-chart': ECharts
+       'v-chart': ECharts,
+       HotChart
 		},
+    mixins: [resize],
 		data(){
 			return {
         // 图表实例
@@ -35,10 +48,10 @@ const colorLost = ['#4FD8FF', '#C15FFF', '#FF5F55', '#FFC935', '#767BFB', 'rgb(2
 				chartLines: null,
         optionPies: {
 					color: colorLost,
-          title: {
-            text: '分类统计图',
-            x: 'center'
-          },
+          // title: {
+          //   text: '分类统计图',
+          //   x: 'center'
+          // },
           tooltip: {
             trigger: 'item',
             formatter: '{a} <br/>{b} : {c} ({d}%)'
@@ -106,15 +119,23 @@ const colorLost = ['#4FD8FF', '#C15FFF', '#FF5F55', '#FFC935', '#767BFB', 'rgb(2
             }
           ]
 				},
-        
+
+        hotData: hotArrs
       } 
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-.wrap {
-	 
+@media screen and (max-width: 960px) {
+ .wrap {
+   display: none;
+ }
+}
+
+@media screen and (min-width: 768px) {
+ .wrap {
+   display:block;
 	 .top {
 		 display: flex;
 		 justify-content:center;
@@ -123,11 +144,11 @@ const colorLost = ['#4FD8FF', '#C15FFF', '#FF5F55', '#FFC935', '#767BFB', 'rgb(2
 			 flex:1;
       .echarts {
 				 width: 450px;
-				 height: 400px;
+				 height: auto;
       }
 		 }
 	 }
-	
-	
 }
+}
+
 </style>
