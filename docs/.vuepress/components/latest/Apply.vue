@@ -155,7 +155,6 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
         },
-
       ]
     };
   }

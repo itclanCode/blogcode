@@ -19,8 +19,8 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
-* [vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较](../fontend/framework/vue-computed-watch)
-* [使用let/const定义变量的场景](../fontend/js/variable-use)
+- [vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较](../fontend/framework/vue-computed-watch)
+- [使用let/const定义变量的场景](../fontend/js/variable-use)
 - [2021-又是一年告别时](../read/replay/look-back-2021)
 - [实现小于12px的字体像素](../fontend/css/example-small-size)
 - [实现扇形生成器](../fontend/css/example-sector)
