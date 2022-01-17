@@ -39,6 +39,7 @@ const rightBar = {
       'https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/rightBarImgs/1606973752313-shang.png',
     bottomImg:
       'https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/rightBarImgs/1606973784719-down-arrow.png',
+    keQunImg: 'https://static01.imgkr.com/temp/d9a2ba19f34a4468bac80bba9e437367.png'  
   },
 };
 
