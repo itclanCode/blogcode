@@ -36,7 +36,7 @@ import {artTitles }  from "./artTitles.js";
                 pageSize:5,
                 // 总条数
                 total: "",
-                tableData: [],
+                tableData: artTitles,
                 tags: [],
                 dates: [],
                 isTable: true,
@@ -67,18 +67,18 @@ import {artTitles }  from "./artTitles.js";
                  this.tags = this.removeArrs(arts);
                  this.dates =  this.removeArrs(date)  
               
-                 for(let i = 0;i <= artTitles.length;i++) {
-                    this.tableData.push({
-                         id: i,
-                         title: artTitles[i].title,
-                         desc: artTitles[i].desc,
-                         author: artTitles[i].author,
-                         update_time: artTitles[i].update_time,
-                         link: artTitles[i].link,
-                         url: artTitles[i].url,
-                         tag: artTitles[i].tag
-                     })
-                 }
+                //  for(let i = 0;i <= artTitles.length;i++) {
+                //     this.tableData.push({
+                //          id: i,
+                //          title: artTitles[i].title,
+                //          desc: artTitles[i].desc,
+                //          author: artTitles[i].author,
+                //          update_time: artTitles[i].update_time,
+                //          link: artTitles[i].link,
+                //          url: artTitles[i].url,
+                //          tag: artTitles[i].tag
+                //      })
+                //  }
              },
 
              removeArrs(arrs) {
