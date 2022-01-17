@@ -11,6 +11,9 @@
           <img width="30" height="30" :src="rightbar.newImg" alt="最新" />
         </a>
       </div>
+      <div  @click="handleKeQun('https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/')">
+        <img width="30" height="30" :src="rightbar.keQunImg" alt="社群" />
+      </div>
       <div>
         <img
           width="30"
@@ -100,6 +103,24 @@ export default {
         .confirm({
           title: "温馨提示",
           message: "亲,这里接受广告主投放,可前往了解一下",
+          theme: "round-button",
+          showCancelButton: true,
+          cancelButtonColor: "#ccc",
+        })
+        .then(() => {
+          // on confirm 确认
+          window.open(openUrl, "_blank");
+        })
+        .catch(() => {
+          // on cancel // 取消
+        });
+    },
+
+    handleKeQun(openUrl) {
+      this.$dialog
+        .confirm({
+          title: "温馨提示",
+          message: "亲,在这里可以加各种群,发广告,发名片,开始你的探索吧",
           theme: "round-button",
           showCancelButton: true,
           cancelButtonColor: "#ccc",

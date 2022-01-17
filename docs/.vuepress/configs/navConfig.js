@@ -104,6 +104,7 @@ const navs = [
   {
     text: '工具',
     items: [
+      {text:'客群基地',link: 'https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/'},
       {text:'飞扬的小鸟',link: 'https://flybird.itclan.cn'},
       {text: '贪吃蛇',link: 'https://snake.itclan.cn'},
       {text: '合成大西瓜',link: 'https://xigua.itclan.cn'},

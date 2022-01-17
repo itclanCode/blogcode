@@ -34,24 +34,24 @@ document.addEventListener('copy', function(e) {
 });
 
 // 在线问答
-(function(y, o, u, k, e) {
-  if (y[k]) {
-    return;
-  }
-  y['YoukeInstance'] = k;
-  y[k] =
-    y[k] ||
-    function() {
-      (y[k].e = y[k].e || []).push(arguments);
-    };
-  e = o.createElement('script');
-  e.async = 1;
-  e.src = u;
-  o.currentScript
-    ? o.currentScript.parentNode.insertBefore(e, o.currentScript)
-    : o.body.appendChild(e);
-})(window, document, 'https://static.cdn.youke.co/js/widget.js', '$youke');
-$youke('load', '7JWIAnpAvIrCXwUH');
+// (function(y, o, u, k, e) {
+//   if (y[k]) {
+//     return;
+//   }
+//   y['YoukeInstance'] = k;
+//   y[k] =
+//     y[k] ||
+//     function() {
+//       (y[k].e = y[k].e || []).push(arguments);
+//     };
+//   e = o.createElement('script');
+//   e.async = 1;
+//   e.src = u;
+//   o.currentScript
+//     ? o.currentScript.parentNode.insertBefore(e, o.currentScript)
+//     : o.body.appendChild(e);
+// })(window, document, 'https://static.cdn.youke.co/js/widget.js', '$youke');
+// $youke('load', '7JWIAnpAvIrCXwUH');
 
 // 浏览器控制台显示
 window.console &&
