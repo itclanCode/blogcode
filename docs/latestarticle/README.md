@@ -9,7 +9,7 @@ title: 目录
 <Meting server="netease"
         type="playlist"
         mid="784399723"
-        :list-folded="true"/>
+        :list-folded="true" />
 
 ## 最新文章
 

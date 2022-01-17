@@ -104,6 +104,7 @@ function getSvgTemplate(fontsize,width, height, y, content) {
 </svg>`;
 }
 import Prism from "prismjs";
+var dom = document;
 
 export default {
   name: "lessThen12px",
@@ -124,7 +125,7 @@ export default {
       return (fontsizeHeightMap[this.fontsize] - 2).toFixed(2);
     },
     width() {
-      const div = document.createElement("div");
+      const div = dom.createElement("div");
       div.style =
         "posiiton: fixed;left: -10000px;top: -10000;visibility: hidden;";
       div.id = "small-font-mock-dom";
@@ -136,7 +137,7 @@ export default {
         this.content
       );
 
-      document.body.appendChild(div);
+      dom.body.appendChild(div);
 
       const width = document
         .querySelector("#small-font-mock-dom text")
