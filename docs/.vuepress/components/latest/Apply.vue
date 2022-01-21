@@ -29,6 +29,16 @@ export default {
             target: "_self",
             class:"medium-zoom lazy img-pic"
          },
+          {
+            href: "javascript:;",
+            imgSrc: "https://static01.imgkr.com/temp/1c51006d3f674c7aad011c357466c37d.jpg",
+            alt: "高情商聊天对话-解救直男、直女,助力脱单",
+            text: "高情商聊天对话",
+            width: "85",
+            height: "85",
+            target: "_self",
+            class:"medium-zoom lazy img-pic"
+         },
          {
             href: "javascript:;",
             imgSrc: "https://static01.imgkr.com/temp/f85d0cb9bc2d4138a91f08efcdadf5a6.jpg",
