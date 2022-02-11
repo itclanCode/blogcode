@@ -50,7 +50,7 @@
     "diff-match-patch": "^1.0.5",
     "echarts": "^4.9.0",
     "element-ui": "^2.15.6",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^10.1.0",
     "sortablejs": "^1.14.0",
     "vant": "^2.12.30",
