@@ -33,7 +33,7 @@ title: 关于作者
 
 ## 我在做什么?
 
-目前，主要在互联网行业，从事前端开发工作，现主要偏向于无服务 `serverless`开发，云开发的研究，并不是什么厉害的角色，正努力脱菜籍中的战斗机一枚。
+目前，主要在互联网行业，从事前端开发工作(360资深前端开发)，现主要偏向于无服务 `serverless`开发，云开发的研究，热衷于好玩实用的技术,并不是什么厉害的角色，正努力脱菜籍中的战斗机一枚。
 
 ## 为什么要写博客呢?
 
@@ -117,10 +117,11 @@ title: 关于作者
 - 微信小程序:搜索`佳豪瑞森装饰`
 - 微信小程序:搜索`轻记账`
 - 微信小程序:搜索`暖暖聊天恋爱话术`
-- [北京 itclan 爱客来科技网络](https://itclan.cn)
-- [站集网-一个收录对你有用的网站](https://zhanji.itclan.cn)
+- 微信小程序:搜索`高情商聊天对话`
+- [IT资源网](https://itclan.cn)
+- [站集网-一个收录对你有用资源导航网站](https://zhanji.itclan.cn)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
-- [免费图床](https://img.itclan.cn)
+- [客来图床(免费)](https://img.itclan.cn)
 
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />
@@ -132,7 +133,7 @@ title: 关于作者
   </div>
 
 * [itclanCoder 博客源码](https://github.com/itclanCode/blogcode)
-* [itclan 爱客来科技网络 https://itclan.cn](https://itclan.cn)
+* [it资源网 https://itclan.cn](https://itclan.cn)
 * [微信公众号: itclanCoder](https://mp.weixin.qq.com/s/EgSgGqMWoV4nrt7qPF9nzA)
 * [微信公众号: 人人领读(renrenlingdu)](https://mp.weixin.qq.com/s/2uEeANGSsixlTqDcJCnm6Q)
 * [诚意招募领读人](https://mp.weixin.qq.com/s/26gR8oixKW1hzOuE_PLCXQ)
@@ -155,7 +156,7 @@ title: 关于作者
 
 ## 承接业务
 
-⒈ 网站建设,pc/移动端网站,具体可见[北京 itclan 爱客来科技官网介绍](https://itclan.cn)
+⒈ 网站建设,pc/移动端网站,具体可见[IT资源网](https://itclan.cn)
 
 ⒉ 小程序-云开发(后台是云数据库-云存储)无服务`serverless`整站开发应用(按需收费)
 

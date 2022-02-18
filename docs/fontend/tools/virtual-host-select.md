@@ -31,6 +31,8 @@ autoGroup-1: 网站建设
 
 服务器 php 版本与 wordpress 版本不一致,需要更新 wordpress 版本
 
+本地安装时：数据库名是填写自己创建的数据库名,而用户名和密码都是root，不然的话就会错误
+
 ::: waring 警告
 
 Your server is running PHP version 5.5.30 but WordPress 5.5.3 requires at least 5.6.20.
@@ -282,6 +284,9 @@ require_once ABSPATH . 'wp-settings.php';
 * divi
 * Ultra
 * Qubery
+* WPReplace插件: 批量替换域
+* Better Search Replace
+* 分类目录-标签转换器（在wordpress后台的工具当中,将站点中的标签和分类进行互转）
 
 ## 设计
 
@@ -477,6 +482,15 @@ apt-get install zip unzip
 腾讯云腾讯云出站规则-一键
 ## 安装宝塔软件
 
+## 上传的文件大小超过php.ini文件中定义的upload_max_filesize值
+
+
+找到php.ini这个文件,点击MAMP网站中的phpInfo,在phpInfo可以看到
+
+搜索upload_max_filesize 和post_max_size，改一下文件上传最大限制，比如都改为20M
+
+
+## wordpress的分类和文章管理
 
 
  -->
