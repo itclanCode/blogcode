@@ -1,5 +1,10 @@
 friendLinkers = [
   {
+    name: 'IT资源网',
+    url: 'https://itclan.cn',
+    desc: 'IT资源网(itclan.cn)-专注网站模板下载，源码下载，程序开发，视频教程，小程序搭建，站长交易平台',
+  },
+  {
     name: '站集网',
     url: 'https://zhanji.itclan.cn',
     desc: '让资源导航更简单,一个收录对你有用的网站',

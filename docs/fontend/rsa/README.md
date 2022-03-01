@@ -29,6 +29,7 @@ title:目录
 - [返回数组中下标间隔nth的元素](./array-return-nth)
 - [返回数组中的第n个元素](./array-return-n-elem)
 - [返回数组头尾元素](./array-head-elem)
+- [找出数组当中指定元素的位置](./array-findarr-index)
 
 ## 字符串String
 

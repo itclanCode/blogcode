@@ -120,7 +120,7 @@ const navs = [
   { text: '关于我', link: '/about/' },
   { text: '广告投放', link: '/adverent/' },
   { text: 'IT资源网', link: 'https://itclan.cn' },
-  { text: '开往', link: 'https://travellings-zeta.vercel.app/' },
+  { text: '爱客来', link: 'https://aikelaidev.cn' },
 ];
 
 module.exports = navs;

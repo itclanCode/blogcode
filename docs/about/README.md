@@ -119,6 +119,7 @@ title: 关于作者
 - 微信小程序:搜索`暖暖聊天恋爱话术`
 - 微信小程序:搜索`高情商聊天对话`
 - [IT资源网](https://itclan.cn)
+- [爱客来科技](https://aikelaidev.cn)
 - [站集网-一个收录对你有用资源导航网站](https://zhanji.itclan.cn)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
 - [客来图床(免费)](https://img.itclan.cn)
@@ -134,6 +135,7 @@ title: 关于作者
 
 * [itclanCoder 博客源码](https://github.com/itclanCode/blogcode)
 * [it资源网 https://itclan.cn](https://itclan.cn)
+- [爱客来科技](https://aikelaidev.cn)
 * [微信公众号: itclanCoder](https://mp.weixin.qq.com/s/EgSgGqMWoV4nrt7qPF9nzA)
 * [微信公众号: 人人领读(renrenlingdu)](https://mp.weixin.qq.com/s/2uEeANGSsixlTqDcJCnm6Q)
 * [诚意招募领读人](https://mp.weixin.qq.com/s/26gR8oixKW1hzOuE_PLCXQ)

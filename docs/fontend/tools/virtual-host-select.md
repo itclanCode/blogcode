@@ -491,6 +491,7 @@ apt-get install zip unzip
 
 
 ## wordpress的分类和文章管理
+cookile-editor
 
 
  -->
