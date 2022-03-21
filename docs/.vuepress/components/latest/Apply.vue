@@ -21,6 +21,16 @@ export default {
       applyData: [
          {
             href: "javascript:;",
+            imgSrc: "https://static01.imgkr.com/temp/e16c6225fa64422d976ed1e202ac4898.png",
+            alt: "在线测运势,取名,姻缘,八字",
+            text: "测算网",
+            width: "85",
+            height: "85",
+            target: "_self",
+            class:"medium-zoom lazy img-pic"
+         },
+         {
+            href: "javascript:;",
             imgSrc: "https://static01.imgkr.com/temp/449b0b2c383546d687515a5159416b97.png",
             alt: "客群基地,帮你拓展人脉,各行各业真实圈子,发广告,发名片等",
             text: "客群基地",
