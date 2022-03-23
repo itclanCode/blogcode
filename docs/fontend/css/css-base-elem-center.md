@@ -1342,4 +1342,3 @@ css 层叠样式代码
 对于元素水平垂直居中显示可以优先考虑 css 的方式解决(如上方法),对于复杂的实例,也可以考虑同上文中用 js 的方式去实现元素的水平垂直居中显示
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
-<!-- <footer-AvoidCopy /> -->

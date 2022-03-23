@@ -1007,4 +1007,3 @@ Page({
 <!-- <googleAd-googleBottomAd /> -->
 
 <footer-FeedBack />
-<!-- <footer-AvoidCopy /> -->

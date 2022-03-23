@@ -136,22 +136,14 @@ const headConfig = [
   //       'https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=9bdd2044-a21a-48f4-8838-5aea07e583ab&amp;pophcol=2&amp;lang=zh',
   //   },
   // ],
-  [
-    'script',
-    {
-      charset: 'utf-8',
-      async: 'async',
-      src: 'https://static.bshare.cn/b/bshareC0.js',
-    },
-  ],
-  [
-    'script',  // 全局支持复制时,复制付费
-    {
-      id: 'union_douhao',
-      union_pay_tid: '720',
-      src: 'https://n.2lian.com/static/js/loader.js',
-    },
-  ]
+  // [
+  //   'script',
+  //   {
+  //     charset: 'utf-8',
+  //     async: 'async',
+  //     src: 'https://static.bshare.cn/b/bshareC0.js',
+  //   },
+  // ],
 ];
 
 module.exports = headConfig;
