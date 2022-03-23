@@ -144,14 +144,14 @@ const headConfig = [
       src: 'https://static.bshare.cn/b/bshareC0.js',
     },
   ],
-  // [
-  //   'script',  // 全局支持复制时,复制付费
-  //   {
-  //     id: 'union_douhao',
-  //     union_pay_tid: '720',
-  //     src: 'https://n.2lian.com/static/js/loader.js',
-  //   },
-  // ]
+  [
+    'script',  // 全局支持复制时,复制付费
+    {
+      id: 'union_douhao',
+      union_pay_tid: '720',
+      src: 'https://n.2lian.com/static/js/loader.js',
+    },
+  ]
 ];
 
 module.exports = headConfig;

@@ -389,4 +389,4 @@ exports.main = async (event, context) => {
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
-<footer-AvoidCopy />
+<!-- <footer-AvoidCopy /> -->
