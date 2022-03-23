@@ -21,3 +21,4 @@ autoGroup-1: 小程序实用案例
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
+<footer-AvoidCopy />

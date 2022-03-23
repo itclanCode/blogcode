@@ -262,3 +262,4 @@ setData 将数据从逻辑层发送到视图层是异步,同时改变对应的`t
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
+<footer-AvoidCopy />

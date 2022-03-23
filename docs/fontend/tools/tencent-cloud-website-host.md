@@ -245,3 +245,4 @@ Windows 系统中 `localPath` 为本地路径形式，是系统可以识别的�
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
+<footer-AvoidCopy />

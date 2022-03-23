@@ -238,3 +238,4 @@ fatal: Authentication failed for 'https://xxx.git'
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
+<footer-AvoidCopy />

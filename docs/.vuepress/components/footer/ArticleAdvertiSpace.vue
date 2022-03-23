@@ -3,7 +3,7 @@
     <div class="carousel">
       <el-carousel trigger="click" height="150px">
         <el-carousel-item v-for="item in carouses" :key="item.id">
-          <a :href="item.href" @click="linkFun">
+          <a :href="item.href" @click="linkFun" target="_blank">
             <img :src="item.imgUrl" :width="width" :height="height" alt />
           </a>
         </el-carousel-item>
@@ -46,10 +46,10 @@ export default {
 
         {
           imgUrl:
-            "https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/AdvertiSpace/1607499509358-adslocation.png",
+            "https://static01.imgkr.com/temp/cc727b60a9114b8d9d5ae0724431083f.png",
           text: "广告位招租",
           id: "2",
-          href: "/adverent/",
+          href: "https://cesuan.itclan.cn/",
         },
       ],
       centerDialogVisible: false,

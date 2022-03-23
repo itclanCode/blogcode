@@ -411,3 +411,4 @@ _formatTimeDetail(); // 3小时前,上面的传入的是可控制的
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
+<footer-AvoidCopy />

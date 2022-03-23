@@ -160,3 +160,4 @@ build command,以及 publish directory,你可以不填,当然你可以指定命�
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
+<footer-AvoidCopy />

@@ -3,7 +3,7 @@
     <div class="carousel">
       <el-carousel trigger="click" height="150px">
         <el-carousel-item v-for="item in carouses" :key="item.id">
-          <a :href="item.href" @click="handleItem">
+          <a :href="item.href" @click="handleItem" target="_blank">
             <img :src="item.imgUrl" />
           </a>
         </el-carousel-item>
@@ -36,10 +36,11 @@ export default {
       carouses: [
         {
           imgUrl:
-            "https://ae01.alicdn.com/kf/U03ca707a19b14bc9b69d157e35b282ceI.jpg",
-          text: "领取限量云产品优惠，今日限时秒杀",
+            "https://static01.imgkr.com/temp/cc727b60a9114b8d9d5ae0724431083f.png",
+          text: "测算",
           id: "1",
-          href: "https://www.aliyun.com/1111/new?userCode=icq59tjf",
+          // href: "https://www.aliyun.com/1111/new?userCode=icq59tjf",
+          href:'https://cesuan.itclan.cn'
         },
 
         {

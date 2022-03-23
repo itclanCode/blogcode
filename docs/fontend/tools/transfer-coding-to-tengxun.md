@@ -61,3 +61,5 @@ coding 虽然是免费使用,但是腾讯云的云存储`cos`,`cdn`却是收费�
 ## 相关参考文档
 
 - [coding 静态网站服务升级指南](https://help.coding.net/docs/pages/operating/migrate.html)
+
+<footer-AvoidCopy />
