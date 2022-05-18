@@ -127,10 +127,12 @@ title: 关于作者
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />
   <p>扫码即可体验,还有待完善</p>
-   <img class="medium-zoom lazy" loading="lazy"  src="https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/%E8%BD%BB%E8%AE%B0%E8%B4%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A0%81.3unxzonk84a0.jpg" alt="轻记账" width="200" height="200" />
+   <img class="medium-zoom lazy" loading="lazy"  src="./images/qing-jizhang-min-code.png" alt="轻记账" width="200" height="200" />
   <p>扫码即可体验,还有待完善</p>
-  <img class="medium-zoom lazy" loading="lazy"  src="https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/gh_a0b6a06d175a_258.6k0rqh7vefo0.jpg" alt="暖暖聊天恋爱话术" width="200" height="200" />
+  <img class="medium-zoom lazy" loading="lazy"  src="./images/gaoqingshangcode.jpg" alt="高情商聊天对话" width="200" height="200" />
   <p>扫码即可体验,还有待完善</p>
+  <img class="medium-zoom lazy" loading="lazy"  src="https://static01.imgkr.com/temp/449b0b2c383546d687515a5159416b97.png" alt="加群" width="200" height="200" />
+  <p>添加社群</p>
   </div>
 
 * [itclanCoder 博客源码](https://github.com/itclanCode/blogcode)

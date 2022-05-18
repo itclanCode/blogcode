@@ -14,9 +14,9 @@
 <script>
 import live2dJSString from '../../public/js/live2d';
 const blackCatUrl =
-  'https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-hijiki/assets/hijiki.model.json';
+  '/js/live2d-widget-model-hibiki/assets/hijiki.model.json';
 const whiteCatUrl =
-  'https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-tororo/assets/tororo.model.json';
+  '/js/live2d-widget-model-tororo/assets/tororo.model.json';
 export default {
   name: 'Cat',
   data() {

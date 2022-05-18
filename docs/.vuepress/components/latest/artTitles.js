@@ -427,6 +427,26 @@ export  const artTitles =  [
       link: "javascript:;",
       url:"/fontend/framework/vue-computed-watch",
       tag: "Vue"  
+   },
+   {
+      id: 40,
+      title: "vuejs中的默认插槽-具名插槽-作用域插槽三者的比较",
+      desc: "vuejs中的默认插槽-具名插槽-作用域插槽三者的比较",
+      author: "随笔川迹",
+      update_time: '2022-5-12',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-slot",
+      tag: "Vue"  
+   },
+   {
+      id: 41,
+      title: "vuejs中的mixin混入-局部混入/全局混入",
+      desc: "vuejs中的mixin混入-局部混入/全局混入",
+      author: "随笔川迹",
+      update_time: '2022-5-17',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-mixins",
+      tag: "Vue"  
    }
 
 

@@ -159,7 +159,7 @@ const plugins = [
         'global-RightBar',
         'global-Cat',
         'global-Copy',
-        'global-AdvertiSpace',
+        // 'global-AdvertiSpace',
       ],
     },
   ],

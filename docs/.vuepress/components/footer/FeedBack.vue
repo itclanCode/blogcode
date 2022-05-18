@@ -3,22 +3,22 @@
     <div class="feedback-content">
       <div @click="handleShareCopy">
         <img
-          src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/feedback/1607598007853-icon-share.png"
+          src="/images/feedback/share.svg"
         />分享
       </div>
       <div @click="handleFeedBack('http://itclancoder.mikecrm.com/WkvRFA4')">
         <img
-          src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/feedback/1607598092598-icon-experiense.png"
+          src="/images/feedback/liuyan.svg"
         />留言
       </div>
       <div @click="handleAnswer('http://itclancoder.mikecrm.com/wkgblhv')">
         <img
-          src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/feedback/1607598132714-icon-dspel.png"
+          src="/images/feedback/jieda.svg"
         />解答
       </div>
       <div @click="handleColect">
         <img
-          src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/feedback/1607598161589-icon-collect.png"
+          src="/images/feedback/shoucang.svg"
         />收藏
       </div>
     </div>

@@ -20,6 +20,46 @@ export default {
     return {
       applyData: [
          {
+            href: "https://pay.aikelaidev.cn",
+            imgSrc: "/images/latest/payaikelaidev.svg",
+            alt: "生成聚合支付码",
+            text: "生成聚合支付码",
+            width: "100",
+            height: "44",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+         {
+            href: "https://bazihehun.itclan.cn",
+            imgSrc: "/images/latest/bazihehun.svg",
+            alt: "测八字合婚",
+            text: "测合婚",
+            width: "100",
+            height: "44",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+         {
+            href: "https://bazi.itclan.cn",
+            imgSrc: "/images/latest/bazi.svg",
+            alt: "在线测八字",
+            text: "测八字",
+            width: "100",
+            height: "44",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+        {
+            href: "https://taohua.itclan.cn",
+            imgSrc: "/images/latest/taohua.svg",
+            alt: "在线桃花",
+            text: "测桃花",
+            width: "100",
+            height: "44",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+         {
             href: "javascript:;",
             imgSrc: "https://static01.imgkr.com/temp/e16c6225fa64422d976ed1e202ac4898.png",
             alt: "在线测运势,取名,姻缘,八字",
@@ -49,21 +89,21 @@ export default {
             target: "_self",
             class:"medium-zoom lazy img-pic"
          },
-         {
-            href: "javascript:;",
-            imgSrc: "https://static01.imgkr.com/temp/f85d0cb9bc2d4138a91f08efcdadf5a6.jpg",
-            alt: "让你平时的消费更省钱,日久越长,能省出一辆车",
-            text: "外卖电影客惠劵",
-            width: "85",
-            height: "85",
-            target: "_self",
-            class:"medium-zoom lazy img-pic"
-         },
+        //  {
+        //     href: "javascript:;",
+        //     imgSrc: "https://static01.imgkr.com/temp/f85d0cb9bc2d4138a91f08efcdadf5a6.jpg",
+        //     alt: "让你平时的消费更省钱,日久越长,能省出一辆车",
+        //     text: "外卖电影客惠劵",
+        //     width: "85",
+        //     height: "85",
+        //     target: "_self",
+        //     class:"medium-zoom lazy img-pic"
+        //  },
          {
           href: "javascript:;",
-          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/gh_a0b6a06d175a_258.6k0rqh7vefo0.jpg",
-          alt: "暖暖聊天恋爱话术小程序-高情商聊天对话,让撩妹,撩汉脱单更简单",
-          text: "暖暖聊天恋爱话术",
+          imgSrc: "https://static01.imgkr.com/temp/7743eada609d499fbc009f671874eefe.jpg",
+          alt: "高情商聊天对话,让撩妹,撩汉脱单更简单",
+          text: "高情商聊天对话",
           width: "85",
           height: "85",
           target: "_self",
@@ -71,7 +111,7 @@ export default {
         },
         {
           href: "javascript:;",
-          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/暖暖聊天表情包.2w2dhf5lfcu0.jpg",
+          imgSrc: "https://static01.imgkr.com/temp/1c4b7fd152d744fa9414bcb5d2b2f560.jpg",
           alt: "暖暖聊天表情包",
           text: "暖暖聊天表情包",
           width: "85",
@@ -81,7 +121,7 @@ export default {
         },
          {
           href: "javascript:;",
-          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/爱客来证件照制作小程序码.149lpqwmr4xs.jpg",
+          imgSrc: "https://static01.imgkr.com/temp/ff3e54d4366f4ce19fc92f3058639f3a.jpg",
           alt: "爱客来证件照制作",
           text: "爱客来证件照制作",
           width: "85",
@@ -91,7 +131,7 @@ export default {
         },
         {
           href: "javascript:;",
-          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/轻记账小程序码.3unxzonk84a0.jpg",
+          imgSrc: "https://static01.imgkr.com/temp/f6f88dc91e5c411f9641332f6a09e8b5.jpg",
           alt: "轻记账-一款轻松微信记账小工具",
           text: "轻记账",
           width: "85",
@@ -101,7 +141,7 @@ export default {
         },
          {
           href: "javascript:;",
-          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/gaoqingqi.16l762kzsihs.jpg",
+          imgSrc: "https://s1.ax1x.com/2022/05/18/OoIAkn.jpg",
           alt: "搞清亲戚称谓关系-知道亲戚称呼什么的一款工具",
           text: "搞清亲戚称谓关系",
           width: "85",
@@ -112,7 +152,7 @@ export default {
         
          {
           href: "javascript:;",
-          imgSrc: "https://cdn.jsdelivr.net/gh/itclanCode/blogimg@main/mIn-program-img/susuanjisuanqi.6ayyb58z2d00.jpg",
+          imgSrc: "https://s1.ax1x.com/2022/05/18/OooHIA.jpg",
           alt: "速算计算器-一款简易的加减乘除计算器",
           text: "速算计算器",
           width: "85",

@@ -42,6 +42,8 @@ title: 目录
 
 ## Vue 基础
 
+- [vuejs中的mixin混入-局部混入/全局混入](./vue-mixins)
+- [vuejs中的默认插槽-具名插槽-作用域插槽三者的比较](./vue-slot)
 - [vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较](./vue-computed-watch)
 - [vuejs 中的组件以及父子组件间通信传值](./vue-component-pass-value)
 

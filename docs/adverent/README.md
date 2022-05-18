@@ -28,7 +28,7 @@ sidebarDepth: 3
 3. 通过添加微信:`suibichuanji`
 
 <div align="center">
-     <img class="medium-zoom lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/adverent/1607579945697-person-code.jpg" width="150" height="150" />
+     <img class="medium-zoom lazy" src="./images/personcode.jpg" width="150" height="150" />
 </div>
 
 If you have any question, please contact us immediately for free:
@@ -44,7 +44,7 @@ follow us on **weixin:suibichuanji**
 付费广告包括展示广告位和付费文章(暂时全站文章免费阅读),具体广告位分为:**文章顶部**,**底部**,以及**右下角广告展示位**,如下所示
 
 <div align="center">
-  <img class="medium-zoom lazy admessage" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/adverent/1607580039801-admessage.png" alt="itclanCoder" />
+  <img class="medium-zoom lazy admessage" loading="lazy" src="https://imgtu.com/i/OTikMF" alt="itclanCoder" />
   </div>
 
 - `广告位展示1`为右侧底部广告,全站可见

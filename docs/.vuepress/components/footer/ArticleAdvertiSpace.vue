@@ -35,14 +35,14 @@ export default {
   data() {
     return {
       carouses: [
-        {
-          imgUrl:
-            "https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/AdvertiSpace/1607499461751-adslo.png",
-          text: "广告位招租",
-          id: "1",
-          target: "_blank",
-          href: "http://itclancoder.mikecrm.com/z1zXWvz",
-        },
+        // {
+        //   imgUrl:
+        //     "https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/AdvertiSpace/1607499461751-adslo.png",
+        //   text: "广告位招租",
+        //   id: "1",
+        //   target: "_blank",
+        //   href: "http://itclancoder.mikecrm.com/z1zXWvz",
+        // },
 
         {
           imgUrl:
