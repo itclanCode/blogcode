@@ -2,7 +2,7 @@
 
 # itclanCoder
 
-![](https://coder.itclan.cn/images/itclancoder.jpeg))
+![](https://coder.itclan.cn/images/itclancoder.jpeg)
 
 <p align="center">
 
