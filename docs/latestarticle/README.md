@@ -18,6 +18,8 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+- [CSS3 实现炫丽的温室玫瑰](../fontend/css/animate-meiguihua)
+- [纯css3实现字体旋转动效](../fontend/css/animate-ziti-rotate)
 - [vuejs中的mixin混入-局部混入/全局混入](../fontend/framework/vue-mixins)
 - [vuejs中的默认插槽-具名插槽-作用域插槽三者的比较](../fontend/framework/vue-slot)
 - [vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较](../fontend/framework/vue-computed-watch)

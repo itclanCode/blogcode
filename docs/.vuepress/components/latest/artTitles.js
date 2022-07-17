@@ -447,6 +447,26 @@ export  const artTitles =  [
       link: "javascript:;",
       url:"/fontend/framework/vue-mixins",
       tag: "Vue"  
+   },
+   {
+      id: 42,
+      title: "纯css3实现字体旋转动效",
+      desc: "纯css3实现字体旋转动效",
+      author: "随笔川迹",
+      update_time: '20226-14',
+      link: "javascript:;",
+      url:"/fontend/css/animate-ziti-rotate",
+      tag: "Css"  
+   },
+   {
+      id: 43,
+      title: "CSS3 实现炫丽的温室玫瑰",
+      desc: "CSS3 实现炫丽的温室玫瑰",
+      author: "随笔川迹",
+      update_time: '20226-14',
+      link: "javascript:;",
+      url:"/fontend/css/animate-meiguihua",
+      tag: "Css"  
    }
 
 

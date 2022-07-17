@@ -131,7 +131,7 @@ title: 关于作者
   <p>扫码即可体验,还有待完善</p>
   <img class="medium-zoom lazy" loading="lazy"  src="./images/gaoqingshangcode.jpg" alt="高情商聊天对话" width="200" height="200" />
   <p>扫码即可体验,还有待完善</p>
-  <img class="medium-zoom lazy" loading="lazy"  src="https://static01.imgkr.com/temp/449b0b2c383546d687515a5159416b97.png" alt="加群" width="200" height="200" />
+  <img class="medium-zoom lazy" loading="lazy"  src="./images/kequnjide.png" alt="加群" width="200" height="200" />
   <p>添加社群</p>
   </div>
 

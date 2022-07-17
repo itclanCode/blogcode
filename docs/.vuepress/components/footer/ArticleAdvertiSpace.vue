@@ -35,19 +35,19 @@ export default {
   data() {
     return {
       carouses: [
-        // {
-        //   imgUrl:
-        //     "https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/AdvertiSpace/1607499461751-adslo.png",
-        //   text: "广告位招租",
-        //   id: "1",
-        //   target: "_blank",
-        //   href: "http://itclancoder.mikecrm.com/z1zXWvz",
-        // },
+        {
+          imgUrl:
+            "https://itclan.cn/wp-content/uploads/2022/06/footer-hf.gif",
+          text: "广告",
+          id: "1",
+          target: "_blank",
+          href: "http://jg.wegowan.com/stf/visitor.html?id=200&s=6702&c={uid}",
+        },
 
         {
           imgUrl:
-            "https://static01.imgkr.com/temp/cc727b60a9114b8d9d5ae0724431083f.png",
-          text: "广告位招租",
+            "https://s1.ax1x.com/2022/06/24/jiTfOO.png",
+          text: "测算",
           id: "2",
           href: "https://cesuan.itclan.cn/",
         },

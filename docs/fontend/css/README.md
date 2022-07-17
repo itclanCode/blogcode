@@ -40,6 +40,8 @@ title: 目录
 - [css 实现动画箭头](./animated-arrow)
 - [css 汽车 VR-3D 旋转](./animate-car-vr)
 - [css 时钟翻转](./animate-flip-clock)
+- [css字体旋转动效](./animate-ziti-rotate)
+- [CSS3 炫丽的温室玫瑰开花](./animate-meiguihua)
 
 ## 移动端相关
 

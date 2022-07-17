@@ -36,7 +36,7 @@ export default {
       carouses: [
         {
           imgUrl:
-            "https://static01.imgkr.com/temp/cc727b60a9114b8d9d5ae0724431083f.png",
+            "https://s1.ax1x.com/2022/06/24/jiTfOO.png",
           text: "测算",
           id: "1",
           // href: "https://www.aliyun.com/1111/new?userCode=icq59tjf",
