@@ -285,8 +285,8 @@ module.exports = {
 ```
 
 如果这时在`itclan`根目录下的终端下,运行`npm run docs:dev`或者`yarn docs:dev`,会出现页面 404 页面,如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994240666-01-start-project.png" alt="启动页面" />
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994330473-02-404-page.png" alt="404页面" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbeU6e.png" alt="启动页面" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbmEBd.png" alt="404页面" />
 
 这是因为`vuepress`默认打开的是`docs` 下的 `README.md` 文件, 由于你没有创建,所以找到的是`vuepress` 默认提供的 `404`页面
 | 文件的相对路径 | 页面路由地址 |
@@ -296,7 +296,7 @@ module.exports = {
 | /config.md | /config.html |
 在`VuePress`中`README.md`文件,你可以把它视为`xxx.vue`文件,md 文件中既可以写`js`,`css`,`html`,如果你发现页面 404,排除下路由下是不是没有添加`README.md`文件的
 在`docs`目录下创建`README.md`文件, 再次`npm run dev`,就可以看到运行起来的效果, 如下图所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994404436-03-start-success.png" alt="启动页面" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbmN40.png" alt="启动页面" />
 当然,您现在看到的页面是一片空白,那是因为`docs`根目录下的`README.md`中没有任何内容,但现在至少不是 404 了,离曙光又近了一步
 
 ## 设置封面启动页
@@ -325,7 +325,7 @@ footer: MIT Licensed | Copyright © 2020-present 随笔川迹
 ```
 
 效果如下所示:
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994618811-04-home-config.png" alt="配置首页页面" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbmobd.png" alt="配置首页页面" />
 当然,您现在看到,网站上有图片没有正常的显示,那是因为没有添加图片造成的,网站上一些图片,logo 等静态资源可以放到`.vuepress`目录下的一个`public`目录下的
 
 这个`public`是自己创建的,`vuepress`并不会自动帮你生成,在`/.vuepress/public/images`中放入您想要的图片就可以了的
@@ -367,7 +367,7 @@ module.exports = {
 :::
 
 配置完后,如下所示:
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994760866-05-home.png" alt="首页" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbnCan.png" alt="首页" />
 
 当然,你如果现在点击导航栏,会发现是 404 页面,那是因为导航路由下面没有`README.md`文件
 目录树结构如下所示
@@ -393,7 +393,7 @@ module.exports = {
 ```
 
 与您的电脑上打开的是一一对应的,如下所示
-<img class="medium-zoom" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994898937-06-nav-file.png" alt="文件结构" />
+<img class="medium-zoom" src="https://s1.ax1x.com/2022/07/20/jbnUZd.png" alt="文件结构" />
 
 其中导航栏的链接分为三种:一级 nav,链接,二级下拉菜单,带标题的多级分类菜单
 
@@ -411,7 +411,7 @@ themeConfig: {
 
 配置完如下所示:
 
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995030126-07-level-1-nav.png" alt="一级路由结构" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbn4J0.png" alt="一级路由结构" />
 
 - 如果想 nav 直接是链接,即路由直接是链接地止即可
 
@@ -427,7 +427,7 @@ themeConfig: {
 ```
 
 配置完,如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995189075-08-nav-link.png" alt="导航栏链接" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbumSf.png" alt="导航栏链接" />
 
 - 如果想 nav 二级下拉菜单,如下配置,`link`的属性值带有链接,会直接是链接,若不是那就是路由,在`vuepress`中提供了一个`items`属性,配置二级导航如下所示
 
@@ -445,7 +445,7 @@ themeConfig:{
 ```
 
 配置完后,如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995250844-09-leavel2-nav.png" alt="二级菜单导航" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbuB79.png" alt="二级菜单导航" />
 
 - 如果你想要二级菜单带有标题,分类的菜单形式,如下配置
 
@@ -493,7 +493,7 @@ themeConfig:{
 ```
 
 配置完后,结果如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995356209-10-leavel-3-nav.png" alt="带标题级菜单导航" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbu47d.png" alt="带标题级菜单导航" />
 你可以按照这个类似的结构,无限制的配置下去
 
 光有 nav 导航是不够的,下面来配置一下侧边栏,怎么配置侧边栏才是重中之重
@@ -561,7 +561,7 @@ module.exports = {
 ```
 
 配置完后,具体效果如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995462785-11-slide-config.png" alt="配置侧边栏" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbujBQ.png" alt="配置侧边栏" />
 
 目前的,项目目录结构如下所示
 
@@ -851,7 +851,7 @@ module.exports = {
 在使用 valine 之前,先前往[leancloud 注册账号](https://www.leancloud.cn/)
 
 然后创建应用, 获取`APP ID`和`APP KEY`
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995769714-12-leancloud-get-appid-appkey.png" alt="获取appId" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbKmNR.png" alt="获取appId" />
 
 ### 安装-vuepress-plugin-comment
 
@@ -883,14 +883,14 @@ module.exports = {
 ```
 
 其中`appid`和`appkey`为你创建的应用的`APP ID` 和`APP Key`，把刚才获取到的秘钥复制过来即可,经过配置之后
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995911786-13-valine-comment.png" alt="评论" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbK0v8.png" alt="评论" />
 
 ### 删除管理评论
 
 在`leancloud`后台管理里,在存储中,支持删除评论操作
 
 若有骚扰,或违反法律法规的评论,可以进行删除操作的,避免给自己带来不必要的麻烦
-<img class="medium-zoom" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607995983101-14-valine-comment-manner.png" alt="评论" />
+<img class="medium-zoom" src="https://s1.ax1x.com/2022/07/20/jbKg5n.png" alt="评论" />
 
 ### valine-样式的修改-适配
 
@@ -1124,7 +1124,7 @@ cd -
 注意克隆到本地仓库代码的方式,默认是`https`方式,如果你克隆代码方式是`https` 方式,上面的提交地止,就换成`https`的,如果是 ssh 的方式的就换成 `ssh`方式,否则是会出现问题的
 
 若是 ssh 的方式,可以配置秘钥:这样不用每次提交代码,都输入用户名和密码的
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607999244376-39-deploy-github.png" alt="部署" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbMKaj.png" alt="部署" />
 :::
 也可以通过在命令行终端输入`git remote -v`查看克隆下的远端仓库地止的,看得出是那种方式克隆下来的
 
@@ -1157,9 +1157,9 @@ git remote -v
 :::
 
 当你`push`,完后,地止栏里输入`xxx.github.io`,如果能够访问成功,那说明部署已经成功了,如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996302728-15-github-name.png" alt="github-name" />
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607994618811-04-home-config.png" alt="github-domain" />
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996514032-16-github-pages-success.png" alt="github-success" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbMBJ1.png" alt="github-name" />
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/17.png" alt="github-domain" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbM7y8.png" alt="github-success" />
 
 ## 配置自定义域名
 
@@ -1170,9 +1170,9 @@ git remote -v
 ### 登录域名管理后台
 
 在这里我以阿里云为例:[阿里云控制台](https://dc.console.aliyun.com/)
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996608390-17-domain-config0.png" alt="配置域名" />
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996677592-18-domain-config1.png" alt="配置域名" />
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996736235-19-domain-config3.png" alt="配置域名" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jblEDS.png" alt="配置域名" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbllvV.png" alt="配置域名" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jbltUJ.png" alt="配置域名" />
 
 实现这一步相当于就是将自定义的域名指向`gihub pages`,当访问`https://itclancode.github.io/`与`doc.itclan.cn`指向同一个`IP`,相比于浏览器地止栏输入`xxx.github.io`,直接输入域名访问要方便得多
 
@@ -1213,7 +1213,7 @@ xxx.xxx.xxx.xxx的 Ping 统计信息:
 - [阿里云域名检测工具](https://zijian.aliyun.com/?spm=a2c4g.11186623.2.15.6db92da1C19ghl#/domainDetect)
 
 如果遇到解析不成功:先仔细查看一下文档,按照文档指示一步一步的排查,官方文档很详细,但是就是不明显,得耐心一点的
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996871908-20-watch-doc.png" alt="配置域名" />
+<img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb1esK.png" alt="配置域名" />
 
 ### 在仓库底下新建一个-CNAME-文件
 
@@ -1252,29 +1252,26 @@ doc.itclan.cn;
 <div align="center">
   <p><strong>step1:新建仓库</strong></p>
   <div>
-    <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607996983797-21-coding01.png" alt="新建仓库" />
+    <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb1adg.png" alt="新建仓库" />
   </div>
   <div>
   <p><strong>step2:选择DevOps模板</strong></p>
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997050235-22-coding02.png" alt="新建仓库" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb1rzq.png" alt="新建仓库" />
   </div>
   <div>
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997121313-23-coding03.png" alt="新建仓库" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb12eU.png" alt="新建仓库" />
   </div>
   <p><strong>step3:选择静态网站</strong></p>
   <div>
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997224831-24-coding04.png" alt="选择静态网站" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb14Y9.png" alt="选择静态网站" />
   </div>
   <p><strong>step4:修改静态网站配置</strong></p>
   <div>
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997275137-25-coding05.png" alt="新建仓库" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb1TQx.png" alt="新建仓库" />
   </div>
    <p><strong>step5:设置自定义域名</strong></p>
    <div>
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997332711-26-coding06.png" alt="新建仓库" />
-  </div>
-    <div>
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997397539-27-coding07.png" alt="新建仓库" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb1jFH.png" alt="新建仓库" />
   </div>
 </div>
 
@@ -1297,8 +1294,8 @@ doc.itclan.cn;
 - 进入百度统计官方网址:[百度统计](https://tongji.baidu.com/)
 
 * 新增网站,填入你的网站信息即可
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997509175-28-baidutongji-0.png" alt="配置域名" />
-  <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997584068-29-baidutongji1.png" alt="配置域名" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb3l0U.png" alt="配置域名" />
+  <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb3Jh9.png" alt="配置域名" />
 
 - 在`.vuepress/config.js`的`head`中添加如下一段代码即可
 
@@ -1332,10 +1329,10 @@ doc.itclan.cn;
 - 创建媒体资源,获取`ga`,格式是`UA-00000000-0`
 - 安装插件,并配置选项
 
- <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997680591-30-google-alays-01.png" alt="谷歌分析" /> 
- <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997748254-31-google-alays-02.png" alt="谷歌分析" /> 
- <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607997970832-32-google-alays-03.png" alt="谷歌分析" /> 
- <img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607998050820-33-google-alays-04.png" alt="谷歌分析" />
+ <img class="medium-zoom lazy" loading="lazy" src="https://s1.ax1x.com/2022/07/20/jb3fnf.png" alt="谷歌分析" /> 
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/32.png" alt="谷歌分析" /> 
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/33.png" alt="谷歌分析" /> 
+ <img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/34.png" alt="谷歌分析" />
 
 ### 安装
 
@@ -1391,10 +1388,12 @@ plugins: [
 | /config.md | /config.html |
 当你访问 `/guide/`而 `404` 时,这是由于`guide`目录下缺乏了它对应的 `README.md`文件
 
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/35.png" alt="文件名" />
+
 ### 侧边栏显示的是文件路径，而非文件名
 
 当您的`md`文件没有任何内容时,就会显示文件路径,如`/read/lingdu/wanted.html`),如下所示
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607998646760-34-show-path.png" alt="文件名" />
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/36.png" alt="文件名" />
 
 这是由于你的 `md`文件中缺乏标题导致的，**标题的产生有两种方式**
 
@@ -1493,7 +1492,7 @@ resolutions: {
 ### deploy-脚本部署失败
 
 当你在命令行终端执行`bash deploy.sh`,报如下错误
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607998813656-35-deploy-error.png" alt="部署失败" />
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/37.png" alt="部署失败" />
 
 单独执行`npm run docs:build`没有问题,但是一旦执行这个自动化部署脚本命令,就报这个错误,这个错误令人很奔溃
 把`deplpy.sh`中的`set -e`注释掉,重新在执行`bash deploy.sh`就可以了的
@@ -1505,7 +1504,7 @@ resolutions: {
 ### npm-安装某些包失败
 
 有时候,您在使用某些`cli`或者`命令`的时候,会报这个错误
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607998894653-36-install-fail.png" alt="安装包失败" />
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/38.png" alt="安装包失败" />
 
 遇到此类问题可以尝试如下操作
 
@@ -1518,7 +1517,7 @@ resolutions: {
 ⒋ 去错误日志文件内,看具体的报错信息
 
 ⒌ 根据错误信息去相应的目录下,把相应`npm`中的`node_modules`给删掉,重新在安装
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607999011361-37-solve-install-fail.png" alt="解决错误信息" />
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/39.png" alt="解决错误信息" />
 
 ::: tip 提醒
 推荐使用`yarn`进行安装某些插件和安装包,因为`npm`有时候,`npm` 会生成错误的依赖树,导致安装某些插件安装不上,即使安装上了,在执行`npm run dev`启动项目时,会报错,影响项目的启动
@@ -1527,7 +1526,7 @@ resolutions: {
 ### 配置自定义域名不生效
 
 项目的根目录下是否缺少`CNAME`文件,并且里面的内容与自定义的域名不一致,该文件的名称必须是大写
-<img class="medium-zoom lazy" loading="lazy" src="https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/vuepress-build-blog/1607999071051-38-CNAME-file.png" alt="CNAME" />
+<img class="medium-zoom lazy" loading="lazy" src="../images/tools-article-imgs/vuepress-blug-note/40.png" alt="CNAME" />
 
 ```js
 doc.itclan.cn;

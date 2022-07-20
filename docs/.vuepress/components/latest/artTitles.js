@@ -453,7 +453,7 @@ export  const artTitles =  [
       title: "纯css3实现字体旋转动效",
       desc: "纯css3实现字体旋转动效",
       author: "随笔川迹",
-      update_time: '20226-14',
+      update_time: '2022-6-14',
       link: "javascript:;",
       url:"/fontend/css/animate-ziti-rotate",
       tag: "Css"  
@@ -463,9 +463,29 @@ export  const artTitles =  [
       title: "CSS3 实现炫丽的温室玫瑰",
       desc: "CSS3 实现炫丽的温室玫瑰",
       author: "随笔川迹",
-      update_time: '20226-14',
+      update_time: '2022-6-19',
       link: "javascript:;",
       url:"/fontend/css/animate-meiguihua",
+      tag: "Css"  
+   },
+   {
+      id: 44,
+      title: "vuejs中路由的传参以及路由props配置",
+      desc: "vuejs中路由的传参以及路由props配置",
+      author: "随笔川迹",
+      update_time: '2022-7-14',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-router-params",
+      tag: "Css"  
+   },
+   {
+      id: 45,
+      title: "vuejs中的编程式导航",
+      desc: "vuejs中的编程式导航",
+      author: "随笔川迹",
+      update_time: '2022-7-14',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-router-biancheng",
       tag: "Css"  
    }
 

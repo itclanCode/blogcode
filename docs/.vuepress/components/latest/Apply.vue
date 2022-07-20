@@ -19,6 +19,16 @@ export default {
   data() {
     return {
       applyData: [
+        {
+            href: "https://faka.itclan.cn",
+            imgSrc: "/images/latest/shop.png",
+            alt: "发卡商城",
+            text: "发卡商城",
+            width: "85",
+            height: "85",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
          {
             href: "https://pay.aikelaidev.cn",
             imgSrc: "/images/latest/payaikelaidev.svg",
@@ -30,14 +40,14 @@ export default {
             class:"lazy img-pic" 
          },
           {
-            href: "javascript:;",
-            imgSrc: "/images/latest/plp.png",
-            alt: "捞漂流瓶",
-            text: "捞漂流瓶",
+            href: "https://mh.aikelaidev.cn",
+            imgSrc: "/images/latest/choumanghe.svg",
+            alt: "抽盲盒",
+            text: "抽盲盒",
             width: "85",
             height: "85",
             target: "_self",
-            class: "medium-zoom lazy img-pic" 
+            class: "lazy img-pic" 
          },
          {
             href: "https://bazihehun.itclan.cn",
@@ -254,6 +264,16 @@ export default {
           height: "85",
           target: "_self",
           class:"lazy img-pic"
+        },
+         {
+          href: "javascript:;",
+          imgSrc: "/images/latest/jisuqushuiyin.jpg",
+          alt: "极速去水印工具小助手",
+          text: "极速去水印工具小助手",
+          width: "85",
+          height: "85",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
         },
       ]
     };
