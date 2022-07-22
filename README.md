@@ -41,10 +41,7 @@
   * [点击链接支付宝/微信赞助](https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813)
 
 <div align="center">
-    <img src="https://t1.picb.cc/uploads/2020/06/11/tIptoc.jpg" width="148" height="148" alt="微信支付" border="0">
-    <br /><br />
-    <hr />
-    <img src="https://t1.picb.cc/uploads/2020/06/11/tIpwCK.jpg" width="148" height="148" alt="支付宝支付" border="0">
+    [![jLzy0f.md.png](https://s1.ax1x.com/2022/07/22/jLzy0f.md.png)](https://imgtu.com/i/jLzy0f)
 </div>
 
 - 小额赞助后,您可以联系作者,可获得额外的回报,您可以告诉我,您的名字,它将会出现在`itclanCoder` 的`GitHub`仓库中,再比如您公司 `logo`,或相关产品会出现在[itclanCoder 官网](https://coder.itclan.cn)上.
