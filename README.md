@@ -41,7 +41,7 @@
   * [点击链接支付宝/微信赞助](https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813)
 
 <div align="center">
-    [![jLzy0f.md.png](https://s1.ax1x.com/2022/07/22/jLzy0f.md.png)](https://imgtu.com/i/jLzy0f)
+    <img src="https://s1.ax1x.com/2022/07/22/jLzy0f.png" width="148" height="148" />
 </div>
 
 - 小额赞助后,您可以联系作者,可获得额外的回报,您可以告诉我,您的名字,它将会出现在`itclanCoder` 的`GitHub`仓库中,再比如您公司 `logo`,或相关产品会出现在[itclanCoder 官网](https://coder.itclan.cn)上.
