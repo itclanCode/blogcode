@@ -136,7 +136,8 @@ export default {
 
     // 支付
     handlePayBtn() {
-      this.payCodeStatus = true;
+      // this.payCodeStatus = true;
+      window.open('https://pay.aikelaidev.cn/paypage/?merchant=f924dI3EvxGakIkFfOPP2fk%2Fl59qMq6teJaMtxjpLoGw','target');
     },
   },
 };

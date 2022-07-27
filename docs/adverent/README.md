@@ -44,8 +44,8 @@ follow us on **weixin:suibichuanji**
 付费广告包括展示广告位和付费文章(暂时全站文章免费阅读),具体广告位分为:**文章顶部**,**底部**,以及**右下角广告展示位**,如下所示
 
 <div align="center">
-  <img class="medium-zoom lazy admessage" loading="lazy" src="https://s1.ax1x.com/2022/05/18/OTikMF.png" alt="itclanCoder" />
-  </div>
+    <img class="medium-zoom lazy" src="./images/admessage.png"  />
+</div>
 
 - `广告位展示1`为右侧底部广告,全站可见
 - `广告位展示2`为文章页头部广告,全站文章详情页内可见
@@ -78,7 +78,7 @@ follow us on **weixin:suibichuanji**
          height: 500px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .admessage {
      width:600px;
      height: 280px;

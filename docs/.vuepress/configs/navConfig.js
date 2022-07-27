@@ -101,22 +101,22 @@ const navs = [
       { text: '复盘', link: '/read/replay/' },
     ],
   },
-  {
-    text: '工具',
-    items: [
-      {text:'客群基地',link: 'https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/'},
-      {text:'飞扬的小鸟',link: 'https://flybird.itclan.cn'},
-      {text: '贪吃蛇',link: 'https://snake.itclan.cn'},
-      {text: '合成大西瓜',link: 'https://xigua.itclan.cn'},
-      { text: '图床', link: 'https://img.itclan.cn' },
-      { text: '站集网', link: 'https://zhanji.itclan.cn' },
-      { text: 'Vue2.0模板编译', link: 'https://vue2compile.itclan.cn' },
-      {
-        text: 'Vue3.0模板编译',
-        link: 'https://vue-next-template-explorer.netlify.app/#',
-      },
-    ],
-  },
+  // {
+  //   text: '工具',
+  //   items: [
+  //     {text:'客群基地',link: 'https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/'},
+  //     {text:'飞扬的小鸟',link: 'https://flybird.itclan.cn'},
+  //     {text: '贪吃蛇',link: 'https://snake.itclan.cn'},
+  //     {text: '合成大西瓜',link: 'https://xigua.itclan.cn'},
+  //     { text: '图床', link: 'https://img.itclan.cn' },
+  //     { text: '站集网', link: 'https://zhanji.itclan.cn' },
+  //     { text: 'Vue2.0模板编译', link: 'https://vue2compile.itclan.cn' },
+  //     {
+  //       text: 'Vue3.0模板编译',
+  //       link: 'https://vue-next-template-explorer.netlify.app/#',
+  //     },
+  //   ],
+  // },
   { text: '关于我', link: '/about/' },
   { text: '广告投放', link: '/adverent/' },
   { text: 'IT资源网', link: 'https://itclan.cn' },

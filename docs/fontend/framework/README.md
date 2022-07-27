@@ -42,7 +42,8 @@ title: 目录
 
 ## Vue 基础
 
-- [vuejs中的编程式导航](./vue-router-biancheng) 
+- [vuejs中如何实现动态路由切换及路由的缓存](./vue-router-keep-alive)
+- [vuejs中的编程式导航Vs声明式导航](./vue-router-biancheng) 
 - [vuejs中路由的传参以及路由props配置](./vue-router-params)
 - [vuejs中的mixin混入-局部混入/全局混入](./vue-mixins)
 - [vuejs中的默认插槽-具名插槽-作用域插槽三者的比较](./vue-slot)

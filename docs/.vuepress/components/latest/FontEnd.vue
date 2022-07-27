@@ -4,7 +4,7 @@
       <div v-for="item in FontEndData" class="item" :key="item.text">
         <p class="list">
           <a :href="item.href" target="_blank" :title="item.alt">
-            <img width="100" height="44" class="img-pic" :src="item.imgSrc" :alt="item.alt" />
+            <img width="80" height="80" class="img-pic" :src="item.imgSrc" :alt="item.alt" />
           </a>
         </p>
         <p class="text">{{ item.text }}</p>

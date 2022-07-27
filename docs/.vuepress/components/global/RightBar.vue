@@ -47,6 +47,12 @@
       <div @click="handleAd('http://itclancoder.mikecrm.com/z1zXWvz')">
         <img width="30" height="30" :src="rightbar.adImg" alt="广告" />
       </div>
+      <div @click="handleFaKa('https://faka.itclan.cn')">
+        <img width="30" height="30" :src="rightbar.fkImg" alt="发卡">
+      </div>
+       <div @click="handleKelaiTV('https://video.itclan.cn')">
+        <img width="30" height="30" :src="rightbar.videotvImg" alt="客来影视">
+      </div>
       <div
         @click="
           handleShange(
@@ -133,6 +139,43 @@ export default {
           // on cancel // 取消
         });
     },
+    
+    // 发卡商城
+    handleFaKa() {
+      this.$dialog
+        .confirm({
+          title: "温馨提示",
+          message: "亲,您将前往发卡商城,开始寻找对您有价值的商品吧",
+          theme: "round-button",
+          showCancelButton: true,
+          cancelButtonColor: "#ccc",
+        })
+        .then(() => {
+          // on confirm 确认
+          window.open(openUrl, "_blank");
+        })
+        .catch(() => {
+          // on cancel // 取消
+        });
+    },
+
+    handleKelaiTV() {
+      this.$dialog
+        .confirm({
+          title: "温馨提示",
+          message: "亲,您将前往客来影视TV,更多好电影,电视剧等你看哦",
+          theme: "round-button",
+          showCancelButton: true,
+          cancelButtonColor: "#ccc",
+        })
+        .then(() => {
+          // on confirm 确认
+          window.open(openUrl, "_blank");
+        })
+        .catch(() => {
+          // on cancel // 取消
+        });
+    },
 
     handleShange(openUrl) {
       this.$dialog
@@ -166,7 +209,7 @@ export default {
   .right-bar-wrap {
     position: fixed;
     right: 0.15rem;
-    top: 28%;
+    top: 24%;
     display: flex;
     flex-direction: column;
     z-index: 888;

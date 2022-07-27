@@ -1,9 +1,9 @@
 ---
-title: vuejs中的编程式导航
+title: vuejs中的编程式导航Vs声明式导航
 autoGroup-3: Vue基础
 ---
 
-## vuejs中的编程式导航
+## vuejs中的编程式导航Vs声明式导航
 
 ## 快速导航
 

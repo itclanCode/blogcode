@@ -18,8 +18,10 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
-- [vuejs中的编程式导航](../fontend/framework/vue-router-biancheng)
+- [vuejs中如何实现动态路由切换及路由的缓存](../fontend/framework/vue-router-keep-alive)
+- [vuejs中的编程式导航Vs声明式导航](../fontend/framework/vue-router-biancheng)
 - [vuejs中路由的传参以及路由props配置](../fontend/framework/vue-router-params)
+- [2022已过半，上半年回顾](../read/replay/2022-back-half)
 - [CSS3 实现炫丽的温室玫瑰](../fontend/css/animate-meiguihua)
 - [纯css3实现字体旋转动效](../fontend/css/animate-ziti-rotate)
 - [vuejs中的mixin混入-局部混入/全局混入](../fontend/framework/vue-mixins)

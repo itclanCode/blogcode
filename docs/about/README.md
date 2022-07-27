@@ -119,7 +119,9 @@ title: 关于作者
 - 微信小程序:搜索`暖暖聊天恋爱话术`
 - 微信小程序:搜索`高情商聊天对话`
 - [IT资源网](https://itclan.cn)
+- [发卡商城](https://faka.itclan.cn)
 - [爱客来科技](https://aikelaidev.cn)
+- [爱客来支付-免签支付工具-在小的个体也具备独立的支付能力](https://pay.aikelaidev.cn)
 - [站集网-一个收录对你有用资源导航网站](https://zhanji.itclan.cn)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
 - [客来图床(免费)](https://img.itclan.cn)

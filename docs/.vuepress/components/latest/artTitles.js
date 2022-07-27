@@ -476,17 +476,27 @@ export  const artTitles =  [
       update_time: '2022-7-14',
       link: "javascript:;",
       url:"/fontend/framework/vue-router-params",
-      tag: "Css"  
+      tag: "Vue"  
    },
    {
       id: 45,
-      title: "vuejs中的编程式导航",
-      desc: "vuejs中的编程式导航",
+      title: "vuejs中的编程式导航vs声明式导航",
+      desc: "vuejs中的编程式导航vs声明式导航",
       author: "随笔川迹",
       update_time: '2022-7-14',
       link: "javascript:;",
       url:"/fontend/framework/vue-router-biancheng",
-      tag: "Css"  
+      tag: "Vue"  
+   },
+   {
+      id: 46,
+      title: "vuejs中如何实现动态路由切换及路由的缓存",
+      desc: "vuejs中如何实现动态路由切换及路由的缓存",
+      author: "随笔川迹",
+      update_time: '2022-7-27',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-router-biancheng",
+      tag: "Vue"  
    }
 
 
