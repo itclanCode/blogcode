@@ -35,6 +35,8 @@ const rightBar = {
       '/images/rightbar/itclancoder-code.jpg',
     adImg:
       '/images/rightbar/ad.svg',
+    fkImg: '/images/rightbar/fk.png',  
+    videotvImg: '/images/rightbar/videotv.svg',
     shangImg:
       '/images/rightbar/shang.svg',
     bottomImg:

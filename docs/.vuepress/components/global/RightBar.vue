@@ -209,7 +209,7 @@ export default {
   .right-bar-wrap {
     position: fixed;
     right: 0.15rem;
-    top: 24%;
+    top: 22%;
     display: flex;
     flex-direction: column;
     z-index: 888;

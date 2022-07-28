@@ -393,7 +393,107 @@ export default {
 ```
 你会发现,如果你使用的是`btton`组件进行路由的跳转,那么就需要使用`vue-router`中的编程式导航,也就是`this.$router.push({})`这种方式
 
-我们发现,上面的编程式导航实现的路由跳转不是很优雅
+我们发现,上面的编程式导航实现的路由跳转不是很优雅.对于激活的按钮到底是用`路径`还是`名字`,保持对应一致就可以了的
+
+`radio`默认初始值也可以设置为空,去监听路由,从路由中拿到的,并赋值的,如下代码所示
+```html
+<template>
+  <div id="app">
+      <el-radio-group v-model="radio" 
+                      v-for="item in routers" 
+                      :key="item.name" 
+                      @change="handleRadioRoute" >
+        <el-radio-button :label="item.path" >{{item.name}}</el-radio-button>
+      </el-radio-group>
+    
+      <router-view></router-view>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'App',
+  components: {
+   
+  },
+  data() {
+    return {
+      radio: '',
+      routers: [
+        {
+          path: '/recent',
+          name: '最新文章'
+        },
+        {
+          path: '/fontend',
+          name: '前端'
+        }
+      ]
+    }
+  },
+  methods: {
+    handleRadioRoute(val){
+       console.log(val);
+       this.$router.push({
+          path:val
+       })
+    }
+  },
+
+  watch: {
+    // 监听路由,当前菜单
+    $route: {
+       handler(val) {
+         console.log(val);
+         this.radio = val.path;
+       },
+       immediate: true,   // 初始化时,就调用一次handler函数
+    }
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+```
+## 如何缓存路由组件
+
+让不展示的路由组件保持挂载,不被销毁
+
+在路由的切换当中,只要切换到另一个路由组件上,前一个组件就会随之销毁，应证这个的话,可以借用`destoryed`生命周期进行测试的
+
+在用户填写表单的时候,如果切换到另一个路由上,在回来,之前填写的数据都会丢失,如何保证用户之前填写的数据不丢失呢,就可以使用缓存路由组件
+
+```html
+<keep-alive include='要缓存的组件名字,组件命名的那个name,而非路由那个name'>
+   <router-view></router-view>
+</keep-alive>
+```
+在`router-view`外面包裹`keep-alive`组件包裹,不要包裹错了的
+
+如果要缓存多个路由组件,直接`:include='[路由组件名称1,路由组件名称2]'`
+
+缓存路由组件就是为了提升用户体验的,增加组件的性能
+
+## 总结
+
+vuejs中如何实现动态路由切换及路由的缓存,是一个非常重要的知识点,可以这么说,如果对路由不熟悉,那基本上是没法干活,它的知识点虽然不多
+
+但是比较零散,使用路由必须要使用`vue-router`这个插件,然后进行一些配置,才可以使用
+
+以及如何设置路由的激活样式,与传统的开发模式,是不一样的,有些东西,并不需要原生的去实现,根据`vue-router`提供的规则就可以实现
+
+以及如何实现默认路由,以及使用`elementUI`中提供的组件实现路由的切换,还有如何缓存路由组件
 
 
 
