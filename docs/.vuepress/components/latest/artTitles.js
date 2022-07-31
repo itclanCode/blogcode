@@ -497,7 +497,30 @@ export  const artTitles =  [
       link: "javascript:;",
       url:"/fontend/framework/vue-router-biancheng",
       tag: "Vue"  
+   },
+
+   {
+      id: 47,
+      title: "vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫",
+      desc: "vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫",
+      author: "随笔川迹",
+      update_time: '2022-7-31',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-router-shouwei",
+      tag: "Vue"  
+   },
+
+   {
+      id: 48,
+      title: "vuejs中路由的嵌套",
+      desc: "vuejs中路由的嵌套",
+      author: "随笔川迹",
+      update_time: '2022-7-31',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-router-qiantao",
+      tag: "Vue"  
    }
+
 
 
  

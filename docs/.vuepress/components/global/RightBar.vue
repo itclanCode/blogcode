@@ -141,7 +141,7 @@ export default {
     },
     
     // 发卡商城
-    handleFaKa() {
+    handleFaKa(openUrl) {
       this.$dialog
         .confirm({
           title: "温馨提示",
@@ -159,7 +159,7 @@ export default {
         });
     },
 
-    handleKelaiTV() {
+    handleKelaiTV(openUrl) {
       this.$dialog
         .confirm({
           title: "温馨提示",
@@ -209,7 +209,7 @@ export default {
   .right-bar-wrap {
     position: fixed;
     right: 0.15rem;
-    top: 22%;
+    top: 20%;
     display: flex;
     flex-direction: column;
     z-index: 888;

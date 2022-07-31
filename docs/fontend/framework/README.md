@@ -42,6 +42,8 @@ title: 目录
 
 ## Vue 基础
 
+- [vuejs中路由的嵌套](./vue-router-qiantao)
+- [vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫](./vue-router-shouwei) 
 - [vuejs中如何实现动态路由切换及路由的缓存](./vue-router-keep-alive)
 - [vuejs中的编程式导航Vs声明式导航](./vue-router-biancheng) 
 - [vuejs中路由的传参以及路由props配置](./vue-router-params)

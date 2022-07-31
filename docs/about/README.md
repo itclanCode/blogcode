@@ -86,7 +86,8 @@ title: 关于作者
 - 16 年下半年开始写作，记录，[掘金-itclanCoder](https://juejin.im/user/5900e97b1b69e60058b936ed/posts)[segmentFault](https://segmentfault.com/u/suibichuanji_5900e1f5bcf67)。
 - 17 年开始玩音频([itclanCoder 喜马拉雅电台](https://m.ximalaya.com/keji/8315952/)荔枝 FM/懒人听书:itclanCoder)
 - 18~·19 年开始录视频(腾讯视频),([B 站 itclanCoder](https://space.bilibili.com/267957620))
-- 20 年开始玩短视频(抖音/快手号:`人人领读`)
+- 20 年开始玩短视频(抖音/快手号:`客来影视TV`)
+- 21年[IT资源网](https://itclan.cn)等
 
 当自己经历过一段时间，不满足于写(图文)的时候，于是便开始用音频(音频+图文)的方式去表达，而当音频又玩得不满足的时候，于是便开始用视频的方式去表达，输出。
 
