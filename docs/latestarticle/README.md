@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+- [vuejs中路由的嵌套](../fontend/framework/vue-router-qiantao)
 - [vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫](../fontend/framework/vue-router-shouwei)
 - [vuejs中如何实现动态路由切换及路由的缓存](../fontend/framework/vue-router-keep-alive)
 - [vuejs中的编程式导航Vs声明式导航](../fontend/framework/vue-router-biancheng)

@@ -42,6 +42,7 @@ title: 目录
 
 ## Vue 基础
 
+- [vuejs中路由器的两种模式-哈希模式与历史模式](./vue-hash-history)
 - [vuejs中路由的嵌套](./vue-router-qiantao)
 - [vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫](./vue-router-shouwei) 
 - [vuejs中如何实现动态路由切换及路由的缓存](./vue-router-keep-alive)

@@ -268,12 +268,22 @@ export default {
          {
           href: "javascript:;",
           imgSrc: "/images/latest/jisuqushuiyin.jpg",
-          alt: "极速去水印工具小助手",
-          text: "极速去水印工具小助手",
+          alt: "极速去水印工具",
+          text: "极速去水印工具",
           width: "80",
           height: "80",
           target: "_self",
           class:"medium-zoom lazy img-pic"
+        },
+         {
+            href: "https://shuiying.itclan.cn",
+            imgSrc: "/images/latest/addshuiyin.svg",
+            alt: "图片打码",
+            text: "图片水印",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
         },
       ]
     };
@@ -290,7 +300,7 @@ export default {
     flex-wrap: wrap;
 
     .item {
-      margin: 0 20px;
+      margin: 0 15px;
 
       .list {
         width: 200px;
