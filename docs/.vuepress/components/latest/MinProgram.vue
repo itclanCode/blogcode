@@ -46,8 +46,6 @@ export default {
     flex-wrap: wrap;
 
     .item {
-      margin: 0 10px;
-
       .list {
         width: 200px;
         height: 65px;

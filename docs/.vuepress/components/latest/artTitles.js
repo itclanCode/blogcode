@@ -515,9 +515,20 @@ export  const artTitles =  [
       title: "vuejs中路由的嵌套",
       desc: "vuejs中路由的嵌套",
       author: "随笔川迹",
-      update_time: '2022-7-31',
+      update_time: '2022-8-3',
       link: "javascript:;",
       url:"/fontend/framework/vue-router-qiantao",
+      tag: "Vue"  
+   },
+
+   {
+      id: 49,
+      title: "vuejs中路由器的两种模式-哈希模式与历史模式",
+      desc: "vuejs中路由器的两种模式-哈希模式与历史模式",
+      author: "随笔川迹",
+      update_time: '2022-8-3',
+      link: "javascript:;",
+      url:"/fontend/framework/vue-hash-history",
       tag: "Vue"  
    }
 

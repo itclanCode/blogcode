@@ -66,13 +66,11 @@ export default {
 @media screen and (min-width: 960px) {
   .wrap {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
 
     .item {
-      margin: 0 10px;
-
       .list {
         width: 200px;
         height: 65px;
