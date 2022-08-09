@@ -1600,4 +1600,3 @@ doc.itclan.cn;
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
 <footer-FeedBack />
-<footer-AvoidCopy />

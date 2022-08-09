@@ -530,6 +530,17 @@ export  const artTitles =  [
       link: "javascript:;",
       url:"/fontend/framework/vue-hash-history",
       tag: "Vue"  
+   },
+
+   {
+      id: 50,
+      title: "VuePress右侧如何添加固定侧边栏-实现置顶和置底",
+      desc: "VuePress右侧如何添加固定侧边栏-实现置顶和置底",
+      author: "随笔川迹",
+      update_time: '2022-8-9',
+      link: "javascript:;",
+      url:"/fontend/tools/vuepress-slidebar-top",
+      tag: "Vue"  
    }
 
 

@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+- [VuePress右侧如何添加固定侧边栏-实现置顶和置底](../fontend/tools/vuepress-slidebar-top)
 - [vuejs中路由器的两种模式-哈希模式与历史模式](../fontend/framework/vue-hash-history)
 - [vuejs中路由的嵌套](../fontend/framework/vue-router-qiantao)
 - [vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫](../fontend/framework/vue-router-shouwei)

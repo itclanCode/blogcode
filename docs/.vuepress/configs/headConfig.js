@@ -127,6 +127,13 @@ const headConfig = [
       async: 'async',
     },
   ],
+  [
+    'script',
+    {
+      name: 'referrer',
+      content: 'no-referrer'
+    }
+  ],
   // [
   //   'script',
   //   {
