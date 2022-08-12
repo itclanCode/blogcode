@@ -285,6 +285,16 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
         },
+        {
+            href: "https://pingtu.itclan.cn",
+            imgSrc: "/images/latest/pingtu.png",
+            alt: "将多张图片合并成一张图片",
+            text: "在线拼图",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
       ]
     };
   }
