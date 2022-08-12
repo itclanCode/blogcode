@@ -20,7 +20,7 @@ const headConfig = [
     {
       rel: 'keywords',
       content:
-        '随笔川迹,itclanCoder,itclanCoder的技术博客,coder.itclan.cn,itclan.cn前端开发,IT技术,网络技术,斜杠青年,itclan,川川,https://itclan.cn,https://coder.itclan.cn/',
+        '随笔川迹,itclanCoder,itclanCoder的技术博客,coder.itclan.cn,前端开发,IT技术,网络技术,斜杠青年,https://coder.itclan.cn/',
     },
   ],
   ['meta', { name: 'Author', content: '随笔川迹' }],
@@ -132,6 +132,23 @@ const headConfig = [
     {
       name: 'referrer',
       content: 'no-referrer'
+    }
+  ],
+  [
+    'script',
+    {
+      src: '//i.6v6.work/v/?uid=388604',
+      async: 'async'
+    }
+  ],
+
+  // 51统计
+  [
+    'script',
+    {
+      charset: 'utf-8',
+      id: 'LA_COLLECT',
+      src: '//sdk.51.la/js-sdk-pro.min.js?id=JmTU1mn0cnHhpM63&ck=JmTU1mn0cnHhpM63&hashMode=true'
     }
   ],
   // [

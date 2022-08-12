@@ -62,7 +62,7 @@ window.console &&
   console.log('书以启智,技于谋生,活出斜杠.\n祝屏幕前正阅读的您码中致富'),
   console.log(`%c https://itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://coder.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://doc.itclan.cn\n`, 'color:#3eaf7c'),
+  console.log(`%c https://faka.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://zhanji.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://img.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(

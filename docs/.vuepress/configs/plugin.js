@@ -157,7 +157,7 @@ const plugins = [
         'global-AttionFixed',
         'global-ToBottom',
         'global-RightBar',
-        'global-Cat',
+        // 'global-Cat',
         'global-Copy',
         // 'global-AdvertiSpace',
       ],

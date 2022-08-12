@@ -14,7 +14,7 @@
   <div>
     <p>
       <span>MIT Licensed | {{ dateYear }}-present</span>
-      <a href="https://github.com/itclanCode/blogcode" target="_blank"
+      <a href="/about/" target="_blank"
         >随笔川迹</a
       >
       <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
@@ -25,6 +25,7 @@
           alt="公网备案"
         />京ICP备16017996号
       </a>
+      <span>{{runTimeText}}</span>
     </p>
     <div v-html="html" />
   </div>
@@ -56,12 +57,36 @@ export default {
   props: ['html'],
   data() {
     return {
-      dateYear: new Date().getFullYear()
+      dateYear: new Date().getFullYear(),
+      runTimeText: '',
+      timer: ''
     }
   },
+  mounted() {
+    this.timer = setInterval(this.runTime,1000);
+  },
+  methods: {
+    runTime() {
+        let X = new Date("01/06/2020 5:22:00"); // 设置的初始时间
+        let Y = new Date();  // 当前时间
+        let T = (Y.getTime()-X.getTime());
+        let M =24*60*60*1000;
+        let a = T/M;
+        let A = Math.floor(a);
+        let b = (a-A)*24;
+        let B = Math.floor(b);
+        let c = (b-B)*60;
+        let C = Math.floor((b-B)*60);
+        let D = Math.floor((c-C)*60);
 
+        this.runTimeText = "本站已经稳定运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"
+    }
+  },
   created() {
     // this.location = window.location;
   },
+  beforeDestroy() {
+    clearInterval(this.timer)
+  }
 };
 </script>

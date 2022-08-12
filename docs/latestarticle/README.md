@@ -77,15 +77,19 @@ title: 目录
 
 <latest-TableArticle />
 
-## 应用
+## 实例应用
 
 <latest-Apply />
 
-## 游戏
+## 流量变现
+
+<latest-FlowBianxian />
+
+## 游戏推荐
 
 <latest-Games />
 
-## 前端
+## 前端技术
 
 <latest-FontEnd />
 
