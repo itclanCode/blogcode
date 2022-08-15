@@ -226,7 +226,7 @@ export default {
         },
 
         {
-            href: "http://bhnk8.cn/884jt",
+            href: "https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/",
             imgSrc: "/images/latest/qun.svg",
             alt: "客群基地-寻找圈子,加各种资源群,发布广告,个人名片",
             text: "客群基地",
@@ -257,7 +257,7 @@ export default {
         },
         {
           href: "https://tv.itclan.cn",
-          imgSrc: "/images/latest/jingpinyingshi.png",
+          imgSrc: "/images/latest/tv-logo.png",
           alt: "精品影视",
           text: "精品影视",
           width: "80",
@@ -290,6 +290,16 @@ export default {
             imgSrc: "/images/latest/pingtu.png",
             alt: "将多张图片合并成一张图片",
             text: "在线拼图",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
+        {
+            href: "https://app.itclan.cn",
+            imgSrc: "/images/latest/app-itclan-cn.png",
+            alt: "App软件应用下载",
+            text: "App软件下载",
             width: "80",
             height: "80",
             target: "_blank",
