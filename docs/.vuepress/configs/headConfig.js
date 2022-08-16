@@ -127,13 +127,8 @@ const headConfig = [
       async: 'async',
     },
   ],
-  [
-    'script',
-    {
-      name: 'referrer',
-      content: 'no-referrer'
-    }
-  ],
+ 
+// 易统计流量变现，http://www.6v4.cn/
   [
     'script',
     {
@@ -149,22 +144,6 @@ const headConfig = [
       charset: 'utf-8',
       id: 'LA_COLLECT',
       src: '//sdk.51.la/js-sdk-pro.min.js?id=JmTU1mn0cnHhpM63&ck=JmTU1mn0cnHhpM63&hashMode=true'
-    }
-  ],
-// https://www.3324.cn/,中聚传媒广告
-// cpc-点击广告
-  [
-    'script',
-    {
-      charset:'utf-8',
-      src:'https://sgls.wk4y.cn/bdu.php?id=2489'
-    }
-  ],
-  // 中聚传媒,cpm弹窗广告
-  [
-    'script',
-    {
-      src: 'https://sgls.wk4y.cn/bdu.php?id=2490'
     }
   ],
   // 
