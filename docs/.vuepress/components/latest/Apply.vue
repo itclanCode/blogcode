@@ -305,6 +305,16 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
         },
+         {
+            href: "https://short.itclan.cn",
+            imgSrc: "/images/latest/short.svg",
+            alt: "短链接生成",
+            text: "短链接生成",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
       ]
     };
   }
