@@ -146,6 +146,21 @@ const headConfig = [
       src: '//sdk.51.la/js-sdk-pro.min.js?id=JmTU1mn0cnHhpM63&ck=JmTU1mn0cnHhpM63&hashMode=true'
     }
   ],
+// https://70z.com/麒麟广告,底部漂浮广告
+  [
+    'script',
+    {
+      src:'https://70z.efangcdn.com/slot?7645859975449108235-2435'
+    }
+  ],
+
+  //https://70z.com/麒麟广告,-cpc-嵌入固定广告位
+  [
+    'script',
+    {
+      src: 'https://70z.efangcdn.com/slot?7645859975449108235-2439'
+    }
+  ],
   // 
   // [
   //   'script',
