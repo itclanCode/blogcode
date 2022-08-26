@@ -154,11 +154,11 @@ const headConfig = [
     }
   ],
 
-  //https://70z.com/麒麟广告,-cpc-嵌入固定广告位
+  //https://70z.com/麒麟广告,-cpm-右下角漂浮
   [
     'script',
     {
-      src: 'https://70z.efangcdn.com/slot?7645859975449108235-2439'
+      src: 'https://70z.efangcdn.com/slot?7645859975449108235-2447'
     }
   ],
   // 
