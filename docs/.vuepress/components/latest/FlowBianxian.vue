@@ -60,6 +60,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://www.79lm.cc/?pid=100693",
+            imgSrc: "/images/latest/79lm-cc.svg",
+            alt: "茄子广告联盟",
+            text: "茄子广告",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }
