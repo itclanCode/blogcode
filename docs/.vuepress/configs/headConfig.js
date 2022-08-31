@@ -161,6 +161,27 @@ const headConfig = [
       src: 'https://70z.efangcdn.com/slot?7645859975449108235-2447'
     }
   ],
+  // https://www.szlm.cc/神州联盟-cpm-底部漂浮广告
+  [
+    'script',
+    {
+      src: 'https://abb.zjsdsports.cn/slot?2377029035902478992-20690'
+    }
+  ],
+  // https://www.fengma.club/风马联盟
+  [
+    'script',
+    {
+      src: 'https://a.fengmalianmeng.top/vs.php?id=18'
+    }
+  ],
+  // 茄子联盟https://www.79lm.cc/-悬浮底部广告
+  [
+    'script',
+    {
+      src: 'ttps://820lmlmjs.cc/slot?1895670460909466853-10844'
+    }
+  ],
   // 
   // [
   //   'script',

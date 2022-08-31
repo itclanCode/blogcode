@@ -71,6 +71,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+          {
+            href: "https://www.szlm.cc/?pid=104699",
+            imgSrc: "/images/latest/szlm-cc.svg",
+            alt: "神州联盟",
+            text: "神州联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }
