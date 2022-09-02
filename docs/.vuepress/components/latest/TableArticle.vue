@@ -22,6 +22,7 @@
 import { tableColist } from "./tableColist.js"; // 表格表头配置数据
 import tableComp from "./tableComp.vue";
 import {artTitles }  from "./artTitles.js";
+let tabArticle = artTitles.reverse();
     export default {
         name: "TableArticle",
         components: {
@@ -36,7 +37,7 @@ import {artTitles }  from "./artTitles.js";
                 pageSize:5,
                 // 总条数
                 total: "",
-                tableData: artTitles.reverse(),
+                tableData: tabArticle,
                 tags: [],
                 dates: [],
                 isTable: true,
@@ -49,15 +50,15 @@ import {artTitles }  from "./artTitles.js";
 
         methods: {
              mockTable() {
-                 this.total = artTitles.length;
-                 let date = this.dates = artTitles.map((item) => {
+                 this.total = tabArticle.length;
+                 let date = this.dates = tabArticle.map((item) => {
                      return {
                          text: item.update_time,
                          value: item.update_time
                      }
                  })
 
-                 let arts = artTitles.map((item) => {
+                 let arts = tabArticle.map((item) => {
                      return {
                          text: item.tag,
                          value: item.tag
@@ -67,7 +68,7 @@ import {artTitles }  from "./artTitles.js";
                  this.tags = this.removeArrs(arts);
                  this.dates =  this.removeArrs(date)  
               
-                //  for(let i = 0;i <= artTitles.length;i++) {
+                //  for(let i = 0;i <= tabArticle.length;i++) {
                 //     this.tableData.push({
                 //          id: i,
                 //          title: artTitles[i].title,

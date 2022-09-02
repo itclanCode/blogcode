@@ -9,7 +9,7 @@ autoGroup-2: 常见实例技巧
 
 <TOC />
 
-<exampleskill-lessThen12px />
+<exampleskill-lessThen />
 
 
 ::: tip 注意事项
