@@ -36,7 +36,7 @@ import {artTitles }  from "./artTitles.js";
                 pageSize:5,
                 // 总条数
                 total: "",
-                tableData: artTitles,
+                tableData: artTitles.reverse(),
                 tags: [],
                 dates: [],
                 isTable: true,

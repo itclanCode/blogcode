@@ -380,7 +380,7 @@ export  const artTitles =  [
       desc: "实现扇形生成器",
       author: "随笔川迹",
       update_time: '2021-12-25',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/FYQ1WSHAn_sWxTOGnrAqxQ",
       url:"/fontend/css/example-sector",
       tag: "css"
    },
@@ -391,7 +391,7 @@ export  const artTitles =  [
       desc: "实现小于12px的字体像素",
       author: "随笔川迹",
       update_time: '2021-12-26',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/q-AaTDMyanDVEyjtBkCw_g",
       url:"/fontend/css/example-small-size",
       tag: "css"
    },
@@ -402,7 +402,7 @@ export  const artTitles =  [
       desc: "2021-又是一年告别时",
       author: "随笔川迹",
       update_time: '2021-12-30',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/kl2ZwhvHm0bq-KVrDpgO4Q",
       url:"/read/replay/look-back-2021",
       tag: "年终总结"
    },
@@ -424,7 +424,7 @@ export  const artTitles =  [
       desc: "vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较",
       author: "随笔川迹",
       update_time: '2022-1-10',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/yqOgT5YPxFI_CSFIZnZP1A",
       url:"/fontend/framework/vue-computed-watch",
       tag: "Vue"  
    },
@@ -434,7 +434,7 @@ export  const artTitles =  [
       desc: "vuejs中的默认插槽-具名插槽-作用域插槽三者的比较",
       author: "随笔川迹",
       update_time: '2022-5-12',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/MtRsq8ILQVDu6K04_G9EoQ",
       url:"/fontend/framework/vue-slot",
       tag: "Vue"  
    },
@@ -444,7 +444,7 @@ export  const artTitles =  [
       desc: "vuejs中的mixin混入-局部混入/全局混入",
       author: "随笔川迹",
       update_time: '2022-5-17',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/tj4GJlA2PtTz1lb6mzKEiA",
       url:"/fontend/framework/vue-mixins",
       tag: "Vue"  
    },
@@ -474,7 +474,7 @@ export  const artTitles =  [
       desc: "vuejs中路由的传参以及路由props配置",
       author: "随笔川迹",
       update_time: '2022-7-14',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/iMCm1LELTBHcEJ-XbekUMw",
       url:"/fontend/framework/vue-router-params",
       tag: "Vue"  
    },
@@ -484,7 +484,7 @@ export  const artTitles =  [
       desc: "vuejs中的编程式导航vs声明式导航",
       author: "随笔川迹",
       update_time: '2022-7-14',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/giiMP2IHNTlUVUJ-K-dE9A",
       url:"/fontend/framework/vue-router-biancheng",
       tag: "Vue"  
    },
@@ -494,7 +494,7 @@ export  const artTitles =  [
       desc: "vuejs中如何实现动态路由切换及路由的缓存",
       author: "随笔川迹",
       update_time: '2022-7-27',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/8zoAXWboA5F8lrdRVCYpmg",
       url:"/fontend/framework/vue-router-biancheng",
       tag: "Vue"  
    },
@@ -505,7 +505,7 @@ export  const artTitles =  [
       desc: "vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫",
       author: "随笔川迹",
       update_time: '2022-7-31',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/TKUhDBXtKLI04_aphms_Sw",
       url:"/fontend/framework/vue-router-shouwei",
       tag: "Vue"  
    },
@@ -516,7 +516,7 @@ export  const artTitles =  [
       desc: "vuejs中路由的嵌套",
       author: "随笔川迹",
       update_time: '2022-8-3',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/LrokzJbRC6j2HEk3NeHDyg",
       url:"/fontend/framework/vue-router-qiantao",
       tag: "Vue"  
    },
@@ -527,7 +527,7 @@ export  const artTitles =  [
       desc: "vuejs中路由器的两种模式-哈希模式与历史模式",
       author: "随笔川迹",
       update_time: '2022-8-3',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/dMLhsU7oIUzWlMY4iIB8Lg",
       url:"/fontend/framework/vue-hash-history",
       tag: "Vue"  
    },
@@ -538,9 +538,31 @@ export  const artTitles =  [
       desc: "VuePress右侧如何添加固定侧边栏-实现置顶和置底",
       author: "随笔川迹",
       update_time: '2022-8-9',
-      link: "javascript:;",
+      link: "https://mp.weixin.qq.com/s/gFGjB9FRJhOTkshHQw55Iw",
       url:"/fontend/tools/vuepress-slidebar-top",
       tag: "Vue"  
+   },
+
+   {
+      id: 51,
+      title: "给网站添加代码统计实现流量的变现",
+      desc: "给网站添加代码统计实现流量的变现",
+      author: "随笔川迹",
+      update_time: '2022-8-21',
+      link: "https://mp.weixin.qq.com/s/6bNnVRFN6bp7xl7s-Sv9kA",
+      url:"/read/wealth/add-code-tongji",
+      tag: "搞钱"  
+   },
+   
+   {
+      id: 52,
+      title: "揭露一些广告联盟骗局",
+      desc: "揭露一些广告联盟骗局",
+      author: "随笔川迹",
+      update_time: '2022-8-31',
+      link: "https://mp.weixin.qq.com/s/TnHfyz0c3eq_WgrQXr7zgQ",
+      url:"/read/wealth/jielu-adunion-pianju",
+      tag: "避坑"  
    }
 
 
