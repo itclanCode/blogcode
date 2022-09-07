@@ -8,6 +8,7 @@ title: 目录
 
 ## JavaScript 文章目录
 
+- [script标签中type的使用](./js-type)
 - [使用let/const定义变量的场景](./variable-use) 
 - [理解 Es6 中的 Symbol 类型](./understand-symbol)
 - [解析 super 关键字](./resolve-super-keyword)
@@ -33,6 +34,10 @@ title: 目录
 ## JS 常见特效
 
 - [JS 实现烟花特效](./fireWorkEffect)
+
+## JS网页特效300例
+
+* [1-JS实现自动刷新页面](./1-texiao-auto-refresh)
 
 ## JS 实用案例技巧
 

@@ -33,7 +33,7 @@ title: 关于作者
 
 ## 我在做什么?
 
-目前，主要在互联网行业，从事前端开发工作(360资深前端开发)，现主要偏向于无服务 `serverless`开发，云开发的研究，热衷于好玩实用的技术,并不是什么厉害的角色，正努力脱菜籍中的战斗机一枚。
+目前，主要在互联网行业，从事前端开发工作，沉迷于`javaScript`,现主要偏向于无服务 `serverless`开发，云开发的研究，热衷于研究各种好玩实用,能搞钱的技术,并不是什么厉害的角色，正努力脱菜籍中的战斗机一枚。
 
 ## 为什么要写博客呢?
 
@@ -86,8 +86,9 @@ title: 关于作者
 - 16 年下半年开始写作，记录，[掘金-itclanCoder](https://juejin.im/user/5900e97b1b69e60058b936ed/posts)[segmentFault](https://segmentfault.com/u/suibichuanji_5900e1f5bcf67)。
 - 17 年开始玩音频([itclanCoder 喜马拉雅电台](https://m.ximalaya.com/keji/8315952/)荔枝 FM/懒人听书:itclanCoder)
 - 18~·19 年开始录视频(腾讯视频),([B 站 itclanCoder](https://space.bilibili.com/267957620))
-- 20 年开始玩短视频(抖音/快手号:`客来影视TV`)
+- 20 年开始玩短视频(抖音号:`itclanCoder`,快手号:`客来影视TV`)
 - 21年[IT资源网](https://itclan.cn)等
+- 22年[精品影视](https://tv.itclan.cn)等
 
 当自己经历过一段时间，不满足于写(图文)的时候，于是便开始用音频(音频+图文)的方式去表达，而当音频又玩得不满足的时候，于是便开始用视频的方式去表达，输出。
 
@@ -126,6 +127,8 @@ title: 关于作者
 - [站集网-一个收录对你有用资源导航网站](https://zhanji.itclan.cn)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
 - [客来图床(免费)](https://img.itclan.cn)
+- [客来影视TV](https://video.itclan.cn)
+- [精品影视](https://tv.itclan.cn)
 
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />

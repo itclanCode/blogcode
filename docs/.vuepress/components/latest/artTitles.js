@@ -590,9 +590,30 @@ export  const artTitles =  [
       desc: "如何利用微信视频号挣钱",
       author: "随笔川迹",
       update_time: '2022-9-5',
-      link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
+      link: "https://mp.weixin.qq.com/s/q-Opvr2X2jubqKRgivj--w",
       url:"/read/wealth/how-use-wx-shipinhao",
       tag: "赚钱"  
+   },
+   {
+      id: 56,
+      title: "script标签中type的使用",
+      desc: "script标签中type的使用",
+      author: "随笔川迹",
+      update_time: '2022-9-7',
+      link: "https://mp.weixin.qq.com/s/FOQB6gVBHSBnk1e1TRTHoA",
+      url:"/fontend/js/js-type",
+      tag: "JS"  
+   },
+
+   {
+      id: 57,
+      title: "1-JS实现自动刷新页面",
+      desc: "1-JS实现自动刷新页面",
+      author: "随笔川迹",
+      update_time: '2022-9-7',
+      link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
+      url:"/fontend/js/1-texiao-auto-refresh",
+      tag: "JS特效"  
    }
 
 ];
