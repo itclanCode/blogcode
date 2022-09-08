@@ -614,6 +614,16 @@ export  const artTitles =  [
       link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
       url:"/fontend/js/1-texiao-auto-refresh",
       tag: "JS特效"  
+   },
+   {
+      id: 58,
+      title: "2-JS如何实现页面的前进与后退",
+      desc: "2-JS如何实现页面的前进与后退",
+      author: "随笔川迹",
+      update_time: '2022-9-8',
+      link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
+      url:"/fontend/js/2-texiao-forward-back",
+      tag: "JS特效"  
    }
 
 ];

@@ -81,6 +81,16 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
+         {
+            href: "https://www.sdlm.cc/register?from=EGD4d91ycr1",
+            imgSrc: "/images/latest/sdlm.svg",
+            alt: "闪电联盟",
+            text: "闪电联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
 
       ]
     };

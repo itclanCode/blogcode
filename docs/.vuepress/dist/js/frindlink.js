@@ -5,6 +5,11 @@ friendLinkers = [
     desc: 'IT资源网(itclan.cn)-专注网站模板下载，源码下载，程序开发，视频教程，小程序搭建，站长交易平台',
   },
   {
+    name: '客来影视TV',
+    url: 'https://video.itclan.cn',
+    desc: '免费电影,电视剧,动漫随意看',
+  },
+  {
     name: '站集网',
     url: 'https://zhanji.itclan.cn',
     desc: '让资源导航更简单,一个收录对你有用的网站',
@@ -15,9 +20,19 @@ friendLinkers = [
     desc: '一个专注家庭装修的网站',
   },
   {
+    name: '精品影视',
+    url: 'https://tv.itclan.cn',
+    desc: '免费电影,电视剧,动漫随意看',
+  },
+  {
     name: '小溪里',
     url: 'https://www.xiaoxili.com/',
     desc: 'HI头像-让头像更有趣一点',
+  },
+  {
+    name: '佳豪影视',
+    url: 'https://tv.jiahaoruisen.com',
+    desc: '免费电影,电视剧,动漫随意看',
   },
   {
     name: '格姗知识圈',
@@ -62,9 +77,9 @@ friendLinkers = [
   },
 
   {
-    name: '666收录',
-    url: 'http://www.0666.tv',
-    desc: '666收录'
+    name: 'mdnice',
+    url: 'https://mdnice.com',
+    desc: '全网都在用的markdown工具'
   }
 ];
 function getFriendsLink() {

@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+- [2-JS如何实现页面的前进与后退](../fontend/js/2-texiao-forward-back)
 - [1-JS实现自动刷新页面](../fontend/js/1-texiao-auto-refresh)
 - [script标签中type的使用](../fontend/js/js-type)
 - [如何利用微信视频号挣钱](../read/wealth/how-use-wx-shipinhao)

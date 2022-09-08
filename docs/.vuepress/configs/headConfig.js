@@ -168,13 +168,13 @@ const headConfig = [
       src: 'https://abb.zjsdsports.cn/slot?2377029035902478992-20690'
     }
   ],
-   // https://www.szlm.cc/神州联盟-cpc-固定横幅广告
-  [
-    'script',
-    {
-      src: 'https://abb.zjsdsports.cn/slot?2377029035902478992-20691'
-    }
-  ],
+  // https://www.szlm.cc/神州联盟-cpc-固定横幅广告
+  // [
+  //   'script',
+  //   {
+  //     src: 'https://abb.zjsdsports.cn/slot?2377029035902478992-20691'
+  //   }
+  // ],
   // https://www.fengma.club/风马联盟
   [
     'script',
@@ -186,7 +186,15 @@ const headConfig = [
   [
     'script',
     {
-      src: 'ttps://820lmlmjs.cc/slot?1895670460909466853-10844'
+      src: 'https://820lmlmjs.cc/slot?1895670460909466853-10844'
+    }
+  ],
+
+  // 唐朝联盟https://tclm.cc/
+  [
+    'script',
+    {
+      src: 'https://www.tclmjs.com:15589/slot?425080562724843477-10016'
     }
   ],
   // 

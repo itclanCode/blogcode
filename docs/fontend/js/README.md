@@ -37,7 +37,8 @@ title: 目录
 
 ## JS网页特效300例
 
-* [1-JS实现自动刷新页面](./1-texiao-auto-refresh)
+* [1-JS如何实现自动刷新页面](./1-texiao-auto-refresh)
+* [2-JS如何实现页面的前进与后退](./2-texiao-forward-back)
 
 ## JS 实用案例技巧
 
