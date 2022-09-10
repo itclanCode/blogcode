@@ -91,6 +91,36 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
+         {
+            href: "https://tclm.cc/",
+            imgSrc: "/images/latest/tclmcc.svg",
+            alt: "唐朝联盟",
+            text: "唐朝联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+          {
+            href: "https://www.fengma.club/",
+            imgSrc: "/images/latest/fengmaclub.svg",
+            alt: "风马联盟",
+            text: "风马联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+         {
+            href: "https://nglm.cc/track/c/?rid=1435",
+            imgSrc: "/images/latest/nglmcc.svg",
+            alt: "南瓜联盟",
+            text: "南瓜联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
 
       ]
     };
