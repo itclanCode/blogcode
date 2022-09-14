@@ -634,6 +634,16 @@ export  const artTitles =  [
       link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
       url:"/fontend/js/3-texiao-close-page",
       tag: "JS特效"  
+   },
+   {
+      id: 60,
+      title: "vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态",
+      desc: "vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态",
+      author: "随笔川迹",
+      update_time: '2022-9-13',
+      link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
+      url:"/fontend/framework/vue-router-sanji",
+      tag: "Vue"  
    }
 
 ];

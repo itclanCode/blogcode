@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页特效300例
 
+* [4-jQ如何选择所有的元素](./4-jq-select-all-elem)
 * [3-JS如何动态关闭页面](./3-texiao-close-page)
 * [2-JS如何实现页面的前进与后退](./2-texiao-forward-back)
 * [1-JS如何实现自动刷新页面](./1-texiao-auto-refresh)

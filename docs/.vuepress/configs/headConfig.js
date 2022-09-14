@@ -165,16 +165,16 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.zjsdsports.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.dexinyi.cn/slot?2377029035902478992-20690'
     }
   ],
   // https://www.szlm.cc/神州联盟-cpc-固定横幅广告
-  // [
-  //   'script',
-  //   {
-  //     src: 'https://abb.zjsdsports.cn/slot?2377029035902478992-20691'
-  //   }
-  // ],
+  [
+    'script',
+    {
+      src: 'https://abb.dexinyi.cn/slot?2377029035902478992-20691'
+    }
+  ],
   // https://www.fengma.club/风马联盟
   [
     'script',
