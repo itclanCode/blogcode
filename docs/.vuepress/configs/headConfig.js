@@ -182,21 +182,8 @@ const headConfig = [
       src: 'https://a.fengmalianmeng.top/vs.php?id=18'
     }
   ],
-  // 茄子联盟https://www.79lm.cc/-悬浮底部广告
-  [
-    'script',
-    {
-      src: 'https://820lmlmjs.cc/slot?1895670460909466853-10844'
-    }
-  ],
+ 
 
-  // 唐朝联盟https://tclm.cc/
-  [
-    'script',
-    {
-      src: 'https://www.tclmjs.com:15589/slot?425080562724843477-10016'
-    }
-  ],
   // 
   // [
   //   'script',

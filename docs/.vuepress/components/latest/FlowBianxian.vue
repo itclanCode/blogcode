@@ -60,17 +60,6 @@ export default {
             class:"lazy img-pic" 
          },
 
-         {
-            href: "https://www.79lm.cc/?pid=100693",
-            imgSrc: "/images/latest/79lm-cc.svg",
-            alt: "茄子广告联盟",
-            text: "茄子广告",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-         },
-
           {
             href: "https://www.szlm.cc/?pid=104699",
             imgSrc: "/images/latest/szlm-cc.svg",
@@ -86,16 +75,6 @@ export default {
             imgSrc: "/images/latest/sdlm.svg",
             alt: "闪电联盟",
             text: "闪电联盟",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-         },
-         {
-            href: "https://tclm.cc/",
-            imgSrc: "/images/latest/tclmcc.svg",
-            alt: "唐朝联盟",
-            text: "唐朝联盟",
             width: "80",
             height: "80",
             target: "_blank",

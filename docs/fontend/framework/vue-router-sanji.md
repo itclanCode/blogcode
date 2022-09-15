@@ -17,6 +17,7 @@ autoGroup-3: Vue基础
 
 比如:如下的,二级路由下的`tab`选项页,当刷新页面时,还能保持当前`tab`的一个状态
 
+在切换到其他路由后,在回到当前路由,依旧能保证上一个状态等
 <div align="center">
     <img class="medium-zoom lazy" loading="lazy" src="https://i.postimg.cc/QNzzwT0t/01.gif"  alt="路由示例" />
 </div>
@@ -87,6 +88,9 @@ autoGroup-3: Vue基础
     padding: 30px;
 }
 </style>
+在上面的模板代码中,使用了elementUI中的单选按钮组合组件el-radio-group,并结合v-for指令循环遍历了一个数组
+
+同时在点击按钮时,绑定了一个change事件,使用编程式导航this.$router.push({})控制按钮路由的跳转
 ```
 :::
 ::: tab router.js配置 lazy
@@ -163,6 +167,8 @@ export function resetRouter() {
 }
 
 export default router
+
+在`router.js`中,使用`children`配置了子路由,并使用异步路由懒加载形式,配置了三个子路由
 ```
 ::: 
 ::: tab 路由不显示 lazy
@@ -170,6 +176,48 @@ export default router
 :::
 ::: tab 按钮的激活状态不显示 lazy
 未设置初始值
+```js
+<script>
+    export default {
+        name: 'FontEnd',
+        data(){
+            return {
+              activeTab: '', // 激活状态
+              lists: [
+                {
+                    // path: '/fontend/html',
+                    name: 'html'
+                },
+                {
+                    // path: "/fontend/javascript",
+                    name: 'javascript'
+                },
+                {
+                    // path: "/fontend/css",
+                    name: "css"
+                }
+              ]
+           };
+        },
+        methods: {
+            handleRadio(val) {
+                this.$router.push({
+                    name: val
+                })
+            }
+        },
+        watch: {
+            $route: {
+                handler(val) {
+                    console.log(val);
+                    this.activeTab = val.name;
+                },
+                immediate:true
+            }
+        }
+    }
+</script>
+```
 :::
 ::: tab 刷新页面时,按钮不显示当前激活状态 lazy
 未监听路由,并且设置激活状态
@@ -198,9 +246,10 @@ watch: {
 
 ## 配置三级路由
 
-会配置一级,二级路由,那么配置三级,四级路由..也是一样的,路由是可以进行嵌套的,使用`children`属性,可以无限的嵌套下去
+会配置一级,二级路由,那么配置三级,四级路由..也是一样的,路由是可以进行嵌套的,使用children属性,可以无限的嵌套下去
 
-以下是示例代码
+以下是`fontend/html.vue`的示例代码
+
 :::: tabs type:border-card
 ::: tab html.vue代码 lazy
 ```html
@@ -258,6 +307,9 @@ watch: {
 
     }
 </script>
+上面是模板代码,使用了`elementUI`中`el-tabs`组件,并使用`v-for`循环遍历一数组对象,同样绑定`tab-click`事件
+
+使用编程式导航`this.$route.push({})`,实现路由的跳转,并监听当前路由,控制当前`tab`的激活状态,保持刷新页面时,仍然保持上一次的一个状态
 ```
 :::
 ::: tab router.js代码 lazy
@@ -351,6 +403,11 @@ export function resetRouter() {
 
 export default router
 
+因为`a.vue`,`b.vue`.`span.vue`,所属在`html.vue`下,所以,在`router.js`中,使用`children`配置三个子路由
+
+1. 注意`name`要与模板中的循环遍历数组对象中的`name`值保持一致
+2. 路由的`path`路径的值,是必须要写的
+
 ```
 :::
 ::: tab 解决路由点击两下才会切换到选中激活的状态 lazy
@@ -377,6 +434,8 @@ export default router
 对于一级,二级可以使用路由组件去实现,但是当出现多级的时候,路由嵌套的层级太深,只会让项目代码越来越复杂,而变得不易维护
 
 在二级导航切换按钮,显示具体的对应的内容,就可以使用动态组件的方式去渲染
+
+`html.vue`使用动态组件实现
 
 :::: tabs type:border-card
 ::: tab html.vue使用动态组件实现 lazy
@@ -435,6 +494,10 @@ export default router
 
     }
 </script>
+
+上面`el-tabs`组件的切换,具体显示哪个对应的组件,使用了动态组件`component`,并通过`is`属性,绑定`activeName`，以达到控制指定组件的显示
+
+在逻辑代码中,点击`tab`时,使用`query`的方式,经过这样的操作后,即使刷新页面,也不会丢失,保持在当前状态下的
 ```
 :::
 ::: tab 注意事项 lazy
@@ -451,6 +514,8 @@ export default router
 
 如果不使用`query`方式,使用`params`的方式也是可以的,但若想保持状态,那么就需要结合`localStorage`进行使用,如下代码所示
 代码上基本没有什么变化
+
+只不过是使用了本地存储`localStorage`
 ```js
 <template>
     <div>
@@ -504,7 +569,6 @@ export default router
                 })
             }
         },
-
     }
 </script>
 ```
