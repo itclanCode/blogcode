@@ -641,7 +641,7 @@ export  const artTitles =  [
       desc: "vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态",
       author: "随笔川迹",
       update_time: '2022-9-13',
-      link: "https://mp.weixin.qq.com/s/js8SrdAbxVTWSzOXiDbxNA",
+      link: "https://mp.weixin.qq.com/s/OavV8uMa2ByWhlPtLzWQBQ",
       url:"/fontend/framework/vue-router-sanji",
       tag: "Vue"  
    }

@@ -69,4 +69,8 @@ title: 目录
 - [JavaScript 企业级编程规范(2)-常量-变量-函数-事件-操作符](./program-rules2)
 - [JavaScript 企业级编程规范(3)-换行与缩进-空格约束-语句格式-常见技巧](./program-rules3)
 
+## 常用片段代码
+
+- [如何屏蔽浏览器右键菜单以及屏蔽F12审查元素](./pingbibrowser-menu)
+
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
