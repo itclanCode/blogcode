@@ -20,16 +20,10 @@ export default {
     return {
       gamesData: [
         {
-          href: "http://g.vsane.com/game/821/",
-          imgSrc: "/images/games/car.svg",
-          alt: "就地过年",
-          text: "就地过年"
-        },
-         {
-          href: "http://g.vsane.com/game/803/",
-          imgSrc: "/images/games/fish.svg",
-          alt: "小蝌蚪",
-          text: "小蝌蚪"
+          href: "http://game.itclan.cn",
+          imgSrc: "/images/games/kelaigame.png",
+          alt: "客来游戏",
+          text: "客来游戏"
         },
         {
           href: "https://xigua.itclan.cn",

@@ -80,21 +80,12 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
-          {
-            href: "https://www.fengma.club/",
-            imgSrc: "/images/latest/fengmaclub.svg",
-            alt: "风马联盟",
-            text: "风马联盟",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-         },
+
          {
-            href: "https://nglm.cc/track/c/?rid=1435",
-            imgSrc: "/images/latest/nglmcc.svg",
-            alt: "南瓜联盟",
-            text: "南瓜联盟",
+            href: "http://www.558wap.com/",
+            imgSrc: "/images/latest/558.jpg",
+            alt: "558联盟",
+            text: "558联盟",
             width: "80",
             height: "80",
             target: "_blank",

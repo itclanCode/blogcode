@@ -165,21 +165,21 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.dexinyi.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.forestseasons.com.cn/slot?2377029035902478992-20690'
     }
   ],
   // https://www.szlm.cc/神州联盟-cpc-固定横幅广告
   [
     'script',
     {
-      src: 'https://abb.dexinyi.cn/slot?2377029035902478992-20691'
+      src: 'https://abb.forestseasons.com.cn/slot?2377029035902478992-20691'
     }
   ],
-  // https://www.fengma.club/风马联盟
+  // http://www.558wap.com/558联盟
   [
     'script',
     {
-      src: 'https://a.fengmalianmeng.top/vs.php?id=18'
+      src: 'https://wap.didadidadi.xyz/vs.php?id=93'
     }
   ],
  
