@@ -655,6 +655,16 @@ export  const artTitles =  [
       link: "https://mp.weixin.qq.com/s/OavV8uMa2ByWhlPtLzWQBQ",
       url:"/fontend/js/js-jq-zhiding",
       tag: "实例代码"  
+   },
+   {
+      id: 62,
+      title: "如何在复制网站文字时添加上版权申明",
+      desc: "如何在复制网站文字时添加上版权申明",
+      author: "随笔川迹",
+      update_time: '2022-9-29',
+      link: "https://mp.weixin.qq.com/s/OavV8uMa2ByWhlPtLzWQBQ",
+      url:"/fontend/js/copy-web-text-copyright",
+      tag: "js片段代码"  
    }
 
 ];

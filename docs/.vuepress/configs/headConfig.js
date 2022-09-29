@@ -143,7 +143,7 @@ const headConfig = [
     {
       charset: 'utf-8',
       id: 'LA_COLLECT',
-      src: '//sdk.51.la/js-sdk-pro.min.js?id=JmTU1mn0cnHhpM63&ck=JmTU1mn0cnHhpM63&hashMode=true'
+      src: '//sdk.51.la/js-sdk-pro.min.js?id=JpY374pS1mZfseKk&ck=JpY374pS1mZfseKk'
     }
   ],
 // https://70z.com/麒麟广告,底部漂浮广告

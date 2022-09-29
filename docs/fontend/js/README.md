@@ -73,6 +73,7 @@ title: 目录
 
 ## 常用片段代码
 
+- [在复制网站文字时如何添加上版权申明](./copy-web-text-copyright)
 - [如何屏蔽浏览器右键菜单以及屏蔽F12审查元素](./pingbibrowser-menu)
 - [移动端web如何禁止长按选择文字以及弹出菜单](./mobile-jinzhi-select)
 * [原生js与jq如何实现元素的置顶效果](./js-jq-zhiding)

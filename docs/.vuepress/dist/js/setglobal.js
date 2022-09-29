@@ -65,6 +65,7 @@ window.console &&
   console.log(`%c https://faka.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://zhanji.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://img.itclan.cn\n`, 'color:#3eaf7c'),
+  console.log(`%c https://game.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(
     '%c QQ交流群(1):64346880,微信公众号:itclanCoder',
     'color:#3eaf7c'
