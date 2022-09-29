@@ -175,14 +175,15 @@ const headConfig = [
       src: 'https://abb.forestseasons.com.cn/slot?2377029035902478992-20691'
     }
   ],
-  // http://www.558wap.com/558联盟
+// 汇米网络http://pc.huimee.com/
   [
     'script',
     {
-      src: 'https://wap.didadidadi.xyz/vs.php?id=93'
+      src:'//pc.stgowan.com/pc/rich-tf.js',
+      id: "richid",
+      data: 's=6992'
     }
   ],
- 
 
   // 
   // [

@@ -43,4 +43,5 @@ setTimeout(() => {
 ::::
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FeedBack />
 

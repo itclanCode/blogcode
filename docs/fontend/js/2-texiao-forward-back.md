@@ -41,4 +41,5 @@ function goBack() {
 ::::
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FeedBack />
 

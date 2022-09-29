@@ -37,6 +37,8 @@ title: 目录
 
 ## JS网页特效300例
 
+* [6-js如何禁止网页放入框架](./6-forbid-framework)
+* [5-js如何若干秒后不操作自动关闭窗口](./5-auto-close-pop) 
 * [4-jQ如何选择所有的元素](./4-jq-select-all-elem)
 * [3-JS如何动态关闭页面](./3-texiao-close-page)
 * [2-JS如何实现页面的前进与后退](./2-texiao-forward-back)
