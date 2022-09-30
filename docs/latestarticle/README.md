@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [如何动态的在网页里加载插入js脚本](../fontend/js/7-load-js)
 - [如何在复制网站文字时添加上版权申明](../fontend/js/copy-web-text-copyright)
 - [原生js与jq如何实现元素的置顶效果](../fontend/js/js-jq-zhiding)
 - [vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态](../fontend/framework/vue-router-sanji)

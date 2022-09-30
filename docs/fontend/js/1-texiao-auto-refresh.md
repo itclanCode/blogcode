@@ -1,5 +1,6 @@
 ---
 title: JS实现自动刷新页面
+autoGroup-5: JS特效
 ---
 
 ## JS实现自动刷新页面

@@ -1,5 +1,6 @@
 ---
 title: JS如何动态关闭页面
+autoGroup-5: JS特效
 ---
 
 ## JS如何动态关闭页面

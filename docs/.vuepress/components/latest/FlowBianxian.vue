@@ -92,6 +92,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://www.txzlm.com/cf.aspx?95",
+            imgSrc: "/images/latest/txzlm-com.svg",
+            alt: "天行者联盟",
+            text: "天行者联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }

@@ -165,14 +165,14 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.forestseasons.com.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.chenfoo.cn/slot?2377029035902478992-20690'
     }
   ],
   // https://www.szlm.cc/神州联盟-cpc-固定横幅广告
   [
     'script',
     {
-      src: 'https://abb.forestseasons.com.cn/slot?2377029035902478992-20691'
+      src: 'https://abb.chenfoo.cn/slot?2377029035902478992-20691'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -184,6 +184,22 @@ const headConfig = [
       data: 's=6992'
     }
   ],
+// 天行者联盟https://www.txzlm.com/底部漂浮广告
+  [
+    'script',
+    {
+      src:'https://www.txzlm.com/c.aspx?action=a&c32=621&c2=95&c3=',
+    }
+  ],
+ // 天行者,左下角广告
+  [
+    'script',
+    {
+      src:'https://www.txzlm.com/c.aspx?action=a&c32=628&c2=95&c3=',
+    }
+  ],
+
+
 
   // 
   // [

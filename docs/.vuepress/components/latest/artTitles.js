@@ -662,9 +662,20 @@ export  const artTitles =  [
       desc: "如何在复制网站文字时添加上版权申明",
       author: "随笔川迹",
       update_time: '2022-9-29',
-      link: "https://mp.weixin.qq.com/s/OavV8uMa2ByWhlPtLzWQBQ",
+      link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
       url:"/fontend/js/copy-web-text-copyright",
       tag: "js片段代码"  
+   },
+
+   {
+      id: 63,
+      title: "如何动态的在网页里加载插入js脚本",
+      desc: "如何动态的在网页里加载插入js脚本",
+      author: "随笔川迹",
+      update_time: '2022-9-30',
+      link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
+      url:"/fontend/js/7-load-js",
+      tag: "js特效"  
    }
 
 ];
