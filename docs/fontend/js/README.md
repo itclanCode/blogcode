@@ -37,7 +37,9 @@ title: 目录
 
 ## JS网页特效300例
 
-* [7-js如何在网页里动态的加载插入javascript](./7-load-js)
+* [9-js如何实现收藏当前页面](./9-colect-current-page)
+* [8-js如何实现将当前网站设置为首页-兼容IE-chrome-firefox](./8-set-home-page)
+* [7-如何在网页里动态的加载插入javascript](./7-load-js)
 * [6-js如何禁止网页放入框架](./6-forbid-framework)
 * [5-js如何若干秒后不操作自动关闭窗口](./5-auto-close-pop) 
 * [4-jQ如何选择所有的元素](./4-jq-select-all-elem)

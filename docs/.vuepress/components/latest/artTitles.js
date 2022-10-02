@@ -676,6 +676,17 @@ export  const artTitles =  [
       link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
       url:"/fontend/js/7-load-js",
       tag: "js特效"  
+   },
+
+   {
+      id: 64,
+      title: "js如何实现将当前网站设置为首页-兼容IE-chrome-firefox",
+      desc: "js如何实现将当前网站设置为首页-兼容IE-chrome-firefox",
+      author: "随笔川迹",
+      update_time: '2022-10-02',
+      link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
+      url:"/fontend/js/8-set-home-page",
+      tag: "js特效"  
    }
 
 ];
