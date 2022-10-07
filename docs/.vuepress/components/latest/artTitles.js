@@ -687,6 +687,17 @@ export  const artTitles =  [
       link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
       url:"/fontend/js/8-set-home-page",
       tag: "js特效"  
+   },
+
+   {
+      id: 65,
+      title: "如何抵御DDOS攻击-各种免费方法防御",
+      desc: "如何抵御DDOS攻击-各种免费方法防御",
+      author: "随笔川迹",
+      update_time: '2022-10-07',
+      link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
+      url:"/fontend/tools/fangyu-ddos",
+      tag: "网络安全"  
    }
 
 ];

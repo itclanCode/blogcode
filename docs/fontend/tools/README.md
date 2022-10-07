@@ -4,6 +4,7 @@ title: 目录
 
 ## 工欲善其事,必先利其器
 
+* [如何抵御DDOS攻击-各种免费方法防御](./fangyu-ddos)
 - [VuePress右侧如何添加固定侧边栏-实现置顶和置底](vuepress-slidebar-top) 
 - [git 使用速查](./git-common-problem)
 - [markdown 使用速查](./markdown-use-guide)

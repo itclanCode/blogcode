@@ -103,6 +103,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://www.smtwm.com/",
+            imgSrc: "/images/latest/smtwm-com.png",
+            alt: "水蜜桃联盟",
+            text: "水蜜桃联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }
