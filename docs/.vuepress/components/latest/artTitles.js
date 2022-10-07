@@ -695,8 +695,19 @@ export  const artTitles =  [
       desc: "如何抵御DDOS攻击-各种免费方法防御",
       author: "随笔川迹",
       update_time: '2022-10-07',
-      link: "https://mp.weixin.qq.com/s/G3Kwwzyq1WlY-zzfZ7OL5Q",
+      link: "https://mp.weixin.qq.com/s/PIB6RmHZE-zNlxGY9l0l7g",
       url:"/fontend/tools/fangyu-ddos",
+      tag: "网络安全"  
+   },
+
+   {
+      id: 66,
+      title: "如何添加百度云加速-给网站增加防护",
+      desc: "如何添加百度云加速-给网站增加防护",
+      author: "随笔川迹",
+      update_time: '2022-10-07',
+      link: "https://mp.weixin.qq.com/s/PIB6RmHZE-zNlxGY9l0l7g",
+      url:"/fontend/tools/add-su-baidu",
       tag: "网络安全"  
    }
 

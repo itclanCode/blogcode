@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页特效300例
 
+* [10-js如何通过id获取网页中的标签的内容](./10-getid-tag-content) 
 * [9-js如何实现收藏当前页面](./9-colect-current-page)
 * [8-js如何实现将当前网站设置为首页-兼容IE-chrome-firefox](./8-set-home-page)
 * [7-如何在网页里动态的加载插入javascript](./7-load-js)
