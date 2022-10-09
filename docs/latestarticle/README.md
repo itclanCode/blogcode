@@ -18,7 +18,8 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
-- [js如何动态创建网页新元素](../fontend/js/11--create-new-elem)
+* [js如何删除一个元素](../fontend/js/12-delete-element)
+- [js如何动态创建网页新元素](../fontend/js/11-create-new-elem)
 - [如何添加百度云加速-给网站增加防护](../fontend/tools/add-su-baidu)
 - [如何抵御DDOS攻击-各种免费方法防御](../fontend/tools/fangyu-ddos)
 * [js如何实现将当前网站设置为首页-兼容IE-chrome-firefox](../fontend/js/8-set-home-page)
@@ -26,9 +27,9 @@ title: 目录
 - [如何在复制网站文字时添加上版权申明](../fontend/js/copy-web-text-copyright)
 - [原生js与jq如何实现元素的置顶效果](../fontend/js/js-jq-zhiding)
 - [vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态](../fontend/framework/vue-router-sanji)
-- [3-JS如何动态关闭页面](../fontend/js/3-texiao-close-page)
-- [2-JS如何实现页面的前进与后退](../fontend/js/2-texiao-forward-back)
-- [1-JS实现自动刷新页面](../fontend/js/1-texiao-auto-refresh)
+- [JS如何动态关闭页面](../fontend/js/3-texiao-close-page)
+- [JS如何实现页面的前进与后退](../fontend/js/2-texiao-forward-back)
+- [JS实现自动刷新页面](../fontend/js/1-texiao-auto-refresh)
 - [script标签中type的使用](../fontend/js/js-type)
 - [如何利用微信视频号挣钱](../read/wealth/how-use-wx-shipinhao)
 - [如何降低成本,选择轻资产型项目](../read/wealth/select-qingzichan)

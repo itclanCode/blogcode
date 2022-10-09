@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页特效300例
 
+* [12-js如何删除一个元素](./12-delete-element)
 * [11-js如何动态创建网页新元素](./11-create-new-elem)
 * [10-js如何通过id获取网页中的标签的内容](./10-getid-tag-content) 
 * [9-js如何实现收藏当前页面](./9-colect-current-page)
