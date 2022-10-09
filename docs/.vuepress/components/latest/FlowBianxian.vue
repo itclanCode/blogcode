@@ -91,12 +91,11 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
-
          {
-            href: "https://www.txzlm.com/cf.aspx?95",
-            imgSrc: "/images/latest/txzlm-com.svg",
-            alt: "天行者联盟",
-            text: "天行者联盟",
+            href: "https://www.smtwm.com/",
+            imgSrc: "/images/latest/smtwm-com.png",
+            alt: "水蜜桃联盟",
+            text: "水蜜桃联盟",
             width: "80",
             height: "80",
             target: "_blank",
@@ -104,10 +103,10 @@ export default {
          },
 
          {
-            href: "https://www.smtwm.com/",
-            imgSrc: "/images/latest/smtwm-com.png",
-            alt: "水蜜桃联盟",
-            text: "水蜜桃联盟",
+            href: "http://tclm.cc/?pid=100023",
+            imgSrc: "/images/latest/tclmcc.svg",
+            alt: "唐朝联盟",
+            text: "唐朝联盟",
             width: "80",
             height: "80",
             target: "_blank",

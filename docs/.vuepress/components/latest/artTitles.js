@@ -706,9 +706,20 @@ export  const artTitles =  [
       desc: "如何添加百度云加速-给网站增加防护",
       author: "随笔川迹",
       update_time: '2022-10-07',
-      link: "https://mp.weixin.qq.com/s/PIB6RmHZE-zNlxGY9l0l7g",
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
       url:"/fontend/tools/add-su-baidu",
       tag: "网络安全"  
-   }
+   },
+
+   {
+      id: 67,
+      title: "js如何动态创建网页新元素",
+      desc: "js如何动态创建网页新元素",
+      author: "随笔川迹",
+      update_time: '2022-10-09',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/11-create-new-elem",
+      tag: "JS特效"  
+   },
 
 ];
