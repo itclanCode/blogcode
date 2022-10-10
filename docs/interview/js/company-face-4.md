@@ -1,5 +1,7 @@
 ---
 title: Js 笔试真题-4
+sidebarDepth: 3
+collapsable: true
 ---
 
 ## 快速导航
@@ -174,3 +176,6 @@ new Promise(function (resolve) {
 例如：formatData('1574624629') => 2019-11-01
 
 ## 第 16 题-给你一个时间戳你如何得到这个时间戳对应月的最大天数？
+
+
+<footer-FooterLink :isShareLink="true" :isDaShang="true" />

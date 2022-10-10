@@ -1,5 +1,7 @@
 ---
 title: Js 笔试真题-3
+sidebarDepth: 3
+collapsable: true
 ---
 
 ## 快速导航
@@ -370,7 +372,7 @@ var fruit1 = $('fruit'); // 此时fruit1是一个jQuery对象
 
 使用`$`可以将任何 js 对象转化为 jQuery 对象
 
-## 如何中断 Ajax 请求
+## 第10题-如何中断 Ajax 请求
 
 停止`javaScript`的`ajax`请求有两种方式
 
@@ -378,9 +380,9 @@ var fruit1 = $('fruit'); // 此时fruit1是一个jQuery对象
 
 ⒉ 手动去停止 ajax 请求
 
-核心是调用 XMLHttpRequest 对象上的 abort 方法
+核心是调用 `XMLHttpRequest` 对象上的 `abort` 方法
 
-jQuery 的 ajax 对象的 abort 方法,调用 abort 的 jQuery 会执行 error 的方法,抛出 abort 的异常信息,此时即可执行我们中断 ajax 后的操作
+jQuery 的 `ajax` 对象的 `abort` 方法,调用`abort` 的 `jQuery` 会执行 `error` 的方法,抛出 `abort` 的异常信息,此时即可执行我们中断 `ajax`后的操作
 
 ```js
 var ajax = $.ajax({
@@ -395,7 +397,7 @@ var ajax = $.ajax({
 ajax.abort(); // 停止ajax
 ```
 
-原生 js
+原生 `js`
 
 ```js
 xmlHttp.open('POST', 'URL', true);
@@ -415,16 +417,16 @@ function CheckRequest() {
 ```
 
 ::: tip 注意
-不可用 abort 方法来作为终止对服务器的请求操作,只有当做在前端页面立刻停止执行 ajax 成功后的方法
+不可用 `abort` 方法来作为终止对服务器的请求操作,只有当做在前端页面立刻停止执行 `ajax` 成功后的方法
 :::
 
-## 如何让 form 表单提交数据后,页面不跳转不刷新
+## 第11题-如何让 form 表单提交数据后,页面不跳转不刷新
 
 解决思路:
 
-需要一个 iframe 标签做替罪羊,form 点击提交后到 iframe 里面,当什么都没有发生一样,先把写好的 iframe 标签隐藏起来,给 form 绑定属性 target 为何 iframe 的 name 一模一样的值,当点击 button 进行提交后,就会提交到 iframe 框里面,这样就不会重新打开一个新页面成功提交数据
+需要一个 `iframe` 标签做替罪羊,`form` 点击提交后到 `iframe` 里面,当什么都没有发生一样,先把写好的 `iframe` 标签隐藏起来,给 `form`绑定属性 `target` 为何 `iframe` 的 `name` 一模一样的值,当点击 `button` 进行提交后,就会提交到 `iframe` 框里面,这样就不会重新打开一个新页面成功提交数据
 
-在 form 表单后添加 iframe 元素
+在 `form` 表单后添加 `iframe` 元素
 
 ```js
 <iframe

@@ -370,8 +370,6 @@ console.log(toHumpName(str)); // borderTopColor
 
 本地存储有三种:`cookie`,`localStorage`,`sessionStorage`
 
-- ### cookie
-
 * **相同点**: 在本地(浏览器端)存储数据
 * **不同点**: `localStorage`,`sessionStorage`
 

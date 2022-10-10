@@ -13,6 +13,10 @@ autoGroup-5: JS特效
 
 动态的创建新的`DOM`元素,是`js`操作网页对象的重要手段
 
+## 具体示例
+
+<jingdiantexiao-createElem />
+
 ## 实现代码
 
 ```js

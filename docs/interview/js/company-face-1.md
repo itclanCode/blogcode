@@ -310,6 +310,7 @@ flower.bloom(); // 1秒后输出 我有 11 朵花瓣
 - **应用场景 3**:绑定函数作为构造函数
 
 绑定函数也适用于使用`new操作符`来构造目标函数的实例。当使用绑定函数来构造实例
+
 ::: tip 注意
 this 会被忽略，但是传入的参数仍然可用
 :::
@@ -350,15 +351,15 @@ new Point(17, 42) instanceof YAxisPoint; // true // 同上
 
 - **应用场景 4**:快捷调用-将类数组对象转换为真实的数组
 
-`bind()`也可以为需要特定 this 值的函数创造捷径
+`bind()`也可以为需要特定 `this` 值的函数创造捷径
 
-```
+```js
 var slice = Array.prototype.slice;
 
 slice.call(arguments);
 ```
 
-如果使用 bind()的话，情况变得更简单
+如果使用 `bind()`的话，情况变得更简单
 
 ```js
 // // 与前一段代码的 "slice" 效果相同,下面使用了bind
