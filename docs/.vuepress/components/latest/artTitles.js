@@ -744,4 +744,15 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 70,
+      title: "网站服务器配置-应该选择多大带宽-同时能承载多少用户的访问",
+      desc: "网站服务器配置-应该选择多大带宽-同时能承载多少用户的访问",
+      author: "随笔川迹",
+      update_time: '2022-10-10',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/tools/web-config-daikuan",
+      tag: "网络安全"  
+   },
+
 ];

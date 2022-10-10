@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [网站服务器配置-应该选择多大带宽-同时能承载多少用户的访问](../fontend/tools/web-config-daikuan)
 * [js如何实现阅读完协议后才可以注册](../fontend/js/13-read-xieyi)
 * [js如何删除一个元素](../fontend/js/12-delete-element)
 - [js如何动态创建网页新元素](../fontend/js/11-create-new-elem)
