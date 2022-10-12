@@ -154,25 +154,11 @@ const headConfig = [
     }
   ],
 
-  //https://70z.com/麒麟广告,-CPC
-  [
-    'script',
-    {
-      src: 'https://70z.efangcdn.com/slot?7645859975449108235-2434'
-    }
-  ],
   // https://www.szlm.cc/神州联盟-cpm-底部漂浮广告
   [
     'script',
     {
       src: 'https://abb.jnmami.cn/slot?2377029035902478992-20691'
-    }
-  ],
-  // https://www.szlm.cc/神州联盟-cpc-固定横幅广告
-  [
-    'script',
-    {
-      src: 'https://abb.jnmami.cn/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/

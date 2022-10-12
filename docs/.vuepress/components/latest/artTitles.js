@@ -755,4 +755,15 @@ export  const artTitles =  [
       tag: "网络安全"  
    },
 
+   {
+      id: 71,
+      title: "js如何实现随机数切换",
+      desc: "js如何实现随机数切换",
+      author: "随笔川迹",
+      update_time: '2022-10-11',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/14-click-num-suiji",
+      tag: "JS特效"  
+   },
+
 ];

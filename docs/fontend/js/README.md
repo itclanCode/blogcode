@@ -37,6 +37,8 @@ title: 目录
 
 ## JS网页特效300例
 
+* [14-js如何实现随机数切换](./14-click-num-suiji)
+* [13-js如何实现阅读完协议后才可以注册](./13-read-xieyi)
 * [12-js如何删除一个元素](./12-delete-element)
 * [11-js如何动态创建网页新元素](./11-create-new-elem)
 * [10-js如何通过id获取网页中的标签的内容](./10-getid-tag-content) 
