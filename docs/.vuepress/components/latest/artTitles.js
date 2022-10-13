@@ -766,4 +766,15 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 72,
+      title: "js如何替换元素内容",
+      desc: "js如何替换元素内容",
+      author: "随笔川迹",
+      update_time: '2022-10-13',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/15-replace-ele-content",
+      tag: "JS特效"  
+   },
+
 ];

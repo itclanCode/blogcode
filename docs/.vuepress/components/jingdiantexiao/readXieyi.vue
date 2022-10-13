@@ -34,7 +34,7 @@
                 var textareaReg = document.getElementById("inputTextarea");
                 textareaReg.addEventListener('scroll', ()=> {
                     //console.log(111);
-                    //console.log("scrollTop",textareaReg.scrollTop,"clientHeight",textareaReg.clientHeight,"scrollHeight",textareaReg.scrollHeight);
+                     console.log("scrollTop",textareaReg.scrollTop,"clientHeight",textareaReg.clientHeight,"scrollHeight",textareaReg.scrollHeight);
                     if(Math.ceil(textareaReg.scrollTop)+textareaReg.clientHeight >= textareaReg.scrollHeight) {
                         this.regStatus = false;
                     }else {
