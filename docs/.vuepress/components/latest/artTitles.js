@@ -777,4 +777,16 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 73,
+      title: "js如何修改元素的属性值",
+      desc: "js如何修改元素的属性值",
+      author: "随笔川迹",
+      update_time: '2022-10-14',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/16-change-elem-attr",
+      tag: "JS特效"  
+   },
+
+
 ];

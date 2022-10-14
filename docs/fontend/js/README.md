@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页特效300例
 
+* [16-js如何修改元素的属性值](16-change-elem-attr)
 * [15-js如何替换元素内容](./15-replace-ele-content)
 * [14-js如何实现随机数切换](./14-click-num-suiji)
 * [13-js如何实现阅读完协议后才可以注册](./13-read-xieyi)

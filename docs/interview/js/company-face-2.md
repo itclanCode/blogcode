@@ -379,7 +379,7 @@ cookie由服务端写入,而`localStorage`,`sessionStorage`由前端写入
 **同源原则**: `cookie`,`sessionStorage`,`LocalStorage`数据都遵循同源原则,其中sessionStorage还限制必须是同一个页面 
 
 在前端给后端发送请求的时候,会自动携带`cookie`中的数据,但是`sessionStorage`不会
-应用场景: Cookie一般用于存储登录验证信息`sessionID`或者`token`,`localStorage`常用语存储不易变动的数据,减轻服务器的压力,`sessionStorage`可以用来监测用户是否刷新进入页面
+应用场景: `Cookie`一般用于存储登录验证信息`sessionID`或者`token`,`localStorage`常用语存储不易变动的数据,减轻服务器的压力,`sessionStorage`可以用来监测用户是否刷新进入页面
 
 ## 第 12 题-请说一下事件循环机制
 

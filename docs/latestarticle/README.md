@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [js如何修改元素的属性值](../fontend/js/16-change-elem-attr)
 * [js如何替换元素内容](../fontend/js/15-replace-ele-content)
 * [js如何实现随机数切换](../fontend/js/14-click-num-suiji)
 * [网站服务器配置-应该选择多大带宽-同时能承载多少用户的访问](../fontend/tools/web-config-daikuan)
