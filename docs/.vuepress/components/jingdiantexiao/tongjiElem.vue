@@ -1,8 +1,10 @@
 <template>
     <div class="wrap">
-        <el-radio-group v-model="skillVal" @change="handleRadio">
-            <el-radio-button  v-for="(item,index) in lists" :key="index" :label="item">{{item}}</el-radio-button>
-       </el-radio-group>
+        <div>
+            <el-radio-group v-model="skillVal" @change="handleRadio">
+              <el-radio-button  v-for="(item,index) in lists" :key="index" :label="item">{{item}}</el-radio-button>
+            </el-radio-group>
+        </div>
        <div class="content">
           {{content}}
        </div>
