@@ -187,6 +187,14 @@ const headConfig = [
   }
 ],
 
+// zk联盟https://www.ztolm.com/
+[
+  'script',
+  {
+    src:'https://js.gg-baidu.xyz/slot?7255774253627174051-10084',
+  }
+],
+
   // 
   // [
   //   'script',

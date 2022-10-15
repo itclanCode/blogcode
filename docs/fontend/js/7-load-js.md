@@ -45,5 +45,5 @@ function loadJs() {
 
 上面就是动态的创建`script`的方式来动态加载`js`,这也是一种比较常见的方式,创建一个`js`的`DOM`对象,然后为它配置好脚本的来源地址和类型,最后把它挂载到网页的头部,也就是`head`部分
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

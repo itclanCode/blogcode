@@ -71,7 +71,7 @@ export default {
             class:"lazy img-pic" 
          },
          {
-            href: "https://www.sdlm.cc/register?from=EGD4d91ycr1",
+            href: "https://www.xyhx.cc/register?from=EGD4d91ycr1",
             imgSrc: "/images/latest/sdlm.svg",
             alt: "闪电联盟",
             text: "闪电联盟",
@@ -116,6 +116,28 @@ export default {
             imgSrc: "/images/latest/999lm.png",
             alt: "999联盟",
             text: "999联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
+         {
+            href: "https://www.ztolm.com/?pid=100093",
+            imgSrc: "/images/latest/ztolm-cc.png",
+            alt: "ZT联盟",
+            text: "ZT联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
+         {
+            href: "https://www.ztolm.com/?pid=100093",
+            imgSrc: "/images/latest/xrklm-com.png",
+            alt: "向日葵联盟",
+            text: "向日葵联盟",
             width: "80",
             height: "80",
             target: "_blank",

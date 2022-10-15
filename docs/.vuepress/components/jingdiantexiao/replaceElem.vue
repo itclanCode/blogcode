@@ -4,6 +4,7 @@
             <el-input placeholder="请输入内容" v-model="input" clearable class="input-with-select"></el-input>
             <el-button slot="append" @click="handleReplace">替换元素</el-button>  
         </div>
+        <br />
         <div><el-link type="primary" :href="url">{{url}}</el-link></div> 
     </div>
 </template>

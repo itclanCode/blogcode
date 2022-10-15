@@ -94,7 +94,7 @@ function replaceElem() {
 
 而在`vue`里面,并不是通过操作`DOM`去实现的,而是操作数据,通过操作数据实现的,与原生`js`的使用是有差异的
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />
 
 

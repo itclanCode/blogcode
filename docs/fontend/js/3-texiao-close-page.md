@@ -62,5 +62,5 @@ if (userAgent.indexOf("MSIE") > 0) {
 :::
 ::::
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

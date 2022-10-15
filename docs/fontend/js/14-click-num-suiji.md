@@ -169,5 +169,5 @@ Math.floor(Math.random() * (max - min)) + min
 ```
 其他的,都是与原生`js`实现都是一样的,同样用的是定时器,加上一个开关去实现的
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

@@ -41,6 +41,6 @@ function goBack() {
 :::
 ::::
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
-<footer-FeedBack />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
+<footer-FeedBack />>
 

@@ -24,5 +24,5 @@ if(self != top) {
 
 也等同于`self`对象,所以`top`和`self`是否等同,可以作为网页是否在一个框架中打开的判断标准
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

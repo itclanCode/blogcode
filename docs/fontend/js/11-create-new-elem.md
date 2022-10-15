@@ -56,6 +56,6 @@ function createNewElements() {
 
 第二种方法比较灵活,效率比较高,但是使用起来比较复杂一些
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />
 

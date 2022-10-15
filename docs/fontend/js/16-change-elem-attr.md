@@ -36,5 +36,5 @@ funciton changeDomAttr() {
 ```
 
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

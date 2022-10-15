@@ -36,6 +36,6 @@ function addFavor () {
 <a href="javascript:void(0)" onclick="addFavor()"></a>
 ```
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />
 

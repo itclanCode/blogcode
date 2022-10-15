@@ -58,5 +58,5 @@ function SetHome(obj,url){
 <a href="javascript:void(0);" onclick="SetHome(this,'https://coder.itclan.cn');">设为首页</a>
 ```
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

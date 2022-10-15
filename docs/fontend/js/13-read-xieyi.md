@@ -51,5 +51,5 @@ function on_scroll_reg(thisid) {
 **3. 元素.scrollHeight**: 滚动条滚动的高度,代表在有滚动条时，滚动条向下滚动的距离也就是元素顶部被遮住部分的高度,在没有滚动条时,那么它的`scrollTop:0`,可以获取设置一个元素的内容垂直滚动的距离,代表这个元素的顶部到视口可见内容（的顶部）的距离。
 :::
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />

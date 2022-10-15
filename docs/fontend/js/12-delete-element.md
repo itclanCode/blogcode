@@ -45,5 +45,5 @@ function deleteElement() {
 
 在上面的示例代码中,是先使用`parentNode`属性获得待删除元素的父元素,再删除目标元素
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <footer-FeedBack />
