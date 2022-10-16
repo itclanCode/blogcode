@@ -174,47 +174,47 @@ const plugins = [
     },
   ],
 
-  [
-    'meting',
-    {
-      metingApi: 'https://api.injahow.cn/meting/',
-      // metingApi: 'https://meting.sigure.xyz/api/music',
-      meting: {
-        //auto: 'https://music.163.com/#/playlist?id=784399723'
-        // 网易
-        server: 'netease',
-        // 读取歌单
-        type: 'playlist',
-        mid: '784399723'
-        // mid: '1300310,31654455,4022088,29717271,2061739,3934523,28263314,29577767,28949412,34749433,32102855,41630476,5042951,31010566,41630480,2061724,34690640,3935176,32526653,28283167',
-      },
-      // 不配置该项的话不会出现全局播放器
-      aplayer: {
-        // 是否开启吸底模式
-        fixed: true,
-        // 是否开启迷你模式
-        mini: true,
-        // 自动播放
-        autoplay: false,
-        // 设置播放器的初始循环模式
-        loop: 'All',
-        // 歌曲栏折叠
-        listFolded: true,
-        // 设置播放器默认主题颜色
-        theme: '#42b983',
-        // 播放顺序为随机
-        order: 'list',
-        // 初始音量
-        volume: 0.1,
-        // 关闭歌词显示
-        lrcType: 0,
-      },
-      mobile: {
-        // 手机端去掉cover图
-        cover: false,
-      },
-    },
-  ],
+  // [
+  //   'meting',
+  //   {
+  //     metingApi: 'https://api.injahow.cn/meting/',
+  //     // metingApi: 'https://meting.sigure.xyz/api/music',
+  //     meting: {
+  //       //auto: 'https://music.163.com/#/playlist?id=784399723'
+  //       // 网易
+  //       server: 'netease',
+  //       // 读取歌单
+  //       type: 'playlist',
+  //       mid: '784399723'
+  //       // mid: '1300310,31654455,4022088,29717271,2061739,3934523,28263314,29577767,28949412,34749433,32102855,41630476,5042951,31010566,41630480,2061724,34690640,3935176,32526653,28283167',
+  //     },
+  //     // 不配置该项的话不会出现全局播放器
+  //     aplayer: {
+  //       // 是否开启吸底模式
+  //       fixed: true,
+  //       // 是否开启迷你模式
+  //       mini: true,
+  //       // 自动播放
+  //       autoplay: false,
+  //       // 设置播放器的初始循环模式
+  //       loop: 'All',
+  //       // 歌曲栏折叠
+  //       listFolded: true,
+  //       // 设置播放器默认主题颜色
+  //       theme: '#42b983',
+  //       // 播放顺序为随机
+  //       order: 'list',
+  //       // 初始音量
+  //       volume: 0.1,
+  //       // 关闭歌词显示
+  //       lrcType: 0,
+  //     },
+  //     mobile: {
+  //       // 手机端去掉cover图
+  //       cover: false,
+  //     },
+  //   },
+  // ],
 ];
 
 module.exports = plugins; // 导出

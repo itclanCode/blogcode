@@ -34,6 +34,9 @@
 <style lang="scss" scoped>
 .wrap {
     margin: 20px 0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .content {
