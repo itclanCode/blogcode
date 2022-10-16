@@ -57,7 +57,9 @@
 
 <style lang="scss" scoped>
 .wrap {
-    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .img-content {
     display: flex;

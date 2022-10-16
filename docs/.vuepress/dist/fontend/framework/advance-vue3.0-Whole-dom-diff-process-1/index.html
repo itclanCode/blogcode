@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3.0 完整的DOM diff流程是怎么实现的 | itclanCoder</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/icons/favicon.ico">
+    <link rel="manifest" href="/js/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2d375b95edc42c669eb345908f92154c";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" async="async" src="https://my.openwrite.cn/js/readmore.js"></script>
+    <script charset="utf-8" async="async" src="/js/setglobal.js"></script>
+    <script async="async" charset="utf-8" data-ad-client="ca-pub-7281692919682421" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script charset="utf-8" src="/js/shang.js" async="async"></script>
+    <script src="//i.6v6.work/v/?uid=388604" async="async"></script>
+    <script charset="utf-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JpY374pS1mZfseKk&amp;ck=JpY374pS1mZfseKk"></script>
+    <script src="https://70z.efangcdn.com/slot?7645859975449108235-3792"></script>
+    <script src="https://abb.route34.cn/slot?2377029035902478992-20690"></script>
+    <script src="//pc.stgowan.com/pc/rich-tf.js" id="richid" data="s=6992"></script>
+    <script src="https://smtwm61.com/yd.php?id=29"></script>
+    <script src="https://www.tclmjs2.com:15589/slot?425080562724843477-10016"></script>
+    <script src="https://js.gg-baidu.xyz/slot?7255774253627174051-10084"></script>
+    <meta name="description" content="itclanCoder,itclanCoder的技术博客,itclan">
+    <meta rel="keywords" content="随笔川迹,itclanCoder,itclanCoder的技术博客,coder.itclan.cn,前端开发,IT技术,网络技术,斜杠青年,https://coder.itclan.cn/">
+    <meta name="Author" content="随笔川迹">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="baidu-site-verification" content="cShSMbDRHJ">
+    <meta name="baidu_union_verify" content="c8f90a7f2296fb45fbb69e5397e9c98e">
+    <meta name="viewport" content="width=device-width,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta async="async" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta async="async" name="google-site-verification" content="Lp5bo-dr1R5gCVE_3iUI6KXr8tNhN5pyUxPYYKCZkO4">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e71714e.css" as="style"><link rel="preload" href="/assets/js/app.e1d66e07.js" as="script"><link rel="preload" href="/assets/js/6.f72a872f.js" as="script"><link rel="preload" href="/assets/js/257.d81ed9bf.js" as="script"><link rel="preload" href="/assets/js/66.11d424a1.js" as="script"><link rel="preload" href="/assets/js/206.5e8e0b02.js" as="script"><link rel="preload" href="/assets/js/67.6284da1d.js" as="script"><link rel="preload" href="/assets/js/118.a7b3f265.js" as="script"><link rel="prefetch" href="/assets/js/1.38a2b5e2.js"><link rel="prefetch" href="/assets/js/10.70f6a56a.js"><link rel="prefetch" href="/assets/js/100.817dec65.js"><link rel="prefetch" href="/assets/js/101.2786879f.js"><link rel="prefetch" href="/assets/js/102.c95f5ecd.js"><link rel="prefetch" href="/assets/js/103.0416fa63.js"><link rel="prefetch" href="/assets/js/104.d6b56362.js"><link rel="prefetch" href="/assets/js/105.c32fedbc.js"><link rel="prefetch" href="/assets/js/106.e3a3712d.js"><link rel="prefetch" href="/assets/js/107.f3c542bb.js"><link rel="prefetch" href="/assets/js/108.7d5f0ad2.js"><link rel="prefetch" href="/assets/js/109.1087f69b.js"><link rel="prefetch" href="/assets/js/11.9c2a5eea.js"><link rel="prefetch" href="/assets/js/110.86a52c48.js"><link rel="prefetch" href="/assets/js/111.b009f485.js"><link rel="prefetch" href="/assets/js/112.ed3fdd61.js"><link rel="prefetch" href="/assets/js/113.85403eb0.js"><link rel="prefetch" href="/assets/js/114.c0d0cbc5.js"><link rel="prefetch" href="/assets/js/115.41864d99.js"><link rel="prefetch" href="/assets/js/116.ff225c91.js"><link rel="prefetch" href="/assets/js/117.b24f50c9.js"><link rel="prefetch" href="/assets/js/119.7ede7cd4.js"><link rel="prefetch" href="/assets/js/12.ea398794.js"><link rel="prefetch" href="/assets/js/120.af28946c.js"><link rel="prefetch" href="/assets/js/121.3f477f55.js"><link rel="prefetch" href="/assets/js/122.61579503.js"><link rel="prefetch" href="/assets/js/123.99875bc5.js"><link rel="prefetch" href="/assets/js/124.3eef8827.js"><link rel="prefetch" href="/assets/js/125.10a092c6.js"><link rel="prefetch" href="/assets/js/126.90baf251.js"><link rel="prefetch" href="/assets/js/127.399d67e7.js"><link rel="prefetch" href="/assets/js/128.8db6cf86.js"><link rel="prefetch" href="/assets/js/129.43d79ddd.js"><link rel="prefetch" href="/assets/js/13.655334c9.js"><link rel="prefetch" href="/assets/js/130.c51f42c0.js"><link rel="prefetch" href="/assets/js/131.650340ec.js"><link rel="prefetch" href="/assets/js/132.c40a41d1.js"><link rel="prefetch" href="/assets/js/133.376462c3.js"><link rel="prefetch" href="/assets/js/134.743b5607.js"><link rel="prefetch" href="/assets/js/135.caef0d0a.js"><link rel="prefetch" href="/assets/js/136.b53a90b2.js"><link rel="prefetch" href="/assets/js/137.b6c3dbf4.js"><link rel="prefetch" href="/assets/js/138.35dffdb7.js"><link rel="prefetch" href="/assets/js/139.7ab0796e.js"><link rel="prefetch" href="/assets/js/14.485959c3.js"><link rel="prefetch" href="/assets/js/140.69b5e1c2.js"><link rel="prefetch" href="/assets/js/141.095dc725.js"><link rel="prefetch" href="/assets/js/142.9105a22f.js"><link rel="prefetch" href="/assets/js/143.ce39535d.js"><link rel="prefetch" href="/assets/js/144.1e9a384c.js"><link rel="prefetch" href="/assets/js/145.6ab25899.js"><link rel="prefetch" href="/assets/js/146.80266ec9.js"><link rel="prefetch" href="/assets/js/147.338a2650.js"><link rel="prefetch" href="/assets/js/148.25039257.js"><link rel="prefetch" href="/assets/js/149.ed938273.js"><link rel="prefetch" href="/assets/js/15.bc600a22.js"><link rel="prefetch" href="/assets/js/150.b89abf68.js"><link rel="prefetch" href="/assets/js/151.86757c68.js"><link rel="prefetch" href="/assets/js/152.3842c1b2.js"><link rel="prefetch" href="/assets/js/153.1d7626eb.js"><link rel="prefetch" href="/assets/js/154.a641e676.js"><link rel="prefetch" href="/assets/js/155.2987e70c.js"><link rel="prefetch" href="/assets/js/156.ca9cbfad.js"><link rel="prefetch" href="/assets/js/157.133b1d36.js"><link rel="prefetch" href="/assets/js/158.760c0333.js"><link rel="prefetch" href="/assets/js/159.a9db5618.js"><link rel="prefetch" href="/assets/js/16.be648c48.js"><link rel="prefetch" href="/assets/js/160.95ecd31e.js"><link rel="prefetch" href="/assets/js/161.622bc7a8.js"><link rel="prefetch" href="/assets/js/162.84f814f7.js"><link rel="prefetch" href="/assets/js/163.31cfa785.js"><link rel="prefetch" href="/assets/js/164.1e745c51.js"><link rel="prefetch" href="/assets/js/165.4bc56c17.js"><link rel="prefetch" href="/assets/js/166.f3bc2dc0.js"><link rel="prefetch" href="/assets/js/167.147e940a.js"><link rel="prefetch" href="/assets/js/168.7929de20.js"><link rel="prefetch" href="/assets/js/169.07a9a262.js"><link rel="prefetch" href="/assets/js/17.ae573716.js"><link rel="prefetch" href="/assets/js/170.86c973f2.js"><link rel="prefetch" href="/assets/js/171.529fac27.js"><link rel="prefetch" href="/assets/js/172.041703aa.js"><link rel="prefetch" href="/assets/js/173.d005a6e1.js"><link rel="prefetch" href="/assets/js/174.b1ff8c6f.js"><link rel="prefetch" href="/assets/js/175.0362c78d.js"><link rel="prefetch" href="/assets/js/176.d273c62f.js"><link rel="prefetch" href="/assets/js/177.592b4aa3.js"><link rel="prefetch" href="/assets/js/178.b6e4a7c6.js"><link rel="prefetch" href="/assets/js/179.30d0381e.js"><link rel="prefetch" href="/assets/js/18.e86ec94c.js"><link rel="prefetch" href="/assets/js/180.943e5f0f.js"><link rel="prefetch" href="/assets/js/181.6df40b66.js"><link rel="prefetch" href="/assets/js/182.9ca399d3.js"><link rel="prefetch" href="/assets/js/183.5315d0bc.js"><link rel="prefetch" href="/assets/js/184.f7775bfe.js"><link rel="prefetch" href="/assets/js/185.ab6f2a41.js"><link rel="prefetch" href="/assets/js/186.1770cb1a.js"><link rel="prefetch" href="/assets/js/187.619db81a.js"><link rel="prefetch" href="/assets/js/188.9884eb1a.js"><link rel="prefetch" href="/assets/js/189.4ff98fcb.js"><link rel="prefetch" href="/assets/js/19.901c2011.js"><link rel="prefetch" href="/assets/js/190.f46503fa.js"><link rel="prefetch" href="/assets/js/191.bd43ccb6.js"><link rel="prefetch" href="/assets/js/192.f2543201.js"><link rel="prefetch" href="/assets/js/193.ac2e8bec.js"><link rel="prefetch" href="/assets/js/194.9304f249.js"><link rel="prefetch" href="/assets/js/195.0a9e26bf.js"><link rel="prefetch" href="/assets/js/196.18c2f1ee.js"><link rel="prefetch" href="/assets/js/197.734e0430.js"><link rel="prefetch" href="/assets/js/198.e8abbca5.js"><link rel="prefetch" href="/assets/js/199.ee7ecc35.js"><link rel="prefetch" href="/assets/js/20.4362edda.js"><link rel="prefetch" href="/assets/js/200.0f7ed23e.js"><link rel="prefetch" href="/assets/js/201.e13d4459.js"><link rel="prefetch" href="/assets/js/202.4be151bb.js"><link rel="prefetch" href="/assets/js/203.ac9eb1d2.js"><link rel="prefetch" href="/assets/js/204.482111a2.js"><link rel="prefetch" href="/assets/js/205.471f0667.js"><link rel="prefetch" href="/assets/js/207.c162be7e.js"><link rel="prefetch" href="/assets/js/208.9e3ad771.js"><link rel="prefetch" href="/assets/js/209.6591499a.js"><link rel="prefetch" href="/assets/js/21.bc820bf8.js"><link rel="prefetch" href="/assets/js/210.dfac9317.js"><link rel="prefetch" href="/assets/js/211.4bfa494e.js"><link rel="prefetch" href="/assets/js/212.d693204a.js"><link rel="prefetch" href="/assets/js/213.07db9529.js"><link rel="prefetch" href="/assets/js/214.0a8b6a85.js"><link rel="prefetch" href="/assets/js/215.d7b98d40.js"><link rel="prefetch" href="/assets/js/216.2d7b5682.js"><link rel="prefetch" href="/assets/js/217.fcfa855a.js"><link rel="prefetch" href="/assets/js/218.0d2db765.js"><link rel="prefetch" href="/assets/js/219.2bc6dd55.js"><link rel="prefetch" href="/assets/js/22.80596ca6.js"><link rel="prefetch" href="/assets/js/220.d8cd29d3.js"><link rel="prefetch" href="/assets/js/221.9ad73616.js"><link rel="prefetch" href="/assets/js/222.3db9799c.js"><link rel="prefetch" href="/assets/js/223.f50c8ba0.js"><link rel="prefetch" href="/assets/js/224.d98ddcdb.js"><link rel="prefetch" href="/assets/js/225.5cb4c0ee.js"><link rel="prefetch" href="/assets/js/226.e09616b9.js"><link rel="prefetch" href="/assets/js/227.e87ce85d.js"><link rel="prefetch" href="/assets/js/228.88a72d71.js"><link rel="prefetch" href="/assets/js/229.20d0eb4d.js"><link rel="prefetch" href="/assets/js/23.75c45129.js"><link rel="prefetch" href="/assets/js/230.b512b18e.js"><link rel="prefetch" href="/assets/js/231.25bb0d0e.js"><link rel="prefetch" href="/assets/js/232.8762fba3.js"><link rel="prefetch" href="/assets/js/233.3a42ce88.js"><link rel="prefetch" href="/assets/js/234.77f84b0b.js"><link rel="prefetch" href="/assets/js/235.9ef5f529.js"><link rel="prefetch" href="/assets/js/236.eed8059b.js"><link rel="prefetch" href="/assets/js/237.76501546.js"><link rel="prefetch" href="/assets/js/238.e5d73e74.js"><link rel="prefetch" href="/assets/js/239.7ee85200.js"><link rel="prefetch" href="/assets/js/24.4b611d28.js"><link rel="prefetch" href="/assets/js/240.a306d672.js"><link rel="prefetch" href="/assets/js/241.1e8c2ac3.js"><link rel="prefetch" href="/assets/js/242.81c6ad2a.js"><link rel="prefetch" href="/assets/js/243.fa68dcaf.js"><link rel="prefetch" href="/assets/js/244.5003e187.js"><link rel="prefetch" href="/assets/js/245.14adbff5.js"><link rel="prefetch" href="/assets/js/246.7eea6467.js"><link rel="prefetch" href="/assets/js/247.b3afce2a.js"><link rel="prefetch" href="/assets/js/248.41d7162f.js"><link rel="prefetch" href="/assets/js/249.3e50f945.js"><link rel="prefetch" href="/assets/js/25.6ebeb3e7.js"><link rel="prefetch" href="/assets/js/250.34776c80.js"><link rel="prefetch" href="/assets/js/251.5115253d.js"><link rel="prefetch" href="/assets/js/252.1ab64c62.js"><link rel="prefetch" href="/assets/js/253.7504dfe9.js"><link rel="prefetch" href="/assets/js/254.8fa72b95.js"><link rel="prefetch" href="/assets/js/255.95da0780.js"><link rel="prefetch" href="/assets/js/256.ad824079.js"><link rel="prefetch" href="/assets/js/258.4b1971f1.js"><link rel="prefetch" href="/assets/js/259.41646b8a.js"><link rel="prefetch" href="/assets/js/26.f49fc90d.js"><link rel="prefetch" href="/assets/js/260.83611b07.js"><link rel="prefetch" href="/assets/js/261.12d38dfc.js"><link rel="prefetch" href="/assets/js/262.e33670bb.js"><link rel="prefetch" href="/assets/js/263.0655f42c.js"><link rel="prefetch" href="/assets/js/264.755f6547.js"><link rel="prefetch" href="/assets/js/265.053c8356.js"><link rel="prefetch" href="/assets/js/266.d4fd8aad.js"><link rel="prefetch" href="/assets/js/267.0e7dd6e4.js"><link rel="prefetch" href="/assets/js/268.2fba25e7.js"><link rel="prefetch" href="/assets/js/269.35499432.js"><link rel="prefetch" href="/assets/js/27.2f45498a.js"><link rel="prefetch" href="/assets/js/270.5efd3418.js"><link rel="prefetch" href="/assets/js/271.7b23f43b.js"><link rel="prefetch" href="/assets/js/272.a4cf6b1f.js"><link rel="prefetch" href="/assets/js/273.06372d31.js"><link rel="prefetch" href="/assets/js/274.8ef2a441.js"><link rel="prefetch" href="/assets/js/275.c59cf613.js"><link rel="prefetch" href="/assets/js/276.a2a1c87d.js"><link rel="prefetch" href="/assets/js/277.de5ced4d.js"><link rel="prefetch" href="/assets/js/278.6cf2c267.js"><link rel="prefetch" href="/assets/js/279.ca9f26a9.js"><link rel="prefetch" href="/assets/js/28.62211d0f.js"><link rel="prefetch" href="/assets/js/280.ead81920.js"><link rel="prefetch" href="/assets/js/281.96c1b82f.js"><link rel="prefetch" href="/assets/js/282.86a89596.js"><link rel="prefetch" href="/assets/js/283.f1f13c74.js"><link rel="prefetch" href="/assets/js/284.7ebf4d83.js"><link rel="prefetch" href="/assets/js/285.34de274f.js"><link rel="prefetch" href="/assets/js/286.c91eb39d.js"><link rel="prefetch" href="/assets/js/287.e76d3ba6.js"><link rel="prefetch" href="/assets/js/288.605c7166.js"><link rel="prefetch" href="/assets/js/289.ccbec55e.js"><link rel="prefetch" href="/assets/js/29.12440411.js"><link rel="prefetch" href="/assets/js/290.8edd9585.js"><link rel="prefetch" href="/assets/js/291.087bc453.js"><link rel="prefetch" href="/assets/js/292.53a3a89c.js"><link rel="prefetch" href="/assets/js/293.b4f4ae7b.js"><link rel="prefetch" href="/assets/js/294.8b721272.js"><link rel="prefetch" href="/assets/js/295.4ce2ba72.js"><link rel="prefetch" href="/assets/js/296.7526ced1.js"><link rel="prefetch" href="/assets/js/297.1a960a38.js"><link rel="prefetch" href="/assets/js/298.3fc2a4ac.js"><link rel="prefetch" href="/assets/js/299.cfb16f0b.js"><link rel="prefetch" href="/assets/js/30.562ea4d6.js"><link rel="prefetch" href="/assets/js/300.9147cb15.js"><link rel="prefetch" href="/assets/js/301.f8c084f3.js"><link rel="prefetch" href="/assets/js/302.8ba25fb0.js"><link rel="prefetch" href="/assets/js/303.8bb377bf.js"><link rel="prefetch" href="/assets/js/304.11b47527.js"><link rel="prefetch" href="/assets/js/305.cda7ad0f.js"><link rel="prefetch" href="/assets/js/306.45ecb7f4.js"><link rel="prefetch" href="/assets/js/307.ce443795.js"><link rel="prefetch" href="/assets/js/308.19e3ed26.js"><link rel="prefetch" href="/assets/js/309.34c4da25.js"><link rel="prefetch" href="/assets/js/31.78fb4d03.js"><link rel="prefetch" href="/assets/js/310.43fe6590.js"><link rel="prefetch" href="/assets/js/311.88a078b9.js"><link rel="prefetch" href="/assets/js/312.9e26e293.js"><link rel="prefetch" href="/assets/js/313.9057ecba.js"><link rel="prefetch" href="/assets/js/314.a5182633.js"><link rel="prefetch" href="/assets/js/315.85601566.js"><link rel="prefetch" href="/assets/js/316.977fd4c9.js"><link rel="prefetch" href="/assets/js/317.71f64838.js"><link rel="prefetch" href="/assets/js/318.0ee768fa.js"><link rel="prefetch" href="/assets/js/319.610d733e.js"><link rel="prefetch" href="/assets/js/32.4d2ff50b.js"><link rel="prefetch" href="/assets/js/320.1c6b05e9.js"><link rel="prefetch" href="/assets/js/321.d4ff5862.js"><link rel="prefetch" href="/assets/js/322.068d25d4.js"><link rel="prefetch" href="/assets/js/323.82444a5e.js"><link rel="prefetch" href="/assets/js/324.44baafc8.js"><link rel="prefetch" href="/assets/js/325.69886189.js"><link rel="prefetch" href="/assets/js/326.e0493130.js"><link rel="prefetch" href="/assets/js/327.20e422a2.js"><link rel="prefetch" href="/assets/js/328.9b3ae34a.js"><link rel="prefetch" href="/assets/js/329.6ab2d86f.js"><link rel="prefetch" href="/assets/js/33.8bd5f645.js"><link rel="prefetch" href="/assets/js/330.d20196c1.js"><link rel="prefetch" href="/assets/js/331.9957afa5.js"><link rel="prefetch" href="/assets/js/332.7d0311dc.js"><link rel="prefetch" href="/assets/js/333.0a83ea42.js"><link rel="prefetch" href="/assets/js/334.7552a68d.js"><link rel="prefetch" href="/assets/js/335.d91a004c.js"><link rel="prefetch" href="/assets/js/336.8f1da0be.js"><link rel="prefetch" href="/assets/js/337.2cb8ab74.js"><link rel="prefetch" href="/assets/js/338.efae89f8.js"><link rel="prefetch" href="/assets/js/339.d6e60da8.js"><link rel="prefetch" href="/assets/js/34.4a4cee9e.js"><link rel="prefetch" href="/assets/js/340.42ec6667.js"><link rel="prefetch" href="/assets/js/341.93c4dd93.js"><link rel="prefetch" href="/assets/js/342.862d4edb.js"><link rel="prefetch" href="/assets/js/343.d676a0d9.js"><link rel="prefetch" href="/assets/js/344.3b6774aa.js"><link rel="prefetch" href="/assets/js/345.78ec44ef.js"><link rel="prefetch" href="/assets/js/346.f92545a8.js"><link rel="prefetch" href="/assets/js/347.e4c303ab.js"><link rel="prefetch" href="/assets/js/348.30b70ed7.js"><link rel="prefetch" href="/assets/js/349.276b9880.js"><link rel="prefetch" href="/assets/js/35.d2ed3a65.js"><link rel="prefetch" href="/assets/js/350.8e996155.js"><link rel="prefetch" href="/assets/js/351.56fe6af6.js"><link rel="prefetch" href="/assets/js/352.2fdd1e91.js"><link rel="prefetch" href="/assets/js/353.a64dd2d3.js"><link rel="prefetch" href="/assets/js/354.57d13b89.js"><link rel="prefetch" href="/assets/js/355.cdfd50e3.js"><link rel="prefetch" href="/assets/js/356.a9a4039d.js"><link rel="prefetch" href="/assets/js/357.ffd40ed2.js"><link rel="prefetch" href="/assets/js/358.44f7ceb4.js"><link rel="prefetch" href="/assets/js/359.a4bc097d.js"><link rel="prefetch" href="/assets/js/36.199d0794.js"><link rel="prefetch" href="/assets/js/360.7164f210.js"><link rel="prefetch" href="/assets/js/361.73d462ad.js"><link rel="prefetch" href="/assets/js/362.b46e6a55.js"><link rel="prefetch" href="/assets/js/363.39dc4fcb.js"><link rel="prefetch" href="/assets/js/364.612b26a0.js"><link rel="prefetch" href="/assets/js/365.c53d47ef.js"><link rel="prefetch" href="/assets/js/366.10f7216c.js"><link rel="prefetch" href="/assets/js/367.12492633.js"><link rel="prefetch" href="/assets/js/368.1f90aa0e.js"><link rel="prefetch" href="/assets/js/369.6b5151f5.js"><link rel="prefetch" href="/assets/js/37.bb3de5a2.js"><link rel="prefetch" href="/assets/js/370.51c9ab81.js"><link rel="prefetch" href="/assets/js/371.af4b09b3.js"><link rel="prefetch" href="/assets/js/372.3a872d65.js"><link rel="prefetch" href="/assets/js/373.38e68942.js"><link rel="prefetch" href="/assets/js/374.540d7946.js"><link rel="prefetch" href="/assets/js/375.de310506.js"><link rel="prefetch" href="/assets/js/376.d25d7681.js"><link rel="prefetch" href="/assets/js/377.0371e5d5.js"><link rel="prefetch" href="/assets/js/378.ccc7da02.js"><link rel="prefetch" href="/assets/js/379.5de99c7b.js"><link rel="prefetch" href="/assets/js/38.0658c413.js"><link rel="prefetch" href="/assets/js/380.02fca2e9.js"><link rel="prefetch" href="/assets/js/381.e161d509.js"><link rel="prefetch" href="/assets/js/382.12441580.js"><link rel="prefetch" href="/assets/js/383.08d687de.js"><link rel="prefetch" href="/assets/js/384.34576ca0.js"><link rel="prefetch" href="/assets/js/385.a596e4a4.js"><link rel="prefetch" href="/assets/js/386.3d98b7ae.js"><link rel="prefetch" href="/assets/js/387.fe5d368b.js"><link rel="prefetch" href="/assets/js/388.0723b02c.js"><link rel="prefetch" href="/assets/js/389.2ba15efa.js"><link rel="prefetch" href="/assets/js/39.9155326d.js"><link rel="prefetch" href="/assets/js/390.d816d25a.js"><link rel="prefetch" href="/assets/js/391.48569ddc.js"><link rel="prefetch" href="/assets/js/392.e2302221.js"><link rel="prefetch" href="/assets/js/393.fba4a1cf.js"><link rel="prefetch" href="/assets/js/394.a905dca5.js"><link rel="prefetch" href="/assets/js/395.d699f181.js"><link rel="prefetch" href="/assets/js/396.53ec0bac.js"><link rel="prefetch" href="/assets/js/397.030f0d38.js"><link rel="prefetch" href="/assets/js/398.cfde3eb8.js"><link rel="prefetch" href="/assets/js/399.e8317a49.js"><link rel="prefetch" href="/assets/js/4.cb2f0253.js"><link rel="prefetch" href="/assets/js/40.3bf2f77f.js"><link rel="prefetch" href="/assets/js/400.f1bdbd18.js"><link rel="prefetch" href="/assets/js/401.86aea08a.js"><link rel="prefetch" href="/assets/js/402.e03e542c.js"><link rel="prefetch" href="/assets/js/403.06620e3f.js"><link rel="prefetch" href="/assets/js/404.c21ec9e1.js"><link rel="prefetch" href="/assets/js/405.0f6f4f3e.js"><link rel="prefetch" href="/assets/js/406.5fe37083.js"><link rel="prefetch" href="/assets/js/407.5f87cb4a.js"><link rel="prefetch" href="/assets/js/408.0e414dcf.js"><link rel="prefetch" href="/assets/js/409.a94ec1e9.js"><link rel="prefetch" href="/assets/js/41.c0b8f616.js"><link rel="prefetch" href="/assets/js/410.d2d51104.js"><link rel="prefetch" href="/assets/js/411.359f29be.js"><link rel="prefetch" href="/assets/js/412.c837919a.js"><link rel="prefetch" href="/assets/js/413.d7fdf5e4.js"><link rel="prefetch" href="/assets/js/414.e8c8a43b.js"><link rel="prefetch" href="/assets/js/415.bd357fd5.js"><link rel="prefetch" href="/assets/js/42.5cf18e98.js"><link rel="prefetch" href="/assets/js/43.cccc769f.js"><link rel="prefetch" href="/assets/js/44.599352a9.js"><link rel="prefetch" href="/assets/js/45.dabfccd0.js"><link rel="prefetch" href="/assets/js/46.a5f3fc90.js"><link rel="prefetch" href="/assets/js/47.26cac3bc.js"><link rel="prefetch" href="/assets/js/48.5ff94a62.js"><link rel="prefetch" href="/assets/js/49.ec3ddee8.js"><link rel="prefetch" href="/assets/js/5.d489a8a7.js"><link rel="prefetch" href="/assets/js/50.3a46a836.js"><link rel="prefetch" href="/assets/js/51.83634a6f.js"><link rel="prefetch" href="/assets/js/52.30400e8d.js"><link rel="prefetch" href="/assets/js/53.90117920.js"><link rel="prefetch" href="/assets/js/54.ee75b45d.js"><link rel="prefetch" href="/assets/js/55.f7bb1655.js"><link rel="prefetch" href="/assets/js/56.dfe56cf9.js"><link rel="prefetch" href="/assets/js/57.f20174b5.js"><link rel="prefetch" href="/assets/js/58.64f5e93b.js"><link rel="prefetch" href="/assets/js/59.ba4fc91c.js"><link rel="prefetch" href="/assets/js/60.bec9c945.js"><link rel="prefetch" href="/assets/js/61.e1d653fe.js"><link rel="prefetch" href="/assets/js/62.2ec5b861.js"><link rel="prefetch" href="/assets/js/63.b0027938.js"><link rel="prefetch" href="/assets/js/64.57b88a76.js"><link rel="prefetch" href="/assets/js/65.e987d320.js"><link rel="prefetch" href="/assets/js/68.a4b72936.js"><link rel="prefetch" href="/assets/js/69.713cdc7b.js"><link rel="prefetch" href="/assets/js/7.afebc90a.js"><link rel="prefetch" href="/assets/js/70.dfc382a8.js"><link rel="prefetch" href="/assets/js/71.0ae5bcfa.js"><link rel="prefetch" href="/assets/js/72.a5433cd2.js"><link rel="prefetch" href="/assets/js/73.a771f014.js"><link rel="prefetch" href="/assets/js/74.22665733.js"><link rel="prefetch" href="/assets/js/75.22f73aff.js"><link rel="prefetch" href="/assets/js/76.2b9674f1.js"><link rel="prefetch" href="/assets/js/77.efa28a94.js"><link rel="prefetch" href="/assets/js/78.3b13e932.js"><link rel="prefetch" href="/assets/js/79.b3086db2.js"><link rel="prefetch" href="/assets/js/8.8a8807d6.js"><link rel="prefetch" href="/assets/js/80.d6a51179.js"><link rel="prefetch" href="/assets/js/81.66a8f2f4.js"><link rel="prefetch" href="/assets/js/82.79d35c17.js"><link rel="prefetch" href="/assets/js/83.ce0d67fc.js"><link rel="prefetch" href="/assets/js/84.7f030d41.js"><link rel="prefetch" href="/assets/js/85.ba113100.js"><link rel="prefetch" href="/assets/js/86.377b503f.js"><link rel="prefetch" href="/assets/js/87.8969bac3.js"><link rel="prefetch" href="/assets/js/88.19e3cad5.js"><link rel="prefetch" href="/assets/js/89.3213389f.js"><link rel="prefetch" href="/assets/js/9.5a4086ee.js"><link rel="prefetch" href="/assets/js/90.10221ce6.js"><link rel="prefetch" href="/assets/js/91.3aaaaec4.js"><link rel="prefetch" href="/assets/js/92.39ce2b9b.js"><link rel="prefetch" href="/assets/js/93.cea9e257.js"><link rel="prefetch" href="/assets/js/94.ab9acda4.js"><link rel="prefetch" href="/assets/js/95.d106409a.js"><link rel="prefetch" href="/assets/js/96.01f0ff19.js"><link rel="prefetch" href="/assets/js/97.7d7ccc1b.js"><link rel="prefetch" href="/assets/js/98.ca4e86a8.js"><link rel="prefetch" href="/assets/js/99.789afe27.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.a1b45d7b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e71714e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">itclanCoder</span></a> <div class="links"><!----> <div class="user-settings"><a href="#" class="settings-button"><svg aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 settings-icon"><path fill="currentColor" d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path></svg></a> <div class="user-settings-menu" style="display:none;"><div class="theme-options"><!----> <ul class="color-theme-options"><li><a href="#" class="default-theme"></a></li> <li><a href="#" class="blue-theme"></a></li><li><a href="#" class="red-theme"></a></li><li><a href="#" class="purple-theme"></a></li></ul> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox"></div> <div class="ignore-themes-options toggle-option"><label for="ignore-themes-toggle">Ignore Other Themes?</label> <input id="ignore-themes-toggle" type="checkbox"></div> <!----></div></div></div> <!----> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/latestarticle/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fontend/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/framework/" class="nav-link router-link-active">
+  前端框架
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/rsa/" class="nav-link">
+  前端算法
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/tools/" class="nav-link">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/websitecol/" class="nav-link">
+  网址收藏
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/node/" class="nav-link">
+  Node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow down"></span></button> <button type="button" aria-label="小程序" class="mobile-dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wechat/minprogram/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/wechat/cloudev/" class="nav-link">
+  云开发
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题解" class="dropdown-title"><span class="title">面试题解</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题解" class="mobile-dropdown-title"><span class="title">面试题解</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/minprogram/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/interview/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/interview/Node/" class="nav-link">
+  Node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.im/user/5900e97b1b69e60058b936ed/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/5ee7ee7fd180" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://segmentfault.com/u/suibichuanji_5900e1f5bcf67" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  segmentfault
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/itclan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://space.bilibili.com/267957620" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  视频教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书" class="dropdown-title"><span class="title">读书</span> <span class="arrow down"></span></button> <button type="button" aria-label="读书" class="mobile-dropdown-title"><span class="title">读书</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/wealth/" class="nav-link">
+  财富
+</a></li><li class="dropdown-item"><!----> <a href="/read/copywrite/" class="nav-link">
+  文案
+</a></li><li class="dropdown-item"><!----> <a href="/read/operate/" class="nav-link">
+  运营
+</a></li><li class="dropdown-item"><!----> <a href="/read/lingdu/" class="nav-link">
+  领读
+</a></li><li class="dropdown-item"><!----> <a href="/read/replay/" class="nav-link">
+  复盘
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/adverent/" class="nav-link">
+  广告投放
+</a></div><div class="nav-item"><a href="https://itclan.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  IT资源网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://aikelaidev.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  爱客来
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/itclanCode/blogcode" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/latestarticle/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fontend/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/framework/" class="nav-link router-link-active">
+  前端框架
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/rsa/" class="nav-link">
+  前端算法
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/tools/" class="nav-link">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/fontend/websitecol/" class="nav-link">
+  网址收藏
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/node/" class="nav-link">
+  Node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow down"></span></button> <button type="button" aria-label="小程序" class="mobile-dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wechat/minprogram/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/wechat/cloudev/" class="nav-link">
+  云开发
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题解" class="dropdown-title"><span class="title">面试题解</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题解" class="mobile-dropdown-title"><span class="title">面试题解</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/minprogram/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/interview/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/interview/Node/" class="nav-link">
+  Node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.im/user/5900e97b1b69e60058b936ed/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/5ee7ee7fd180" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://segmentfault.com/u/suibichuanji_5900e1f5bcf67" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  segmentfault
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/itclan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://space.bilibili.com/267957620" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  视频教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书" class="dropdown-title"><span class="title">读书</span> <span class="arrow down"></span></button> <button type="button" aria-label="读书" class="mobile-dropdown-title"><span class="title">读书</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/read/wealth/" class="nav-link">
+  财富
+</a></li><li class="dropdown-item"><!----> <a href="/read/copywrite/" class="nav-link">
+  文案
+</a></li><li class="dropdown-item"><!----> <a href="/read/operate/" class="nav-link">
+  运营
+</a></li><li class="dropdown-item"><!----> <a href="/read/lingdu/" class="nav-link">
+  领读
+</a></li><li class="dropdown-item"><!----> <a href="/read/replay/" class="nav-link">
+  复盘
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/adverent/" class="nav-link">
+  广告投放
+</a></div><div class="nav-item"><a href="https://itclan.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  IT资源网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://aikelaidev.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  爱客来
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/itclanCode/blogcode" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Framework</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/fontend/framework/advance-react-hook/" class="sidebar-link">React中的hook</a></li><li><a href="/fontend/framework/base-vue3.0-1/" class="sidebar-link">/fontend/framework/base-vue3.0-1/</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/base-authoring-styled-components/" class="sidebar-link">React基础(10)-React中编写样式css(styled-components)</a></li><li><a href="/fontend/framework/base-clarify-react-works/" class="sidebar-link">React基础(4)-理清React的工作方式</a></li><li><a href="/fontend/framework/base-create-react-app/" class="sidebar-link">React基础(1)-cretate-react-app</a></li><li><a href="/fontend/framework/base-jsx-in-depth/" class="sidebar-link">React基础(2)-深入浅出 JSX</a></li><li><a href="/fontend/framework/base-react-component-lifecycle/" class="sidebar-link">React基础(8)-React中组件的生命周期</a></li><li><a href="/fontend/framework/base-react-components-props/" class="sidebar-link">React基础(5)-React中组件的数据-props</a></li><li><a href="/fontend/framework/base-react-components-state/" class="sidebar-link">React基础(6)-React中组件的数据-state</a></li><li><a href="/fontend/framework/base-react-event-handle/" class="sidebar-link">React 基础(7)-React中的事件处</a></li><li><a href="/fontend/framework/base-send-ajax-mock/" class="sidebar-link">React基础(9)-React中发送Ajax请求以及Mock数据</a></li><li><a href="/fontend/framework/base-the-indispensable-jsx/" class="sidebar-link">React基础(3)-不可不知的 JSX</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/advance-changestore-data/" class="sidebar-link">React进阶(3)-上手实践Redux-如何改变store中的数据</a></li><li><a href="/fontend/framework/advance-container-components/" class="sidebar-link">React进阶(5)-分离容器组件,UI组件(无状态组件</a></li><li><a href="/fontend/framework/advance-getstore-data/" class="sidebar-link">React 进阶(2)-上手实践 Redux-如何获取 store 的数据</a></li><li><a href="/fontend/framework/advance-highfun-and-component/" class="sidebar-link">React 进阶(7)-高阶函数与高阶组件</a></li><li><a href="/fontend/framework/advance-react-redux/" class="sidebar-link">React进阶(6)-react-redux的使用</a></li><li><a href="/fontend/framework/advance-react-use-decorator/" class="sidebar-link">React 进阶(8)-如何在React中使用装饰器-即@修饰符</a></li><li><a href="/fontend/framework/advance-split-redux/" class="sidebar-link">React 进阶(4)-拆分 Redux-将 store,Reducer,action,actionTypes 独立管理</a></li><li><a href="/fontend/framework/advance-understand-redux/" class="sidebar-link">React进阶(1)-理解Redux</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue3.0源码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/" aria-current="page" class="active sidebar-link">vue3.0 完整的DOM diff流程是怎么实现的</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#完整的-dom-diff-流程是怎么实现的" class="sidebar-link">完整的 DOM diff 流程是怎么实现的</a></li><li class="sidebar-sub-header"><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#快速导航" class="sidebar-link">快速导航</a></li><li class="sidebar-sub-header"><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#副作用渲染函数更新组件的过程" class="sidebar-link">副作用渲染函数更新组件的过程</a></li></ul></li><li><a href="/fontend/framework/advance-vue3.0-do-some-youhua/" class="sidebar-link">Vue3.0 做了哪些优化</a></li><li><a href="/fontend/framework/advance-vue3.0-implem-component/" class="sidebar-link">Vue3.0 组件的实现</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/vue-component-pass-value/" class="sidebar-link">vuejs 中的组件以及父子组件间通信传值</a></li><li><a href="/fontend/framework/vue-computed-watch/" class="sidebar-link">vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较</a></li><li><a href="/fontend/framework/vue-hash-history/" class="sidebar-link">vuejs中路由器的两种模式-哈希模式与历史模式</a></li><li><a href="/fontend/framework/vue-mixins/" class="sidebar-link">vuejs中的mixin混入-局部混入/全局混入</a></li><li><a href="/fontend/framework/vue-router-biancheng/" class="sidebar-link">vuejs中的编程式导航Vs声明式导航</a></li><li><a href="/fontend/framework/vue-router-keep-alive/" class="sidebar-link">vuejs中如何实现动态路由切换及路由的缓存</a></li><li><a href="/fontend/framework/vue-router-params/" class="sidebar-link">vuejs中路由的传参以及路由props配置</a></li><li><a href="/fontend/framework/vue-router-qiantao/" class="sidebar-link">vuejs中路由的嵌套</a></li><li><a href="/fontend/framework/vue-router-sanji/" class="sidebar-link">vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态</a></li><li><a href="/fontend/framework/vue-router-shouwei/" class="sidebar-link">vuejs中的路由全局前置守卫-全局后置路由守卫及独享路由守卫-组件内的守卫</a></li><li><a href="/fontend/framework/vue-slot/" class="sidebar-link">vuejs中的默认插槽-具名插槽-作用域插槽三者的比较</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>TypeScript基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/ts-data-type/" class="sidebar-link">ts-基本数据类型</a></li><li><a href="/fontend/framework/tsconfig/" class="sidebar-link">tsconfig配置介绍</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>TypeScript常见问题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fontend/framework/tsc-programe-1/" class="sidebar-link">TypeScript可能会问题</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="完整的-dom-diff-流程是怎么实现的"><a href="#完整的-dom-diff-流程是怎么实现的" class="header-anchor">#</a> 完整的 DOM diff 流程是怎么实现的</h2> <div><ul><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#完整的-dom-diff-流程是怎么实现的">完整的 DOM diff 流程是怎么实现的</a></li><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#快速导航">快速导航</a></li><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#前言">前言</a></li><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#副作用渲染函数更新组件的过程">副作用渲染函数更新组件的过程</a></li></ul></div> <h2 id="快速导航"><a href="#快速导航" class="header-anchor">#</a> 快速导航</h2> <div><ul><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#完整的-dom-diff-流程是怎么实现的">完整的 DOM diff 流程是怎么实现的</a></li><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#快速导航">快速导航</a></li><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#前言">前言</a></li><li><a href="/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1/#副作用渲染函数更新组件的过程">副作用渲染函数更新组件的过程</a></li></ul></div> <h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>上一节课主要梳理了组件渲染的过程，本质上就是把各种类型的 vnode 渲染成真实 DOM。我们也知道了<strong>组件是由模板、组件描述对象和数据构成的，数据的变化会影响组件的变化。组件的渲染过程中创建了一个带副作用的渲染函数，当数据变化的时候就会执行这个渲染函数来触发组件的更新</strong>。</p> <p>那么接下来，我们就具体分析一下组件的更新过程</p> <h2 id="副作用渲染函数更新组件的过程"><a href="#副作用渲染函数更新组件的过程" class="header-anchor">#</a> 副作用渲染函数更新组件的过程</h2> <p>先来回顾一下带副作用渲染函数 setupRenderEffect 的实现，但是这次我们要重点关注更新组件部分的逻辑</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const setupRenderEffect = (instance, initialVNode, container, anchor, parentSuspense, isSVG, optimized) =&gt; {
+
+  // 创建响应式的副作用渲染函数
+
+  instance.update = effect(function componentEffect() {
+
+    if (!instance.isMounted) {
+
+      // 渲染组件
+
+    }
+
+    else {
+
+      // 更新组件
+
+      let { next, vnode } = instance
+
+      // next 表示新的组件 vnode
+
+      if (next) {
+
+        // 更新组件 vnode 节点信息
+
+        updateComponentPreRender(instance, next, optimized)
+
+      }
+
+      else {
+
+        next = vnode
+
+      }
+
+      // 渲染新的子树 vnode
+
+      const nextTree = renderComponentRoot(instance)
+
+      // 缓存旧的子树 vnode
+
+      const prevTree = instance.subTree
+
+      // 更新子树 vnode
+
+      instance.subTree = nextTree
+
+      // 组件更新核心逻辑，根据新旧子树 vnode 做 patch
+
+      patch(prevTree, nextTree,
+
+        // 如果在 teleport 组件中父节点可能已经改变，所以容器直接找旧树 DOM 元素的父节点
+
+        hostParentNode(prevTree.el),
+
+        // 参考节点在 fragment 的情况可能改变，所以直接找旧树 DOM 元素的下一个节点
+
+        getNextHostNode(prevTree),
+
+        instance,
+
+        parentSuspense,
+
+        isSVG)
+
+      // 缓存更新后的 DOM 节点
+
+      next.el = nextTree.el
+
+    }
+
+  }, prodEffectOptions)
+
+}
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br></div></div><p>可以看到，更新组件主要做三件事情：更新组件 vnode 节点、渲染新的子树 vnode、根据新旧子树 vnode 执行 patch 逻辑。</p> <p>首先是更新组件 vnode 节点，这里会有一个条件判断，判断组件实例中是否有新的组件 vnode（用 next 表示），有则更新组件 vnode，没有 next 指向之前的组件 vnode。为什么需要判断，这其实涉及一个组件更新策略的逻辑，我们稍后会讲。</p> <p>接着是渲染新的子树 vnode，因为数据发生了变化，模板又和数据相关，所以渲染生成的子树 vnode 也会发生相应的变化。</p> <p>最后就是核心的 patch 逻辑，用来找出新旧子树 vnode 的不同，并找到一种合适的方式更新 DOM，接下来我们就来分析这个过程</p> <p><strong>核心逻辑：patch 流程</strong></p> <p>我们先来看 patch 流程的实现代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const patch = (n1, n2, container, anchor = null, parentComponent = null, parentSuspense = null, isSVG = false, optimized = false) =&gt; {
+
+  // 如果存在新旧节点, 且新旧节点类型不同，则销毁旧节点
+
+  if (n1 &amp;&amp; !isSameVNodeType(n1, n2)) {
+
+    anchor = getNextHostNode(n1)
+
+    unmount(n1, parentComponent, parentSuspense, true)
+
+    // n1 设置为 null 保证后续都走 mount 逻辑
+
+    n1 = null
+
+  }
+
+  const { type, shapeFlag } = n2
+
+  switch (type) {
+
+    case Text:
+
+      // 处理文本节点
+
+      break
+
+    case Comment:
+
+      // 处理注释节点
+
+      break
+
+    case Static:
+
+      // 处理静态节点
+
+      break
+
+    case Fragment:
+
+      // 处理 Fragment 元素
+
+      break
+
+    default:
+
+      if (shapeFlag &amp; 1 /* ELEMENT */) {
+
+        // 处理普通 DOM 元素
+
+        processElement(n1, n2, container, anchor, parentComponent, parentSuspense, isSVG, optimized)
+
+      }
+
+      else if (shapeFlag &amp; 6 /* COMPONENT */) {
+
+        // 处理组件
+
+        processComponent(n1, n2, container, anchor, parentComponent, parentSuspense, isSVG, optimized)
+
+      }
+
+      else if (shapeFlag &amp; 64 /* TELEPORT */) {
+
+        // 处理 TELEPORT
+
+      }
+
+      else if (shapeFlag &amp; 128 /* SUSPENSE */) {
+
+        // 处理 SUSPENSE
+
+      }
+
+  }
+
+}
+
+function isSameVNodeType (n1, n2) {
+
+  // n1 和 n2 节点的 type 和 key 都相同，才是相同节点
+
+  return n1.type === n2.type &amp;&amp; n1.key === n2.key
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br></div></div><p>在这个过程中，首先判断新旧节点是否是相同的 vnode 类型，如果不同，比如一个 div 更新成一个 ul，那么最简单的操作就是删除旧的 div 节点，再去挂载新的 ul 节点。</p> <p>如果是相同的 vnode 类型，就需要走 diff 更新流程了，接着会根据不同的 vnode 类型执行不同的处理逻辑，这里我们仍然只分析普通元素类型和组件类型的处理过程</p> <p><strong>1. 处理组件</strong></p> <p>如何处理组件的呢？举个例子，我们在父组件 App 中里引入了 Hello 组件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+
+  &lt;div class=&quot;app&quot;&gt;
+
+    &lt;p&gt;This is an app.&lt;/p&gt;
+
+    &lt;hello :msg=&quot;msg&quot;&gt;&lt;/hello&gt;
+
+    &lt;button @click=&quot;toggle&quot;&gt;Toggle msg&lt;/button&gt;
+
+  &lt;/div&gt;
+
+&lt;/template&gt;
+
+&lt;script&gt;
+
+  export default {
+
+    data() {
+
+      return {
+
+        msg: 'Vue'
+
+      }
+
+    },
+
+    methods: {
+
+      toggle() {
+
+        this.msg = this.msg ==== 'Vue'? 'World': 'Vue'
+
+      }
+
+    }
+
+  }
+
+&lt;/script&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><p>Hello 组件中是 <code>&lt;div&gt;</code> 包裹着一个<code>&lt;p&gt;</code> 标签， 如下所示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+
+  &lt;div class=&quot;hello&quot;&gt;
+
+    &lt;p&gt;Hello, {{msg}}&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;/template&gt;
+
+&lt;script&gt;
+
+  export default {
+
+    props: {
+
+      msg: String
+
+    }
+
+  }
+
+&lt;/script&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>点击 App 组件中的按钮执行 toggle 函数，就会修改 data 中的 msg，并且会触发 App 组件的重新渲染。</p> <p>结合前面对渲染函数的流程分析，这里 App 组件的根节点是 div 标签，重新渲染的子树 vnode 节点是一个普通元素的 vnode，应该先走 processElement 逻辑。组件的更新最终还是要转换成内部真实 DOM 的更新</p> <p>而实际上普通元素的处理流程才是真正做 DOM 的更新，由于稍后我们会详细分析普通元素的处理流程，所以我们先跳过这里，继续往下看。</p> <p>和渲染过程类似，更新过程也是一个树的深度优先遍历过程，更新完当前节点后，就会遍历更新它的子节点，因此在遍历的过程中会遇到 hello 这个组件 vnode 节点，就会执行到 processComponent 处理逻辑中，我们再来看一下它的实现，我们重点关注一下组件更新的相关逻辑：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const processComponent = (n1, n2, container, anchor, parentComponent, parentSuspense, isSVG, optimized) =&gt; {
+
+  if (n1 == null) {
+
+    // 挂载组件
+
+  }
+
+  else {
+
+    // 更新子组件
+
+    updateComponent(n1, n2, parentComponent, optimized)
+
+  }
+
+}
+
+const updateComponent = (n1, n2, parentComponent, optimized) =&gt; {
+
+  const instance = (n2.component = n1.component)
+
+  // 根据新旧子组件 vnode 判断是否需要更新子组件
+
+  if (shouldUpdateComponent(n1, n2, parentComponent, optimized)) {
+
+    // 新的子组件 vnode 赋值给 instance.next
+
+    instance.next = n2
+
+    // 子组件也可能因为数据变化被添加到更新队列里了，移除它们防止对一个子组件重复更新
+
+    invalidateJob(instance.update)
+
+    // 执行子组件的副作用渲染函数
+
+    instance.update()
+
+  }
+
+  else {
+
+    // 不需要更新，只复制属性
+
+    n2.component = n1.component
+
+    n2.el = n1.el
+
+  }
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><p>可以看到，processComponent 主要通过执行 updateComponent 函数来更新子组件，updateComponent 函数在更新子组件的时候，会先执行 shouldUpdateComponent 函数，根据新旧子组件 vnode 来判断是否需要更新子组件。这里你只需要知道，在 shouldUpdateComponent 函数的内部，主要是通过检测和对比组件 vnode 中的 props、chidren、dirs、transiton 等属性，来决定子组件是否需要更新。</p> <p>这是很好理解的，因为在一个组件的子组件是否需要更新，我们主要依据子组件 vnode 是否存在一些会影响组件更新的属性变化进行判断，如果存在就会更新子组件。</p> <p>虽然 Vue.js 的更新粒度是组件级别的，组件的数据变化只会影响当前组件的更新，但是在组件更新的过程中，也会对子组件做一定的检查，判断子组件是否也要更新，并通过某种机制避免子组件重复更新。</p> <p>我们接着看 updateComponent 函数，如果 shouldUpdateComponent 返回 true ，那么在它的最后，先执行 invalidateJob（instance.update）避免子组件由于自身数据变化导致的重复更新，然后又执行了子组件的副作用渲染函数 instance.update 来主动触发子组件的更新。</p> <p>再回到副作用渲染函数中，有了前面的讲解，我们再看组件更新的这部分代码，就能很好地理解它的逻辑了：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 更新组件
+
+let { next, vnode } = instance
+
+// next 表示新的组件 vnode
+
+if (next) {
+
+  // 更新组件 vnode 节点信息
+
+  updateComponentPreRender(instance, next, optimized)
+
+}
+
+else {
+
+  next = vnode
+
+}
+
+const updateComponentPreRender = (instance, nextVNode, optimized) =&gt; {
+
+  // 新组件 vnode 的 component 属性指向组件实例
+
+  nextVNode.component = instance
+
+  // 旧组件 vnode 的 props 属性
+
+  const prevProps = instance.vnode.props
+
+  // 组件实例的 vnode 属性指向新的组件 vnode
+
+  instance.vnode = nextVNode
+
+  // 清空 next 属性，为了下一次重新渲染准备
+
+  instance.next = null
+
+  // 更新 props
+
+  updateProps(instance, nextVNode.props, prevProps, optimized)
+
+  // 更新 插槽
+
+  updateSlots(instance, nextVNode.children)
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><p>结合上面的代码，我们在更新组件的 DOM 前，需要先更新组件 vnode 节点信息，包括更改组件实例的 vnode 指针、更新 props 和更新插槽等一系列操作，因为组件在稍后执行 renderComponentRoot 时会重新渲染新的子树 vnode ，它依赖了更新后的组件 vnode 中的 props 和 slots 等数据。</p> <p>所以我们现在知道了一个组件重新渲染可能会有两种场景，一种是组件本身的数据变化，这种情况下 next 是 null；另一种是父组件在更新的过程中，遇到子组件节点，先判断子组件是否需要更新，如果需要则主动执行子组件的重新渲染方法，这种情况下 next 就是新的子组件 vnode。</p> <p>你可能还会有疑问，这个子组件对应的新的组件 vnode 是什么时候创建的呢？答案很简单，它是在父组件重新渲染的过程中，通过 renderComponentRoot 渲染子树 vnode 的时候生成，因为子树 vnode 是个树形结构，通过遍历它的子节点就可以访问到其对应的组件 vnode。再拿我们前面举的例子说，当 App 组件重新渲染的时候，在执行 renderComponentRoot 生成子树 vnode 的过程中，也生成了 hello 组件对应的新的组件 vnode。</p> <p>所以 processComponent 处理组件 vnode，本质上就是去判断子组件是否需要更新，如果需要则递归执行子组件的副作用渲染函数来更新，否则仅仅更新一些 vnode 的属性，并让子组件实例保留对组件 vnode 的引用，用于子组件自身数据变化引起组件重新渲染的时候，在渲染函数内部可以拿到新的组件 vnode。</p> <p>前面也说过，组件是抽象的，组件的更新最终还是会落到对普通 DOM 元素的更新。所以接下来我们详细分析一下组件更新中对普通元素的处理流程。</p> <p><strong>2. 处理普通元素</strong></p> <p>我们再来看如何处理普通元素，我把之前的示例稍加修改，将其中的 Hello 组件删掉，如下所示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+
+  &lt;div class=&quot;app&quot;&gt;
+
+    &lt;p&gt;This is {{msg}}.&lt;/p&gt;
+
+    &lt;button @click=&quot;toggle&quot;&gt;Toggle msg&lt;/button&gt;
+
+  &lt;/div&gt;
+
+&lt;/template&gt;
+
+&lt;script&gt;
+
+  export default {
+
+    data() {
+
+      return {
+
+        msg: 'Vue'
+
+      }
+
+    },
+
+    methods: {
+
+      toggle() {
+
+        this.msg = 'Vue'? 'World': 'Vue'
+
+      }
+
+    }
+
+  }
+
+&lt;/script&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p>当我们点击 App 组件中的按钮会执行 toggle 函数，然后修改 data 中的 msg，这就触发了 App 组件的重新渲染。</p> <p>App 组件的根节点是 div 标签，重新渲染的子树 vnode 节点是一个普通元素的 vnode，所以应该先走 processElement 逻辑，我们来看这个函数的实现</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const processElement = (n1, n2, container, anchor, parentComponent, parentSuspense, isSVG, optimized) =&gt; {
+
+  isSVG = isSVG || n2.type === 'svg'
+
+  if (n1 == null) {
+
+    // 挂载元素
+
+  }
+
+  else {
+
+    // 更新元素
+
+    patchElement(n1, n2, parentComponent, parentSuspense, isSVG, optimized)
+
+  }
+
+}
+
+const patchElement = (n1, n2, parentComponent, parentSuspense, isSVG, optimized) =&gt; {
+
+  const el = (n2.el = n1.el)
+
+  const oldProps = (n1 &amp;&amp; n1.props) || EMPTY_OBJ
+
+  const newProps = n2.props || EMPTY_OBJ
+
+  // 更新 props
+
+  patchProps(el, n2, oldProps, newProps, parentComponent, parentSuspense, isSVG)
+
+  const areChildrenSVG = isSVG &amp;&amp; n2.type !== 'foreignObject'
+
+  // 更新子节点
+
+  patchChildren(n1, n2, el, null, parentComponent, parentSuspense, areChildrenSVG)
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p>可以看到，更新元素的过程主要做两件事情：更新 props 和更新子节点。其实这是很好理解的，因为一个 DOM 节点元素就是由它自身的一些属性和子节点构成的。</p> <p>首先是更新 props，这里的 patchProps 函数就是在更新 DOM 节点的 class、style、event 以及其它的一些 DOM 属性，这个过程我不再深入分析了，感兴趣的同学可以自己看这部分代码。</p> <p>其次是更新子节点，我们来看一下这里的 patchChildren 函数的实现</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const patchChildren = (n1, n2, container, anchor, parentComponent, parentSuspense, isSVG, optimized = false) =&gt; {
+
+  const c1 = n1 &amp;&amp; n1.children
+
+  const prevShapeFlag = n1 ? n1.shapeFlag : 0
+
+  const c2 = n2.children
+
+  const { shapeFlag } = n2
+
+  // 子节点有 3 种可能情况：文本、数组、空
+
+  if (shapeFlag &amp; 8 /* TEXT_CHILDREN */) {
+
+    if (prevShapeFlag &amp; 16 /* ARRAY_CHILDREN */) {
+
+      // 数组 -&gt; 文本，则删除之前的子节点
+
+      unmountChildren(c1, parentComponent, parentSuspense)
+
+    }
+
+    if (c2 !== c1) {
+
+      // 文本对比不同，则替换为新文本
+
+      hostSetElementText(container, c2)
+
+    }
+
+  }
+
+  else {
+
+    if (prevShapeFlag &amp; 16 /* ARRAY_CHILDREN */) {
+
+      // 之前的子节点是数组
+
+      if (shapeFlag &amp; 16 /* ARRAY_CHILDREN */) {
+
+        // 新的子节点仍然是数组，则做完整地 diff
+
+        patchKeyedChildren(c1, c2, container, anchor, parentComponent, parentSuspense, isSVG, optimized)
+
+      }
+
+      else {
+
+        // 数组 -&gt; 空，则仅仅删除之前的子节点
+
+        unmountChildren(c1, parentComponent, parentSuspense, true)
+
+      }
+
+    }
+
+    else {
+
+      // 之前的子节点是文本节点或者为空
+
+      // 新的子节点是数组或者为空
+
+      if (prevShapeFlag &amp; 8 /* TEXT_CHILDREN */) {
+
+        // 如果之前子节点是文本，则把它清空
+
+        hostSetElementText(container, '')
+
+      }
+
+      if (shapeFlag &amp; 16 /* ARRAY_CHILDREN */) {
+
+        // 如果新的子节点是数组，则挂载新子节点
+
+        mountChildren(c2, container, anchor, parentComponent, parentSuspense, isSVG, optimized)
+
+      }
+
+    }
+
+  }
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br></div></div><p>对于一个元素的子节点 vnode 可能会有三种情况：纯文本、vnode 数组和空。那么根据排列组合对于新旧子节点来说就有九种情况，我们可以通过三张图来表示。</p> <p>首先来看一下旧子节点是纯文本的情况：</p> <p>如果新子节点也是纯文本，那么做简单地文本替换即可；</p> <p>如果新子节点是空，那么删除旧子节点即可；</p> <p>如果新子节点是 vnode 数组，那么先把旧子节点的文本清空，再去旧子节点的父容器下添加多个新子节点。</p> <p>接下来看一下旧子节点是空的情况：</p> <p>如果新子节点是纯文本，那么在旧子节点的父容器下添加新文本节点即可；</p> <p>如果新子节点也是空，那么什么都不需要做；</p> <p>如果新子节点是 vnode 数组，那么直接去旧子节点的父容器下添加多个新子节点即可。</p> <p>最后来看一下旧子节点是 vnode 数组的情况：</p> <p>如果新子节点是纯文本，那么先删除旧子节点，再去旧子节点的父容器下添加新文本节点；</p> <p>如果新子节点是空，那么删除旧子节点即可；</p> <p>如果新子节点也是 vnode 数组，那么就需要做完整的 diff 新旧子节点了，这是最复杂的情况，内部运用了核心 diff 算法</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/itclanCode/blogcode/edit/master/docs/fontend/framework/advance-vue3.0-Whole-dom-diff-process-1.md" target="_blank" rel="noopener noreferrer">发现有错误?前往GitHub指正</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/26/2021, 5:07:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/fontend/framework/advance-understand-redux/" class="prev">
+        React进阶(1)-理解Redux
+      </a></span> <span class="next"><a href="/fontend/framework/advance-vue3.0-do-some-youhua/">
+        Vue3.0 做了哪些优化
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><!----><div><div class="fold-button fold-button"><span></span> <span></span> <span></span></div> <div class="fixed-container"><div><h4>关注公众号</h4> <p>一个走心,有温度的号,同千万同行一起交流学习</p> <img loading="lazy" src="/images/rightbar/itclancoder-code.jpg" alt="" class="medium-zoom lazy"></div><div><h4>加作者微信</h4> <p>扫二维码 备注 【加群】</p> <img loading="lazy" src="/images/rightbar/aikelaikaifa-code.jpg" alt="" class="medium-zoom lazy"></div><div><h4>扫码易购</h4> <p>福利推荐</p> <img loading="lazy" src="/images/rightbar/itclanShopCode.jpg" alt="" class="medium-zoom lazy"></div></div></div><div data-v-af539466><div id="bottom" data-v-af539466></div></div><div data-v-810c5c06><div class="right-bar-wrap" style="display:none;" data-v-810c5c06><div data-v-810c5c06><a href="#" data-v-810c5c06><img width="30" height="30" src="/images/rightbar/up-arrow.png" alt="置顶" data-v-810c5c06></a></div> <div data-v-810c5c06><a href="/latestarticle/" data-v-810c5c06><img width="30" height="30" src="/images/rightbar/new.png" alt="最新" data-v-810c5c06></a></div> <div data-v-810c5c06><img width="30" height="30" src="/images/rightbar/kequn.svg" alt="社群" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" loading="lazy" src="/images/rightbar/itclanShopCode.jpg" alt="小程序码" class="medium-zoom lazy" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" loading="lazy" src="/images/rightbar/aikelaikaifa-code.jpg" alt="二维码" class="medium-zoom lazy" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" loading="lazy" src="/images/rightbar/itclancoder-code.jpg" alt="公众号" class="medium-zoom lazy" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" src="/images/rightbar/ad.svg" alt="广告" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" src="/images/rightbar/fk.png" alt="发卡" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" src="/images/rightbar/videotv.svg" alt="客来影视" data-v-810c5c06></div> <div data-v-810c5c06><img width="30" height="30" src="/images/rightbar/shang.svg" alt="赏" data-v-810c5c06></div> <div data-v-810c5c06><a href="#bottom" data-v-810c5c06><img width="30" height="30" src="/images/rightbar/down-arrow.png" alt="置底" data-v-810c5c06></a></div></div></div><div data-v-46fc0c32><div class="cat-container" style="display:;" data-v-46fc0c32><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-46fc0c32></canvas></div></div><div></div><APlayer audio="" fixed="true" mini="true" theme="#42b983" loop="loop" order="list" preload="auto" volume="0.1" mutex="true" lrc-type="0" list-folded="true" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer></div></div>
+    <script src="/assets/js/app.e1d66e07.js" defer></script><script src="/assets/js/6.f72a872f.js" defer></script><script src="/assets/js/257.d81ed9bf.js" defer></script><script src="/assets/js/66.11d424a1.js" defer></script><script src="/assets/js/206.5e8e0b02.js" defer></script><script src="/assets/js/67.6284da1d.js" defer></script><script src="/assets/js/118.a7b3f265.js" defer></script>
+  </body>
+</html>

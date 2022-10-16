@@ -35,8 +35,10 @@
 <style lang="scss" scoped>
 .wrap {
     width: 400px;
-    text-align: center;
     margin: 20px auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-wrap {
