@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页特效300例
 
+* [18-js如何实现克隆元素](./18-clone-elem)
 * [17-js如何引用同级元素](./17-yinyong-tongji-elem)
 * [16-js如何修改元素的属性值](./16-change-elem-attr)
 * [15-js如何替换元素内容](./15-replace-ele-content)

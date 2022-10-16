@@ -799,5 +799,16 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 75,
+      title: "js如何实现克隆元素",
+      desc: "js如何实现克隆元素",
+      author: "随笔川迹",
+      update_time: '2022-10-16',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/18-clone-elem",
+      tag: "JS特效"  
+   },
+
 
 ];

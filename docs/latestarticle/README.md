@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [js如何实现克隆元素](../fontend/js/18-clone-elem)
 * [js如何引用同级元素](../fontend/js/17-yinyong-tongji-elem)
 * [js如何修改元素的属性值](../fontend/js/16-change-elem-attr)
 * [js如何替换元素内容](../fontend/js/15-replace-ele-content)
