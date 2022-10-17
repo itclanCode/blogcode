@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页特效300例
 
+* [20-js如何实现升序和降序](./20-elem-ascend-descend)
 * [19-js如何设置元素的显示和隐藏](./19-elem-show-hide)
 * [18-js如何实现克隆元素](./18-clone-elem)
 * [17-js如何引用同级元素](./17-yinyong-tongji-elem)

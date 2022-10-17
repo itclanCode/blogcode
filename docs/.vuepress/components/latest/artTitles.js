@@ -717,7 +717,7 @@ export  const artTitles =  [
       desc: "js如何动态创建网页新元素",
       author: "随笔川迹",
       update_time: '2022-10-09',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/8Q56jpKdRlyy2p01xft6fg",
       url:"/fontend/js/11-create-new-elem",
       tag: "JS特效"  
    },
@@ -818,6 +818,17 @@ export  const artTitles =  [
       update_time: '2022-10-16',
       link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
       url:"/fontend/js/19-elem-show-hide",
+      tag: "JS特效"  
+   },
+
+   {
+      id: 77,
+      title: "js如何实现升序和降序",
+      desc: "js如何实现升序和降序",
+      author: "随笔川迹",
+      update_time: '2022-10-17',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/20-elem-ascend-descend",
       tag: "JS特效"  
    },
    
