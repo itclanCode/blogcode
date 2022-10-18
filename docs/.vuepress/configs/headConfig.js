@@ -114,8 +114,8 @@ const headConfig = [
     {
       async: 'async',
       charset: 'utf-8',
-      'data-ad-client': 'ca-pub-7281692919682421',
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+      crossorigin: 'anonymous',
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7281692919682421',
     },
   ],
 

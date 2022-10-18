@@ -29,6 +29,17 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
+
+         {
+          href: "http://game.itclan.cn",
+          imgSrc: "/images/games/kelaigame.png",
+          alt: "客来游戏=h5小游戏",
+          text: "客来游戏",
+          width: "80",
+          height: "80",
+          target: "_blank",
+        },
+
          {
             href: "https://pay.aikelaidev.cn",
             imgSrc: "/images/latest/payaikelaidev.svg",

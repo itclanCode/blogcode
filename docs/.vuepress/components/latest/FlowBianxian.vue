@@ -30,6 +30,26 @@ export default {
             class:"lazy img-pic" 
          },
          {
+            href: "https://union.baidu.com/",
+            imgSrc: "/images/latest/union-baidu.png",
+            alt: "百度联盟",
+            text: "百度联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+         {
+            href: "https://www.google.com/adsense",
+            imgSrc: "/images/latest/google.png",
+            alt: "谷歌广告联盟",
+            text: "谷歌广告联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+         {
             href: "http://pc.huimee.com/affiliate/",
             imgSrc: "/images/latest/huimi.png",
             alt: "网站注入-cpm,cpv广告变现",
