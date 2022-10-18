@@ -158,7 +158,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.route34.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.sdzhongke.cn/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/

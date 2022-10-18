@@ -60,6 +60,10 @@
 <style lang="scss" scoped>
 .wrap {
     text-align: center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
 }
 .btn {
     margin-top: 20px;

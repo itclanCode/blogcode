@@ -13,10 +13,10 @@
 
 <script>
 import live2dJSString from '../../public/js/live2d';
-const blackCatUrl =
-  'https://coder.itclan.cn/live2D/live2d-widget-model-hibiki/assets/hijiki.model.json';
-const whiteCatUrl =
-  'https://coder.itclan.cn/live2D/live2d-widget-model-tororo/assets/tororo.model.json';
+// const blackCatUrl =
+//   'https://coder.itclan.cn/live2D/live2d-widget-model-hibiki/assets/hijiki.model.json';
+// const whiteCatUrl =
+//   'https://coder.itclan.cn/live2D/live2d-widget-model-tororo/assets/tororo.model.json';
 
 //   const blackCatUrl =
 //   'https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-hijiki/assets/hijiki.model.json';

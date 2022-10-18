@@ -35,14 +35,14 @@ export default {
   data() {
     return {
       carouses: [
-        {
-          imgUrl:
-            "https://itclan.cn/wp-content/uploads/2022/06/footer-hf.gif",
-          text: "广告",
-          id: "1",
-          target: "_blank",
-          href: "http://jg.wegowan.com/stf/visitor.html?id=200&s=6702&c={uid}",
-        },
+        // {
+        //   imgUrl:
+        //     "https://itclan.cn/wp-content/uploads/2022/06/footer-hf.gif",
+        //   text: "广告",
+        //   id: "1",
+        //   target: "_blank",
+        //   href: "http://jg.wegowan.com/stf/visitor.html?id=200&s=6702&c={uid}",
+        // },
 
         {
           imgUrl:
