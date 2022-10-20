@@ -164,6 +164,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://www.bbads.cc/?pid=100073",
+            imgSrc: "/images/latest/bbads-cc.png",
+            alt: "爆表联盟",
+            text: "爆表联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }

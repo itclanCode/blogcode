@@ -4,6 +4,7 @@ title: 目录
 
 ## 工欲善其事,必先利其器
 
+* [IT资源导航网站设置注意事项](./nav-itlan-cn)
 * [surge部署静态网页](./surge-info)
 * [网站服务器配置-应该选择多大带宽-同时能承载多少用户的访问](./web-config-daikuan)
 * [如何添加百度云加速-给网站添加防护](./add-su-baidu)

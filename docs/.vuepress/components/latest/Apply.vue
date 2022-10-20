@@ -50,6 +50,17 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
+
+         {
+            href: "https://nav.itclan.cn",
+            imgSrc: "/images/latest/nav-itclan-cn.png",
+            alt: "IT资源导航",
+            text: "IT资源导航",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
           {
             href: "https://mh.aikelaidev.cn",
             imgSrc: "/images/latest/choumanghe.svg",

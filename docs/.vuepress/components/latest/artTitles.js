@@ -842,6 +842,17 @@ export  const artTitles =  [
       url:"/fontend/js/21-delete-child-elem",
       tag: "JS特效"  
    },
+
+   {
+      id: 79,
+      title: "Js如何创建一个自定义对象",
+      desc: "Js如何创建一个自定义对象",
+      author: "随笔川迹",
+      update_time: '2022-10-20',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/22-create-zidingyi-obj",
+      tag: "JS特效"  
+   },
    
 
 ];

@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [Js如何创建一个自定义对象](../fontend/js/22-create-zidingyi-obj)
 * [Js如何删除所有子元素以及当前元素](../fontend/js/21-delete-child-elem)
 * [js如何实现升序和降序](../fontend/js/20-elem-ascend-descend)
 * [js如何设置元素的显示和隐藏](../fontend/js/19-elem-show-hide)
