@@ -1,6 +1,6 @@
 <template>
   <div>
-    <iframe  class="iframe" scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=mango" frameborder="0" width="100%" height="32" allowtransparency="true"></iframe>
+    <iframe  class="iframe" v-if="src || false"  scrolling="no" :src="src" frameborder="0" width="100%" height="32" allowtransparency="true"></iframe>
     <div class="clock-box"><FlipClock></FlipClock></div>
   </div>
 </template>
@@ -11,7 +11,12 @@
     components: {
       FlipClock
     },
-    name: "Weather"
+    name: "Weather",
+    data() {
+      return {
+        src: "https://tianqiapi.com/api.php?style=tz&skin=mango"
+      }
+    }
   }
 </script>
 

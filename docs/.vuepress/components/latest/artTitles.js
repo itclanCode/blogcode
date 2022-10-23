@@ -853,6 +853,28 @@ export  const artTitles =  [
       url:"/fontend/js/22-create-zidingyi-obj",
       tag: "JS特效"  
    },
-   
+
+   {
+      id: 80,
+      title: "JS如何在数组的末尾处加入和移除元素",
+      desc: "JS如何在数组的末尾处加入和移除元素",
+      author: "随笔川迹",
+      update_time: '2022-10-22',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/23-arr-push-pop",
+      tag: "JS特效"  
+   },
+
+   {
+      id: 81,
+      title: "JS如何使用隐藏控件为表单添加参数",
+      desc: "JS如何使用隐藏控件为表单添加参数",
+      author: "随笔川迹",
+      update_time: '2022-10-23',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/24-hide-input-params",
+      tag: "JS特效"  
+   },
+
 
 ];

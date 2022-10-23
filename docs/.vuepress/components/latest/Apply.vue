@@ -102,7 +102,7 @@ export default {
             class:"lazy img-pic" 
          },
          {
-            href: "htttps://cesuan.itclan.cn",
+            href: "https://cesuan.itclan.cn",
             imgSrc: "/images/latest/cesuan.png",
             alt: "在线测运势,取名,姻缘,八字",
             text: "测算网",

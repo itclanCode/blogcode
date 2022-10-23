@@ -37,6 +37,9 @@ title: 目录
 
 ## JS网页特效300例
 
+* [24-JS如何使用隐藏控件为表单添加参数](./24-hide-input-params)
+* [23-JS如何在数组的末尾处加入和移除元素](./23-arr-push-pop)
+* [22-Js如何创建一个自定义对象](./22-create-zidingyi-obj)
 * [21-Js如何删除所有子元素以及当前元素](./21-delete-child-elem)
 * [20-js如何实现升序和降序](./20-elem-ascend-descend)
 * [19-js如何设置元素的显示和隐藏](./19-elem-show-hide)

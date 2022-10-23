@@ -53,6 +53,15 @@ document.addEventListener('copy', function(e) {
 // })(window, document, 'https://static.cdn.youke.co/js/widget.js', '$youke');
 // $youke('load', '7JWIAnpAvIrCXwUH');
 
+// 爆表联盟-cpc
+(function (){
+  var id = "7844475154362457956-10116";
+document.write('<ins style="display:none!important" id="' + id + '"></ins>');
+(window.adbyunion = window.adbyunion || []).push(id);
+document.write('<script async  src="https://rs.bbads.vip/o.js"></script>');
+})();
+
+
 // 浏览器控制台显示
 window.console &&
   (console.groupCollapsed(
@@ -69,6 +78,7 @@ window.console &&
   console.log(`%c https://video.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://tv.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(`%c https://tv.jiahaoruisen.com\n`, 'color:#3eaf7c'),
+  console.log(`%c https://nav.itclan.cn\n`, 'color:#3eaf7c'),
   console.log(
     '%c QQ交流群(1):64346880,微信公众号:itclanCoder',
     'color:#3eaf7c'
