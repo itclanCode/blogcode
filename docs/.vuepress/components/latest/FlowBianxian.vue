@@ -175,6 +175,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://8865.org/?pid=100090",
+            imgSrc: "/images/latest/8865-org.png",
+            alt: "胜利联盟",
+            text: "胜利联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }

@@ -187,11 +187,27 @@ const headConfig = [
   }
 ],
 
+// 众聚联盟纵聚广告联盟-cpv-居中插屏http://www.31dtl1v.cn/
+[
+  'script',
+  {
+    src:'http://www.31dtl1v.cn/s.php?id=333',
+  }
+],
+
 // zk联盟https://www.ztolm.com/
 [
   'script',
   {
     src:'https://js.gg-baidu.xyz/slot?7255774253627174051-10084',
+  }
+],
+
+// 胜利联盟胜利联盟-底部cpmhttps://8865.org/
+[
+  'script',
+  {
+    src:'https://www.shanpooo.com:31267/slot?8836717831084845850-10034',
   }
 ],
 

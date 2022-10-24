@@ -875,6 +875,17 @@ export  const artTitles =  [
       url:"/fontend/js/24-hide-input-params",
       tag: "JS特效"  
    },
+ 
+   {
+      id: 82,
+      title: "JS如何实现勾选全部复选框",
+      desc: "JS如何实现勾选全部复选框",
+      author: "随笔川迹",
+      update_time: '2022-10-24',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/25-checked-all-checkbox",
+      tag: "JS特效"  
+   },
 
 
 ];
