@@ -37,7 +37,8 @@ title: 目录
 
 ## JS网页特效300例
 
-* [25-JS如何实现勾选全部复选框](./25-checked-all-checkbox)
+* [26-JS如何为表单聚焦控件设置醒目的样式](./26-set-form-style)
+* [25-JS如何实现勾选全部复选框](./25-all-checkbox)
 * [24-JS如何使用隐藏控件为表单添加参数](./24-hide-input-params)
 * [23-JS如何在数组的末尾处加入和移除元素](./23-arr-push-pop)
 * [22-Js如何创建一个自定义对象](./22-create-zidingyi-obj)

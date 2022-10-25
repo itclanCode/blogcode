@@ -41,7 +41,9 @@
  */
 // const emojiMaps = require("./emojiMaps"); // 引入表情包
 // const moment = require('moment'); // 引入moment.js  // 不要忘了安装 moment
-const secret = require('./secretKey'); // 引入密钥信息
+// vuepress-plugin-table-of-contents 为你的 VuePress 站点增加目录组件,支持在md和vue中写<TOC />,生成目录树
+// 引入密钥信息
+const secret = require('./secretKey'); 
 
 const plugins = [
   '@vuepress/back-to-top', // 返回到到顶部插件
@@ -50,7 +52,7 @@ const plugins = [
   'img-lazy', // 图片的懒加载
   'vuepress-plugin-baidu-autopush', // 注入百度url-auto-push脚本，以优化您的百度SEO网站
   'vuepress-plugin-smooth-scroll', // 你的 VuePress 站点中使用平滑滚动
-  'vuepress-plugin-table-of-contents', // 为你的 VuePress 站点增加目录组件,支持在md和vue中写<TOC />,生成目录树
+  'vuepress-plugin-table-of-contents', 
   'element-ui', // 添加element-ui组件
   'flowchart', // 流程图表
   'demo-code', // 在线写demo

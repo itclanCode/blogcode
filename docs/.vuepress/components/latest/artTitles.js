@@ -883,7 +883,18 @@ export  const artTitles =  [
       author: "随笔川迹",
       update_time: '2022-10-24',
       link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
-      url:"/fontend/js/25-checked-all-checkbox",
+      url:"/fontend/js/25-all-checkbox",
+      tag: "JS特效"  
+   },
+
+   {
+      id: 83,
+      title: "JS如何为表单聚焦控件设置醒目的样式",
+      desc: "JS如何为表单聚焦控件设置醒目的样式",
+      author: "随笔川迹",
+      update_time: '2022-10-25',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/26-set-form-style",
       tag: "JS特效"  
    },
 

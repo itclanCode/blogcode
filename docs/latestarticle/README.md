@@ -18,7 +18,8 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
-* [JS如何实现勾选全部复选框](../fontend/js/25-checked-all-checkbox)
+* [JS如何为表单聚焦控件设置醒目的样式](../fontend/js/26-set-form-style)
+* [JS如何实现勾选全部复选框](../fontend/js/25-all-checkbox)
 * [JS如何使用隐藏控件为表单添加参数](../fontend/js/24-hide-input-params)
 * [JS如何在数组的末尾处加入和移除元素](../fontend/js/23-arr-push-pop)
 * [Js如何创建一个自定义对象](../fontend/js/22-create-zidingyi-obj)

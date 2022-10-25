@@ -158,7 +158,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.sdzhongke.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.nrjzkj.cn/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -187,14 +187,6 @@ const headConfig = [
   }
 ],
 
-// 众聚联盟纵聚广告联盟-cpv-居中插屏http://www.31dtl1v.cn/
-[
-  'script',
-  {
-    src:'http://www.31dtl1v.cn/s.php?id=333',
-  }
-],
-
 // zk联盟https://www.ztolm.com/
 [
   'script',
@@ -207,7 +199,7 @@ const headConfig = [
 [
   'script',
   {
-    src:'https://www.shanpooo.com:31267/slot?8836717831084845850-10034',
+    src:'https://www.uyiyide.com:31267/slot?8836717831084845850-10034',
   }
 ],
 
