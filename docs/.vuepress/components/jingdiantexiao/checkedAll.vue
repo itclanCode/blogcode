@@ -1,8 +1,7 @@
 <template>
     <div class="wrap">
-        <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange">全选</el-checkbox>
-            <div style="margin: 15px 0;"></div>
-            <el-checkbox-group v-model="checkedLanNames" @change="handleCheckedlanguagesChange">
+        <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange" class="el-checkbox-all">全选</el-checkbox>
+        <el-checkbox-group v-model="checkedLanNames" @change="handleCheckedlanguagesChange">
                 <el-checkbox v-for="lan in checkedLanOptions" :label="lan.type" :key="lan.name">{{lan.name}}</el-checkbox>
         </el-checkbox-group>
     </div>
@@ -78,5 +77,13 @@
 .wrap {
     text-align: center;
     margin:20px 0 20px 0;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.el-checkbox-all {
+    margin-bottom: 10px;
 }
 </style>

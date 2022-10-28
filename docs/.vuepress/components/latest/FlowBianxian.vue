@@ -186,6 +186,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://www.trclm.com/?pid=100170",
+            imgSrc: "/images/latest/trclm.png",
+            alt: "TRC联盟",
+            text: "TRC联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }

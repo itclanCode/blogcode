@@ -307,3 +307,6 @@ li:nth-of-type(8) {
 结合`@keyframes`动画帧,`animation`,`transform(变换旋转)`,`rotate(旋转角度)`,`skew()沿着x轴与y轴的倾斜角度`
 
 `scale():定义 2D 缩放转换`,`1`表示不放大也不缩小
+
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
+<footer-FeedBack />

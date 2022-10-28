@@ -898,5 +898,26 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 84,
+      title: "css如何隐藏垂直滚动条但同时需保持滚动",
+      desc: "css如何隐藏垂直滚动条但同时需保持滚动",
+      author: "随笔川迹",
+      update_time: '2022-10-26',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/css/example-scroll",
+      tag: "CSS特效"  
+   },
+   
+   {
+      id: 85,
+      title: "Js如何实现激活菜单按钮样式的切换-凸显正在浏览的菜单项的导航菜单",
+      desc: "Js如何实现激活菜单按钮样式的切换-凸显正在浏览的菜单项的导航菜单",
+      author: "随笔川迹",
+      update_time: '2022-10-27',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/27-active-tab-change",
+      tag: "JS特效"  
+   },
 
 ];

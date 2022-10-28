@@ -167,4 +167,5 @@ em {
 
 样式可以通过 css 去控制,这些动态可改变的都是该组件的接口属性
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
+<footer-FeedBack />

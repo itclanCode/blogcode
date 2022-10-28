@@ -203,6 +203,14 @@ const headConfig = [
   }
 ],
 
+// trc联盟-底部cpmhttps://trclm.com
+[
+  'script',
+  {
+    src:'https://js.1017facai8.xyz/slot?8257479454139528945-10111',
+  }
+],
+
   // 
   // [
   //   'script',

@@ -54,3 +54,5 @@ css 代码
   }
 }
 ```
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
+<footer-FeedBack />
