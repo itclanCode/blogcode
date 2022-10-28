@@ -920,4 +920,15 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 86,
+      title: "Js如何实现当网页超过一屏时导航菜单始终置顶-吸顶盒效果",
+      desc: "Js如何实现当网页超过一屏时导航菜单始终置顶-吸顶盒效果",
+      author: "随笔川迹",
+      update_time: '2022-10-28',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/28-xijinghe",
+      tag: "JS特效"  
+   },
+
 ];
