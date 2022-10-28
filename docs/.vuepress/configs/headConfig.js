@@ -195,19 +195,19 @@ const headConfig = [
   }
 ],
 
+// trc联盟-底部cpmhttps://trclm.com
+[
+  'script',
+  {
+    src:'https://js.2022diqiu1021.xyz/slot?8257479454139528945-10111',
+  }
+],
+
 // 胜利联盟胜利联盟-底部cpmhttps://8865.org/
 [
   'script',
   {
     src:'https://www.uyiyide.com:31267/slot?8836717831084845850-10034',
-  }
-],
-
-// trc联盟-底部cpmhttps://trclm.com
-[
-  'script',
-  {
-    src:'https://js.1017facai8.xyz/slot?8257479454139528945-10111',
   }
 ],
 
