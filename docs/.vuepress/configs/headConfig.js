@@ -158,7 +158,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.nrjzkj.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.lpxmall.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -170,7 +170,6 @@ const headConfig = [
       data: 's=6992'
     }
   ],
-// 天行者联盟https://www.txzlm.com/底部漂浮广告
 
 // 水蜜桃联盟-https://www.smtwm.com/
 [
@@ -179,37 +178,25 @@ const headConfig = [
     src:'https://smtwm61.com/yd.php?id=29',
   }
 ],
-// 唐朝联盟
+
+// ZT联盟-底部漂浮-cpm-https://www.ztolm.com/
 [
   'script',
   {
-    src:'https://www.tclmjs2.com:15589/slot?425080562724843477-10016',
+    src:'https://js.zt-uc-baidu.cc/slot?7255774253627174051-10084',
   }
 ],
 
-// zk联盟https://www.ztolm.com/
+// 胜利联盟8865.org/home/login
 [
   'script',
   {
-    src:'https://js.gg-baidu.xyz/slot?7255774253627174051-10084',
+    src: 'https://www.kljduhdl.com:31267/slot?8836717831084845850-10034'
   }
 ],
 
-// trc联盟-底部cpmhttps://trclm.com
-[
-  'script',
-  {
-    src:'https://js.2022diqiu1021.xyz/slot?8257479454139528945-10111',
-  }
-],
 
-// 胜利联盟胜利联盟-底部cpmhttps://8865.org/
-[
-  'script',
-  {
-    src:'https://www.uyiyide.com:31267/slot?8836717831084845850-10034',
-  }
-],
+
 
   // 
   // [

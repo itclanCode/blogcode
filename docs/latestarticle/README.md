@@ -18,6 +18,8 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [Js如何实现避免读取缓存重新加载验证码图片](../fontend/js/30-reload-ver-img)
+* [Js如何实现注册按钮10秒倒计时效果](../fontend/js/29-btn-daojishi)
 * [Js如何实现当网页超过一屏时导航菜单始终置顶-吸顶盒效果](../fontend/js/28-xijinghe)
 * [Js如何实现激活菜单按钮样式的切换-凸显正在浏览的菜单项的导航菜单](../fontend/js/27-active-tab-change)
 * [css如何隐藏垂直滚动条但同时需保持滚动](../fontend/css/example-scroll)
