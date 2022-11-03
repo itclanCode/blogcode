@@ -35,8 +35,11 @@ title: 目录
 
 - [JS 实现烟花特效](./fireWorkEffect)
 
-## JS网页特效300例
+## JS网页经典特效
 
+* [33-JS如何利用浏览器的cookie保存用户名](./33-cookie-save-user)
+* [32-JS如何使用sessionStorage实现计数器](./32-sessionstorage-count-num)
+* [31-JS如何使用localStorage实现计数器](./31-localstorage-count-num)
 * [30-Js如何实现避免读取缓存重新加载验证码图片](./30-reload-ver-img)
 * [29-Js如何实现注册按钮10秒倒计时效果](./29-btn-daojishi)
 * [28-Js如何实现当网页超过一屏时导航菜单始终置顶-吸顶盒效果](./28-xijinghe)

@@ -122,16 +122,6 @@ export default {
             class:"lazy img-pic" 
          },
          {
-            href: "http://tclm.cc/?pid=100023",
-            imgSrc: "/images/latest/tclmcc.svg",
-            alt: "唐朝联盟",
-            text: "唐朝联盟",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-         },
-         {
             href: "http://www.999lm.com/track/c/?rid=2921",
             imgSrc: "/images/latest/999lm.png",
             alt: "999联盟",

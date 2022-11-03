@@ -761,7 +761,7 @@ export  const artTitles =  [
       desc: "js如何实现随机数切换",
       author: "随笔川迹",
       update_time: '2022-10-11',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/4R3TRTSvBDkA7dceAaJ9Zg",
       url:"/fontend/js/14-click-num-suiji",
       tag: "JS特效"  
    },
@@ -772,7 +772,7 @@ export  const artTitles =  [
       desc: "js如何替换元素内容",
       author: "随笔川迹",
       update_time: '2022-10-13',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/Swh4JAxd698boIomPQyovQ",
       url:"/fontend/js/15-replace-ele-content",
       tag: "JS特效"  
    },
@@ -952,5 +952,39 @@ export  const artTitles =  [
       url:"/fontend/js/30-reload-ver-img",
       tag: "JS特效"  
    },
+
+   {
+      id: 89,
+      title: "JS如何使用localStorage实现计数器功能",
+      desc: "JS如何使用localStorage实现计数器功能",
+      author: "随笔川迹",
+      update_time: '2022-10-31',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/31-localstorage-count-num",
+      tag: "JS特效"  
+   },
+
+   {
+      id: 90,
+      title: "JS如何使用sessionStorage实现计数器功能",
+      desc: "JS如何使用sessionStorage实现计数器功能",
+      author: "随笔川迹",
+      update_time: '2022-11-1',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/32-sessionstorage-count-num",
+      tag: "JS特效"  
+   },
+
+   {
+      id: 91,
+      title: "JS如何利用浏览器的cookie保存用户名",
+      desc: "JS如何利用浏览器的cookie保存用户名",
+      author: "随笔川迹",
+      update_time: '2022-11-2',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/33-cookie-save-user",
+      tag: "JS特效"  
+   },
+
 
 ];

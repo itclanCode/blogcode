@@ -18,6 +18,9 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [JS如何利用浏览器的cookie保存用户名](../fontend/js/33-cookie-save-user)
+* [JS如何使用sessionStorage实现计数器](../fontend/js/32-sessionstorage-count-num)
+* [JS如何使用localStorage实现计数器](../fontend/js/31-localstorage-count-num)
 * [Js如何实现避免读取缓存重新加载验证码图片](../fontend/js/30-reload-ver-img)
 * [Js如何实现注册按钮10秒倒计时效果](../fontend/js/29-btn-daojishi)
 * [Js如何实现当网页超过一屏时导航菜单始终置顶-吸顶盒效果](../fontend/js/28-xijinghe)
