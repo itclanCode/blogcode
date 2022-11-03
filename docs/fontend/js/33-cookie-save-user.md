@@ -137,14 +137,14 @@ autoGroup-5: JS特效
                     <el-input type="password" class="input" v-model="form.pass" clearable></el-input>
                 </el-form-item>
                 <el-form-item label="记住用户名">
-                    <el-radio-group v-model="form.date" @change="handleCheck">
+                    <el-radio-group v-model="form.date" size="mini" @change="handleCheck" class="el-radio-group">
                         <el-radio :label="3" border>保存3天</el-radio>
                         <el-radio :label="7" border>保存7天</el-radio>
                         <el-radio :label="10" border>保存10天</el-radio>
                         <el-radio :label="30" border>保存30天</el-radio>
                     </el-radio-group>
                 </el-form-item>
-                <el-form-item>
+                <el-form-item class="login">
                     <el-button type="primary" @click="onLogin">登录</el-button>
                 </el-form-item>
           </el-form>
@@ -228,6 +228,15 @@ autoGroup-5: JS特效
     margin: 10px auto;
     display: flex;
     justify-content: center;
+  }
+
+  .el-radio-group {
+    display:flex;
+    justify-content: left;
+  }
+
+  .login {
+    text-align: left;
   }
 </style>
 

@@ -37,6 +37,7 @@ title: 目录
 
 ## JS网页经典特效
 
+* [34-JS如何实现根据不同的时间段显示不同的欢迎语](./34-time-huanyin)
 * [33-JS如何利用浏览器的cookie保存用户名](./33-cookie-save-user)
 * [32-JS如何使用sessionStorage实现计数器](./32-sessionstorage-count-num)
 * [31-JS如何使用localStorage实现计数器](./31-localstorage-count-num)

@@ -18,6 +18,7 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [JS如何实现根据不同的时间段显示不同的欢迎语](../fontend/js/34-time-huanyin)
 * [JS如何利用浏览器的cookie保存用户名](../fontend/js/33-cookie-save-user)
 * [JS如何使用sessionStorage实现计数器](../fontend/js/32-sessionstorage-count-num)
 * [JS如何使用localStorage实现计数器](../fontend/js/31-localstorage-count-num)

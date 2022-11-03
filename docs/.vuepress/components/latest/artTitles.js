@@ -986,5 +986,16 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 92,
+      title: "JS如何实现根据不同的时间段显示不同的欢迎语",
+      desc: "JS如何实现根据不同的时间段显示不同的欢迎语",
+      author: "随笔川迹",
+      update_time: '2022-11-3',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/34-time-huanyin",
+      tag: "JS特效"  
+   },
+
 
 ];
