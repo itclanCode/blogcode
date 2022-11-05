@@ -937,7 +937,7 @@ export  const artTitles =  [
       desc: "Js如何实现注册按钮10秒倒计时效果",
       author: "随笔川迹",
       update_time: '2022-10-29',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/KX86xL8JMK1MeuaPjyYZaw",
       url:"/fontend/js/29-btn-daojishi",
       tag: "JS特效"  
    },
@@ -997,5 +997,25 @@ export  const artTitles =  [
       tag: "JS特效"  
    },
 
+   {
+      id: 93,
+      title: "JS如何实现倒计时效果",
+      desc: "JS如何实现倒计时效果",
+      author: "随笔川迹",
+      update_time: '2022-11-4',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/35-daojishi-effect",
+      tag: "JS特效"  
+   },
 
+   {
+      id: 94,
+      title: "Js中闭包的概念和具体使用",
+      desc: "Js中闭包的概念和具体使用",
+      author: "随笔川迹",
+      update_time: '2022-11-5',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/36-use-bibao",
+      tag: "JS基础"  
+   },
 ];

@@ -18,6 +18,8 @@ title: 目录
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 
 - [置顶-广告位接受投放](../adverent/)
+* [Js中闭包的概念和具体使用](../fontend/js/36-use-bibao)
+* [JS如何实现倒计时效果](../fontend/js/35-daojishi-effect)
 * [JS如何实现根据不同的时间段显示不同的欢迎语](../fontend/js/34-time-huanyin)
 * [JS如何利用浏览器的cookie保存用户名](../fontend/js/33-cookie-save-user)
 * [JS如何使用sessionStorage实现计数器](../fontend/js/32-sessionstorage-count-num)
@@ -58,7 +60,6 @@ title: 目录
 - [如何利用微信视频号挣钱](../read/wealth/how-use-wx-shipinhao)
 - [如何降低成本,选择轻资产型项目](../read/wealth/select-qingzichan)
 - [公司基本账户与一般户的区别](../read/wealth/base-account)
-- [揭露一些广告联盟骗局](../read/wealth/jielu-adunion-pianju)
 - [给网站添加代码统计实现流量的变现](../read/wealth/add-code-tongji)
 - [VuePress右侧如何添加固定侧边栏-实现置顶和置底](../fontend/tools/vuepress-slidebar-top)
 - [vuejs中路由器的两种模式-哈希模式与历史模式](../fontend/framework/vue-hash-history)
