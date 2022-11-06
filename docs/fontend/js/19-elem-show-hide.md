@@ -47,7 +47,7 @@ function showOrHide() {
 
 ```html
 <template>
-    <div class="wrap">
+    <div class="elem-wrap">
         <div>
             <el-button type="primary" @click="handleBtn">{{showText}}</el-button>
         </div>
@@ -87,7 +87,7 @@ function showOrHide() {
 </script>
 
 <style lang="scss" scoped>
-.wrap {
+.elem-wrap {
     display:flex;
     justify-content: center;
     flex-direction: column;

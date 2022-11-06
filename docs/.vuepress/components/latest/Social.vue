@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrap">
+    <div class="socil-wrap">
       <div v-for="item in SocialData" class="item" :key="item.imgSrc">
         <p class="list">
           <a :href="item.href" target="_blank" :title="item.alt">
@@ -64,7 +64,7 @@ export default {
 
 <style lang="stylus" scoped>
 @media screen and (min-width: 960px) {
-  .wrap {
+  .socil-wrap {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -97,11 +97,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .wrap {
+  .socil-wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
 
     .item {

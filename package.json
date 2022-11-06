@@ -70,5 +70,6 @@
     "vuepress-plugin-smooth-scroll": "0.0.10",
     "vuepress-plugin-table-of-contents": "^1.1.7",
     "vuepress-theme-yuu": "^3.1.1"
-  }
+  },
+  "dependencies": {}
 }

@@ -83,4 +83,22 @@ obj[keyArray[0]]  // 'symbol'
 
 **Promise.race()**: 当参数里的任意一个子`promise`被成功或失败后,父`promise`马上也会用子`promise`的成功返回值或失败详情作为参数调用调用父`promise`绑定的对象,并返回该`promise`对象
 
+## 第3题-说一下BFC
+
+块级格式化上下文,独立的渲染区域,不会影响边界以外的元素
+
+产生BFC的条件: `float`,`position`,`overflow`,`display`
+
+块级格式化上下文,是`web`页面一块独立的渲染区域,内部元素的渲染不会影响边界以外的元素
+
+`BFC`布局规则,内部盒子会在垂直方向,一个接一个的放置,`box`垂直方向的距离由`margin`决定,属于同一个`BFC`的两个相邻的`BOX`的`margin`会发生重叠
+
+`BFC`的区域不会与`float`的`box`重叠
+
+清除浮动:`overflow:hiiden`,解决外边距的合并问题
+
+## 
+
+
+
 

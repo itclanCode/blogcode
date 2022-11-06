@@ -178,4 +178,4 @@ new Promise(function (resolve) {
 ## 第 16 题-给你一个时间戳你如何得到这个时间戳对应月的最大天数？
 
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />

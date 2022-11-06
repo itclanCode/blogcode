@@ -36,7 +36,6 @@ title: 目录
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
-
 * [36-Js中闭包的概念和具体使用](./36-use-bibao)
 * [35-JS如何实现倒计时效果](./35-daojishi-effect) 
 * [34-JS如何实现根据不同的时间段显示不同的欢迎语](./34-time-huanyin)

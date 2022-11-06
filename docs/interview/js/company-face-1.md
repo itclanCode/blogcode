@@ -615,4 +615,4 @@ G: !0                 // true
 
 <iframe-lineTestCode />
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />

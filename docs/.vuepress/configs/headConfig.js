@@ -62,14 +62,14 @@ const headConfig = [
     },
   ],
 
-  [
-    'meta',
-    {
-      async: 'async',
-      'http-equiv': 'Content-Security-Policy', // 自动将http的不安全请求升级为https
-      content: 'upgrade-insecure-requests', // HTTPS 是 HTTP over Secure Socket Layer，以安全为目标的 HTTP 通道，所以在 HTTPS 承载的页面上不允许出现 http 请求，一旦出现就是提示或报错
-    },
-  ],
+  // [
+  //   'meta',
+  //   {
+  //     async: 'async',
+  //     'http-equiv': 'Content-Security-Policy', // 自动将http的不安全请求升级为https
+  //     content: 'upgrade-insecure-requests', // HTTPS 是 HTTP over Secure Socket Layer，以安全为目标的 HTTP 通道，所以在 HTTPS 承载的页面上不允许出现 http 请求，一旦出现就是提示或报错
+  //   },
+  // ],
   [
     'meta', // 添加谷歌站点搜素
     {
@@ -194,10 +194,6 @@ const headConfig = [
     src: 'https://www.kljduhdl.com:31267/slot?8836717831084845850-10034'
   }
 ],
-
-
-
-
   // 
   // [
   //   'script',

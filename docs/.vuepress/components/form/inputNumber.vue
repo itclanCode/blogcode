@@ -2,7 +2,7 @@
   <div>
       <div class="input-wrapper">
            <div> 
-             <el-input-number v-model="num" @change="handleChange" :min="1" label="描述文字"></el-input-number>
+             <el-input-number v-model="num"  :min="1"  :max="100"></el-input-number>
             </div>
            <div class="text">父组件count:{{num}}</div>
       </div>
@@ -18,9 +18,9 @@
       }
     },
     methods: {
-      handleChange(value) {
-        console.log(value);
-      }
+      // handleChange(value) {
+      //   console.log(value);
+      // }
     }
   }
 </script>

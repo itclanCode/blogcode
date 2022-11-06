@@ -107,7 +107,7 @@ import Prism from "prismjs";
 var dom = document;
 
 export default {
-  name: "lessThen12px",
+  name: "lessThen",
   data() {
     return {
       fontsize: 10,

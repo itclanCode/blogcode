@@ -88,18 +88,18 @@ const plugins = [
     },
   ],
 
-  [
-    '@vuepress/pwa', // 以@开头的都是官方维护的插件, pwa配置
-    {
-      serviceWorker: true, // 如果设置为 true，VuePress 将自动生成并注册一个 Service Worker，用于缓存页面的内容以供离线使用（仅会在生产环境中启用）
-      updatePopup: {
-        '/zh/': {
-          message: '发现有新的内容更新,马上更新',
-          buttonText: '刷新',
-        },
-      },
-    },
-  ],
+  // [
+  //   '@vuepress/pwa', // 以@开头的都是官方维护的插件, pwa配置
+  //   {
+  //     serviceWorker: true, // 如果设置为 true，VuePress 将自动生成并注册一个 Service Worker，用于缓存页面的内容以供离线使用（仅会在生产环境中启用）
+  //     updatePopup: {
+  //       '/zh/': {
+  //         message: '发现有新的内容更新,马上更新',
+  //         buttonText: '刷新',
+  //       },
+  //     },
+  //   },
+  // ],
 
   // [
   //   'vuepress-plugin-comment', // valine留言插件

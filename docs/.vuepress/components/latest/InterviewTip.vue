@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrap">
+    <div class="interview-wrap">
       <div v-for="item in MinProgramData" class="item" :key="item.imgSrc">
         <p class="list">
           <a :href="item.href" target="_blank" :title="item.alt">
@@ -69,7 +69,7 @@ export default {
 
 <style lang="stylus" scoped>
 @media screen and (min-width: 960px) {
-  .wrap {
+  .interview-wrap {
     display: flex;
     justify-content: start;
     text-align: center;
@@ -102,11 +102,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .wrap {
+  .interview-wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
 
     .item {

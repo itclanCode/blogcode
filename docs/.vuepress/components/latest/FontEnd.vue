@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrap">
+    <div class="fontend-wrap">
       <div v-for="item in FontEndData" class="item" :key="item.text">
         <p class="list">
           <a :href="item.href" target="_blank" :title="item.alt">
@@ -67,7 +67,7 @@ export default {
 
 <style lang="stylus" scoped>
 @media screen and (min-width: 960px) {
-  .wrap {
+  .fontend-wrap {
     display: flex;
     justify-content: start;
     text-align: center;
@@ -100,13 +100,11 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .wrap {
+  .fontend-wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
-
     .item {
       .list {
         width: 160px;

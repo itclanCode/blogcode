@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrap">
+    <div class="game-wrap">
       <div v-for="item in gamesData" class="item" :key="item.alt">
         <p class="list">
           <a :href="item.href" target="_blank" :title="item.alt">
@@ -52,7 +52,7 @@ export default {
 
 <style lang="stylus" scoped>
 @media screen and (min-width: 960px) {
-  .wrap {
+  .game-wrap {
     display: flex;
     justify-content: start;
     text-align: center;
@@ -85,11 +85,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .wrap {
+  .game-wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
 
     .item {

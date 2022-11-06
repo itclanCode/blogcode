@@ -44,6 +44,11 @@ let tabArticle = artTitles.reverse();
             }
         },
 
+        created() {
+            this.pageNo = this.getStorageData("currentPage") || 1;
+            console.log("当前页", this.pageNo);
+        },
+
         mounted() {
             this.mockTable();
         },
@@ -102,9 +107,26 @@ let tabArticle = artTitles.reverse();
                   });
             },
 
+            setStorageData(key, value) {
+               window.localStorage.setItem(key, value);
+            },
+
+            getStorageData(key) {
+                const str = window.localStorage.getItem(key);
+                if (typeof str == "string") {
+                    try {
+                      return JSON.parse(str);
+                    } catch (e) {
+                      return str;
+                    }
+                }
+                return str;
+            },
+
              // 跳转页,currentPage 当前页改变时会触发
             pageCurrentChange(pageNo) {
                 this.pageNo = pageNo;
+                this.setStorageData("currentPage", this.pageNo);
                 console.log("跳转页,currentPage 当前页改变时会触发");
             },
 

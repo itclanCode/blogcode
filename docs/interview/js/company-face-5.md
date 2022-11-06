@@ -221,4 +221,4 @@ a = a^b;   // 计算结果: a=0010,b=0001
 ```
 可以使用`new Number(具体的数字).toString(需要转化进制数)`,例如:new Number(10).toString(2),将10转化为2进制是`1010`
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />

@@ -81,7 +81,7 @@ autoGroup-1: 年终总结
 2021年,文章写得少了,应用却做得多了,更多是集中在微信小程序上
 
 <template>
-  <div class="wrap">
+  <div class="growth-wrap">
           <a class="list" v-for="(item,index) in imgs" :key="index" :href="item.href" :target="item.target" :title="item.alt">
              <img  :width="item.width" :height="item.height" :class="item.class" :src="item.imgSrc" :alt="item.alt" />
              <span>{{item.alt}}</span>
@@ -172,7 +172,7 @@ autoGroup-1: 年终总结
   };
 </script>
 <style>
-  .wrap {
+  .growth-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +181,7 @@ autoGroup-1: 年终总结
    
   }
 
-  .wrap .list {
+  .growth-wrap .list {
         flex: 1;
         margin-right: 20px;
         display:flex;

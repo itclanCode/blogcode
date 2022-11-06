@@ -19,7 +19,7 @@ autoGroup-2: 小程序技术
 
 ## 实例效果
 
-<form-inputNumber />
+<!-- <form-inputNumber /> -->
 
 通过上面一个简单的数字加减输入框组件,阅读完本文后,您将收获到
 

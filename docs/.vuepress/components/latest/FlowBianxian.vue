@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrap">
+    <div class="flowbianxian-wrap">
       <div v-for="item in  FlowData" class="item" :key="item.alt">
         <p class="list">
           <a :href="item.href" :target="item.target" :title="item.alt">
@@ -184,7 +184,7 @@ export default {
 
 <style lang="stylus" scoped>
 @media screen and (min-width: 960px) {
-  .wrap {
+  .flowbianxian-wrap {
     display: flex;
     justify-content: start;
     text-align: center;
@@ -217,11 +217,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .wrap {
+  .flowbianxian-wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
 
     .item {
