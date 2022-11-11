@@ -959,7 +959,7 @@ export  const artTitles =  [
       desc: "JS如何使用localStorage实现计数器功能",
       author: "随笔川迹",
       update_time: '2022-10-31',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/8L7Z2fu2HaRtBn30ny9Djw",
       url:"/fontend/js/31-localstorage-count-num",
       tag: "JS特效"  
    },
@@ -970,7 +970,7 @@ export  const artTitles =  [
       desc: "JS如何使用sessionStorage实现计数器功能",
       author: "随笔川迹",
       update_time: '2022-11-1',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/ThEhxzY_q0hoTOhly7QnYg",
       url:"/fontend/js/32-sessionstorage-count-num",
       tag: "JS特效"  
    },
@@ -981,7 +981,7 @@ export  const artTitles =  [
       desc: "JS如何利用浏览器的cookie保存用户名",
       author: "随笔川迹",
       update_time: '2022-11-2',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/JbECjG0YEhYTpv_c9IOPYA",
       url:"/fontend/js/33-cookie-save-user",
       tag: "JS特效"  
    },
@@ -1016,6 +1016,38 @@ export  const artTitles =  [
       update_time: '2022-11-5',
       link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
       url:"/fontend/js/36-use-bibao",
+      tag: "JS基础"  
+   },
+   {
+      id: 95,
+      title: "JS如何定义一个类分别用Es5和Es6来实现",
+      desc: "JS如何定义一个类分别用Es5和Es6来实现",
+      author: "随笔川迹",
+      update_time: '2022-11-6',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/37-define-class",
+      tag: "JS基础"  
+   },
+
+   {
+      id: 96,
+      title: "Js如何利用prototype为类创建静态成员属性和方法",
+      desc: "Js如何利用prototype为类创建静态成员属性和方法",
+      author: "随笔川迹",
+      update_time: '2022-11-7',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/38-prototype-static",
+      tag: "JS基础"  
+   },
+
+   {
+      id: 97,
+      title: "Js如何模拟继承机制分别使用Es5和Es6来实现",
+      desc: "Js如何模拟继承机制分别使用Es5和Es6来实现",
+      author: "随笔川迹",
+      update_time: '2022-11-8',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/39-extends",
       tag: "JS基础"  
    },
 ];

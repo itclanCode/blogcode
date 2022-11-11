@@ -36,6 +36,9 @@ title: 目录
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
+* [39-Js如何模拟继承机制分别使用Es5和Es6来实现](./39-extends)
+* [38-Js如何利用prototype为类创建静态成员属性和方法](./38-prototype-static)
+* [37-JS如何定义一个类分别用Es5和Es6来实现](./37-define-class)
 * [36-Js中闭包的概念和具体使用](./36-use-bibao)
 * [35-JS如何实现倒计时效果](./35-daojishi-effect) 
 * [34-JS如何实现根据不同的时间段显示不同的欢迎语](./34-time-huanyin)

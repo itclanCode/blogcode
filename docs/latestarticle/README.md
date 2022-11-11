@@ -17,6 +17,9 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [Js如何模拟继承机制分别使用Es5和Es6来实现](../fontend/js/39-extends)
+* [Js如何利用prototype为类创建静态成员属性和方法](../fontend/js/38-prototype-static)
+* [JS如何定义一个类分别用Es5和Es6来实现](../fontend/js/37-define-class)
 * [Js中闭包的概念和具体使用](../fontend/js/36-use-bibao)
 * [JS如何实现倒计时效果](../fontend/js/35-daojishi-effect)
 * [JS如何实现根据不同的时间段显示不同的欢迎语](../fontend/js/34-time-huanyin)

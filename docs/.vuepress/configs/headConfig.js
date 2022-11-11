@@ -158,7 +158,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.lpxmall.com/slot?2377029035902478992-20690'
+      src: 'https://abb.sznj91.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -191,7 +191,14 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://www.kljduhdl.com:31267/slot?8836717831084845850-10034'
+    src: 'https://www.shuyeli.com:31267/slot?8836717831084845850-10034'
+  }
+],
+// https://www.trclm.com/联盟
+[
+  'script',
+  {
+    src: 'https://js.1104piaoba2022.xyz/slot?8257479454139528945-10111'
   }
 ],
   // 
