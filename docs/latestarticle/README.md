@@ -17,6 +17,9 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [Js如何实现控制图片的放大和缩小](../fontend/js/42-control-img-scale)
+* [Js如何使用prototype实现继承](../fontend/js/41-use-prototype-extend)
+* [Js如何为对象拓展一个动态属性](../fontend/js/40-tuozhan-obj-attr)
 * [Js如何模拟继承机制分别使用Es5和Es6来实现](../fontend/js/39-extends)
 * [Js如何利用prototype为类创建静态成员属性和方法](../fontend/js/38-prototype-static)
 * [JS如何定义一个类分别用Es5和Es6来实现](../fontend/js/37-define-class)

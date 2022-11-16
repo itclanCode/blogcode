@@ -36,6 +36,9 @@ title: 目录
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
+* [42-Js如何实现控制图片的放大和缩小](./42-control-img-scale)
+* [41-Js如何使用prototype实现继承](./41-use-prototype-extend)
+* [40-Js如何为对象拓展一个动态属性](./40-tuozhan-obj-attr)
 * [39-Js如何模拟继承机制分别使用Es5和Es6来实现](./39-extends)
 * [38-Js如何利用prototype为类创建静态成员属性和方法](./38-prototype-static)
 * [37-JS如何定义一个类分别用Es5和Es6来实现](./37-define-class)

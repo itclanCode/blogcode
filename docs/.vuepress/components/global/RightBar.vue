@@ -56,7 +56,7 @@
       <div
         @click="
           handleShange(
-            'https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813'
+            'https://pay.aikelaidev.cn/paypage/?merchant=35bdYxSx7dCUrVUBqFQjdqqlzhWryCA7lqOn9VhakWHC'
           )
         "
       >

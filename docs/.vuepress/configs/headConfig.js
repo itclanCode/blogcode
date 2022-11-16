@@ -100,14 +100,14 @@ const headConfig = [
     `,
   ],
   ['link', { rel: 'stylesheet', href: '/css/style.css' }], // 这种方式也可以覆盖默认样式
-  [
-    'script',
-    {
-      charset: 'utf-8',
-      async: 'async',
-      src: 'https://my.openwrite.cn/js/readmore.js',
-    },
-  ],
+  // [
+  //   'script',
+  //   {
+  //     charset: 'utf-8',
+  //     async: 'async',
+  //     src: 'https://my.openwrite.cn/js/readmore.js',
+  //   },
+  // ],
   ['script', { charset: 'utf-8', async: 'async', src: '/js/setglobal.js' }],
   [
     'script', // 插入谷歌广告
@@ -158,7 +158,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.sznj91.com/slot?2377029035902478992-20690'
+      src: 'https://abb.glovemall.cn/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -191,14 +191,22 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://www.shuyeli.com:31267/slot?8836717831084845850-10034'
+    src: 'https://www.dknindsl.com:31267/slot?8836717831084845850-10034'
   }
 ],
-// https://www.trclm.com/联盟
+// https://www.trclm.com/联盟-底部漂浮广告
 [
   'script',
   {
-    src: 'https://js.1104piaoba2022.xyz/slot?8257479454139528945-10111'
+    src: 'https://js.shuaige20221105.xyz/slot?8257479454139528945-10111'
+  }
+],
+
+// https://www.trclm.com/联盟-固定横幅广告
+[
+  'script',
+  {
+    src: 'https://js.shuaige20221105.xyz/slot?8257479454139528945-10126'
   }
 ],
   // 

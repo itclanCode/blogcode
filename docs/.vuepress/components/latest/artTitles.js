@@ -1050,4 +1050,37 @@ export  const artTitles =  [
       url:"/fontend/js/39-extends",
       tag: "JS基础"  
    },
+
+   {
+      id: 98,
+      title: "Js如何为对象拓展一个动态属性",
+      desc: "Js如何为对象拓展一个动态属性",
+      author: "随笔川迹",
+      update_time: '2022-11-9',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/40-tuozhan-obj-attr",
+      tag: "JS基础"  
+   },
+
+   {
+      id: 99,
+      title: "Js如何使用prototype实现继承",
+      desc: "Js如何使用prototype实现继承",
+      author: "随笔川迹",
+      update_time: '2022-11-10',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/41-use-prototype-extend",
+      tag: "JS基础"  
+   },
+
+   {
+      id: 100,
+      title: "Js如何实现控制图片的放大和缩小",
+      desc: "Js如何实现控制图片的放大和缩小",
+      author: "随笔川迹",
+      update_time: '2022-11-11',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/42-control-img-scale",
+      tag: "JS特效"  
+   },
 ];

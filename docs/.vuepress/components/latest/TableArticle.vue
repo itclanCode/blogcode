@@ -45,7 +45,7 @@ let tabArticle = artTitles.reverse();
         },
 
         created() {
-            this.pageNo = this.getStorageData("currentPage") || 1;
+            // this.pageNo = this.getStorageData("currentPage") || 1;
             console.log("当前页", this.pageNo);
         },
 
@@ -108,11 +108,11 @@ let tabArticle = artTitles.reverse();
             },
 
             setStorageData(key, value) {
-               window.localStorage.setItem(key, value);
+            //    window.localStorage.setItem(key, value);
             },
 
             getStorageData(key) {
-                const str = window.localStorage.getItem(key);
+                // const str = window.localStorage.getItem(key);
                 if (typeof str == "string") {
                     try {
                       return JSON.parse(str);
@@ -126,7 +126,7 @@ let tabArticle = artTitles.reverse();
              // 跳转页,currentPage 当前页改变时会触发
             pageCurrentChange(pageNo) {
                 this.pageNo = pageNo;
-                this.setStorageData("currentPage", this.pageNo);
+                // this.setStorageData("currentPage", this.pageNo);
                 console.log("跳转页,currentPage 当前页改变时会触发");
             },
 
