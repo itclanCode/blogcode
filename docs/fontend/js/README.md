@@ -36,6 +36,7 @@ title: 目录
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
+* [43-Js如何实现一个抽奖程序](./43-choujiang)
 * [42-Js如何实现控制图片的放大和缩小](./42-control-img-scale)
 * [41-Js如何使用prototype实现继承](./41-use-prototype-extend)
 * [40-Js如何为对象拓展一个动态属性](./40-tuozhan-obj-attr)

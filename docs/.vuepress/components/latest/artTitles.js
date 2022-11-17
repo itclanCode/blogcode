@@ -1083,4 +1083,15 @@ export  const artTitles =  [
       url:"/fontend/js/42-control-img-scale",
       tag: "JS特效"  
    },
+
+   {
+      id: 101,
+      title: "Js如何实现一个抽奖程序",
+      desc: "Js如何实现一个抽奖程序",
+      author: "随笔川迹",
+      update_time: '2022-11-12',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/43-choujiang",
+      tag: "JS特效"  
+   },
 ];

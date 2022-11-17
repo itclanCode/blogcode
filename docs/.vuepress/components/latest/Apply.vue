@@ -337,6 +337,38 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
         },
+
+         {
+            href: "https://shipin.itclan.cn",
+            imgSrc: "/images/latest/shipin-video.png",
+            alt: "刷剧,刷动漫,电影,随意看",
+            text: "视频网",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
+        {
+            href: "javascript:;",
+            imgSrc: "/images/latest/wifigongxiang.jpg",
+            alt: "wifi共享密码",
+            text: "wifi共享密码",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
+
+        {
+            href: "javascript:;",
+            imgSrc: "/images/latest/jingxinmuyu.jpg",
+            alt: "敲木鱼,盘珠,颂钵",
+            text: "静心木鱼",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+        },
       ]
     };
   }
