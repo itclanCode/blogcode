@@ -36,6 +36,7 @@ title: 目录
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
+* [44-Js如何实现一个累加上漂浮动画-静神木鱼小程序](./44-leijia)
 * [43-Js如何实现一个抽奖程序](./43-choujiang)
 * [42-Js如何实现控制图片的放大和缩小](./42-control-img-scale)
 * [41-Js如何使用prototype实现继承](./41-use-prototype-extend)

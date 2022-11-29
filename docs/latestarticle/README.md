@@ -17,6 +17,8 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [vuejs中组件的两种不同的编写风格-选项式API及组合式API](../fontend/framework/base-vue3.0-codestyle)
+* [Js如何实现一个累加上漂浮动画-静神木鱼小程序](../fontend/js/44-leijia)
 * [Js如何实现控制图片的放大和缩小](../fontend/js/42-control-img-scale)
 * [Js如何使用prototype实现继承](../fontend/js/41-use-prototype-extend)
 * [Js如何为对象拓展一个动态属性](../fontend/js/40-tuozhan-obj-attr)

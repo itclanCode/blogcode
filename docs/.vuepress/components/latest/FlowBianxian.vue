@@ -112,7 +112,7 @@ export default {
             class:"lazy img-pic" 
          },
          {
-            href: "https://www.smtwm.com/",
+            href: "https://www.smtlm.cc/?pid=100019",
             imgSrc: "/images/latest/smtwm-com.png",
             alt: "水蜜桃联盟",
             text: "水蜜桃联盟",

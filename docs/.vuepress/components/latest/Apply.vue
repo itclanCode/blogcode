@@ -355,8 +355,8 @@ export default {
             text: "wifi共享密码",
             width: "80",
             height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
+            target: "_self",
+            class:"medium-zoom lazy img-pic" 
         },
 
         {
@@ -366,8 +366,8 @@ export default {
             text: "静心木鱼",
             width: "80",
             height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
+            target: "_self",
+            class:"medium-zoom lazy img-pic" 
         },
       ]
     };

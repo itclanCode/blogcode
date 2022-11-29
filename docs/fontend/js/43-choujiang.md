@@ -20,7 +20,7 @@ autoGroup-5: JS特效
 <template>
   <div class="choujiang-wrap">
         <div>
-            <p>抽奖名单</p><ul class="item">
+            <p>抽奖名单</p><ul class="choujiang-list">
                          <li v-for="(item,index) in lists" :class="index==randIndex?'active':''" :key="index">{{item}}</li>
                       </ul>
         </div>
@@ -77,12 +77,12 @@ autoGroup-5: JS特效
     margin-top: 10px;
   }
 
-  .item {
+  .choujiang-list {
     display:flex;
     justify-content: center;
   }
 
-   .item li {
+   .choujiang-list li {
      margin-right: 10px;
    }
 
@@ -102,7 +102,7 @@ autoGroup-5: JS特效
 <template>
   <div class="choujiang-wrap">
         <div>
-            <p>抽奖名单</p><ul class="item">
+            <p>抽奖名单</p><ul class="choujiang-item">
                          <li v-for="(item,index) in lists" :class="index==randIndex?'active':''" :key="index">{{item}}</li>
                       </ul>
         </div>
@@ -153,18 +153,18 @@ autoGroup-5: JS特效
     }
 }
 </script>
-<style>
+<style lang="scss" scoped>
   .choujiang-wrap {
     text-align: center;
     margin-top: 10px;
   }
 
-  .item {
+  .choujiang-item {
     display:flex;
     justify-content: center;
   }
 
-   .item li {
+   .choujiang-item li {
      margin-right: 10px;
    }
 

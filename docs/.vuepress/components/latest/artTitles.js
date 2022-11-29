@@ -1094,4 +1094,26 @@ export  const artTitles =  [
       url:"/fontend/js/43-choujiang",
       tag: "JS特效"  
    },
+
+   {
+      id: 102,
+      title: "Js如何实现一个累加上漂浮动画-静神木鱼小程序",
+      desc: "Js如何实现一个累加上漂浮动画-静神木鱼小程序",
+      author: "随笔川迹",
+      update_time: '2022-11-13',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/44-leijia",
+      tag: "JS特效"  
+   },
+
+   {
+      id: 103,
+      title: "vuejs中组件的两种不同的编写风格-选项式API及组合式API",
+      desc: "vuejs中组件的两种不同的编写风格-选项式API及组合式API",
+      author: "随笔川迹",
+      update_time: '2022-11-14',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-codestyle",
+      tag: "Vue3基础"  
+   },
 ];
