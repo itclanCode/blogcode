@@ -176,6 +176,17 @@ export default {
             class:"lazy img-pic" 
          },
 
+         {
+            href: "https://dylm.cc/track/c/?rid=374 ",
+            imgSrc: "/images/latest/dylm-cc-logo.png",
+            alt: "东亚联盟",
+            text: "东亚联盟",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
       ]
     };
   }

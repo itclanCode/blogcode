@@ -1116,4 +1116,15 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-codestyle",
       tag: "Vue3基础"  
    },
+
+   {
+      id: 104,
+      title: "VueJs中setup的使用(上)",
+      desc: "VueJs中setup的使用(上)",
+      author: "随笔川迹",
+      update_time: '2022-11-15',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-setup",
+      tag: "Vue3基础"  
+   },
 ];

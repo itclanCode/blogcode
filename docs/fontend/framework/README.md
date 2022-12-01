@@ -40,7 +40,7 @@ title: 目录
 - [React 进阶(2)-上手实践 Redux-如何获取 store 的数据](./advance-getstore-data)
 - [React 进阶(1)-理解 Redux](./advance-understand-redux)
 
-## Vue 基础
+## Vue2.0 基础
 
 - [vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态](./vue-router-sanji)
 - [vuejs中路由器的两种模式-哈希模式与历史模式](./vue-hash-history)
@@ -54,9 +54,10 @@ title: 目录
 - [vuejs中的模板/普通方法/计算属性computed与监听属性watch三者的比较](./vue-computed-watch)
 - [vuejs 中的组件以及父子组件间通信传值](./vue-component-pass-value)
 
-## vue3.0
+## vue3.0基础
 
-* [vuejs中组件的两种不同的编写风格-选项式API及组合式API](./base-vue3.0-codestyle)
+* [VueJs中setup的使用(上)](./base-vue3.0-setup)
+* [VueJs中组件的两种不同的编写风格-选项式API及组合式API](./base-vue3.0-codestyle)
 <!-- - [vue3.0 基础](./base-vue3.0-1) -->
 
 ## Vue3.0 核心源码

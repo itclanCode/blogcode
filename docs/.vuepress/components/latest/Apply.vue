@@ -369,6 +369,17 @@ export default {
             target: "_self",
             class:"medium-zoom lazy img-pic" 
         },
+
+        {
+            href: "https://frontend.itclan.cn",
+            imgSrc: "/images/latest/fe-huise.png",
+            alt: "前端资源导航",
+            text: "前端资源导航",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
       ]
     };
   }
