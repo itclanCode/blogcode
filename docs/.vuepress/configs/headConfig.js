@@ -146,19 +146,12 @@ const headConfig = [
       src: '//sdk.51.la/js-sdk-pro.min.js?id=JpY374pS1mZfseKk&ck=JpY374pS1mZfseKk'
     }
   ],
-// https://70z.com/麒麟广告,底部漂浮广告
-  [
-    'script',
-    {
-      src:'https://70z.efangcdn.com/slot?7645859975449108235-3792'
-    }
-  ],
 
   // https://www.szlm.cc/神州联盟-cpm-底部漂浮广告
   [
     'script',
     {
-      src: 'https://abb.51xuex.com.cn/slot?2377029035902478992-20690'
+      src: 'https://abb.guanhoulz.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -194,11 +187,11 @@ const headConfig = [
     src: 'https://www.slcnysupp.com:31267/slot?8836717831084845850-10034'
   }
 ],
-// https://www.trclm.com/联盟-底部漂浮广告
+// https://www.666lm.cc//联盟-底部漂浮广告
 [
   'script',
   {
-    src: 'https://js.1117liangtiao2022.xyz/slot?8257479454139528945-10111'
+    src: 'https://js.go-1208.cc/slot?7255774253627174051-10084'
   }
 ],
 
@@ -206,7 +199,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.1117liangtiao2022.xyz/slot?8257479454139528945-10126'
+    src: 'https://js.go-1208.cc/slot?7255774253627174051-10504'
   }
 ],
 
