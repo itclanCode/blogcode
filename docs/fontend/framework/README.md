@@ -56,6 +56,7 @@ title: 目录
 
 ## vue3.0基础
 
+* [VueJs中setup的使用(下)](./base-vue3.0-setup2)
 * [VueJs中setup的使用(上)](./base-vue3.0-setup)
 * [VueJs中组件的两种不同的编写风格-选项式API及组合式API](./base-vue3.0-codestyle)
 <!-- - [vue3.0 基础](./base-vue3.0-1) -->

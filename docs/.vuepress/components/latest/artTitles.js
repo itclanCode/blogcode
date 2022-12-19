@@ -1138,4 +1138,15 @@ export  const artTitles =  [
       url:"/fontend/tools/resolve-nosafe-web",
       tag: "网络安全"  
    },
+
+   {
+      id: 106,
+      title: "VueJs中setup的使用(下)",
+      desc: "VueJs中setup的使用(下)",
+      author: "随笔川迹",
+      update_time: '2022-12-19',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-setup2",
+      tag: "Vue3基础"  
+   },
 ];

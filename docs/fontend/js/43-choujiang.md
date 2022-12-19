@@ -71,7 +71,7 @@ autoGroup-5: JS特效
     }
 }
 </script>
-<style>
+<style >
   .choujiang-wrap {
     text-align: center;
     margin-top: 10px;

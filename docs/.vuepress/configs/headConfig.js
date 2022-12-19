@@ -151,7 +151,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.guanhoulz.com/slot?2377029035902478992-20690'
+      src: 'https://abb.81cdn.cn/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -172,14 +172,6 @@ const headConfig = [
   }
 ],
 
-// ZT联盟-底部漂浮-cpm-https://www.666lm.cc//
-[
-  'script',
-  {
-    src:'https://js.yes-24-go.cc/slot?7255774253627174051-10084',
-  }
-],
-
 // 胜利联盟8865.org/home/login
 [
   'script',
@@ -191,7 +183,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.go-1208.cc/slot?7255774253627174051-10084'
+    src: 'https://js.baidu-1216.xyz/slot?7255774253627174051-10084'
   }
 ],
 
@@ -199,7 +191,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.go-1208.cc/slot?7255774253627174051-10504'
+    src: 'https://js.batiao20221209.xyz/slot?8257479454139528945-10111'
   }
 ],
 
