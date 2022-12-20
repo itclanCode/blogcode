@@ -1149,4 +1149,15 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-setup2",
       tag: "Vue3基础"  
    },
+
+   {
+      id: 107,
+      title: "VueJs中的ref函数",
+      desc: "VueJs中的ref函数",
+      author: "随笔川迹",
+      update_time: '2022-12-20',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-ref",
+      tag: "Vue3基础"  
+   },
 ];
