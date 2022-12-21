@@ -100,14 +100,13 @@ const headConfig = [
     `,
   ],
   ['link', { rel: 'stylesheet', href: '/css/style.css' }], // 这种方式也可以覆盖默认样式
-  // [
-  //   'script',
-  //   {
-  //     charset: 'utf-8',
-  //     async: 'async',
-  //     src: 'https://my.openwrite.cn/js/readmore.js',
-  //   },
-  // ],
+  [
+    'script',
+    {
+      charset: 'utf-8',
+      src: 'https://my.openwrite.cn/js/readmore.js',
+    },
+  ],
   ['script', { charset: 'utf-8', async: 'async', src: '/js/setglobal.js' }],
   [
     'script', // 插入谷歌广告

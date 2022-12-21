@@ -17,6 +17,7 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [VueJs中的reactive函数](../fontend/framework/base-vue3.0-reactive)
 * [VueJs中的ref函数](../fontend/framework/base-vue3.0-ref)
 * [如何解决chrome浏览器显示您要访问的是诈骗网站解决办法](../fontend/tools/resolve-nosafe-web)
 * [VueJs中setup的使用(下)](../fontend/framework/base-vue3.0-setup2)
