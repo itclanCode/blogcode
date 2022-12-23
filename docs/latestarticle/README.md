@@ -17,6 +17,8 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [2022-年终总结-忙碌的一年](../read/replay/2022-busy-year)
+* [VueJs中的computed函数](../fontend/framework/base-vue3.0-computed)
 * [VueJs中的reactive函数](../fontend/framework/base-vue3.0-reactive)
 * [VueJs中的ref函数](../fontend/framework/base-vue3.0-ref)
 * [如何解决chrome浏览器显示您要访问的是诈骗网站解决办法](../fontend/tools/resolve-nosafe-web)

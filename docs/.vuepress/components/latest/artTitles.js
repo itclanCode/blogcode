@@ -1171,4 +1171,26 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-reactive",
       tag: "Vue3基础"  
    },
+
+   {
+      id: 109,
+      title: "VueJs中的computed函数",
+      desc: "VueJs中的computed函数",
+      author: "随笔川迹",
+      update_time: '2022-12-22',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-computed",
+      tag: "Vue3基础"  
+   },
+
+   {
+      id: 110,
+      title: "2022-年终总结-忙碌的一年",
+      desc: "2022-年终总结-忙碌的一年",
+      author: "随笔川迹",
+      update_time: '2022-12-23',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/2022-busy-year",
+      tag: "年终总结"  
+   },
 ];

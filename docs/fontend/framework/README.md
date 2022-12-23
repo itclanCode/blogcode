@@ -56,6 +56,7 @@ title: 目录
 
 ## vue3.0基础
 
+* [VueJs中的computed函数](./base-vue3.0-computed)
 * [VueJs中的reactive函数](./base-vue3.0-reactive)
 * [VueJs中的ref函数](./base-vue3.0-ref)
 * [VueJs中setup的使用(下)](./base-vue3.0-setup2)

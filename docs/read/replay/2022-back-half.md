@@ -269,4 +269,4 @@ autoGroup-1: 年终总结
 
 最后，也希望你，我在这个物欲横流的时代，百般皆下苦，维有奋斗是甜.乾坤未定，你我皆黑马，加油！
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
