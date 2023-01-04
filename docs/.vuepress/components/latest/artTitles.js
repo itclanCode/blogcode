@@ -1200,8 +1200,19 @@ export  const artTitles =  [
       desc: "vueJs中的watch与watchEffect函数",
       author: "随笔川迹",
       update_time: '2022-12-27',
-      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      link: "https://mp.weixin.qq.com/s/KjjnSBx1Hs_rQPFbCmiruA",
       url:"/fontend/framework/base-vue3.0-watch",
+      tag: "Vue3基础"  
+   },
+
+   {
+      id: 111,
+      title: "VueJs中如何自定义hooks(组合式)函数",
+      desc: "VueJs中如何自定义hooks(组合式)函数",
+      author: "随笔川迹",
+      update_time: '2023-1-4',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-definehooks",
       tag: "Vue3基础"  
    },
 ];

@@ -56,6 +56,7 @@ title: 目录
 
 ## vue3.0基础
 
+* [VueJs中如何自定义hooks(组合式)函数](./base-vue3.0-definehooks)
 * [vueJs中的watch与watchEffect函数](./base-vue3.0-watch)
 * [VueJs中的computed函数](./base-vue3.0-computed)
 * [VueJs中的reactive函数](./base-vue3.0-reactive)

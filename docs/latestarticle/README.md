@@ -17,6 +17,7 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [VueJs中如何自定义hooks(组合式)函数](../fontend/framework/base-vue3.0-definehooks)
 * [vueJs中的watch与watchEffect函数](../fontend/framework/base-vue3.0-watch)
 * [2022-年终总结-忙碌的一年](../read/replay/2022-busy-year)
 * [VueJs中的computed函数](../fontend/framework/base-vue3.0-computed)

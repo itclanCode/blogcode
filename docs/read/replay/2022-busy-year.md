@@ -1,11 +1,11 @@
 ---
 sidebarDepth: 3
-title: 2022-忙碌的一年
+title: 2022年终总结-忙碌的一年
 collapsable: true
 autoGroup-1: 年终总结
 ---
 
-## 2022-忙碌的一年
+## 2022年终总结-忙碌的一年
 
 ## 快速导航
 
@@ -157,7 +157,14 @@ autoGroup-1: 年终总结
 
 2022一整年,都是在折腾的,当然，技术文章写得少了,离钱近的应用变多了的,一些零零散散的技术记录放在了自己的[itclanCoder](https://coder.itclan.cn)博客上
 
+<div align="center">
+   <p><img width="100%"  class="lazy" loading="lazy"  src ="../images/2022-busy-year/itclancoder.png" alt="itclanCoder" /></p>
+</div>
+
 公众号`itclanCoder`粉丝数,也即将破万粉,微信视频号也具备了商业化变现,西瓜视频,抖音号也具备参与中视频伙伴变现计划
+<div align="center">
+   <p><img width="100%"  class="lazy" loading="lazy"  src ="../images/2022-busy-year/shipinhao.jpg" alt="shipinhao" /></p>
+</div>
 
 相比分享技术,我更喜欢去分享一些自己技术代码之外的东西,有时,是自己看到的一本好书,或是一部好电影
 
@@ -284,7 +291,17 @@ autoGroup-1: 年终总结
 
 全世界都希望梅西夺冠,卫冕球王，最终胜利的天平,好的运气都会倾斜那些努力,不抛弃,不放弃的人,因为相信,所以看见
 
-最后,也希望你,我,不畏将来,往后余日,日富一日,日渐精进，守得云开见月明,加油！
+## 总结
+
+一年太长,一天太短,每当我们一回头,发现一些事,一些人已渐行渐远,盛年不重来,一日难再晨,及时当勉励,岁月不待人
+
+终日每晚想千百遍,早起又走重头路.也许前途未必光明,但一定是充满希望,大好青春,怕什么呢
+
+莫道桑榆晚,为霞尚满天
+
+有些事迟一点,慢一点都没有关系,只要保持在向上就可以了的
+
+最后,也希望你,我,不畏将来,不惑于年龄,不困于现实,往后余日,日富一日,日渐精进，守得云开见月明,加油
 
 <footer-FooterLink :isShareLink="false" :isDaShang="true" />
 

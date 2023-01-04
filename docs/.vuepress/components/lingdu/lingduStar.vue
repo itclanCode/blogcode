@@ -40,7 +40,7 @@ export default {
             "itclan.cn/coder.itclan.cn站长,itclanCoder公众号博主,人人领读公众号发起人,一个具有情怀的技匠,路上正追逐斜杠青年的践行者",
           list_source: chuanchuanSource,
           list_img:
-            "https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/lingdustar/1607597279256-chuanchuan.png",
+            "/images/lingdu-article-imgs/chuanchuan.png",
         },
 
         {
@@ -50,7 +50,7 @@ export default {
             "全名K诗数十万听众,实习型声控主播,集颜值与才华并存的90后萌妹子一枚,专治各种不高兴",
           list_source: fanfanSource,
           list_img:
-            "https://cdn.jsdelivr.net/gh/itclanCode/blogImgAssets/lingdustar/1607597335044-fanfan.png",
+            "/images/lingdu-article-imgs/fanfan.png",
         },
         {
           list_name: "虚位以待",
