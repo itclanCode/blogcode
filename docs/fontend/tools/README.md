@@ -4,6 +4,7 @@ title: 目录
 
 ## 工欲善其事,必先利其器
 
+* [WordPress后台上传文件大小受限制解除方法](./resolve-wpfilebig)
 * [如何解决chrome浏览器显示您要访问的是诈骗网站解决办法](./resolve-nosafe-web)
 * [IT资源导航网站设置注意事项](./nav-itlan-cn)
 * [surge部署静态网页](./surge-info)
