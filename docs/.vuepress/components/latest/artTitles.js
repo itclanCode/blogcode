@@ -1281,4 +1281,14 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-toraw",
       tag: "Vue3基础"  
    },
+   {
+      id: 118,
+      title: "VueJs中customRef函数的使用",
+      desc: "VueJs中customRef函数的使用",
+      author: "随笔川迹",
+      update_time: '2023-1-18',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-customref",
+      tag: "Vue3基础"  
+   },
 ];

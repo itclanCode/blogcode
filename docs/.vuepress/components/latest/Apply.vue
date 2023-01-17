@@ -380,6 +380,17 @@ export default {
             target: "_self",
             class: "lazy img-pic" 
          },
+
+         {
+            href: "https://liangxing.itclan.cn",
+            imgSrc: "/images/latest/liangxing.png",
+            alt: "两性知识网",
+            text: "两性知识网",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
       ]
     };
   }
