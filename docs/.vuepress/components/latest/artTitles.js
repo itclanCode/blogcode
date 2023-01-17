@@ -1291,4 +1291,15 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-customref",
       tag: "Vue3基础"  
    },
+
+   {
+      id: 119,
+      title: "VueJs中如何使用provide与inject",
+      desc: "VueJs中如何使用provide与inject",
+      author: "随笔川迹",
+      update_time: '2023-1-19',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-provide",
+      tag: "Vue3基础"  
+   },
 ];

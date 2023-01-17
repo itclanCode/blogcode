@@ -56,6 +56,7 @@ title: 目录
 
 ## vue3.0基础
 
+* [VueJs中的provide与inject的使用](./base-vue3.0-provide)
 * [VueJs中customRef函数的使用](./base-vue3.0-customref)
 * [VueJs中如何自定义hooks(组合式)函数](./base-vue3.0-definehooks)
 * [vueJs中的watch与watchEffect函数](./base-vue3.0-watch)
