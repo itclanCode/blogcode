@@ -167,7 +167,7 @@ const headConfig = [
 [
   'script',
   {
-    src:'https://www.smtlm.cc/slot?2074847283501657340-10014',
+    src:'https://smtlm967.com/slot?2074847283501657340-10471',
   }
 ],
 
@@ -186,11 +186,19 @@ const headConfig = [
   }
 ],
 
+// https://www.trclm.com/联盟-底部横幅广告
+[
+  'script',
+  {
+    src: 'https://js.qige20230106.life/slot?8257479454139528945-10111'
+  }
+],
+
 // https://www.trclm.com/联盟-固定横幅广告
 [
   'script',
   {
-    src: 'https://js.liuge2023104.live/slot?8257479454139528945-10111'
+    src: 'https://js.qige20230106.life/slot?8257479454139528945-10126'
   }
 ],
 

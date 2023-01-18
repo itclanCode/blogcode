@@ -17,7 +17,8 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
-* [VueJs中如何使用provide与inject](../fontend//framework/base-vue3.0-provide)
+* [VueJs中如何使用Teleport组件](../fontend/framework/base-vue3.0-teleport)
+* [VueJs中如何使用provide与inject](../fontend/framework/base-vue3.0-provide)
 * [VueJs中customRef函数的使用](../fontend//framework/base-vue3.0-customref)
 * [vueJs中toRaw与markRaw函数的使用比较](../fontend/framework/base-vue3.0-toraw)
 * [vueJs中readonly与shallowReadonly函数的使用比较](../fontend/framework/base-vue3.0-shallowreadonly)

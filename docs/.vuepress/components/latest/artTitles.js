@@ -1302,4 +1302,15 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-provide",
       tag: "Vue3基础"  
    },
+
+   {
+      id: 120,
+      title: "VueJs中如何使用Teleport组件",
+      desc: "VueJs中如何使用Teleport组件",
+      author: "随笔川迹",
+      update_time: '2023-1-20',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/framework/base-vue3.0-teleport",
+      tag: "Vue3基础"  
+   },
 ];
