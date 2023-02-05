@@ -69,16 +69,6 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
-          {
-            href: "https://70z.com/?pid=101330",
-            imgSrc: "/images/latest/70z.png",
-            alt: "麒麟广告联盟",
-            text: "麒麟广告",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-         },
 
           {
             href: "https://www.szlm.cc/?pid=104699",
@@ -186,7 +176,6 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
          },
-
       ]
     };
   }

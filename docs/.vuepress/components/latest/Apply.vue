@@ -391,6 +391,17 @@ export default {
             target: "_self",
             class: "lazy img-pic" 
          },
+
+         {
+            href: "https://wen.renrenlingdu.com",
+            imgSrc: "/images/latest/wenrenrenlingdu.png",
+            alt: "文案网",
+            text: "文案网",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
       ]
     };
   }

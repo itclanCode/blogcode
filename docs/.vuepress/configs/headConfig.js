@@ -150,7 +150,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abb.e8jp9.com/slot?2377029035902478992-20690'
+      src: 'https://abc.whfyhouse.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -182,7 +182,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.fds-1230.cc/slot?7255774253627174051-10084'
+    src: 'https://js.cj-0129.cc/slot?7255774253627174051-11141'
   }
 ],
 
@@ -190,7 +190,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.qige20230106.life/slot?8257479454139528945-10111'
+    src: 'https://js.liangtou20230121.live/slot?8257479454139528945-10111'
   }
 ],
 
@@ -198,7 +198,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.qige20230106.life/slot?8257479454139528945-10126'
+    src: 'https://js.liangtou20230121.live/slot?8257479454139528945-10126'
   }
 ],
 
@@ -208,6 +208,24 @@ const headConfig = [
   {
     src: 'https://cdn.jquery-cdn.cc/ba.php?id=493',
     async: 'async'
+  }
+],
+// https://dylm.cc/东亚联盟-固定顶部漂浮广告
+[
+  'script',
+  {
+    src: 'https://cdn.n4d86.com//ba.php?id=735',
+    async: 'async'
+  }
+],
+// 灵动联盟https://www.ceseasons.com/
+[
+  'script',
+  {
+    src: 'https://www.ceseasons.com/c.aspx?action=c&c1=7&c2=103&c3=&c4=2&c5=p&c34=640&c35=200&c7=1&c8=1&c9=&c10=&c50=146560',
+    async: 'async',
+    defer: 'defer ',
+    id:'146560'
   }
 ],
   // 

@@ -1313,4 +1313,15 @@ export  const artTitles =  [
       url:"/fontend/framework/base-vue3.0-teleport",
       tag: "Vue3基础"  
    },
+
+   {
+      id: 121,
+      title: "选择入职一家好公司的理由",
+      desc: "选择入职一家好公司的理由",
+      author: "随笔川迹",
+      update_time: '2023-2-4',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/why-select-good-company",
+      tag: "职场心得"  
+   },
 ];
