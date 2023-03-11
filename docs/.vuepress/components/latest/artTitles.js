@@ -1324,4 +1324,82 @@ export  const artTitles =  [
       url:"/read/replay/why-select-good-company",
       tag: "职场心得"  
    },
+   {
+      id: 122,
+      title: "找工作时如何避开各种求职陷阱",
+      desc: "找工作时如何避开各种求职陷阱",
+      author: "随笔川迹",
+      update_time: '2023-2-5',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/bikaiqiuzhixianjin",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 123,
+      title: "找工作时如何避开各种求职陷阱",
+      desc: "找工作时如何避开各种求职陷阱",
+      author: "随笔川迹",
+      update_time: '2023-2-6',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/bikaiqiuzhixianjin",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 124,
+      title: "针对面试官的盘问-如何回答职场中的一些问题",
+      desc: "针对面试官的盘问-如何回答职场中的一些问题",
+      author: "随笔川迹",
+      update_time: '2023-2-7',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/qazhichangproblem",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 125,
+      title: "一文了互联网中的产品经理",
+      desc: "一文了互联网中的产品经理",
+      author: "随笔川迹",
+      update_time: '2023-2-8',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/producter",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 126,
+      title: "一文了解互联网中的前端开发",
+      desc: "一文了解互联网中的前端开发",
+      author: "随笔川迹",
+      update_time: '2023-2-9',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/frontender",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 127,
+      title: "一文了解互联网中的后端开发",
+      desc: "一文了解互联网中的后端开发",
+      author: "随笔川迹",
+      update_time: '2023-2-11',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/backender",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 128,
+      title: "一文了解互联网中的测试开发",
+      desc: "一文了解互联网中的测试开发",
+      author: "随笔川迹",
+      update_time: '2023-2-12',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/backender",
+      tag: "职场心得"  
+   },
 ];
+
+

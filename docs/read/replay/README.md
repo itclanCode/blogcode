@@ -21,6 +21,12 @@ title: 目录
 
 ### 职场心得
 
-
+* [一文了互联网中的产品经理](./producter)
+* [一文了解互联网中的测试开发工程师](./testcoder)
+* [一文了解互联网中的后端开发工程师](./backender)
+* [一文了解互联网中的前端开发工程师](./frontender)
+* [针对面试官的盘问-如何回答职场中的一些问题](./qazhichangproblem)
+* [找工作时如何避开各种求职陷阱](./bikaiqiuzhixianjin)
+* [选择入职一家好公司的理由](./why-select-good-company)
 
 <footer-FooterLink :isShareLink="true" :isDaShang="true" />

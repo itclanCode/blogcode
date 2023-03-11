@@ -150,7 +150,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abc.whfyhouse.com/slot?2377029035902478992-20690'
+      src: 'https://abc.e8jp9.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -163,26 +163,18 @@ const headConfig = [
     }
   ],
 
-// 水蜜桃联盟-https://www.smtlm.cc/
-[
-  'script',
-  {
-    src:'https://smtlm967.com/slot?2074847283501657340-10471',
-  }
-],
-
 // 胜利联盟8865.org/home/login
 [
   'script',
   {
-    src: 'https://www.slgllgoe.com:31267/slot?8836717831084845850-10034'
+    src: 'https://www.slfindmarket.live:31267/slot?8836717831084845850-10034'
   }
 ],
 // https://www.666lm.cc//联盟-底部漂浮广告
 [
   'script',
   {
-    src: 'https://js.cj-0129.cc/slot?7255774253627174051-11141'
+    src: 'https://js.zt-0304.cc/slot?7255774253627174051-11282'
   }
 ],
 
@@ -190,7 +182,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.liangtou20230121.live/slot?8257479454139528945-10111'
+    src: 'https://js.bamao20230305.live/slot?8257479454139528945-10111'
   }
 ],
 
@@ -198,7 +190,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.liangtou20230121.live/slot?8257479454139528945-10126'
+    src: 'https://js.bamao20230305.live/slot?8257479454139528945-10126'
   }
 ],
 

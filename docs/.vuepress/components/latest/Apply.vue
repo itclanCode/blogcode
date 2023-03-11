@@ -20,6 +20,16 @@ export default {
     return {
       applyData: [
         {
+            href: "https://tv.itclan.net",
+            imgSrc: "/images/latest/tv-itclan-net.png",
+            alt: "影视大全",
+            text: "影视大全",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+        },
+        {
             href: "https://faka.itclan.cn",
             imgSrc: "/images/latest/shop.png",
             alt: "发卡商城",
@@ -31,7 +41,7 @@ export default {
          },
 
          {
-          href: "http://game.itclan.cn",
+          href: "https://game.itclan.cn",
           imgSrc: "/images/games/kelaigame.png",
           alt: "客来游戏=h5小游戏",
           text: "客来游戏",
@@ -397,6 +407,17 @@ export default {
             imgSrc: "/images/latest/wenrenrenlingdu.png",
             alt: "文案网",
             text: "文案网",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
+
+         {
+            href: "https://mianshi.aikelaikaifa.com",
+            imgSrc: "/images/latest/mianshi-aikelaikaifa.png",
+            alt: "面试网",
+            text: "面试网",
             width: "80",
             height: "80",
             target: "_self",
