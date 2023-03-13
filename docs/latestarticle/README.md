@@ -17,10 +17,16 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [一文了解互联网中的运营](../read/replay/opactor)
+* [一文了解互联网中的UI设计师](../read/replay/uier)
 * [一文了解互联网中的测试开发](../read/replay/testcoder)
 * [一文了解互联网中的后端开发](../read/replay/backender)
 * [一文了解互联网中的前端开发](../read/replay/frontender)
 * [一文了互联网中的产品经理](../read/replay/producter)
+* [被面试官问到频繁跳槽,求职者应该怎么回](../read/replay/pingfantiaocao)
+* [从改简历到面试需要知道的](../read/replay/changejianlitomianshi)
+* [入职前-求职者一定要提前了解的问题](../read/replay/qiuzhizhetiqianknowproblem)
+* [为什么找不到合适的工作](../read/replay/why-nofind-work)
 * [针对面试官的盘问-如何回答职场中的一些问题](../read/replay/qazhichangproblem)
 * [找工作时如何避开各种求职陷阱](../read/replay/bikaiqiuzhixianjin)
 * [选择入职一家好公司的理由](../read/replay/why-select-good-company)

@@ -21,10 +21,16 @@ title: 目录
 
 ### 职场心得
 
+* [一文了解互联网中的运营](./opactor)
+* [一文了解互联网中的UI设计师](./uier)
 * [一文了互联网中的产品经理](./producter)
 * [一文了解互联网中的测试开发工程师](./testcoder)
 * [一文了解互联网中的后端开发工程师](./backender)
 * [一文了解互联网中的前端开发工程师](./frontender)
+* [被面试官问到频繁跳槽,求职者应该怎么回](./pingfantiaocao)
+* [从改简历到面试需要知道的](./changejianlitomianshi)
+* [入职前-求职者一定要提前了解的问题](./qiuzhizhetiqianknowproblem)
+* [为什么找不到合适的工作](./why-nofind-work)
 * [针对面试官的盘问-如何回答职场中的一些问题](./qazhichangproblem)
 * [找工作时如何避开各种求职陷阱](./bikaiqiuzhixianjin)
 * [选择入职一家好公司的理由](./why-select-good-company)

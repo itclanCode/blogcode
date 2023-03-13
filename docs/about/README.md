@@ -120,6 +120,7 @@ title: 关于作者
 - 微信小程序:搜索`轻记账`
 - 微信小程序:搜索`暖暖聊天恋爱话术`
 - 微信小程序:搜索`高情商聊天对话`
+* 微信小程序:搜索`静神木鱼`
 - [IT资源网](https://itclan.cn)
 - [发卡商城](https://faka.itclan.cn)
 - [爱客来科技](https://aikelaidev.cn)
@@ -129,6 +130,9 @@ title: 关于作者
 - [客来图床(免费)](https://img.itclan.cn)
 - [客来影视TV](https://video.itclan.cn)
 - [精品影视](https://tv.itclan.cn)
+* [影视大全](https://tv.itclan.net/)
+* [IT资源导航](https://nav.itclan.cn)
+* [前端资源导航](https://frontend.itclan.cn)
 
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />

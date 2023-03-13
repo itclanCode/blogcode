@@ -451,6 +451,6 @@ window.onload = function() {
 - [openWrite 博客导流工具](https://my.openwrite.cn/)
 - [又拍云图片存储](https://www.upyun.com/)
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLinkfalse="false" :isDaShang="true" />
 <footer-FeedBack />
 <footer-AvoidCopy />

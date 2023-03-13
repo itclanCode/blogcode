@@ -1400,6 +1400,70 @@ export  const artTitles =  [
       url:"/read/replay/backender",
       tag: "职场心得"  
    },
+
+   {
+      id: 129,
+      title: "一文了解互联网中的运营",
+      desc: "一文了解互联网中的运营",
+      author: "随笔川迹",
+      update_time: '2023-2-13',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/opactor",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 130,
+      title: "一文了解互联网中的UI设计师",
+      desc: "一文了解互联网中的UI设计师",
+      author: "随笔川迹",
+      update_time: '2023-2-14',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/uier",
+      tag: "职场心得"  
+   },
+
+   {
+      id: 131,
+      title: "被面试官问到频繁跳槽,求职者应该怎么回",
+      desc: "被面试官问到频繁跳槽,求职者应该怎么回",
+      author: "随笔川迹",
+      update_time: '2023-2-15',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/pingfantiaocao",
+      tag: "面试心得"  
+   },
+
+   {
+      id: 132,
+      title: "从改简历到面试需要知道的",
+      desc: "从改简历到面试需要知道的",
+      author: "随笔川迹",
+      update_time: '2023-2-16',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/changejianlitomianshi",
+      tag: "面试心得"  
+   },
+
+   {
+      id: 133,
+      title: "入职前-求职者一定要提前了解的问题",
+      desc: "入职前-求职者一定要提前了解的问题",
+      author: "随笔川迹",
+      update_time: '2023-2-17',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/qiuzhizhetiqianknowproblem",
+      tag: "面试心得"  
+   },
+
+   {
+      id: 134,
+      title: "为什么找不到合适的工作",
+      desc: "为什么找不到合适的工作",
+      author: "随笔川迹",
+      update_time: '2023-2-18',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/read/replay/why-nofind-work",
+      tag: "面试心得"  
+   },
 ];
-
-

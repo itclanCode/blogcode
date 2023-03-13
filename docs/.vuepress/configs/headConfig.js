@@ -150,7 +150,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://abc.e8jp9.com/slot?2377029035902478992-20690'
+      src: 'https://unm.zzxmcp.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -182,7 +182,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.bamao20230305.live/slot?8257479454139528945-10111'
+    src: 'https://js.sike20230309.live/slot?8257479454139528945-10111'
   }
 ],
 
@@ -190,7 +190,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.bamao20230305.live/slot?8257479454139528945-10126'
+    src: 'https://js.sike20230309.live/slot?8257479454139528945-10126'
   }
 ],
 
