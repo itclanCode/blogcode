@@ -20,6 +20,16 @@ export default {
     return {
       applyData: [
         {
+            href: "https://aihelp.itclan.cn/addons/wike_chatgpt/public//h5?uniacid=1",
+            imgSrc: "/images/latest/aihelp.png",
+            alt: "AIChatGPT助手",
+            text: "AIChatGPT助手",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+        },
+        {
             href: "https://tv.itclan.net",
             imgSrc: "/images/latest/tv-itclan-net.png",
             alt: "影视大全",
@@ -34,6 +44,17 @@ export default {
             imgSrc: "/images/latest/shop.png",
             alt: "发卡商城",
             text: "发卡商城",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
+         {
+            href: "https://video.itclan.net",
+            imgSrc: "/images/latest/video-itclan-net.ico",
+            alt: "video影视",
+            text: "video影视",
             width: "80",
             height: "80",
             target: "_blank",
@@ -423,6 +444,28 @@ export default {
             target: "_self",
             class: "lazy img-pic" 
          },
+
+         {
+          href: "https://yingshi.itclan.net",
+          imgSrc: "/images/latest/yingshi.png",
+          alt: "影视网",
+          text: "影视网",
+          width: "80",
+          height: "80",
+          target: "_self",
+          class:"lazy img-pic"
+        },
+
+        {
+          href: "https://aitool.itclan.cn",
+          imgSrc: "/images/latest/aitoolicon.png",
+          alt: "AI工具箱",
+          text: "AI工具箱",
+          width: "80",
+          height: "80",
+          target: "_self",
+          class:"lazy img-pic"
+        },
       ]
     };
   }

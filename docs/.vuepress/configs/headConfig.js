@@ -150,7 +150,7 @@ const headConfig = [
   [
     'script',
     {
-      src: 'https://unm.zzxmcp.com/slot?2377029035902478992-20690'
+      src: 'https://js.effetspositifs.com/slot?2377029035902478992-20690'
     }
   ],
 // 汇米网络http://pc.huimee.com/
@@ -174,7 +174,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.zt-0304.cc/slot?7255774253627174051-11282'
+    src: 'https://js.ok-320.xyz/slot?7255774253627174051-11282'
   }
 ],
 
@@ -182,7 +182,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.sike20230309.live/slot?8257479454139528945-10111'
+    src: 'https://js.jiutb202330.live/slot?8257479454139528945-10111'
   }
 ],
 
@@ -190,7 +190,7 @@ const headConfig = [
 [
   'script',
   {
-    src: 'https://js.sike20230309.live/slot?8257479454139528945-10126'
+    src: 'https://js.jiutb202330.live/slot?8257479454139528945-10126'
   }
 ],
 

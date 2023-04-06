@@ -14,6 +14,7 @@ title: 目录
 
 ### 生活思考
 
+* [缅怀清明-记爷爷这一生](./rember-grandfather)
 * [致而立之年的自己](./erlizhinian)
 - [无论发生什么,我一直都在](./no-matter-what-happens)
 - [链接关系,相互陪伴,见证成长](./link-accompany-growth)

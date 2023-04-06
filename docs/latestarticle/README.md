@@ -17,6 +17,7 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [缅怀清明-记爷爷这一生](../read/replay/rember-grandfather)
 * [一文了解互联网中的运营](../read/replay/opactor)
 * [一文了解互联网中的UI设计师](../read/replay/uier)
 * [一文了解互联网中的测试开发](../read/replay/testcoder)
