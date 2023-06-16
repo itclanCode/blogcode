@@ -8,3 +8,38 @@ body {
 /* #app .theme-container .page {
   padding-left: 10rem;
 } */
+
+.home > .hero > p.description {
+  animation: animateText 4.7s steps(8) infinite;
+  -webkit-animation: animateText 4.7s steps(8) infinite;
+}
+
+ @-webkit-keyframes animateText {
+      0% {
+          width: 0;
+      }
+      35% {
+          width: 12.5em;
+      }
+      75% {
+          width: 12.5em;
+      }
+      100% {
+          width: 0;
+      }
+ }
+  
+  @keyframes animateText {
+      0% {
+          width: 0;
+      }
+      35% {
+          width: 12.5em;
+      }
+      75% {
+          width: 12.5em;
+      }
+      100% {
+          width: 0;
+      }
+ }

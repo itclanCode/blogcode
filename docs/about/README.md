@@ -121,18 +121,25 @@ title: 关于作者
 - 微信小程序:搜索`暖暖聊天恋爱话术`
 - 微信小程序:搜索`高情商聊天对话`
 * 微信小程序:搜索`静神木鱼`
-- [IT资源网](https://itclan.cn)
-- [发卡商城](https://faka.itclan.cn)
+* 微信小程序:搜索`爱客来智能助手`
+* 微信小程序:搜索`客群基地`
+- [IT资源网](https://itclan.net)
+- [发卡商城](https://faka.itclan.net)
 - [爱客来科技](https://aikelaidev.cn)
 - [爱客来支付-免签支付工具-在小的个体也具备独立的支付能力](https://pay.aikelaidev.cn)
-- [站集网-一个收录对你有用资源导航网站](https://zhanji.itclan.cn)
+* [爱支付](https://pay.aikelaikaifa.com)
+- [站集网-一个收录对你有用资源导航网站](https://zhanji.itclan.net)
 - [佳豪瑞森装饰](https://jiahaoruisen.com)
-- [客来图床(免费)](https://img.itclan.cn)
-- [客来影视TV](https://video.itclan.cn)
-- [精品影视](https://tv.itclan.cn)
-* [影视大全](https://tv.itclan.net/)
-* [IT资源导航](https://nav.itclan.cn)
-* [前端资源导航](https://frontend.itclan.cn)
+- [客来影视](https://video.itclan.net)
+- [精品影视](https://tv.itclan.net)
+* [影视大全](https://shipin.itclan.net/)
+* [IT资源导航](https://nav.itclan.net)
+* [前端资源导航](https://frontend.itclan.net)
+* [AI工具箱](https://aitool.itclan.net)
+* [人人领读](https://renrenlingdu.com)
+* [两性知识网](https://liangxing.aikelaidev.cn)
+* [文案网](https://wen.renrenlingdu.com)
+* [相由心生](https://xiangyouxinsheng.aikelaikaifa.com)
 
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />
@@ -146,7 +153,7 @@ title: 关于作者
   </div>
 
 * [itclanCoder 博客源码](https://github.com/itclanCode/blogcode)
-* [it资源网 https://itclan.cn](https://itclan.cn)
+* [it资源网 https://itclan.net](https://itclan.net)
 - [爱客来科技](https://aikelaidev.cn)
 * [微信公众号: itclanCoder](https://mp.weixin.qq.com/s/EgSgGqMWoV4nrt7qPF9nzA)
 * [微信公众号: 人人领读(renrenlingdu)](https://mp.weixin.qq.com/s/2uEeANGSsixlTqDcJCnm6Q)
@@ -206,7 +213,7 @@ title: 关于作者
 
 网站头像: https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image
 网站名称: itclanCoder
-网站链接: https://coder.itclan.cn/
+网站链接: https://coder.itclan.net/
 网站介绍: 书以启智,技于谋生,活出斜杠
 :::
 

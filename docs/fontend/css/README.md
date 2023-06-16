@@ -15,6 +15,7 @@ title: 目录
 
 ## CSS 常见实例技巧
 
+* [使用css3如何实现一个文字打印效果](./example-css3dayin)
 * [css如何隐藏垂直滚动条但同时需保持滚动](./example-scroll)
 - [css实现烟雾效果](./example-yanwu)
 - [实现小于12px的字体像素](./example-small-size)

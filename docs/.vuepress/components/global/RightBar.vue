@@ -11,7 +11,7 @@
           <img width="30" height="30" :src="rightbar.newImg" alt="最新" />
         </a>
       </div>
-      <div  @click="handleKeQun('https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/')">
+      <div  @click="handleKeQun('https://qun.aikelaikaifa.com/index.php?i=1&do=index&opt=index&act=index&m=dc_sqjd&spread=0')">
         <img width="30" height="30" :src="rightbar.keQunImg" alt="社群" />
       </div>
       <div>
@@ -47,10 +47,10 @@
       <div @click="handleAd('http://itclancoder.mikecrm.com/z1zXWvz')">
         <img width="30" height="30" :src="rightbar.adImg" alt="广告" />
       </div>
-      <div @click="handleFaKa('https://faka.itclan.cn')">
+      <div @click="handleFaKa('https://faka.itclan.net')">
         <img width="30" height="30" :src="rightbar.fkImg" alt="发卡">
       </div>
-       <div @click="handleKelaiTV('https://video.itclan.cn')">
+       <div @click="handleKelaiTV('https://video.itclan.pro')">
         <img width="30" height="30" :src="rightbar.videotvImg" alt="客来影视">
       </div>
       <div

@@ -1477,4 +1477,37 @@ export  const artTitles =  [
       url:"/read/replay/rember-grandfather",
       tag: "生活思考"  
    },
+
+   {
+      id: 136,
+      title: "当在网页浏览器的地止栏中输入URL时,web页面是如何呈现的?",
+      desc: "当在网页浏览器的地止栏中输入URL时,web页面是如何呈现的?",
+      author: "随笔川迹",
+      update_time: '2023-5-20',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/inputurlshow",
+      tag: "Javascript"  
+   },
+
+   {
+      id: 137,
+      title: "Js如何实现一个类似chatGPT打字机效果",
+      desc: "Js如何实现一个类似chatGPT打字机效果",
+      author: "随笔川迹",
+      update_time: '2023-5-22',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/45-daziji",
+      tag: "Javascript"  
+   },
+
+   {
+      id: 138,
+      title: "使用css3如何实现一个文字打印效果",
+      desc: "使用css3如何实现一个文字打印效果",
+      author: "随笔川迹",
+      update_time: '2023-6-16',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/css/example-css3dayin",
+      tag: "css"  
+   },
 ];

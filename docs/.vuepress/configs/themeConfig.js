@@ -32,9 +32,6 @@ const themeconfig = {
   // sidebarDepth: 0, // 默认深度是 1，它提取 h2 标题。将其设置为 0 将禁用标题链接，最大值为2，同时提取 h2 和 h3 标题
   nav: navConfig, // Es6语法,相同的值可以省略,头部导航栏配置,通过配置进行管理,nav.js后缀名可以省略
   // sidebar // 配置侧边栏,同上,.js后缀名可省略,统一方便管控
-  yuu: {
-    defaultDarkTheme: false,
-  },
 };
 
 module.exports = themeconfig; // 导出默认主题配置

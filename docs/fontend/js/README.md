@@ -8,6 +8,7 @@ title: 目录
 
 ## JavaScript 文章目录
 
+* [当在网页浏览器的地止栏中输入URL时,web页面是如何呈现的? ](./inputurlshow)
 - [script标签中type的使用](./js-type)
 - [使用let/const定义变量的场景](./variable-use) 
 - [理解 Es6 中的 Symbol 类型](./understand-symbol)
@@ -36,6 +37,8 @@ title: 目录
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
+
+* [45-Js如何实现一个类似chatGPT打字机效果](./45-daziji)
 * [44-Js如何实现一个累加上漂浮动画-静神木鱼小程序](./44-leijia)
 * [43-Js如何实现一个抽奖程序](./43-choujiang)
 * [42-Js如何实现控制图片的放大和缩小](./42-control-img-scale)

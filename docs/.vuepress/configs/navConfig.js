@@ -119,7 +119,7 @@ const navs = [
   // },
   { text: '关于我', link: '/about/' },
   { text: '广告投放', link: '/adverent/' },
-  { text: 'IT资源网', link: 'https://itclan.cn' },
+  { text: 'IT资源网', link: 'https://itclan.net' },
   { text: '爱客来', link: 'https://aikelaidev.cn' },
 ];
 

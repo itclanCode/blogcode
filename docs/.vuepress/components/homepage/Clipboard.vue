@@ -17,14 +17,14 @@
       <a href="/about/" target="_blank"
         >随笔川迹</a
       >
-      <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
+      <!-- <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
         <img
           src="/icons/icp.png"
           width="20"
           height="20"
           alt="公网备案"
         />京ICP备16017996号
-      </a>
+      </a> -->
       <span>{{runTimeText}}</span>
     </p>
     <div v-html="html" />

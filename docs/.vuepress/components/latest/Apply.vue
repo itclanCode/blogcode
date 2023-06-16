@@ -20,7 +20,7 @@ export default {
     return {
       applyData: [
         {
-            href: "https://aihelp.itclan.cn/addons/wike_chatgpt/public//h5?uniacid=1",
+            href: "https://aihelp.aikelaikaifa.com/addons/wike_chatgpt/public/h5/?uniacid=1",
             imgSrc: "/images/latest/aihelp.png",
             alt: "AIChatGPT助手",
             text: "AIChatGPT助手",
@@ -28,6 +28,58 @@ export default {
             height: "80",
             target: "_self",
             class: "lazy img-pic" 
+        },
+        {
+          href: "javascript:;",
+          imgSrc: "/images/latest/aikelaizhinengzhushou.jpg",
+          alt: "chatGPT智能助手,能绘画,能问答",
+          text: "爱客来智能助手",
+          width: "80",
+          height: "80",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
+        },
+        {
+            href: "https://video.itclan.pro",
+            imgSrc: "/images/latest/videoitclanprologo.png",
+            alt: "客来影视",
+            text: "客来影视",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+        },
+        {
+            href: "https://tv.itclan.pro",
+            imgSrc: "/images/latest/tvitclanprologo.png",
+            alt: "精品影视",
+            text: "精品影视",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+        },
+
+         {
+            href: "https://qun.aikelaikaifa.com/index.php?i=1&do=index&opt=index&act=index&m=dc_sqjd&spread=0#/",
+            imgSrc: "/images/latest/kequnaikelaikaifa.png",
+            alt: "拓展人脉圈子,每日更新微信社群",
+            text: "客群基地H5",
+            width: "80",
+            height: "80",
+            target: "_blank",
+            class:"lazy img-pic" 
+         },
+
+         {
+          href: "javascript:;",
+          imgSrc: "/images/latest/kequnmincode.jpg",
+          alt: "每日更新微信社群",
+          text: "客群基地",
+          width: "80",
+          height: "80",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
         },
         {
             href: "https://tv.itclan.net",
@@ -40,7 +92,7 @@ export default {
             class: "lazy img-pic" 
         },
         {
-            href: "https://faka.itclan.cn",
+            href: "https://faka.itclan.net",
             imgSrc: "/images/latest/shop.png",
             alt: "发卡商城",
             text: "发卡商城",
@@ -61,15 +113,15 @@ export default {
             class:"lazy img-pic" 
          },
 
-         {
-          href: "https://game.itclan.cn",
-          imgSrc: "/images/games/kelaigame.png",
-          alt: "客来游戏=h5小游戏",
-          text: "客来游戏",
-          width: "80",
-          height: "80",
-          target: "_blank",
-        },
+        //  {
+        //   href: "https://game.itclan.net",
+        //   imgSrc: "/images/games/kelaigame.png",
+        //   alt: "客来游戏=h5小游戏",
+        //   text: "客来游戏",
+        //   width: "80",
+        //   height: "80",
+        //   target: "_blank",
+        // },
 
          {
             href: "https://pay.aikelaidev.cn",
@@ -83,7 +135,7 @@ export default {
          },
 
          {
-            href: "https://nav.itclan.cn",
+            href: "https://nav.itclan.net",
             imgSrc: "/images/latest/nav-itclan-cn.png",
             alt: "IT资源导航",
             text: "IT资源导航",
@@ -92,18 +144,18 @@ export default {
             target: "_self",
             class: "lazy img-pic" 
          },
-          {
-            href: "https://mh.aikelaidev.cn",
-            imgSrc: "/images/latest/choumanghe.svg",
-            alt: "抽盲盒",
-            text: "抽盲盒",
+         {
+            href: "https://pay.aikelaikaifa.com",
+            imgSrc: "/images/latest/payaikelaikaifa.png",
+            alt: "爱支付-免签支付",
+            text: "爱支付",
             width: "80",
             height: "80",
-            target: "_self",
+            target: "_blank",
             class: "lazy img-pic" 
          },
          {
-            href: "https://bazihehun.itclan.cn",
+            href: "https://bazihehun.itclan.net",
             imgSrc: "/images/latest/bazihehun.svg",
             alt: "测八字合婚",
             text: "测合婚",
@@ -113,7 +165,7 @@ export default {
             class:"lazy img-pic" 
          },
          {
-            href: "https://bazi.itclan.cn",
+            href: "https://bazi.itclan.net",
             imgSrc: "/images/latest/bazi.svg",
             alt: "在线测八字",
             text: "测八字",
@@ -123,7 +175,7 @@ export default {
             class:"lazy img-pic" 
          },
         {
-            href: "https://taohua.itclan.cn",
+            href: "https://taohua.itclan.net",
             imgSrc: "/images/latest/taohua.svg",
             alt: "在线桃花",
             text: "测桃花",
@@ -133,7 +185,7 @@ export default {
             class:"lazy img-pic" 
          },
          {
-            href: "https://cesuan.itclan.cn",
+            href: "https://cesuan.itclan.net",
             imgSrc: "/images/latest/cesuan.png",
             alt: "在线测运势,取名,姻缘,八字",
             text: "测算网",
@@ -245,44 +297,11 @@ export default {
           class:"medium-zoom lazy img-pic"
         },
 
-         {
-            href: "https://video.itclan.cn",
-            imgSrc: "/images/latest/kelaimovie.svg",
-            alt: "客来影视TV",
-            text: "客来影视TV",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic"  
-        },
-
         {
-            href: "https://img.itclan.cn",
-            imgSrc: "/images/latest/kelaituchuang.svg",
-            alt: "客来图床-免费存储图片",
-            text: "客来图床",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic"  
-        },
-
-        {
-            href: "https://zhanji.itclan.cn",
+            href: "https://zhanji.itclan.net",
             imgSrc: "/images/latest/zhanjinet.svg",
             alt: "站集网-总有你不知道的好用的网站大全",
             text: "站集网",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-        },
-
-        {
-            href: "https://kequn.itclan.cn/app/index.php?i=2&c=entry&do=index&m=dc_sqjd&state=index&rand=68drdo&spread=0#/",
-            imgSrc: "/images/latest/qun.svg",
-            alt: "客群基地-寻找圈子,加各种资源群,发布广告,个人名片",
-            text: "客群基地",
             width: "80",
             height: "80",
             target: "_blank",
@@ -308,16 +327,6 @@ export default {
           target: "_self",
           class:"medium-zoom lazy img-pic"
         },
-        {
-          href: "https://tv.itclan.cn",
-          imgSrc: "/images/latest/tv-logo.png",
-          alt: "精品影视",
-          text: "精品影视",
-          width: "80",
-          height: "80",
-          target: "_self",
-          class:"lazy img-pic"
-        },
          {
           href: "javascript:;",
           imgSrc: "/images/latest/jisuqushuiyin.jpg",
@@ -329,7 +338,7 @@ export default {
           class:"medium-zoom lazy img-pic"
         },
          {
-            href: "https://shuiying.itclan.cn",
+            href: "https://shuiying.itclan.net",
             imgSrc: "/images/latest/addshuiyin.svg",
             alt: "图片打码",
             text: "图片水印",
@@ -339,7 +348,7 @@ export default {
             class:"lazy img-pic" 
         },
         {
-            href: "https://pingtu.itclan.cn",
+            href: "https://pingtu.itclan.net",
             imgSrc: "/images/latest/pingtu.png",
             alt: "将多张图片合并成一张图片",
             text: "在线拼图",
@@ -348,29 +357,9 @@ export default {
             target: "_blank",
             class:"lazy img-pic" 
         },
-        {
-            href: "https://app.itclan.cn",
-            imgSrc: "/images/latest/app-itclan-cn.png",
-            alt: "App软件应用下载",
-            text: "App软件下载",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-        },
-         {
-            href: "https://short.itclan.cn",
-            imgSrc: "/images/latest/short.svg",
-            alt: "短链接生成",
-            text: "短链接生成",
-            width: "80",
-            height: "80",
-            target: "_blank",
-            class:"lazy img-pic" 
-        },
 
-         {
-            href: "https://shipin.itclan.cn",
+        {
+            href: "https://shipin.itclan.net",
             imgSrc: "/images/latest/shipin-video.png",
             alt: "刷剧,刷动漫,电影,随意看",
             text: "视频网",
@@ -402,21 +391,10 @@ export default {
         },
 
         {
-            href: "https://frontend.itclan.cn",
+            href: "https://frontend.itclan.net",
             imgSrc: "/images/latest/fe-huise.png",
             alt: "前端资源导航",
             text: "前端资源导航",
-            width: "80",
-            height: "80",
-            target: "_self",
-            class: "lazy img-pic" 
-         },
-
-         {
-            href: "https://liangxing.itclan.cn",
-            imgSrc: "/images/latest/liangxing.png",
-            alt: "两性知识网",
-            text: "两性知识网",
             width: "80",
             height: "80",
             target: "_self",
@@ -428,6 +406,17 @@ export default {
             imgSrc: "/images/latest/wenrenrenlingdu.png",
             alt: "文案网",
             text: "文案网",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
+
+         {
+            href: "https://liangxing.aikelaidev.cn",
+            imgSrc: "/images/latest/liangxing.png",
+            alt: "两性知识网",
+            text: "两性知识网",
             width: "80",
             height: "80",
             target: "_self",
@@ -457,7 +446,7 @@ export default {
         },
 
         {
-          href: "https://aitool.itclan.cn",
+          href: "https://aitool.itclan.net",
           imgSrc: "/images/latest/aitoolicon.png",
           alt: "AI工具箱",
           text: "AI工具箱",
@@ -465,6 +454,17 @@ export default {
           height: "80",
           target: "_self",
           class:"lazy img-pic"
+        },
+
+        {
+          href: "javascript:;",
+          imgSrc: "/images/latest/kequnxiaochengxu.jpg",
+          alt: "客群基地-拓展人脉圈子",
+          text: "客群基地小程序",
+          width: "80",
+          height: "80",
+          target: "_self",
+          class:"medium-zoom lazy img-pic"
         },
       ]
     };

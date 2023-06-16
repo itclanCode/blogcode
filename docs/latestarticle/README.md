@@ -9,6 +9,7 @@ title: 目录
         type="playlist"
         mid="784399723"
         :list-folded="true" /> -->
+<exampleskill-autoTypePrint  />
 
 ## 最新文章
 
@@ -17,6 +18,9 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [使用css3如何实现一个文字打印效果](../fontend/css/example-css3dayin)
+* [Js如何实现一个类似chatGPT打字机效果 ](../fontend/js/45-daziji)
+* [当在网页浏览器的地止栏中输入URL时,web页面是如何呈现的? ](../fontend/js/inputurlshow)
 * [缅怀清明-记爷爷这一生](../read/replay/rember-grandfather)
 * [一文了解互联网中的运营](../read/replay/opactor)
 * [一文了解互联网中的UI设计师](../read/replay/uier)
