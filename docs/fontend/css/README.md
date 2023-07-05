@@ -15,6 +15,11 @@ title: 目录
 
 ## CSS 常见实例技巧
 
+* [使用html5-svg实现玫瑰花盛开动画特效](./example-meiguihua)
+* [使用纯css3实现可爱的Kitty猫图形特效](./example-KittyCat)
+* [使用css一行代码或JS实现元素的平滑置顶](./example-elemzhiding)
+* [使用css3实现悬挂招财猫动画特效](./example-xuanguaMao)
+* [使用css3实现卡通的独角鲸动画特效](./example-katongjin)
 * [使用css3如何实现一个文字打印效果](./example-css3dayin)
 * [css如何隐藏垂直滚动条但同时需保持滚动](./example-scroll)
 - [css实现烟雾效果](./example-yanwu)

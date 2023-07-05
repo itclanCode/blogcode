@@ -10,6 +10,9 @@ title: 目录
         mid="784399723"
         :list-folded="true" /> -->
 <exampleskill-autoTypePrint  />
+<exampleskill-xuanGuamaoMi />
+<exampleskill-jinYu />
+<exampleskill-KittyCat />
 
 ## 最新文章
 
@@ -18,6 +21,14 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [PHP中的变量](../backend/php/php-variable)
+* [php中的双引号与单引号的基本使用](../backend/php/php-shuangyinhao)
+* [MAMP 无法启动 servers 问题](../backend/php/mamp-server-start)
+* [使用纯css3实现可爱的Kitty猫图形特效](../fontend/css/example-KittyCat)
+* [php基础知识了解-开发集成环境及其他](../backend/php/phpDev)
+* [使用css一行代码或JS实现元素的平滑置顶](../fontend/css/example-elemzhiding)
+* [使用css3实现悬挂招财猫动画特效](../fontend/css/example-xuanguaMao)
+* [使用css3实现卡通的独角鲸动画特效](../fontend/css/example-katongjin)
 * [使用css3如何实现一个文字打印效果](../fontend/css/example-css3dayin)
 * [Js如何实现一个类似chatGPT打字机效果 ](../fontend/js/45-daziji)
 * [当在网页浏览器的地止栏中输入URL时,web页面是如何呈现的? ](../fontend/js/inputurlshow)

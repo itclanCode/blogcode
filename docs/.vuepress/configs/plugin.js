@@ -46,6 +46,7 @@
 const secret = require('./secretKey'); 
 
 const plugins = [
+  '@vuepress/back-to-top',
   '@vuepress/nprogress', // 进度条插件
   'reading-progress', // 阅读进度插件
   'img-lazy', // 图片的懒加载

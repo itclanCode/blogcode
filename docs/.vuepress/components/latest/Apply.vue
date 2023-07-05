@@ -466,6 +466,17 @@ export default {
           target: "_self",
           class:"medium-zoom lazy img-pic"
         },
+
+        {
+            href: "https://juhelogin.aikelaidev.cn",
+            imgSrc: "/images/latest/juhelogin.png",
+            alt: "爱客来聚合登录",
+            text: "爱客来聚合登录",
+            width: "80",
+            height: "80",
+            target: "_self",
+            class: "lazy img-pic" 
+         },
       ]
     };
   }

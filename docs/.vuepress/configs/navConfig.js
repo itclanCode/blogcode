@@ -44,6 +44,11 @@ const navs = [
         text: 'Node',
         link: '/backend/node/',
       },
+
+      {
+        text: 'php',
+        link: '/backend/php/'
+      }
     ],
   },
 

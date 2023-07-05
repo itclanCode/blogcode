@@ -2,7 +2,7 @@
   <div>
     <div class="right-bar-wrap" v-show="isRightBar">
       <div>
-        <a href="#">
+        <a href="javascript:;" @click="handleZhiDing">
           <img width="30" height="30" :src="rightbar.topImg" alt="置顶" />
         </a>
       </div>
@@ -90,6 +90,12 @@ export default {
   },
 
   methods: {
+    handleZhiDing() {
+       window.scrollTo({
+         top: 0,
+         behavior:"smooth"
+       })
+    },
     scroll() {
       const that = this;
       let scrollTop =
