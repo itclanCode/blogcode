@@ -21,6 +21,11 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [使用一行css实现黑白色主题皮肤的切换](../fontend/js/css-switch-theme)
+* [css3小鸡从鸡蛋破壳而出动画特效](../fontend/css/example-css3-eag)
+* [CSS3绘制3D银行卡片层叠展示特效](../fontend/css/example-css3-3Dcard)
+* [vue输入框打字放大特效](../fontend/js/46-inputtypetexiao)
+* [使用html5-svg实现玫瑰花盛开动画特效](../fontend/css/example-meiguihua)
 * [PHP中的变量](../backend/php/php-variable)
 * [php中的双引号与单引号的基本使用](../backend/php/php-shuangyinhao)
 * [MAMP 无法启动 servers 问题](../backend/php/mamp-server-start)

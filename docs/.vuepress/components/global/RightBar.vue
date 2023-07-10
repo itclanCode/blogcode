@@ -62,6 +62,11 @@
       >
         <img width="30" height="30" :src="rightbar.shangImg" alt="赏" />
       </div>
+      <div
+        @click="handleSwitchTheme"
+      >
+        <img width="30" height="30" :src="switchThemeUrl" alt="切换主题" />
+      </div>
       <div>
         <a href="#bottom">
           <img width="30" height="30" :src="rightbar.bottomImg" alt="置底" />
@@ -73,12 +78,17 @@
 
 <script>
 import rightbar from "../../public/js/ationfixed";
+import themeDefaultImg from "../../public/images/rightbar/dark.svg";
+import whiteThemeImg from "../../public/images/rightbar/set.svg";
+
 export default {
   name: "RightBar",
   data() {
     return {
       isRightBar: false,
       rightbar: rightbar.mobileslides,
+      switchThemeUrl: themeDefaultImg,
+      themeOff: true,
     };
   },
   mounted() {
@@ -200,6 +210,19 @@ export default {
           // on cancel // 取消
         });
     },
+
+    handleSwitchTheme() {
+      if(this.themeOff) {
+        // 默认白色主题
+        this.switchThemeUrl = themeDefaultImg;
+        document.querySelector('html').style = 'filter:grayscale(0);transition:all 300ms';
+      }else {
+        // 暗黑模式
+        this.switchThemeUrl = whiteThemeImg;
+        document.querySelector('html').style = 'filter:invert(1) hue-rotate(180deg);transition:all 300ms';
+      }
+      this.themeOff = !this.themeOff; // toggle value
+    }
   },
 };
 </script>
@@ -215,7 +238,7 @@ export default {
   .right-bar-wrap {
     position: fixed;
     right: 0.15rem;
-    top: 20%;
+    top: 18%;
     display: flex;
     flex-direction: column;
     z-index: 888;

@@ -140,6 +140,7 @@ title: 关于作者
 * [两性知识网](https://liangxing.aikelaidev.cn)
 * [文案网](https://wen.renrenlingdu.com)
 * [相由心生](https://xiangyouxinsheng.aikelaikaifa.com)
+* [爱客来聚合登录](https://juhelogin.aikelaidev.cn)
 
   <div align="center">
   <img class="medium-zoom lazy" loading="lazy"  src="./images/jiahaoruisen-min-code.jpg" alt="佳豪瑞森装饰" width="200" height="200" />

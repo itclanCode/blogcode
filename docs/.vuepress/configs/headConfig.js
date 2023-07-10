@@ -145,7 +145,6 @@ const headConfig = [
       src: '//sdk.51.la/js-sdk-pro.min.js?id=JpY374pS1mZfseKk&ck=JpY374pS1mZfseKk'
     }
   ],
-
   // 
   // [
   //   'script',

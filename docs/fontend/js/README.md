@@ -38,6 +38,7 @@ title: 目录
 
 ## JS网页经典特效
 
+* [46-vue输入框打字放大特效](./46-inputtypetexiao)
 * [45-Js如何实现一个类似chatGPT打字机效果](./45-daziji)
 * [44-Js如何实现一个累加上漂浮动画-静神木鱼小程序](./44-leijia)
 * [43-Js如何实现一个抽奖程序](./43-choujiang)
@@ -87,6 +88,7 @@ title: 目录
 
 ## JS 实用案例技巧
 
+* [使用一行css实现黑白色主题皮肤的切换](./css-switch-theme)
 - [用户姓名-手机号-中间位数用\*替代](./utils-name-mobile-encrye)
 - [固定滚动条-禁止页面滚动](./fixed-scrollbar)
 - [判断当前位置是否为页面底部](./judge-bottom-of-the-page)

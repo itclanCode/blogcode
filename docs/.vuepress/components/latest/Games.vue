@@ -19,27 +19,27 @@ export default {
   data() {
     return {
       gamesData: [
+        // {
+        //   href: "http://game.itclan.cn",
+        //   imgSrc: "/images/games/kelaigame.png",
+        //   alt: "客来游戏",
+        //   text: "客来游戏"
+        // },
         {
-          href: "http://game.itclan.cn",
-          imgSrc: "/images/games/kelaigame.png",
-          alt: "客来游戏",
-          text: "客来游戏"
-        },
-        {
-          href: "https://xigua.itclan.cn",
+          href: "https://xigua.itclan.net",
           imgSrc: "/images/games/watermelon.svg",
           alt: "watermelon",
           text: "合成大西瓜"
         },
         {
-          href: "https://flybird.itclan.cn/",
+          href: "https://flybird.itclan.net/",
           imgSrc: "/images/games/bird.svg",
           alt: "flybird",
           text: "飞扬的小鸟"
         },
 
         {
-          href: "https://snake.itclan.cn/",
+          href: "https://snake.itclan.net/",
           imgSrc: "/images/games/snake.svg",
           alt: "snake",
           text: "贪吃蛇"
