@@ -38,6 +38,7 @@ title: 目录
 
 ## JS网页经典特效
 
+* [47-有趣的拖动黑白对比图片特效](./47-draw-heibaimg)
 * [46-vue输入框打字放大特效](./46-inputtypetexiao)
 * [45-Js如何实现一个类似chatGPT打字机效果](./45-daziji)
 * [44-Js如何实现一个累加上漂浮动画-静神木鱼小程序](./44-leijia)

@@ -15,6 +15,19 @@ title: 目录
 
 ## CSS 常见实例技巧
 
+* [使用CSS3 transform:matrix3d实现的搜索框变形动画](./example-transformmatrix3d)
+* [CSS3标题文本后的横线](./example-css3textline)
+* [纯CSS3实现悬停时出现对角线耀光效果的按钮](./example-xuantingduijiao)
+* [纯CSS实现的一个对角线填充颜色的按钮悬停动效](./example-duijiaobtn)
+* [使用CSS3 box-shadow实现的7个按钮悬停动画特效](./example-boxshadowbtn)
+* [纯CSS3实现2个的鼠标悬停文本下划线动画效果](./example-hoverxuanting)
+* [纯CSS3文章边角悬停气泡化填充动效](./example-articlepop)
+* [纯css实现图片悬停时显示渐变圆形信息浮层](./example-hovercircle)
+* [纯css3实现元素定点圆环扩散动画](./example-circlekuosan)
+* [纯css3实现水波纹从中心向四周扩散动画](./example-shuibowen)
+* [纯css3彩色loading加载进度条动画特效](./example-loading)
+* [轮播图指示器一点一点加载动效](./example-lunbo-tab)
+* [纯CSS实现的卡片切换效果](./example-css-tab)
 * [css3小鸡从鸡蛋破壳而出动画特效](./example-css3-eag)
 * [CSS3绘制3D银行卡片层叠展示特效](./example-css3-3Dcard)
 * [使用html5-svg实现玫瑰花盛开动画特效](./example-meiguihua)
@@ -45,6 +58,8 @@ title: 目录
 
 ## css3 动效
 
+* [css中文本阴影特效](./animate-textshadow)
+* [css实现手风琴效果](./animate-shoufengqin)
 - [css 实现小鸟旋转](./animate-effect-brid)
 - [css 实现动画箭头](./animated-arrow)
 - [css 汽车 VR-3D 旋转](./animate-car-vr)
@@ -61,6 +76,10 @@ title: 目录
 
 ## 业务型实例
 
+* [按钮悬停效果](./business-btnxuanting)
+* [tab选项卡切换](./business-tabselect)
+* [波浪背景图](./business-wave)
+* [卡券生成器](./business-kajuan)
 - [发送验证码倒计时](./business-send-verification-code)
 - [城市地级联选择](./business-city-choice)
 - [日期时间限制的选择](./bussiness-date-limit-select)

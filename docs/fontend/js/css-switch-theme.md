@@ -78,3 +78,4 @@ document.querySelector('html').style = 'filter:invert(1) hue-rotate(180deg);';
 
 `invert`简单理解就是黑变白，白变黑，黑白颠倒。`hue-rotate`简单理解就是冲淡颜色。为了确保主题色调不会改变，将色相旋转声明为`180deg`比较合理
 
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />

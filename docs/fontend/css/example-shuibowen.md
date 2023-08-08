@@ -1,29 +1,38 @@
+---
+title: 纯css3实现水波纹从中心向四周扩散动画
+---
+
+## 纯css3实现水波纹从中心向四周扩散动画
+
+## 快速导航
+
+<TOC />
+
+## 示例效果
+
+<exampleskill-shuibowen />
+
+## 示例代码
+
+```html
 <template>
-  <div  @click="handleShangBtn('https://pay.aikelaidev.cn/paypage/?merchant=35bdYxSx7dCUrVUBqFQjdqqlzhWryCA7lqOn9VhakWHC')">
-        <el-tooltip class="item" effect="dark" content="如果我的文章对您有任何帮助,欢迎您的任何金额打赏鼓励" placement="top">
-            <el-button class="shang-btn">赞</el-button>
-         </el-tooltip>
-  </div>
+    <div class="zanbtn-wrap">
+        <div @click="handleClick('https://pay.aikelaidev.cn/paypage/?merchant=35bdYxSx7dCUrVUBqFQjdqqlzhWryCA7lqOn9VhakWHC')" class="zanBtn">赞</div>
+    </div>
 </template>
-
 <script>
-// https://www.zhi12.cn/paycenter/reward/widget?entity=user&id=33813
 export default {
-  name: "DaShang",
-  data() {
-    return {};
-  },
-
-  methods: {
-    handleShangBtn(openUrl) {
-      window.open(openUrl, "_blank");
+    name:'shuibowen',
+    methods: {
+        handleClick(openUrl) {
+            window.open(openUrl, "_blank");
+        }
     }
-  }
-};
-</script>
 
-<style lang="stylus" scoped>
-@keyframes shangBtn {
+}
+</script>
+<style scoped>
+@keyframes zanBtnAnimation {
   0% {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 1px rgba(255, 37, 37, 0);
   }
@@ -65,7 +74,11 @@ export default {
   }
 }
 
-.shang-btn {
+.zanbtn-wrap {
+    text-align: center;
+}
+
+.zanBtn {
   width: 45px;
   height: 45px;
   padding: 10px;
@@ -76,13 +89,20 @@ export default {
   color: #fff;
   text-decoration: none;
   border-radius: 100%;
-  -webkit-animation: shangBtn 2s alternate infinite;
-  animation: shangBtn 2s alternate infinite;
+  -webkit-animation: zanBtnAnimation 2s alternate infinite;
+  animation: zanBtnAnimation 2s alternate infinite;
   margin-top: 40px;
   margin-bottom: 40px;
   font-weight: 500;
+  line-height: 45px;
   border: none;
   outline: none;
   cursor:pointer;
 }
 </style>
+
+```
+实现这个示例效果,主要是使用css3中的动画关键帧,以及`box-shadow`实现
+
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
+<footer-FeedBack />
