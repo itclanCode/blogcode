@@ -71,6 +71,7 @@ title: 目录
 * [VueJs中setup的使用(下)](./base-vue3.0-setup2)
 * [VueJs中setup的使用(上)](./base-vue3.0-setup)
 * [VueJs中组件的两种不同的编写风格-选项式API及组合式API](./base-vue3.0-codestyle)
+* [vue3+vite安装element-plus报错解决-使用组件不起作用](./vite-installelemntpluserror)
 <!-- - [vue3.0 基础](./base-vue3.0-1) -->
 
 ## Vue3.0 核心源码

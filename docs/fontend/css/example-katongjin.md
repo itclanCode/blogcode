@@ -9,8 +9,6 @@ autoGroup-2: 常见实例技巧
 
 <TOC />
 
-## 前言
-
 ## 具体实例
 
 <exampleskill-kaTongJin />

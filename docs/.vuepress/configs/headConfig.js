@@ -108,15 +108,15 @@ const headConfig = [
     },
   ],
   ['script', { charset: 'utf-8', async: 'async', src: '/js/setglobal.js' }],
-  [
-    'script', // 插入谷歌广告
-    {
-      async: 'async',
-      charset: 'utf-8',
-      crossorigin: 'anonymous',
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7281692919682421',
-    },
-  ],
+  // [
+  //   'script', // 插入谷歌广告
+  //   {
+  //     async: 'async',
+  //     charset: 'utf-8',
+  //     crossorigin: 'anonymous',
+  //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7281692919682421',
+  //   },
+  // ],
 
   [
     'script',
@@ -143,6 +143,33 @@ const headConfig = [
       charset: 'utf-8',
       id: 'LA_COLLECT',
       src: '//sdk.51.la/js-sdk-pro.min.js?id=JpY374pS1mZfseKk&ck=JpY374pS1mZfseKk'
+    }
+  ],
+  // 汇米广告http://pc.huimee.com/
+  [
+    'script',
+    {
+      charset: 'utf-8',
+      id: 'richid',
+      data: 's=6992',
+      src: '//pc.stgowan.com/pc/rich-tf.js'
+    }
+  ],
+// szlm.cc
+   [
+    'script',
+    {
+      charset: 'utf-8',
+      src: 'https://abk.lingsiqiwu.com/slot?2377029035902478992-20690'
+    }
+  ],
+// duoying  https://duoying.vip/
+  [
+    'script',
+    {
+      charset: 'utf-8',
+      async: 'async',
+      src: 'https://dajs.techspecndt.com/ba.php?id=120'
     }
   ],
   // 

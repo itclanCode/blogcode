@@ -20,6 +20,7 @@ import './public/css/element-variables.scss';
 // import Clipboard from './components/Clipboard';
 import Copy from './components/global/Copy';
 import VueClipboard from 'vue-clipboard2'; // 引入复制粘贴组件
+import axios from 'axios';
 
 // 使用异步函数也是可以的
 export default ({
@@ -36,6 +37,7 @@ export default ({
   Vue.use(ElementUI);
   Vue.use(Vant);
   Vue.use(VueClipboard);
+  Vue.prototype.$axios = axios;
   Vue.mixin({
     mounted() {
       import('./public/js/btwplugin');

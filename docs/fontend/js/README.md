@@ -8,6 +8,10 @@ title: 目录
 
 ## JavaScript 文章目录
 
+* [VuePress网站如何使用axios请求第三方接口](./vuepress-axios)
+<!-- * [VuePress网站对接爱支付](./aizhifu) -->
+* [前后端开发接口联调对接参数](./interface-params)
+* [Es6中的拓展运算符参数解构在实际项目当中应用](./es6-reset)
 * [当在网页浏览器的地止栏中输入URL时,web页面是如何呈现的? ](./inputurlshow)
 - [script标签中type的使用](./js-type)
 - [使用let/const定义变量的场景](./variable-use) 
@@ -34,6 +38,11 @@ title: 目录
 
 ## JS 常见特效
 
+* [Vue中实现全景房看图3D](./vue-quanjing3D)
+* [Vue中实现城市分布图可下钻到县](./vue-cityfenbu)
+* [Vue中中如何实现地球3D自动旋转](./vue-earth3D)
+* [Vue中拖动验证码实现](./vue-dragVercode)
+* [Vue中实现放大镜效果](./vue-fangdajing)
 - [JS 实现烟花特效](./fireWorkEffect)
 
 ## JS网页经典特效
@@ -89,6 +98,7 @@ title: 目录
 
 ## JS 实用案例技巧
 
+* [vite构建的本地开发环境请求第三方接口时如何解决跨域问题](./vite-localcors)
 * [使用一行css实现黑白色主题皮肤的切换](./css-switch-theme)
 - [用户姓名-手机号-中间位数用\*替代](./utils-name-mobile-encrye)
 - [固定滚动条-禁止页面滚动](./fixed-scrollbar)

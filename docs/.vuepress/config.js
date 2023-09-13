@@ -27,4 +27,23 @@ module.exports = {
   theme: 'yuu', // vuepress-theme-yuu主题
   themeConfig, // 导入默认主题的一些选项配置文件,便于集中管理配置
   plugins, // 外部插件配置,config.js里面写得太长了,阅读,修改起来,真的好恶心,有必要考虑拆分出去的
+  devServer: {    
+    proxy: {     
+         '/api': {       
+             target: 'https://v.juhe.cn',       
+             changeOrigin: true,        
+             pathRewrite: {          
+                '^/api': ''       
+             }      
+          }, 
+          '/path': {
+             target: 'https://v0.yiketianqi.com',
+             changeOrigin: true,
+             pathRewrite: {
+                '^/path': ''
+             }
+          }
+    }  
+  }
 };
+

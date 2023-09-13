@@ -123,7 +123,7 @@ autoGroup-2: 常见实例技巧
 - [MDN:filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter)
 - [MDN: backdrop-filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter)
 
-<footer-FooterLink :isShareLink="true" :isDaShang="true" />
+<footer-FooterLink :isShareLink="false" :isDaShang="true" />
 <div align="center">
 <footer-ArticleAdvertiSpace   width="600" height="140" />
 </div>
