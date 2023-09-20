@@ -1,0 +1,42 @@
+export const tableColist = [
+    {
+      label: "所在省份",
+      prop: "Province",
+      width: "auto",
+      size: "medium",
+      align: "center",
+      showOverflowTooltip: false,
+    },
+    {
+      label: "地级城市",
+      prop: "City",
+      width: "auto",
+      size: "medium",
+      align: "center",
+      showOverflowTooltip: true,
+    },
+    {
+      label: "县级市/区",
+      prop: "District",
+      width: "auto",
+      size: "medium",
+      align: "center",
+      showOverflowTooltip: true,
+    },
+    {
+      label:"地止",
+      prop: "Address",
+      width: "auto",
+      size: "medium",
+      align: "center",
+      showOverflowTooltip: true,
+    },
+    {
+      label: "邮编",
+      prop: "PostNumber",
+      width: "auto",
+      size: "medium",
+      align: "center",
+      showOverflowTooltip: true,
+    },
+  ];

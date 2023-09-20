@@ -16,6 +16,7 @@ const themeConfig = require('./configs/themeConfig'); // 导入默认主题配�
 const head = require('./configs/headConfig'); // 导入head配置,需要引入的html中head标签
 const markdown = require('./configs/markdownConfig'); // 导入markdownConfig配置,如显示代码块行号,额外拓展支持h1~h6标签,不仅限于h2,h3标题
 const plugins = require('./configs/plugin'); // 导入插件配置,如:包括返回顶部,图片缩放,pwa等插件
+const devServer = require('./configs/devserver'); // 导入devServer配置,如:端口,host,https,historyApiFallback等配置
 
 module.exports = {
   title: 'itclanCoder', // 博客标题
@@ -27,23 +28,6 @@ module.exports = {
   theme: 'yuu', // vuepress-theme-yuu主题
   themeConfig, // 导入默认主题的一些选项配置文件,便于集中管理配置
   plugins, // 外部插件配置,config.js里面写得太长了,阅读,修改起来,真的好恶心,有必要考虑拆分出去的
-  devServer: {    
-    proxy: {     
-         '/api': {       
-             target: 'https://v.juhe.cn',       
-             changeOrigin: true,        
-             pathRewrite: {          
-                '^/api': ''       
-             }      
-          }, 
-          '/path': {
-             target: 'https://v0.yiketianqi.com',
-             changeOrigin: true,
-             pathRewrite: {
-                '^/path': ''
-             }
-          }
-    }  
-  }
+  devServer    // 配置接口代理
 };
 

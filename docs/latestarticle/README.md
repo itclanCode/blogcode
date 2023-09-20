@@ -4,6 +4,7 @@ title: 目录
 
 <form-weather />
 <business-watchCity />
+<homepage-applay />
 <form-Search />
 
 <!-- <Meting server="netease"
