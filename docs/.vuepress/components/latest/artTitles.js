@@ -1977,6 +1977,17 @@ export  const artTitles =  [
       link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
       url:"/fontend/framework/vite-installelemntpluserror",
       tag: "Vue"  
+   },
+
+   {
+      id: 181,
+      title: "前后端联调前-一个前端动手写代码前的思考",
+      desc: "前后端联调前-一个前端动手写代码前的思考",
+      author: "随笔川迹",
+      update_time: '2023-9-19',
+      link: "https://mp.weixin.qq.com/s/_FZsyjt9uFLsN2fm23RHWQ",
+      url:"/fontend/js/frontend-codethink",
+      tag: "前端"  
    }
 
 ];

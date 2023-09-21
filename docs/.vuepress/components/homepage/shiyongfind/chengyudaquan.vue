@@ -147,6 +147,10 @@
 .result-content p {
     border-bottom: 1px dashed #ccc;
 }
+
+.result-content ul {
+    padding-left:0;
+}
 .result-content ul li {
     padding-left: 0;
 }
@@ -194,7 +198,7 @@
     flex-wrap: wrap;
 }
 
-.result-content ul li.fyc:before {
+.result-content ul li.fyc:first-child::before {
     content: '反义词:';
     display:inline-block;
     font-weight:bold;

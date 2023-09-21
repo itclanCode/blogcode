@@ -152,7 +152,7 @@ import { tableColist } from "./postmenTableColist.js";
                     let res = await this.$axios.get(`${this.url}/postcode/search`,{params});
                     console.log(res, 'res');
                     if(res.status  ==  200 && res.data.error_code == 0 ) {
-                        this.$message.success("邮编数据查询成功");
+                       // this.$message.success("邮编数据查询成功");
                         this.isBtnDisabled = false;
                         const data = res.data.result;
                         const {currentpage, list, totalcount,totalpage} = data;

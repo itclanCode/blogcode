@@ -25,7 +25,18 @@
                    <component :is="shiyongRadioVal"></component>
                 </keep-alive>
             </el-tab-pane>
-            <el-tab-pane label="营销文案" name="营销文案">营销文案</el-tab-pane>
+            <el-tab-pane label="营销文案" name="营销文案">
+                <el-radio-group class="el-radio-group" v-model="yingxiaoRadioVal" size="small" @input="handleYingXiaoRadio">
+                    <el-radio-button class="el-radio-button" v-for="item in yingxiaoRadioOptions"  
+                                    :key="item.name" 
+                                    :label="item.value">
+                                    {{ item.name }}
+                    </el-radio-button>
+                </el-radio-group> 
+                <keep-alive>
+                   <component :is="yingxiaoRadioVal"></component>
+                </keep-alive>
+            </el-tab-pane>
          </el-tabs>
     </div>
 </template>
@@ -44,6 +55,10 @@
     import gongJijinCal from "./shiyongfind/gongJijinCal.vue";
     import xingshiOrigion from "./shiyongfind/xingshiOrigion.vue";
     import historyToday from "./shiyongfind/historyToday.vue";
+    import dmTranslation from "./shiyongfind/dmTranslation.vue";
+    import friendWenAn from "./yingxiao/friendWenAn.vue";
+    import xinlingJiTang from "./yingxiao/xinlingJiTang.vue";
+    import mingRenMingYan from "./yingxiao/mingRenMingYan.vue";
 
     export default {
         name: 'applay',
@@ -60,14 +75,19 @@
             postMenFind,
             gongJijinCal,
             xingshiOrigion,
-            historyToday
+            historyToday,
+            dmTranslation,
+            friendWenAn,
+            xinlingJiTang,
+            mingRenMingYan
         },
         data() {
             return {
                 tabPosition: 'left',
-                activeTabName: '命理玄学',
+                activeTabName: '实用查询',
                 minliRadioVal: 'shenchenHelp',
-                shiyongRadioVal: 'chengyudaquan',
+                shiyongRadioVal: 'dmTranslation',
+                yingxiaoRadioVal: 'friendWenAn',
                 minliRadioOptions: [
                     {
                         value: 'shenchenHelp',
@@ -104,6 +124,10 @@
                 ],
                 shiyongRadioOptions: [
                     {
+                        value: 'dmTranslation',
+                        name: '中英文互译'
+                    },
+                    {
                        value: 'chengyudaquan',
                        name: '成语大全'
                     },
@@ -126,6 +150,23 @@
                         value: 'historyToday',
                         name: '历史上的今天'
                     },
+                ],
+
+                yingxiaoRadioOptions: [
+                    {
+                        value: 'friendWenAn',
+                        name: '朋友圈文案'
+                    },
+
+                    {
+                        value: 'xinlingJiTang',
+                        name: '心灵鸡汤'
+                    },
+
+                    {
+                        value: 'mingRenMingYan',
+                        name: '名人名言'
+                    },
                 ]
             }
         },
@@ -140,6 +181,11 @@
                 console.log(val);
                 this.shiyongRadioVal = val;
             },
+
+            handleYingXiaoRadio(val) {
+                console.log(val);
+                this.yingxiaoRadioVal = val;
+            }
         }
     }
 </script>

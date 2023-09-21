@@ -9,7 +9,7 @@
                 :value="item.value">
                 </el-option>
             </el-select>
-            <el-select v-model="mounthVal" clearable placeholder="请选择月份" size="small" class="el-select">
+            <el-select v-model="monthVal" clearable placeholder="请选择月份" size="small" class="el-select">
                 <el-option
                 v-for="item in monthOptions"
                 :key="item.value"
@@ -86,7 +86,7 @@ import secret from '../serect.js'
                 isResultNull: false,
                 url: '',
                 yearVal: new Date().getFullYear(),
-                mounthVal: new Date().getMonth()+1,
+                monthVal: new Date().getMonth()+1,
                 dayVal: new Date().getDate(),
                 hourVal: new Date().getHours(),
                 yearOptions: [],
@@ -187,8 +187,7 @@ import secret from '../serect.js'
                 //                        .then(res => res.json());
                 const response = await this.$axios.get(`${this.url}/birthEight/query`,{params});                       
                 console.log(response);
-                if(response.status == 200) {
-                    if(response.data.result) {
+                if(response.status == 200 && response.data.error_code == 0) {
                         this.isBtnDisabled = false;
                         this.$message.success("生辰数据查询成功");
                         const data  = response.data.result;
@@ -218,15 +217,9 @@ import secret from '../serect.js'
                             this.shenchenParams.isTerm = isTerm;
                             this.shenchenParams.isLeap = isLeap;
                             this.shenchenParams.Term = Term;
-                            this.isResultNull = false;
-                    }else {
-                        this.isResultNull = true;
-                        this.$message.error('暂无查询数据,接口调用已上线,明天再来吧');
-                    }
-                    
-
                 }else {
-                    this.$message.error(response.reason);
+                    this.isResultNull = true;
+                    this.$message.error('暂无查询数据,接口调用已上线,明天再来吧');
                 }
             },
             handleBtnReset() {

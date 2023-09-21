@@ -127,6 +127,39 @@
                '^/historytodayapi': ''
             },
          },
+
+         '/pyqwenanapi': {
+            target: 'https://apis.juhe.cn',
+            changeOrigin: true,
+            pathRewrite: {
+               '^/pyqwenanapi': ''
+            },
+         },
+
+         '/mingrenmingyanapi': {
+            target: 'https://apis.juhe.cn',
+            changeOrigin: true,
+            pathRewrite: {
+               '^/mingrenmingyanapi': ''
+            },
+         },
+         // 大米心灵毒鸡汤
+         '/damidujitangapi': {
+            target: 'https://api.qqsuu.cn',
+            changeOrigin: true,
+            pathRewrite: {
+               '^/damidujitangapi': ''
+            },
+         },
+
+         // 大米翻译
+         '/damitranslateapi': {
+            target: 'https://api.qqsuu.cn',
+            changeOrigin: true,
+            pathRewrite: {
+               '^/damitranslateapi': ''
+            },
+         },
     }  
   }
 
