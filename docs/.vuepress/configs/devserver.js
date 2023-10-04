@@ -1,4 +1,4 @@
- const devServer = {    
+ const devServer = {   
     proxy: {   
          // 周公解梦  
          '/api': {       
@@ -127,9 +127,9 @@
                '^/historytodayapi': ''
             },
          },
-
+         // 朋友圈文案
          '/pyqwenanapi': {
-            target: 'https://apis.juhe.cn',
+            target: 'https://api.qqsuu.cn',
             changeOrigin: true,
             pathRewrite: {
                '^/pyqwenanapi': ''

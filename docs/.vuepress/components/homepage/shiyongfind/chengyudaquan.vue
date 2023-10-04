@@ -69,7 +69,7 @@
         methods: {
             async handleBtnFind() {
                 if(this.inputVal.trim()) {
-                         this.isBtnDisabled = true;
+                        this.isBtnDisabled = true;
                         let development = process.env.NODE_ENV == 'development' ? true : false;
                         console.log(development, 'development'); //true的时候为开发环境
                         if (development) {

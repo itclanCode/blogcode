@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import fetchJsonp from 'fetch-jsonp';
+import fetch from 'cross-fetch';
     export default {
         name: 'zhougongJieMeng',
         data() {
@@ -57,21 +59,21 @@
                         full:  1
                     }
                     let res = await this.$axios.get(`${this.url}/dream/query`,{params})
-                    console.log(res);
-                    if(res.status == 200) {
-                        if(res.data.result) {
+                    //let paramsUrl = `key=${params.key}&q=${params.q}&full=${params.full}`;
+                    // const response = await fetch(`${this.url}/dream/query?${paramsUrl}`,{method:'get',mode: "no-cors"})
+                    //                 .then(res => res.json())
+                    //                 .then(data => data);
+                    // console.log(response);
+                    console.log(res, 'res');
+                    if(res.status == 200 && res.data.error_code == 0) {
                              this.isBtnDisabled = false;
                              this.$message.success("周公解梦数据查询成功");
                              const data = res.data.result;
                              this.aMengResults = data;
                              this.isResultNull = false;
-                        }else {
-                            this.isResultNull = true;
-                            this.$message.error("请缩短或替换关键词再次查询");
-                        }
-                       
                     }else {
-                        this.$message.error("查询失败");
+                        this.isResultNull = true;
+                        this.$message.error("请缩短或替换关键词再次查询");
                     }
                 }else {
                     this.$message.error("输入框内容不能为空且只能输入中文");

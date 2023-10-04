@@ -23,6 +23,12 @@ title: 目录
 :::: el-collapse
 ::: el-collapse-item title="离您最近的表示是最新的-点击即可查看"
 - [置顶-广告位接受投放](../adverent/)
+* [函数的防抖与节流](../fontend/js/fun-debounce-throttle)
+* [vuejs中使用axios时如何实现滑动滚动条来加载数据](../fontend/framework/vue-axiosSlideScroll)
+* [vuejs中使用axios时如何追加数据](../fontend/framework/vue-axios-zhuijia)
+* [vuejs中封装axios请求集中管理](../fontend/framework/vue-fengzhuangaxios)
+* [vuejs中缓存组件状态-keepAlive](../fontend/framework/vue-keep-alive)
+* [城市级联选择-省-市-县](../fontend/js/cityjilianselect)
 * [前后端联调前-一个前端动手写代码前的思考](../fontend/js/frontend-codethink)
 * [vue3+vite安装element-plus报错解决-使用组件不起作用](../fontend/framework/vite-installelemntpluserror)
 * [vite构建的本地开发环境请求第三方接口时如何解决跨域问题](../fontend/js/vite-localcors)

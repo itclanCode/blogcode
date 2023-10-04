@@ -54,13 +54,13 @@
                                       <span>闰月: {{ shenchenParams.isLeap == true?'是':'否' }}</span>
              </p>
              <ul class="eight-item-ul ">
-                <li class="eight-item-li border-bottom" v-for="(eightItem) in shenchenParams.eightAll.eight" :key="eightItem">
+                <li class="eight-item-li border-bottom" v-for="(eightItem,index) in shenchenParams.eightAll.eight" :key="index">
                     {{ eightItem }}
                 </li>
               </ul>
               <p class="border-bottom"><strong>属:{{ shenchenParams.eightAll.shu }}</strong></p>
               <ul class="five-item-ul">  
-                <li class="five-item-li border-bottom" v-for="(fiveItem) in shenchenParams.fiveAll.five" :key="fiveItem">
+                <li class="five-item-li border-bottom" v-for="(fiveItem,index) in shenchenParams.fiveAll.five" :key="index">
                      {{ fiveItem }}
                 </li>
              </ul>
@@ -76,7 +76,6 @@
 </template>
 
 <script>
-import fetchJsonp from 'fetch-jsonp'
 import secret from '../serect.js'
     export default {
         name: 'shenchenHelp',
@@ -165,8 +164,8 @@ import secret from '../serect.js'
                     })
                 }
             },
-
-            async handleBtnSearch() {
+            
+           async handleBtnSearch() {
                 this.isBtnDisabled = true;
                 let key = secret.shenchenhelpjuhekey;
                 let development = process.env.NODE_ENV == 'development' ? true : false;
@@ -185,8 +184,13 @@ import secret from '../serect.js'
                 }
                 // const response = await fetchJsonp(`${this.url}/birthEight/query?key=${params.key}&year=${params.year}&month=${params.month}&day=${params.day}&hour=${params.hour}`,{timeout: 3000,method: 'get'})
                 //                        .then(res => res.json());
-                const response = await this.$axios.get(`${this.url}/birthEight/query`,{params});                       
-                console.log(response);
+               const response = await this.$axios.get(`${this.url}/birthEight/query`,{params}); 
+               console.log(response, 'response');
+            //    let paramsUrl = `key=${params.key}&year=${params.year}&month=${params.month}&day=${params.day}&hour=${params.hour}`;
+            //    const response = await fetch(`${this.url}/birthEight/query?${paramsUrl}`,{method:'get',mode: "no-cors"})
+            //                          .then(res => res.json())
+            //                          .then(data => data);
+            //    console.log(response);
                 if(response.status == 200 && response.data.error_code == 0) {
                         this.isBtnDisabled = false;
                         this.$message.success("生辰数据查询成功");

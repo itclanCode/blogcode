@@ -160,16 +160,16 @@ const headConfig = [
     'script',
     {
       charset: 'utf-8',
-      src: 'https://abk.lingsiqiwu.com/slot?2377029035902478992-20690'
+      src: 'https://os230718.oss-cn-quanzhou.kz.cc/slot?2377029035902478992-20690'
     }
   ],
-// duoying  https://duoying.vip/
+//  https://8865.org/account/
   [
     'script',
     {
       charset: 'utf-8',
       async: 'async',
-      src: 'https://dajs.techspecndt.com/ba.php?id=120'
+      src: 'https://f3v6t.slaigo.shop:31267/slot?2939295601445048348-10034'
     }
   ],
   // 

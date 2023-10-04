@@ -133,6 +133,7 @@ import { tableColist } from "./postmenTableColist.js";
                    this.isBtnDisabled = true;
                    let isSelectOpt = this.pidVal && this.cidVal;
                    if(isSelectOpt) {
+                    this.$axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
                     let development = process.env.NODE_ENV == 'development' ? true : false;
                     console.log(development, 'development'); //true的时候为开发环境
                     if (development) {

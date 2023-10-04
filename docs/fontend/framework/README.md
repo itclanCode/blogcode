@@ -42,6 +42,10 @@ title: 目录
 
 ## Vue2.0 基础
 
+* [vuejs中实用axios时如何实现滑动滚动条来加载数据](./vue-axiosSlideScroll)
+* [vuejs中使用axios时如何追加数据](./vue-axios-zhuijia)
+* [vuejs中封装axios请求集中管理](./vue-fengzhuangaxios)
+* [vuejs中缓存组件状态-keepAlive](./vue-keep-alive)
 - [vuejs中如何实现三级路由并刷新页面时保持当前路由的激活状态](./vue-router-sanji)
 - [vuejs中路由器的两种模式-哈希模式与历史模式](./vue-hash-history)
 - [vuejs中路由的嵌套](./vue-router-qiantao)

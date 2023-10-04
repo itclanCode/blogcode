@@ -1,5 +1,5 @@
 <template>
-    <div class="applay-wrap">
+    <div class="applay-wrap" v-if="isDev == true?true:false">
         <el-tabs :tab-position="tabPosition" v-model="activeTabName"  style="min-height: 200px;">
             <el-tab-pane label="命理玄学" name="命理玄学">
                 <el-radio-group class="el-radio-group" v-model="minliRadioVal" size="small" @input="handleMiliRadio">
@@ -83,8 +83,9 @@
         },
         data() {
             return {
+                isDev: true,
                 tabPosition: 'left',
-                activeTabName: '实用查询',
+                activeTabName: '命理玄学',
                 minliRadioVal: 'shenchenHelp',
                 shiyongRadioVal: 'dmTranslation',
                 yingxiaoRadioVal: 'friendWenAn',
@@ -168,6 +169,16 @@
                         name: '名人名言'
                     },
                 ]
+            }
+        },
+
+        mounted() {
+            let development = process.env.NODE_ENV == 'development' ? true : false;
+            console.log(development, 'development'); //true的时候为开发环境
+            if (development) {
+                this.isDev = true;
+            } else {
+                this.isDev = false;
             }
         },
 
